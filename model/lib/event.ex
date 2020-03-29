@@ -1,8 +1,5 @@
 defmodule Model.Event do
-  # @type t() :: %__MODULE__{
-  #         sport_id: String.t()
-  #       }
-  # use ExtrapolateStruct
+  @type t() :: %__MODULE__{}
 
   defstruct [
     :id,
