@@ -1,0 +1,31 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTgxNDI4Njo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="ESPS" allow_cash_out="Y" name="Esports" disporder="10">
+    <SBClass sb_class_id="189377" disporder="-500" name="League of Legends">
+      <SBType sb_type_id="193761" name="LCS Spring" disporder="-300">
+        <Ev inplay_allowed="Y" status="A" name="Golden Guardians - FlyQuest" allow_cash_out="Y" start_time="2020-03-29T19:05:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="1" ev_id="5108532" disporder="0">
+          <EvDetail br_match_id="21759175"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-03-29T19:18:58" inplay_period_finished="N" score_a="0" score_b="0" inplay_period_name="Ζωντανά" clock_mode="FORWARD" inplay_period="live" score_string="0-0" scoring_system="match" last_change="2020-03-29T19:05:17" inplay_secs="824">
+            <Scores/>
+          </Inplay>
+          <InplayDetail period_length_mins="0" period_start="2020-03-29T19:05:14" period_stoppage_secs="0" score_team_B="0" score_team_A="0"/>
+          <Incidents>
+            <Incident incident_id="189421463" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T19:05:14" inplay_period="live" type="PBEG"/>
+            <Incident incident_id="189421462" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T19:05:14" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Teams>
+            <Team team_id="1953024" team_order="0" name="Golden Guardians" short_name="Golden Guardians"/>
+            <Team team_id="1953026" team_order="1" name="FlyQuest" short_name="FlyQuest"/>
+          </Teams>
+          <Mkt status="A" name="Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200252381" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Golden Guardians" seln_id="848956645" team_id="1953024" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="3.05" bet_ref="ODQ4OTU2NjQ1OjQxLzIwOjow" frac_prc="41/20" us_prc="+205" last_change="2020-03-29T19:05:30"/>
+            </Seln>
+            <Seln status="A" name="FlyQuest" seln_id="848956644" team_id="1953026" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.35" bet_ref="ODQ4OTU2NjQ0OjcvMjA6OjA" frac_prc="7/20" us_prc="-286" last_change="2020-03-29T19:05:30"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

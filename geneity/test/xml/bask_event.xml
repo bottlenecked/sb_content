@@ -1,0 +1,359 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTc4MzE3Nzo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="BASK" allow_cash_out="Y" name="Μπάσκετ" disporder="2">
+    <SBClass sb_class_id="189059" disporder="-840" name="Κινεζική Ταϊπέι">
+      <SBType sb_type_id="189331" name="SBL" disporder="-50">
+        <Ev inplay_allowed="Y" status="A" name="Μπανκ οφ Ταϊβάν - Παουιάν" allow_cash_out="Y" start_time="2020-03-30T09:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="35" ev_id="5148617" disporder="-498">
+          <EvDetail br_match_id="21769859" br_has_stats="Y"/>
+          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="600" correct_at="2020-03-29T17:41:19" inplay_period_finished="N" extra_period_length="300" score_a="0" score_b="0" inplay_period_name="Έναρξη" num_periods="4" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="5" score_string="0-0" scoring_system="match" last_change="2020-03-29T14:16:09" inplay_secs="0">
+            <Scores/>
+          </Inplay>
+          <InplayDetail period_length_mins="10" period_stoppage_secs="0" score_team_B="0" score_team_A="0"/>
+          <Teams>
+            <Team team_id="1918723" team_order="0" name="Μπανκ οφ Ταϊβάν" short_name="Μπανκ οφ Ταϊβάν"/>
+            <Team team_id="1906390" team_order="1" name="Παουιάν" short_name="Παουιάν"/>
+          </Teams>
+          <Mkt status="A" name="Νικητής (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639478" inplay_avail="Y" disporder="-1500" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570800" team_id="1918723" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODUwNTcwODAwOjkvNTo6MA" frac_prc="9/5" us_prc="+180" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" seln_id="850570801" team_id="1906390" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.40" bet_ref="ODUwNTcwODAxOjIvNTo6MA" frac_prc="2/5" us_prc="-250" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639583" handicap="+3.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+3.5" seln_id="850571058" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="2.17" bet_ref="ODUwNTcxMDU4OjExNy8xMDA6MTQ6MA" frac_prc="117/100" us_prc="+117" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-3.5" seln_id="850571059" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.66" bet_ref="ODUwNTcxMDU5OjMzLzUwOjE0OjA" frac_prc="33/50" us_prc="-152" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639584" handicap="+4.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+4.5" seln_id="850571060" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODUwNTcxMDYwOjIxLzIwOjE4OjA" frac_prc="21/20" us_prc="+105" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-4.5" seln_id="850571061" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.77" bet_ref="ODUwNTcxMDYxOjc3LzEwMDoxODow" frac_prc="77/100" us_prc="-130" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639585" handicap="+5.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+5.5" seln_id="850571062" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODUwNTcxMDYyOjE3LzIwOjIyOjA" frac_prc="17/20" us_prc="-118" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-5.5" seln_id="850571063" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNTcxMDYzOjk3LzEwMDoyMjow" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639586" handicap="+6.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+6.5" seln_id="850571064" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNTcxMDY0OjE4LzI1OjI2OjA" frac_prc="18/25" us_prc="-139" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-6.5" seln_id="850571065" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTcxMDY1OjExLzEwOjI2OjA" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200644632" handicap="+7.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+7.5" seln_id="850587163" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.65" bet_ref="ODUwNTg3MTYzOjEzLzIwOjMwOjA" frac_prc="13/20" us_prc="-154" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-7.5" seln_id="850587164" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODUwNTg3MTY0OjYvNTozMDow" frac_prc="6/5" us_prc="+120" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200644465" handicap="180.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="180.5" seln_id="850586705" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNTg2NzA1OjE4LzI1OjcyMjow" frac_prc="18/25" us_prc="-139" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="180.5" seln_id="850586706" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTg2NzA2OjExLzEwOjcyMjow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639587" handicap="181.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="181.5" seln_id="850571066" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDY2OjQvNTo3MjY6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="181.5" seln_id="850571067" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODUwNTcxMDY3OjUxLzUwOjcyNjow" frac_prc="51/50" us_prc="+102" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639588" handicap="182.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="182.5" seln_id="850571068" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDY4Ojg3LzEwMDo3MzA6MA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="182.5" seln_id="850571069" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDY5OjE5LzIwOjczMDow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639589" handicap="183.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="183.5" seln_id="850571070" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODUwNTcxMDcwOjUxLzUwOjczNDow" frac_prc="51/50" us_prc="+102" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="183.5" seln_id="850571071" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDcxOjQvNTo3MzQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639590" handicap="184.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="184.5" seln_id="850571072" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTcxMDcyOjExLzEwOjczODow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="184.5" seln_id="850571073" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNTcxMDczOjE4LzI1OjczODow" frac_prc="18/25" us_prc="-139" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1η Περίοδος - Nικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639469" inplay_avail="Y" disporder="-1300" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T1DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T1DN">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570773" team_id="1918723" disporder="-1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNTcwNzczOjYxLzUwOjow" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" seln_id="850570772" team_id="1906390" disporder="0" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.61" bet_ref="ODUwNTcwNzcyOjYxLzEwMDo6MA" frac_prc="61/100" us_prc="-164" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1η Περίοδος - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639581" handicap="+1.5" inplay_avail="Y" disporder="-1290" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FT1H" lp_avail="Y" mkt_sort_name="1st Period Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+1.5" seln_id="850571054" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDU0Ojg3LzEwMDo2OjA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:33:19"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-1.5" seln_id="850571055" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDU1Ojg3LzEwMDo2OjA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:33:19"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639499" inplay_avail="Y" disporder="-1285" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT1W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT1W">
+            <Seln status="A" seln_id="850570859" seln_sort="H3-" name="Μπανκ οφ Ταϊβάν νίκη με 3+" disporder="0">
+              <Price prc_type="LP" dec_prc="3.10" bet_ref="ODUwNTcwODU5OjIxLzEwOjow" frac_prc="21/10" us_prc="+210" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570858" seln_sort="A3-" name="Παουιάν νίκη με 3+" disporder="1">
+              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTcwODU4OjExLzEwOjow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T16:33:19"/>
+            </Seln>
+            <Seln status="A" seln_id="850570860" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
+              <Price prc_type="LP" dec_prc="3.30" bet_ref="ODUwNTcwODYwOjIzLzEwOjow" frac_prc="23/10" us_prc="+230" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1η Περίοδος - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639580" handicap="46.5" inplay_avail="Y" disporder="-1280" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP1O" lp_avail="Y" mkt_sort_name="1st Period Total Points">
+            <Seln status="A" name="Over" handicap="46.5" seln_id="850571052" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDUyOjE5LzIwOjE4Njow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="46.5" seln_id="850571053" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDUzOjQvNToxODY6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="2η Περίοδος - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639481" inplay_avail="Y" disporder="-1240" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T2DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T2DN">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570807" team_id="1918723" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.12" bet_ref="ODUwNTcwODA3OjI4LzI1Ojow" frac_prc="28/25" us_prc="+112" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" seln_id="850570806" team_id="1906390" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.67" bet_ref="ODUwNTcwODA2OjY3LzEwMDo6MA" frac_prc="67/100" us_prc="-150" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="2η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639500" inplay_avail="Y" disporder="-1235" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT2W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT2W">
+            <Seln status="A" seln_id="850570862" seln_sort="H3-" name="Μπανκ οφ Ταϊβάν νίκη με 3+" disporder="0">
+              <Price prc_type="LP" dec_prc="3.00" bet_ref="ODUwNTcwODYyOjIvMTo6MA" frac_prc="2/1" us_prc="+200" last_change="2020-03-29T16:19:45"/>
+            </Seln>
+            <Seln status="A" seln_id="850570861" seln_sort="A3-" name="Παουιάν νίκη με 3+" disporder="1">
+              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNTcwODYxOjYxLzUwOjow" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570863" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
+              <Price prc_type="LP" dec_prc="3.25" bet_ref="ODUwNTcwODYzOjkvNDo6MA" frac_prc="9/4" us_prc="+225" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="2η Περίοδος - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639569" handicap="+1.5" inplay_avail="Y" disporder="-1230" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FT2H" lp_avail="Y" mkt_sort_name="2nd Period Handicap">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+1.5" seln_id="850571030" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNTcxMDMwOjc4LzEwMDo2OjA" frac_prc="78/100" us_prc="-129" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-1.5" seln_id="850571031" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNTcxMDMxOjk3LzEwMDo2OjA" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="2η Περίοδος - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639579" handicap="44.5" inplay_avail="Y" disporder="-1220" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
+            <Seln status="A" name="Over" handicap="44.5" seln_id="850571050" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMDUwOjkvMTA6MTc4OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="44.5" seln_id="850571051" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODUwNTcxMDUxOjE3LzIwOjE3ODow" frac_prc="17/20" us_prc="-118" last_change="2020-03-29T17:32:24"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639468" inplay_avail="Y" disporder="-1180" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="1DNB" lp_avail="Y" mkt_sort_name="Ημίχρονο - Εξαίρεση ισοπαλίας">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570771" team_id="1918723" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.45" bet_ref="ODUwNTcwNzcxOjI5LzIwOjow" frac_prc="29/20" us_prc="+145" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" seln_id="850570770" team_id="1906390" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.51" bet_ref="ODUwNTcwNzcwOjUxLzEwMDo6MA" frac_prc="51/100" us_prc="-197" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639570" handicap="+2.5" inplay_avail="Y" disporder="-1170" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FAHT" lp_avail="Y" mkt_sort_name="Asian Handicap (Half-Time)">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+2.5" seln_id="850571032" team_id="1918723" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDMyOjg3LzEwMDoxMDow" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" handicap="-2.5" seln_id="850571033" team_id="1906390" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDMzOjg3LzEwMDoxMDow" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639568" handicap="90.5" inplay_avail="Y" disporder="-1160" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUH1" lp_avail="Y" mkt_sort_name="Πρώτο ημίχρονο (Πάνω/Κάτω)">
+            <Seln status="A" name="Over" handicap="90.5" seln_id="850571028" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDI4Ojg3LzEwMDozNjI6MA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="90.5" seln_id="850571029" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDI5Ojg3LzEwMDozNjI6MA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="4η Περίοδος - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639473" inplay_avail="Y" disporder="-1081" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T4DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T4DN">
+            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570784" team_id="1918723" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.07" bet_ref="ODUwNTcwNzg0OjEwNy8xMDA6OjA" frac_prc="107/100" us_prc="+107" last_change="2020-03-29T16:19:45"/>
+            </Seln>
+            <Seln status="A" name="Παουιάν" seln_id="850570783" team_id="1906390" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.67" bet_ref="ODUwNTcwNzgzOjY3LzEwMDo6MA" frac_prc="67/100" us_prc="-150" last_change="2020-03-29T16:19:45"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="4η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639502" inplay_avail="Y" disporder="-1080" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT4W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT4W">
+            <Seln status="A" seln_id="850570875" seln_sort="H3-" name="Μπανκ οφ Ταϊβάν νίκη με 3+" disporder="0">
+              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODUwNTcwODc1OjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570874" seln_sort="A3-" name="Παουιάν νίκη με 3+" disporder="1">
+              <Price prc_type="LP" dec_prc="2.25" bet_ref="ODUwNTcwODc0OjUvNDo6MA" frac_prc="5/4" us_prc="+125" last_change="2020-03-29T16:18:45"/>
+            </Seln>
+            <Seln status="A" seln_id="850570876" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
+              <Price prc_type="LP" dec_prc="3.15" bet_ref="ODUwNTcwODc2OjQzLzIwOjow" frac_prc="43/20" us_prc="+215" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639501" inplay_avail="N" disporder="-45" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TOTP" lp_avail="Y" mkt_sort_name="MKT_SORT-TOTP">
+            <Seln status="A" seln_id="850570864" seln_sort="0-99" name="&lt;100" disporder="1">
+              <Price prc_type="LP" dec_prc="201.00" bet_ref="ODUwNTcwODY0OjIwMC8xOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-29T14:17:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570865" seln_sort="100-109" name="100-109" disporder="2">
+              <Price prc_type="LP" dec_prc="201.00" bet_ref="ODUwNTcwODY1OjIwMC8xOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-29T14:17:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570866" seln_sort="110-119" name="110-119" disporder="3">
+              <Price prc_type="LP" dec_prc="201.00" bet_ref="ODUwNTcwODY2OjIwMC8xOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-29T14:17:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570867" seln_sort="120-129" name="120-129" disporder="4">
+              <Price prc_type="LP" dec_prc="126.00" bet_ref="ODUwNTcwODY3OjEyNS8xOjow" frac_prc="125/1" us_prc="+12500" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+            <Seln status="A" seln_id="850570868" seln_sort="130-139" name="130-139" disporder="5">
+              <Price prc_type="LP" dec_prc="46.00" bet_ref="ODUwNTcwODY4OjQ1LzE6OjA" frac_prc="45/1" us_prc="+4500" last_change="2020-03-29T16:19:45"/>
+            </Seln>
+            <Seln status="A" seln_id="850570869" seln_sort="140-149" name="140-149" disporder="6">
+              <Price prc_type="LP" dec_prc="16.00" bet_ref="ODUwNTcwODY5OjE1LzE6OjA" frac_prc="15/1" us_prc="+1500" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570870" seln_sort="150-159" name="150-159" disporder="7">
+              <Price prc_type="LP" dec_prc="7.15" bet_ref="ODUwNTcwODcwOjYxNS8xMDA6OjA" frac_prc="615/100" us_prc="+615" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570871" seln_sort="160-169" name="160-169" disporder="8">
+              <Price prc_type="LP" dec_prc="4.05" bet_ref="ODUwNTcwODcxOjMwNS8xMDA6OjA" frac_prc="305/100" us_prc="+305" last_change="2020-03-29T16:19:45"/>
+            </Seln>
+            <Seln status="A" seln_id="850570872" seln_sort="170-179" name="170-179" disporder="9">
+              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODUwNTcwODcyOjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-03-29T15:53:43"/>
+            </Seln>
+            <Seln status="A" seln_id="850570873" seln_sort="180-" name="180+" disporder="10">
+              <Price prc_type="LP" dec_prc="1.65" bet_ref="ODUwNTcwODczOjEzLzIwOjow" frac_prc="13/20" us_prc="-154" last_change="2020-03-29T16:00:13"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ημίχρονο / Τελικό" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639477" inplay_avail="Y" disporder="900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOT" lp_avail="Y" mkt_sort_name="Half-Time/Full-Time (incl Overtime)">
+            <Seln status="A" seln_id="850570799" seln_sort="HH" name="1/1" disporder="1">
+              <Price prc_type="LP" dec_prc="3.80" bet_ref="ODUwNTcwNzk5OjE0LzU6OjA" frac_prc="14/5" us_prc="+280" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570797" seln_sort="DH" name="X/1" disporder="2">
+              <Price prc_type="LP" dec_prc="29.00" bet_ref="ODUwNTcwNzk3OjI4LzE6OjA" frac_prc="28/1" us_prc="+2800" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570795" seln_sort="AH" name="2/1" disporder="3">
+              <Price prc_type="LP" dec_prc="7.70" bet_ref="ODUwNTcwNzk1OjY3MC8xMDA6OjA" frac_prc="670/100" us_prc="+670" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570798" seln_sort="HA" name="1/2" disporder="4">
+              <Price prc_type="LP" dec_prc="5.95" bet_ref="ODUwNTcwNzk4OjQ5NS8xMDA6OjA" frac_prc="495/100" us_prc="+495" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570796" seln_sort="DA" name="X/2" disporder="5">
+              <Price prc_type="LP" dec_prc="20.50" bet_ref="ODUwNTcwNzk2OjM5LzI6OjA" frac_prc="39/2" us_prc="+1950" last_change="2020-03-29T16:18:45"/>
+            </Seln>
+            <Seln status="A" seln_id="850570794" seln_sort="AA" name="2/2" disporder="6">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcwNzk0OjQvNTo6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639498" inplay_avail="Y" disporder="1020" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="WM07" lp_avail="Y" mkt_sort_name="MKT_SORT-WM07">
+            <Seln status="A" seln_id="850570851" seln_sort="01T05" name="1-5" disporder="0">
+              <Price prc_type="LP" dec_prc="2.72" bet_ref="ODUwNTcwODUxOjE3Mi8xMDA6OjA" frac_prc="172/100" us_prc="+172" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570852" seln_sort="06T10" name="6-10" disporder="1">
+              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODUwNTcwODUyOjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570853" seln_sort="11T15" name="11-15" disporder="2">
+              <Price prc_type="LP" dec_prc="4.00" bet_ref="ODUwNTcwODUzOjMvMTo6MA" frac_prc="3/1" us_prc="+300" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570854" seln_sort="16T20" name="16-20" disporder="3">
+              <Price prc_type="LP" dec_prc="6.05" bet_ref="ODUwNTcwODU0OjUwNS8xMDA6OjA" frac_prc="505/100" us_prc="+505" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570855" seln_sort="21T25" name="21-25" disporder="4">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUwNTcwODU1OjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570856" seln_sort="26T30" name="26-30" disporder="5">
+              <Price prc_type="LP" dec_prc="20.00" bet_ref="ODUwNTcwODU2OjE5LzE6OjA" frac_prc="19/1" us_prc="+1900" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" seln_id="850570857" seln_sort="31T-" name="31+" disporder="6">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODUwNTcwODU3OjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι Μπανκ οφ Ταϊβάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200644631" handicap="87.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="87.5" seln_id="850587161" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODUwNTg3MTYxOjcvMTA6MzUwOjA" frac_prc="7/10" us_prc="-143" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="87.5" seln_id="850587162" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODUwNTg3MTYyOjIxLzIwOjM1MDow" frac_prc="21/20" us_prc="+105" last_change="2020-03-29T17:31:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι Μπανκ οφ Ταϊβάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639573" handicap="88.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="88.5" seln_id="850571038" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDM4OjQvNTozNTQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="88.5" seln_id="850571039" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMDM5OjkvMTA6MzU0OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι Μπανκ οφ Ταϊβάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639574" handicap="89.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="89.5" seln_id="850571040" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDQwOjE5LzIwOjM1ODow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="89.5" seln_id="850571041" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNTcxMDQxOjMvNDozNTg6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι Παουιάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639576" handicap="93.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="93.5" seln_id="850571044" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNTcxMDQ0OjMvNDozNzQ6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T16:18:45"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="93.5" seln_id="850571045" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDQ1OjE5LzIwOjM3NDow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T16:18:45"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι Παουιάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639577" handicap="94.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="94.5" seln_id="850571046" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMDQ2OjkvMTA6Mzc4OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="94.5" seln_id="850571047" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDQ3OjQvNTozNzg6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:46:23"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι Παουιάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639578" handicap="95.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="95.5" seln_id="850571048" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.08" bet_ref="ODUwNTcxMDQ4OjI3LzI1OjM4Mjow" frac_prc="27/25" us_prc="+108" last_change="2020-03-29T16:18:45"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="95.5" seln_id="850571049" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODUwNTcxMDQ5OjQvNjozODI6MA" frac_prc="4/6" us_prc="-150" last_change="2020-03-29T16:18:45"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ματς να πάει στην παράταση" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639479" inplay_avail="Y" disporder="1800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OVRT" lp_avail="Y" mkt_sort_name="Will there be overtime?">
+            <Seln status="A" seln_id="850570803" seln_sort="Y" name="Ναι" disporder="0">
+              <Price prc_type="LP" dec_prc="11.00" bet_ref="ODUwNTcwODAzOjEwLzE6OjA" frac_prc="10/1" us_prc="+1000" last_change="2020-03-29T15:53:25"/>
+            </Seln>
+            <Seln status="A" seln_id="850570802" seln_sort="N" name="Όχι" disporder="1">
+              <Price prc_type="LP" dec_prc="1.025" bet_ref="ODUwNTcwODAyOjEvNDA6OjA" frac_prc="1/40" us_prc="-4000" last_change="2020-03-29T15:53:25"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικοί Πόντοι - Μονά/Ζυγά (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639480" inplay_avail="Y" disporder="1900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OEOT" lp_avail="Y" mkt_sort_name="Odd/Even Total Points">
+            <Seln status="A" seln_id="850570805" seln_sort="O" name="Μονά" disporder="-1">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcwODA1OjQvNTo6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:10:43"/>
+            </Seln>
+            <Seln status="A" seln_id="850570804" seln_sort="E" name="Ζυγά" disporder="0">
+              <Price prc_type="LP" dec_prc="1.91" bet_ref="ODUwNTcwODA0OjkxLzEwMDo6MA" frac_prc="91/100" us_prc="-110" last_change="2020-03-29T16:10:43"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

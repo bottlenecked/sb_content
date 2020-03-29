@@ -1,0 +1,266 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTgxNDA2MTo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="BASE" allow_cash_out="Y" name="Μπέιζμπολ" disporder="11">
+    <SBClass sb_class_id="189452" disporder="0" name="Νικαράγουα">
+      <SBType sb_type_id="194387" name="Campeonato GPO" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Ντάντος - Σοντάλες" allow_cash_out="Y" start_time="2020-03-29T17:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="21" ev_id="5145382" disporder="-88">
+          <EvDetail br_match_id="21776431"/>
+          <Inplay inplay_period_num="8" inplay_period_name_short="PERIOD_8_inning_SHORT" clock_status="TICKING" correct_at="2020-03-29T19:18:05" inplay_period_finished="N" score_a="4" score_b="1" inplay_period_name="8th Inning" num_periods="9" clock_mode="NONE" inplay_period="8_inning" num_extra_periods="0" score_string="4-1" scoring_system="match" last_change="2020-03-29T18:21:30" inplay_secs="232">
+            <Scores>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="1"/>
+              <PeriodScore score_a="0" score_b="1" score_string="0-1" period="2"/>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="3"/>
+              <PeriodScore score_a="4" score_b="0" score_string="4-0" period="4"/>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="5"/>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="6"/>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="7"/>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="8"/>
+            </Scores>
+          </Inplay>
+          <InplayDetail period_length_mins="0" period_start="2020-03-29T19:14:21" period_stoppage_secs="0" score_team_B="1" score_team_A="4"/>
+          <Stats>
+            <Stat type="event" stat_type="OUTS" name="EV_STAT_OUTS" value="1" title="EV_STAT_OUTS"/>
+            <Stat type="event" stat_type="BATN" name="EV_STAT_BATN" value="2" title="EV_STAT_BATN"/>
+            <Stat type="event" stat_type="BALL" name="EV_STAT_BALL" value="1" title="EV_STAT_BALL"/>
+            <Stat type="event" stat_type="STRK" name="EV_STAT_STRK" value="2" title="EV_STAT_STRK"/>
+            <Stat type="event" stat_type="BAS1" name="EV_STAT_BAS1" value="0" title="EV_STAT_BAS1"/>
+            <Stat type="event" stat_type="BAS2" name="EV_STAT_BAS2" value="0" title="EV_STAT_BAS2"/>
+            <Stat type="event" stat_type="BAS3" name="EV_STAT_BAS3" value="0" title="EV_STAT_BAS3"/>
+            <Stat name="EV_STAT_BATN" title="TEAM_STAT_BATN" type="team" away="2" home="3" stat_type="BATN"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="189421566" description="OUT_FOR_X" inplay_period_mins="0" team_id="1958173" inplay_total_mins="1" time="2020-03-29T19:16:23" inplay_period="8_inning" type="OUT"/>
+            <Incident incident_id="189421542" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T19:14:21" inplay_period="8_inning" type="PBEG"/>
+            <Incident incident_id="189421528" description="Λήξη περιόδου" inplay_period_mins="0" inplay_total_mins="1" time="2020-03-29T19:12:21" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189421389" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T18:59:45" inplay_period="7_inning" type="PBEG"/>
+            <Incident incident_id="189421373" description="Λήξη περιόδου" inplay_period_mins="0" inplay_total_mins="1" time="2020-03-29T18:57:29" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189421198" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T18:45:56" inplay_period="6_inning" type="PBEG"/>
+            <Incident incident_id="189421162" description="Λήξη περιόδου" inplay_period_mins="0" inplay_total_mins="1" time="2020-03-29T18:43:10" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189420879" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T18:23:39" inplay_period="5_inning" type="PBEG"/>
+            <Incident incident_id="189420858" description="Λήξη περιόδου" inplay_period_mins="0" inplay_total_mins="1" time="2020-03-29T18:21:40" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189420855" description="4-1 Ντάντος" inplay_period_mins="0" team_id="1958174" inplay_total_mins="1" time="2020-03-29T18:21:30" inplay_period="4_inning" type="RUN"/>
+            <Incident incident_id="189420777" description="3-1 Ντάντος" inplay_period_mins="0" team_id="1958174" inplay_total_mins="1" time="2020-03-29T18:15:08" inplay_period="4_inning" type="RUN"/>
+            <Incident incident_id="189420776" description="2-1 Ντάντος" inplay_period_mins="0" team_id="1958174" inplay_total_mins="1" time="2020-03-29T18:15:06" inplay_period="4_inning" type="RUN"/>
+            <Incident incident_id="189420714" description="1-1 Ντάντος" inplay_period_mins="0" team_id="1958174" inplay_total_mins="1" time="2020-03-29T18:10:38" inplay_period="4_inning" type="RUN"/>
+            <Incident incident_id="189420503" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T17:56:48" inplay_period="4_inning" type="PBEG"/>
+            <Incident incident_id="189420502" description="Λήξη περιόδου" inplay_period_mins="0" inplay_total_mins="1" time="2020-03-29T17:56:47" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189420214" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T17:39:12" inplay_period="3_inning" type="PBEG"/>
+            <Incident incident_id="189420176" description="Λήξη περιόδου" inplay_period_mins="0" inplay_total_mins="1" time="2020-03-29T17:36:59" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189420059" description="0-1 Σοντάλες" inplay_period_mins="0" team_id="1958173" inplay_total_mins="1" time="2020-03-29T17:30:29" inplay_period="2_inning" type="RUN"/>
+            <Incident incident_id="189419919" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T17:22:23" inplay_period="2_inning" type="PBEG"/>
+            <Incident incident_id="189419884" description="Λήξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T17:20:02" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189419657" description="Έναρξη περιόδου" inplay_period_mins="1" team_id="1958173" inplay_total_mins="1" time="2020-03-29T16:58:33" inplay_period="1_inning" type="PBEG"/>
+            <Incident incident_id="189419656" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T16:58:33" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Teams>
+            <Team team_id="1958174" team_order="0" name="Ντάντος" short_name="Ντάντος"/>
+            <Team team_id="1958173" team_order="1" name="Σοντάλες" short_name="Σοντάλες"/>
+          </Teams>
+          <Mkt status="A" name="Συνολικά Runs (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649723" handicap="5.5" inplay_avail="Y" disporder="-930" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="5.5" seln_id="850604355" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODUwNjA0MzU1OjYvNToyMjow" frac_prc="6/5" us_prc="+120" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="5.5" seln_id="850604356" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.615" bet_ref="ODUwNjA0MzU2OjgvMTM6MjI6MA" frac_prc="8/13" us_prc="-163" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά Runs (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649742" handicap="6" inplay_avail="Y" disporder="-930" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="6" seln_id="850604417" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="3.40" bet_ref="ODUwNjA0NDE3OjEyLzU6MjQ6MA" frac_prc="12/5" us_prc="+240" last_change="2020-03-29T19:17:45"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="6" seln_id="850604418" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.285" bet_ref="ODUwNjA0NDE4OjIvNzoyNDow" frac_prc="2/7" us_prc="-350" last_change="2020-03-29T19:17:45"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά Runs (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649724" handicap="6.5" inplay_avail="Y" disporder="-930" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="6.5" seln_id="850604357" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="4.15" bet_ref="ODUwNjA0MzU3OjYzLzIwOjI2OjA" frac_prc="63/20" us_prc="+315" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="6.5" seln_id="850604358" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.20" bet_ref="ODUwNjA0MzU4OjEvNToyNjow" frac_prc="1/5" us_prc="-500" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="IN08" name="Νικητής Ίνινγκ (Ίνινγκ 8)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656918" inplay_avail="Y" disporder="-910" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="INWN" lp_avail="Y" mkt_sort_name="MKT_SORT-INWN">
+            <Seln status="A" name="Ντάντος" seln_id="850626148" team_id="1958174" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="4.00" bet_ref="ODUwNjI2MTQ4OjMvMTo6MA" frac_prc="3/1" us_prc="+300" last_change="2020-03-29T19:17:57"/>
+            </Seln>
+            <Seln status="A" seln_id="850626149" seln_sort="D" name="Ισοπαλία" disporder="1">
+              <Price prc_type="LP" dec_prc="1.333" bet_ref="ODUwNjI2MTQ5OjEvMzo6MA" frac_prc="1/3" us_prc="-300" last_change="2020-03-29T19:16:53"/>
+            </Seln>
+            <Seln status="A" name="Σοντάλες" seln_id="850626150" team_id="1958173" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="12.25" bet_ref="ODUwNjI2MTUwOjQ1LzQ6OjA" frac_prc="45/4" us_prc="+1125" last_change="2020-03-29T19:17:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="H004A001" name="Nίκη στο υπόλοιπο του αγώνα (περιλαμβ. Παράταση) (Eντός 4, Φιλοξενούμενοι 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200655246" inplay_avail="Y" disporder="-910" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IWRT" lp_avail="Y" mkt_sort_name="MKT_SORT-IWRT">
+            <Seln status="A" name="Ντάντος" seln_id="850621080" team_id="1958174" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="4.85" bet_ref="ODUwNjIxMDgwOjc3LzIwOjow" frac_prc="77/20" us_prc="+385" last_change="2020-03-29T19:18:02"/>
+            </Seln>
+            <Seln status="A" seln_id="850621081" seln_sort="D" name="Ισοπαλία" disporder="1">
+              <Price prc_type="LP" dec_prc="1.60" bet_ref="ODUwNjIxMDgxOjMvNTo6MA" frac_prc="3/5" us_prc="-167" last_change="2020-03-29T19:18:02"/>
+            </Seln>
+            <Seln status="A" name="Σοντάλες" seln_id="850621082" team_id="1958173" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="4.25" bet_ref="ODUwNjIxMDgyOjEzLzQ6OjA" frac_prc="13/4" us_prc="+325" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200650713" handicap="-3.5" inplay_avail="Y" disporder="-890" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Ντάντος" handicap="-3.5" seln_id="850606987" team_id="1958174" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="4.50" bet_ref="ODUwNjA2OTg3OjcvMjotMTQ6MA" frac_prc="7/2" us_prc="+350" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Σοντάλες" handicap="+3.5" seln_id="850606988" team_id="1958173" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.181" bet_ref="ODUwNjA2OTg4OjIvMTE6LTE0OjA" frac_prc="2/11" us_prc="-550" last_change="2020-03-29T19:18:02"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649727" handicap="-2.5" inplay_avail="Y" disporder="-890" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Ντάντος" handicap="-2.5" seln_id="850604364" team_id="1958174" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.20" bet_ref="ODUwNjA0MzY0OjEvNTotMTA6MA" frac_prc="1/5" us_prc="-500" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+            <Seln status="A" name="Σοντάλες" handicap="+2.5" seln_id="850604365" team_id="1958173" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="4.15" bet_ref="ODUwNjA0MzY1OjYzLzIwOi0xMDow" frac_prc="63/20" us_prc="+315" last_change="2020-03-29T19:17:45"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ τριπλής επιλογής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200655085" handicap="-4" inplay_avail="Y" disporder="-880" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HOT3" lp_avail="Y" mkt_sort_name="MKT_SORT-HOT3">
+            <Seln status="A" name="Σοντάλες" handicap="+4" seln_id="850620524" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.181" bet_ref="ODUwNjIwNTI0OjIvMTE6LTE2OjA" frac_prc="2/11" us_prc="-550" last_change="2020-03-29T19:12:21"/>
+            </Seln>
+            <Seln status="A" name="Ισοπαλία" handicap="-4" seln_id="850620523" disporder="2" seln_sort="T">
+              <Price prc_type="LP" dec_prc="8.00" bet_ref="ODUwNjIwNTIzOjcvMTotMTY6MA" frac_prc="7/1" us_prc="+700" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+            <Seln status="A" name="Ντάντος" handicap="-4" seln_id="850620522" disporder="3" seln_sort="1">
+              <Price prc_type="LP" dec_prc="9.75" bet_ref="ODUwNjIwNTIyOjM1LzQ6LTE2OjA" frac_prc="35/4" us_prc="+875" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ τριπλής επιλογής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200650712" handicap="-3" inplay_avail="Y" disporder="-880" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HOT3" lp_avail="Y" mkt_sort_name="MKT_SORT-HOT3">
+            <Seln status="A" name="Σοντάλες" handicap="+3" seln_id="850606986" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="4.333" bet_ref="ODUwNjA2OTg2OjEwLzM6LTEyOjA" frac_prc="10/3" us_prc="+333" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Ισοπαλία" handicap="-3" seln_id="850606985" disporder="2" seln_sort="T">
+              <Price prc_type="LP" dec_prc="1.571" bet_ref="ODUwNjA2OTg1OjQvNzotMTI6MA" frac_prc="4/7" us_prc="-175" last_change="2020-03-29T19:17:45"/>
+            </Seln>
+            <Seln status="A" name="Ντάντος" handicap="-3" seln_id="850606984" disporder="3" seln_sort="1">
+              <Price prc_type="LP" dec_prc="4.85" bet_ref="ODUwNjA2OTg0Ojc3LzIwOi0xMjow" frac_prc="77/20" us_prc="+385" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ τριπλής επιλογής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649736" handicap="-2" inplay_avail="Y" disporder="-880" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HOT3" lp_avail="Y" mkt_sort_name="MKT_SORT-HOT3">
+            <Seln status="A" name="Σοντάλες" handicap="+2" seln_id="850604391" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUwNjA0MzkxOjkvMTotODow" frac_prc="9/1" us_prc="+900" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Ισοπαλία" handicap="-2" seln_id="850604390" disporder="2" seln_sort="T">
+              <Price prc_type="LP" dec_prc="7.00" bet_ref="ODUwNjA0MzkwOjYvMTotODow" frac_prc="6/1" us_prc="+600" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Ντάντος" handicap="-2" seln_id="850604389" disporder="3" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.20" bet_ref="ODUwNjA0Mzg5OjEvNTotODow" frac_prc="1/5" us_prc="-500" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά Runs" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649739" inplay_avail="Y" disporder="-850" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TOTG" lp_avail="Y" mkt_sort_name="Συνολικά γκολ">
+            <Seln status="A" seln_id="850604399" seln_sort="5-6" name="5-6" disporder="5006">
+              <Price prc_type="LP" dec_prc="1.181" bet_ref="ODUwNjA0Mzk5OjIvMTE6OjA" frac_prc="2/11" us_prc="-550" last_change="2020-03-29T19:17:49"/>
+            </Seln>
+            <Seln status="A" seln_id="850604402" seln_sort="7-8" name="7-8" disporder="7008">
+              <Price prc_type="LP" dec_prc="5.25" bet_ref="ODUwNjA0NDAyOjE3LzQ6OjA" frac_prc="17/4" us_prc="+425" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+            <Seln status="A" seln_id="850604401" seln_sort="9-10" name="9-10" disporder="9010">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUwNjA0NDAxOjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+            <Seln status="A" seln_id="850604400" seln_sort="11-13" name="11-13" disporder="11013">
+              <Price prc_type="LP" dec_prc="19.50" bet_ref="ODUwNjA0NDAwOjM3LzI6OjA" frac_prc="37/2" us_prc="+1850" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+            <Seln status="A" seln_id="850604403" seln_sort="14-" name="14+" disporder="14000">
+              <Price prc_type="LP" dec_prc="19.50" bet_ref="ODUwNjA0NDAzOjM3LzI6OjA" frac_prc="37/2" us_prc="+1850" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά Runs (περιλαμβ. Παράταση) Τριπλής Επιλογής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200650322" handicap="6" inplay_avail="Y" disporder="-849" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="O3OT" lp_avail="Y" mkt_sort_name="MKT_SORT-O3OT">
+            <Seln status="A" name="Over" handicap="6" seln_id="850605934" disporder="-50" seln_sort="O">
+              <Price prc_type="LP" dec_prc="4.25" bet_ref="ODUwNjA1OTM0OjEzLzQ6MjQ6MA" frac_prc="13/4" us_prc="+325" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Ακριβώς" handicap="6" seln_id="850605935" disporder="2" seln_sort="TOU">
+              <Price prc_type="LP" dec_prc="4.35" bet_ref="ODUwNjA1OTM1OjY3LzIwOjI0OjA" frac_prc="67/20" us_prc="+335" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="6" seln_id="850605936" disporder="50" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.615" bet_ref="ODUwNjA1OTM2OjgvMTM6MjQ6MA" frac_prc="8/13" us_prc="-163" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="R006" name="Ποιος θα κερδίσει το Run (Run 6)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200655077" inplay_avail="Y" disporder="0" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="RXST" lp_avail="Y" mkt_sort_name="MKT_SORT-RXST">
+            <Seln status="A" seln_id="850620508" seln_sort="H" name="Ντάντος" disporder="0">
+              <Price prc_type="LP" dec_prc="4.30" bet_ref="ODUwNjIwNTA4OjMzLzEwOjow" frac_prc="33/10" us_prc="+330" last_change="2020-03-29T19:18:02"/>
+            </Seln>
+            <Seln status="A" seln_id="850620509" seln_sort="N" name="Κανένας" disporder="1">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODUwNjIwNTA5OjQvNjo6MA" frac_prc="4/6" us_prc="-150" last_change="2020-03-29T19:18:02"/>
+            </Seln>
+            <Seln status="A" seln_id="850620510" seln_sort="A" name="Σοντάλες" disporder="2">
+              <Price prc_type="LP" dec_prc="4.00" bet_ref="ODUwNjIwNTEwOjMvMTo6MA" frac_prc="3/1" us_prc="+300" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="R007" name="Ποιος θα κερδίσει το Run (Run 7)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200655245" inplay_avail="Y" disporder="0" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="RXST" lp_avail="Y" mkt_sort_name="MKT_SORT-RXST">
+            <Seln status="A" seln_id="850621077" seln_sort="H" name="Ντάντος" disporder="0">
+              <Price prc_type="LP" dec_prc="8.00" bet_ref="ODUwNjIxMDc3OjcvMTo6MA" frac_prc="7/1" us_prc="+700" last_change="2020-03-29T19:17:49"/>
+            </Seln>
+            <Seln status="A" seln_id="850621078" seln_sort="N" name="Κανένας" disporder="1">
+              <Price prc_type="LP" dec_prc="1.222" bet_ref="ODUwNjIxMDc4OjIvOTo6MA" frac_prc="2/9" us_prc="-450" last_change="2020-03-29T19:17:49"/>
+            </Seln>
+            <Seln status="A" seln_id="850621079" seln_sort="A" name="Σοντάλες" disporder="2">
+              <Price prc_type="LP" dec_prc="7.25" bet_ref="ODUwNjIxMDc5OjI1LzQ6OjA" frac_prc="25/4" us_prc="+625" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ομάδα με τα περισσότερα Runs σε ένα Ίνινγκ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649725" inplay_avail="Y" disporder="7" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="THPS" lp_avail="Y" mkt_sort_name="MKT_SORT-THPS">
+            <Seln status="A" name="Ντάντος" seln_id="850604359" team_id="1958174" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.01" bet_ref="ODUwNjA0MzU5OjEvMTAwOjow" frac_prc="1/100" us_prc="-10000" last_change="2020-03-29T19:14:29"/>
+            </Seln>
+            <Seln status="A" seln_id="850604360" seln_sort="D" name="Ισοπαλία" disporder="1">
+              <Price prc_type="LP" dec_prc="25.00" bet_ref="ODUwNjA0MzYwOjI0LzE6OjA" frac_prc="24/1" us_prc="+2400" last_change="2020-03-29T19:14:30"/>
+            </Seln>
+            <Seln status="A" name="Σοντάλες" seln_id="850604361" team_id="1958173" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="25.00" bet_ref="ODUwNjA0MzYxOjI0LzE6OjA" frac_prc="24/1" us_prc="+2400" last_change="2020-03-29T19:14:30"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="8o Ίνινγκ - Συνολικά Runs" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656917" handicap="0.5" inplay_avail="Y" disporder="900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP8O" lp_avail="Y" mkt_sort_name="MKT_SORT-FP8O">
+            <Seln status="A" name="Over" handicap="0.5" seln_id="850626146" disporder="-5" seln_sort="O">
+              <Price prc_type="LP" dec_prc="3.10" bet_ref="ODUwNjI2MTQ2OjIxLzEwOjI6MA" frac_prc="21/10" us_prc="+210" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="0.5" seln_id="850626147" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.333" bet_ref="ODUwNjI2MTQ3OjEvMzoyOjA" frac_prc="1/3" us_prc="-300" last_change="2020-03-29T19:16:58"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="8o Ίνινγκ - Συνολικά Runs" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656916" handicap="1.5" inplay_avail="Y" disporder="900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP8O" lp_avail="Y" mkt_sort_name="MKT_SORT-FP8O">
+            <Seln status="A" name="Over" handicap="1.5" seln_id="850626144" disporder="-5" seln_sort="O">
+              <Price prc_type="LP" dec_prc="6.00" bet_ref="ODUwNjI2MTQ0OjUvMTo2OjA" frac_prc="5/1" us_prc="+500" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="1.5" seln_id="850626145" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.111" bet_ref="ODUwNjI2MTQ1OjEvOTo2OjA" frac_prc="1/9" us_prc="-900" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="8o Ίνινγκ - Συνολικά Runs" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656919" handicap="2.5" inplay_avail="Y" disporder="900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP8O" lp_avail="Y" mkt_sort_name="MKT_SORT-FP8O">
+            <Seln status="A" name="Over" handicap="2.5" seln_id="850626151" disporder="-5" seln_sort="O">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUwNjI2MTUxOjkvMToxMDow" frac_prc="9/1" us_prc="+900" last_change="2020-03-29T19:16:53"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="2.5" seln_id="850626152" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.03" bet_ref="ODUwNjI2MTUyOjEvMzM6MTA6MA" frac_prc="3/100" us_prc="-3334" last_change="2020-03-29T19:16:45"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="R005" name="Πρώτος στα Χ runs (Run 5)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200649730" inplay_avail="Y" disporder="1111" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="RXRT" lp_avail="Y" mkt_sort_name="MKT_SORT-RXRT">
+            <Seln status="A" name="Ντάντος" seln_id="850604370" team_id="1958174" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.071" bet_ref="ODUwNjA0MzcwOjEvMTQ6OjA" frac_prc="1/14" us_prc="-1400" last_change="2020-03-29T19:17:46"/>
+            </Seln>
+            <Seln status="A" name="Σοντάλες" seln_id="850604371" team_id="1958173" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="7.50" bet_ref="ODUwNjA0MzcxOjEzLzI6OjA" frac_prc="13/2" us_prc="+650" last_change="2020-03-29T19:17:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Παράταση" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200604790" inplay_avail="Y" disporder="1800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OVRT" lp_avail="Y" mkt_sort_name="Will there be overtime?">
+            <Seln status="A" seln_id="850446644" seln_sort="Y" name="Ναι" disporder="0">
+              <Price prc_type="LP" dec_prc="13.00" bet_ref="ODUwNDQ2NjQ0OjEyLzE6OjA" frac_prc="12/1" us_prc="+1200" last_change="2020-03-29T19:14:29"/>
+            </Seln>
+            <Seln status="A" seln_id="850446643" seln_sort="N" name="Όχι" disporder="1">
+              <Price prc_type="LP" dec_prc="1.007" bet_ref="ODUwNDQ2NjQzOjcvMTAwMDo6MA" frac_prc="7/1000" us_prc="-14286" last_change="2020-03-29T19:14:29"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά Runs - Μονά/Ζυγά (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200604794" inplay_avail="Y" disporder="2222" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OEOT" lp_avail="Y" mkt_sort_name="Odd/Even Total Points">
+            <Seln status="A" seln_id="850446657" seln_sort="O" name="Μονά" disporder="0">
+              <Price prc_type="LP" dec_prc="1.30" bet_ref="ODUwNDQ2NjU3OjMvMTA6OjA" frac_prc="3/10" us_prc="-334" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850446656" seln_sort="E" name="Ζυγά" disporder="1">
+              <Price prc_type="LP" dec_prc="3.30" bet_ref="ODUwNDQ2NjU2OjIzLzEwOjow" frac_prc="23/10" us_prc="+230" last_change="2020-03-29T19:18:00"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

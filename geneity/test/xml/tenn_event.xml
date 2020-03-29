@@ -1,0 +1,285 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTgxMzMzMjo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="TENN" allow_cash_out="Y" name="Τένις" disporder="10">
+    <SBClass sb_class_id="189431" disporder="-1000" name="Ρωσία">
+      <SBType sb_type_id="194237" name="Eliminator Cup" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Άρτεμ Οσίποφ - Βλάντισλαβ Ζάιτσεβ" allow_cash_out="Y" start_time="2020-03-29T18:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="18" ev_id="5149435" disporder="15">
+          <Inplay tennis_sets="3" inplay_period_num="3" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-03-29T19:15:14" inplay_period_finished="N" score_a="1" score_b="1" inplay_period_name="Ζωντανά" num_periods="3" clock_mode="FORWARD" inplay_period="live" score_string="1-1" scoring_system="game-set-match" last_change="2020-03-29T18:56:52" inplay_secs="4199">
+            <Scores>
+              <Score score_a="0" score_b="15" name="current_game_score"/>
+              <Score score_a="4" score_b="6" name="set_1_games"/>
+              <Score score_a="6" score_b="4" name="set_2_games"/>
+              <Score score_a="1" score_b="1" name="sets_won"/>
+              <Score score_a="Y" score_b="N" name="is_server"/>
+              <Score score_a="3" score_b="3" name="current_set_games_won"/>
+            </Scores>
+            <MatchStatus player_id="19134198" status_code="TSFA" status_text="MATCH_STATUS_TSFA"/>
+          </Inplay>
+          <InplayDetail tennis_sets="3" period_stoppage_secs="0" score_team_B="1" score_team_A="1" tennis_log_level="game" period_start="2020-03-29T18:05:15"/>
+          <Stats>
+            <Stat name="EV_STAT_BPFA" title="PLAYER_STAT_BPFA" stat_type="BPFA" value="8" player_id="19134198" type="player"/>
+            <Stat name="EV_STAT_BPFA" title="PLAYER_STAT_BPFA" stat_type="BPFA" value="5" player_id="19135283" type="player"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="189421539" description="Το παιχνίδι 27 ξεκίνησε, Osipov σερβίς" player1_id="19134198" inplay_total_mins="69" time="2020-03-29T19:14:02" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421538" description="Game 26 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="69" time="2020-03-29T19:14:02" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421517" description="Το παιχνίδι 26 ξεκίνησε, Ζάιτσεφ σερβίς" player1_id="19135283" inplay_total_mins="66" time="2020-03-29T19:11:11" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421516" description="Game 25 - Osipov holds to 15" player1_id="19134198" inplay_total_mins="66" time="2020-03-29T19:11:11" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421500" description="Το παιχνίδι 25 ξεκίνησε, Osipov σερβίς" player1_id="19134198" inplay_total_mins="65" time="2020-03-29T19:09:36" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421499" description="Game 24 - Osipov breaks to 15" player1_id="19134198" inplay_total_mins="65" time="2020-03-29T19:09:36" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421484" description="Το παιχνίδι 24 ξεκίνησε, Ζάιτσεφ σερβίς" player1_id="19135283" inplay_total_mins="63" time="2020-03-29T19:07:21" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421483" description="Game 23 - Ζάιτσεφ breaks to 40" player1_id="19135283" inplay_total_mins="63" time="2020-03-29T19:07:21" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421461" description="Το παιχνίδι 23 ξεκίνησε, Osipov σερβίς" player1_id="19134198" inplay_total_mins="60" time="2020-03-29T19:05:13" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421460" description="Game 22 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="60" time="2020-03-29T19:05:13" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421415" description="Το παιχνίδι 22 ξεκίνησε, Ζάιτσεφ σερβίς" player1_id="19135283" inplay_total_mins="58" time="2020-03-29T19:02:53" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421414" description="Game 21 - Osipov holds to 40" player1_id="19134198" inplay_total_mins="58" time="2020-03-29T19:02:53" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421365" description="Το παιχνίδι 21 ξεκίνησε, Osipov σερβίς" player1_id="19134198" inplay_total_mins="52" time="2020-03-29T18:56:51" inplay_period="live" type="GSRT"/>
+            <Incident incident_id="189421364" description="Έναρξη σετ 3" player1_id="19134198" inplay_total_mins="52" time="2020-03-29T18:56:51" inplay_period="intermission" type="SSRT"/>
+            <Incident incident_id="189421363" description="Νικητής Σετ: Osipov" player1_id="19134198" inplay_total_mins="52" time="2020-03-29T18:56:51" inplay_period="intermission" type="SWIN"/>
+            <Incident incident_id="189421362" description="Game 20 - Osipov breaks to love" player1_id="19134198" inplay_total_mins="52" time="2020-03-29T18:56:51" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421345" description="Game 19 - Osipov holds to love" player1_id="19134198" inplay_total_mins="50" time="2020-03-29T18:55:10" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421332" description="Game 18 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="49" time="2020-03-29T18:53:41" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421266" description="Game 17 - Osipov holds to 30" player1_id="19134198" inplay_total_mins="45" time="2020-03-29T18:50:12" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421225" description="Game 16 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="43" time="2020-03-29T18:47:25" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421188" description="Game 15 - Osipov holds to 40" player1_id="19134198" inplay_total_mins="40" time="2020-03-29T18:44:58" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421134" description="Game 14 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="37" time="2020-03-29T18:41:31" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421089" description="Game 13 - Osipov holds to 40" player1_id="19134198" inplay_total_mins="34" time="2020-03-29T18:38:25" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421052" description="Game 12 - Osipov breaks to 15" player1_id="19134198" inplay_total_mins="30" time="2020-03-29T18:35:12" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189421023" description="Game 11 - Ζάιτσεφ breaks to 40" player1_id="19135283" inplay_total_mins="28" time="2020-03-29T18:32:56" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420966" description="Νικητής Σετ: Ζάιτσεφ" player1_id="19135283" inplay_total_mins="23" time="2020-03-29T18:28:01" inplay_period="intermission" type="SWIN"/>
+            <Incident incident_id="189420965" description="Game 10 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="23" time="2020-03-29T18:28:01" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420940" description="Game 9 - Osipov holds to 15" player1_id="19134198" inplay_total_mins="21" time="2020-03-29T18:25:41" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420877" description="Game 8 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="19" time="2020-03-29T18:23:17" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420842" description="Game 7 - Osipov holds to 30" player1_id="19134198" inplay_total_mins="16" time="2020-03-29T18:20:51" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420805" description="Game 6 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="13" time="2020-03-29T18:17:42" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420762" description="Game 5 - Osipov holds to love" player1_id="19134198" inplay_total_mins="9" time="2020-03-29T18:13:59" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420738" description="Game 4 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="7" time="2020-03-29T18:11:51" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420703" description="Game 3 - Ζάιτσεφ breaks to 40" player1_id="19135283" inplay_total_mins="5" time="2020-03-29T18:09:49" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420673" description="Game 2 - Ζάιτσεφ holds to 40" player1_id="19135283" inplay_total_mins="3" time="2020-03-29T18:07:16" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420652" description="Game 1 - Osipov holds to 15" player1_id="19134198" inplay_total_mins="1" time="2020-03-29T18:05:58" inplay_period="intermission" type="GWIN"/>
+            <Incident incident_id="189420633" description="Έναρξη αγώνα" player1_id="19134198" inplay_total_mins="1" time="2020-03-29T18:05:15" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Participant name="Άρτεμ Οσίποφ" full_name="Άρτεμ Οσίποφ">
+            <Player first_name="Artem" last_name="Osipov" name="Άρτεμ Οσίποφ" number="1" player_id="19134198" initials="A"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="3"/>
+              <MatchStat name="sets_won" value="1"/>
+              <MatchStat name="is_server" value="Y"/>
+              <MatchStat name="set_1_games" value="4"/>
+              <MatchStat name="set_2_games" value="6"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Βλάντισλαβ Ζάιτσεβ" full_name="Βλάντισλαβ Ζάιτσεβ">
+            <Player first_name="Vladislav" last_name="Ζάιτσεφ" name="Βλάντισλαβ Ζάιτσεβ" number="2" player_id="19135283" initials="V"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="15"/>
+              <MatchStat name="current_set_games_won" value="3"/>
+              <MatchStat name="sets_won" value="1"/>
+              <MatchStat name="is_server" value="N"/>
+              <MatchStat name="set_1_games" value="6"/>
+              <MatchStat name="set_2_games" value="4"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654358" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Άρτεμ Οσίποφ" seln_id="850616486" disporder="10" player_id="19134198" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNjE2NDg2OjYxLzUwOjow" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ" seln_id="850616487" disporder="20" player_id="19135283" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.61" bet_ref="ODUwNjE2NDg3OjYxLzEwMDo6MA" frac_prc="61/100" us_prc="-164" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά Games" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657373" handicap="30.5" inplay_avail="Y" disporder="3" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTGO" lp_avail="Y" mkt_sort_name="Total Games (Over/Under)">
+            <Seln status="A" name="Over" handicap="30.5" seln_id="850627620" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.40" bet_ref="ODUwNjI3NjIwOjcvNToxMjI6MA" frac_prc="7/5" us_prc="+140" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="30.5" seln_id="850627621" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.53" bet_ref="ODUwNjI3NjIxOjUzLzEwMDoxMjI6MA" frac_prc="53/100" us_prc="-189" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ Games Αγώνα" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654654" handicap="+1.5" inplay_avail="Y" disporder="4" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TGHC" lp_avail="Y" mkt_sort_name="Συνολικά Games - Χάντικαπ">
+            <Seln status="A" name="Άρτεμ Οσίποφ" handicap="+1.5" seln_id="850617572" disporder="10" player_id="19134198" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNjE3NTcyOjc4LzEwMDo2OjA" frac_prc="78/100" us_prc="-129" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ" handicap="-1.5" seln_id="850617573" disporder="20" player_id="19135283" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNjE3NTczOjk3LzEwMDo2OjA" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Νικητής Αγώνα/Συνολικά Games" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657372" handicap="+30.5" inplay_avail="Y" disporder="6" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MWOU" lp_avail="Y" mkt_sort_name="MKT_SORT-MWOU">
+            <Seln status="A" name="Άρτεμ Οσίποφ και Over" handicap="+30.5" seln_id="850627618" disporder="0" seln_sort="HO">
+              <Price prc_type="LP" dec_prc="4.50" bet_ref="ODUwNjI3NjE4OjcvMjoxMjI6MA" frac_prc="7/2" us_prc="+350" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Άρτεμ Οσίποφ και Under" handicap="+30.5" seln_id="850627619" disporder="1" seln_sort="HU">
+              <Price prc_type="LP" dec_prc="3.85" bet_ref="ODUwNjI3NjE5OjU3LzIwOjEyMjow" frac_prc="57/20" us_prc="+285" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ και Over" handicap="+30.5" seln_id="850627616" disporder="2" seln_sort="AO">
+              <Price prc_type="LP" dec_prc="4.45" bet_ref="ODUwNjI3NjE2OjY5LzIwOjEyMjow" frac_prc="69/20" us_prc="+345" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ και Under" handicap="+30.5" seln_id="850627617" disporder="3" seln_sort="AU">
+              <Price prc_type="LP" dec_prc="2.37" bet_ref="ODUwNjI3NjE3OjEzNy8xMDA6MTIyOjA" frac_prc="137/100" us_prc="+137" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Συνολικά Games (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654469" handicap="9.5" inplay_avail="Y" disporder="9" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FSTO" lp_avail="Y" mkt_sort_name="Set Total Games (Over/Under)">
+            <Seln status="A" name="Over" handicap="9.5" seln_id="850616881" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.24" bet_ref="ODUwNjE2ODgxOjI0LzEwMDozODow" frac_prc="24/100" us_prc="-417" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="9.5" seln_id="850616882" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="3.85" bet_ref="ODUwNjE2ODgyOjU3LzIwOjM4OjA" frac_prc="57/20" us_prc="+285" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Συνολικά Games (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654468" handicap="10.5" inplay_avail="Y" disporder="9" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FSTO" lp_avail="Y" mkt_sort_name="Set Total Games (Over/Under)">
+            <Seln status="A" name="Over" handicap="10.5" seln_id="850616879" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.40" bet_ref="ODUwNjE2ODc5OjcvNTo0Mjow" frac_prc="7/5" us_prc="+140" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="10.5" seln_id="850616880" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.53" bet_ref="ODUwNjE2ODgwOjUzLzEwMDo0Mjow" frac_prc="53/100" us_prc="-189" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Το σετ να πάει στο Τάι Μπρέικ (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654472" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="STTB" lp_avail="Y" mkt_sort_name="Σετ σε τάι μπρέικ">
+            <Seln status="A" seln_id="850616888" seln_sort="Y" name="Ναι" disporder="-1">
+              <Price prc_type="LP" dec_prc="3.85" bet_ref="ODUwNjE2ODg4OjU3LzIwOjow" frac_prc="57/20" us_prc="+285" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616887" seln_sort="N" name="Όχι" disporder="0">
+              <Price prc_type="LP" dec_prc="1.22" bet_ref="ODUwNjE2ODg3OjExLzUwOjow" frac_prc="11/50" us_prc="-455" last_change="2020-03-29T19:14:40"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Νικητής Σετ και Συνολικά Games Σετ (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654577" handicap="9.5" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SWTO" lp_avail="Y" mkt_sort_name="MKT_SORT-SWTO">
+            <Seln status="A" name="Άρτεμ Οσίποφ και Over" handicap="9.5" seln_id="850617280" disporder="0" player_id="19134198" seln_sort="1O">
+              <Price prc_type="LP" dec_prc="2.92" bet_ref="ODUwNjE3MjgwOjE5Mi8xMDA6Mzg6MA" frac_prc="192/100" us_prc="+192" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Άρτεμ Οσίποφ και Under" handicap="9.5" seln_id="850617281" disporder="1" player_id="19134198" seln_sort="1U">
+              <Price prc_type="LP" dec_prc="7.25" bet_ref="ODUwNjE3MjgxOjI1LzQ6Mzg6MA" frac_prc="25/4" us_prc="+625" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ και Over" handicap="9.5" seln_id="850617282" disporder="2" player_id="19135283" seln_sort="2O">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODUwNjE3MjgyOjEvMTozODow" frac_prc="1/1" us_prc="+100" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ και Under" handicap="9.5" seln_id="850617283" disporder="3" player_id="19135283" seln_sort="2U">
+              <Price prc_type="LP" dec_prc="6.50" bet_ref="ODUwNjE3MjgzOjExLzI6Mzg6MA" frac_prc="11/2" us_prc="+550" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Νικητής Σετ και Συνολικά Games Σετ (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657374" handicap="10.5" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SWTO" lp_avail="Y" mkt_sort_name="MKT_SORT-SWTO">
+            <Seln status="A" name="Άρτεμ Οσίποφ και Over" handicap="10.5" seln_id="850627622" disporder="0" player_id="19134198" seln_sort="1O">
+              <Price prc_type="LP" dec_prc="4.50" bet_ref="ODUwNjI3NjIyOjcvMjo0Mjow" frac_prc="7/2" us_prc="+350" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Άρτεμ Οσίποφ και Under" handicap="10.5" seln_id="850627623" disporder="1" player_id="19134198" seln_sort="1U">
+              <Price prc_type="LP" dec_prc="3.85" bet_ref="ODUwNjI3NjIzOjU3LzIwOjQyOjA" frac_prc="57/20" us_prc="+285" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ και Over" handicap="10.5" seln_id="850627624" disporder="2" player_id="19135283" seln_sort="2O">
+              <Price prc_type="LP" dec_prc="4.45" bet_ref="ODUwNjI3NjI0OjY5LzIwOjQyOjA" frac_prc="69/20" us_prc="+345" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ και Under" handicap="10.5" seln_id="850627625" disporder="3" player_id="19135283" seln_sort="2U">
+              <Price prc_type="LP" dec_prc="2.37" bet_ref="ODUwNjI3NjI1OjEzNy8xMDA6NDI6MA" frac_prc="137/100" us_prc="+137" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Χάντικαπ Games (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654482" handicap="+0.5" inplay_avail="Y" disporder="11" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="GHCS" lp_avail="Y" mkt_sort_name="MKT_SORT-GHCS">
+            <Seln status="A" name="Άρτεμ Οσίποφ" handicap="+0.5" seln_id="850616915" disporder="1" player_id="19134198" seln_sort="1">
+              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNjE2OTE1OjYxLzUwOjI6MA" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ" handicap="-0.5" seln_id="850616916" disporder="2" player_id="19135283" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.61" bet_ref="ODUwNjE2OTE2OjYxLzEwMDoyOjA" frac_prc="61/100" us_prc="-164" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Χάντικαπ Games (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656969" handicap="+1.5" inplay_avail="Y" disporder="11" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="GHCS" lp_avail="Y" mkt_sort_name="MKT_SORT-GHCS">
+            <Seln status="A" name="Άρτεμ Οσίποφ" handicap="+1.5" seln_id="850626252" disporder="1" player_id="19134198" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNjI2MjUyOjc4LzEwMDo2OjA" frac_prc="78/100" us_prc="-129" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ" handicap="-1.5" seln_id="850626253" disporder="2" player_id="19135283" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNjI2MjUzOjk3LzEwMDo2OjA" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Σκορ στο σετ (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654462" inplay_avail="Y" disporder="11" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="STSC" lp_avail="Y" mkt_sort_name="Σκορ σετ">
+            <Seln status="A" seln_id="850616858" seln_sort="6-3" name=" 6 - 3" disporder="306">
+              <Price prc_type="LP" dec_prc="7.25" bet_ref="ODUwNjE2ODU4OjI1LzQ6OjA" frac_prc="25/4" us_prc="+625" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616859" seln_sort="6-4" name=" 6 - 4" disporder="406">
+              <Price prc_type="LP" dec_prc="6.55" bet_ref="ODUwNjE2ODU5OjU1NS8xMDA6OjA" frac_prc="555/100" us_prc="+555" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616860" seln_sort="7-5" name=" 7 - 5" disporder="507">
+              <Price prc_type="LP" dec_prc="8.50" bet_ref="ODUwNjE2ODYwOjE1LzI6OjA" frac_prc="15/2" us_prc="+750" last_change="2020-03-29T19:14:40"/>
+            </Seln>
+            <Seln status="A" seln_id="850616861" seln_sort="7-6" name=" 7 - 6" disporder="607">
+              <Price prc_type="LP" dec_prc="7.10" bet_ref="ODUwNjE2ODYxOjYxMC8xMDA6OjA" frac_prc="610/100" us_prc="+610" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616865" seln_sort="3-6" name=" 3 - 6" disporder="10603">
+              <Price prc_type="LP" dec_prc="6.50" bet_ref="ODUwNjE2ODY1OjExLzI6OjA" frac_prc="11/2" us_prc="+550" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616866" seln_sort="4-6" name=" 4 - 6" disporder="10604">
+              <Price prc_type="LP" dec_prc="3.30" bet_ref="ODUwNjE2ODY2OjIzLzEwOjow" frac_prc="23/10" us_prc="+230" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616867" seln_sort="5-7" name=" 5 - 7" disporder="10705">
+              <Price prc_type="LP" dec_prc="8.50" bet_ref="ODUwNjE2ODY3OjE1LzI6OjA" frac_prc="15/2" us_prc="+750" last_change="2020-03-29T19:14:40"/>
+            </Seln>
+            <Seln status="A" seln_id="850616868" seln_sort="6-7" name=" 6 - 7" disporder="10706">
+              <Price prc_type="LP" dec_prc="7.05" bet_ref="ODUwNjE2ODY4OjYwNS8xMDA6OjA" frac_prc="605/100" us_prc="+605" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Τάι Mπρέικ στο ματς" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654369" inplay_avail="Y" disporder="12" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TBIM" lp_avail="Y" mkt_sort_name="Τάι μπρέικ σε αγώνα">
+            <Seln status="A" seln_id="850616518" seln_sort="N" name="Όχι" disporder="0">
+              <Price prc_type="LP" dec_prc="1.22" bet_ref="ODUwNjE2NTE4OjExLzUwOjow" frac_prc="11/50" us_prc="-455" last_change="2020-03-29T19:14:40"/>
+            </Seln>
+            <Seln status="A" seln_id="850616519" seln_sort="Y" name="Ναι" disporder="0">
+              <Price prc_type="LP" dec_prc="3.85" bet_ref="ODUwNjE2NTE5OjU3LzIwOjow" frac_prc="57/20" us_prc="+285" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03" name="Games του σετ - Μονά/Ζυγά (Σετ 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200654478" inplay_avail="Y" disporder="13" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="STOE" lp_avail="Y" mkt_sort_name="Games στο σετ - Μονά/Ζυγά">
+            <Seln status="A" seln_id="850616907" seln_sort="E" name="Ζυγά" disporder="0">
+              <Price prc_type="LP" dec_prc="1.68" bet_ref="ODUwNjE2OTA3OjY4LzEwMDo6MA" frac_prc="68/100" us_prc="-148" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" seln_id="850616908" seln_sort="O" name="Μονά" disporder="0">
+              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNjE2OTA4OjExLzEwOjow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Άρτεμ Οσίποφ Συνολικά Κερδισμένα Games" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656894" handicap="15.5" inplay_avail="Y" disporder="60" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUG1" lp_avail="Y" mkt_sort_name="MKT_SORT-OUG1">
+            <Seln status="A" name="Over" handicap="15.5" seln_id="850626080" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNjI2MDgwOjc4LzEwMDo2Mjow" frac_prc="78/100" us_prc="-129" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="15.5" seln_id="850626081" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNjI2MDgxOjk3LzEwMDo2Mjow" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Βλάντισλαβ Ζάιτσεβ Συνολικά Κερδισμένα Games" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656895" handicap="15.5" inplay_avail="Y" disporder="61" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUG2" lp_avail="Y" mkt_sort_name="MKT_SORT-OUG2">
+            <Seln status="A" name="Over" handicap="15.5" seln_id="850626082" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.37" bet_ref="ODUwNjI2MDgyOjM3LzEwMDo2Mjow" frac_prc="37/100" us_prc="-271" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="15.5" seln_id="850626083" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.92" bet_ref="ODUwNjI2MDgzOjE5Mi8xMDA6NjI6MA" frac_prc="192/100" us_prc="+192" last_change="2020-03-29T19:15:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03G08" name="Νικητής Game (Σετ 3, Game 8)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657508" inplay_avail="Y" disporder="100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SGMW" lp_avail="Y" mkt_sort_name="Νικητής Game">
+            <Seln status="A" name="Άρτεμ Οσίποφ" seln_id="850627997" disporder="10" player_id="19134198" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODUwNjI3OTk3OjkvNTo6MA" frac_prc="9/5" us_prc="+180" last_change="2020-03-29T19:14:03"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ" seln_id="850627998" disporder="20" player_id="19135283" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.40" bet_ref="ODUwNjI3OTk4OjIvNTo6MA" frac_prc="2/5" us_prc="-250" last_change="2020-03-29T19:14:02"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S03G08" name="Σκορ Game (Σετ 3, Game 8)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657509" inplay_avail="Y" disporder="110" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SGSC" lp_avail="Y" mkt_sort_name="MKT_SORT-SGSC">
+            <Seln status="A" name="Άρτεμ Οσίποφ vs 0" seln_id="850627999" disporder="0" player_id="19134198" seln_sort="P1:0">
+              <Price prc_type="LP" dec_prc="20.50" bet_ref="ODUwNjI3OTk5OjM5LzI6OjA" frac_prc="39/2" us_prc="+1950" last_change="2020-03-29T19:14:03"/>
+            </Seln>
+            <Seln status="A" name="Άρτεμ Οσίποφ vs 15" seln_id="850628000" disporder="5" player_id="19134198" seln_sort="P1:15">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUwNjI4MDAwOjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-03-29T19:14:02"/>
+            </Seln>
+            <Seln status="A" name="Άρτεμ Οσίποφ vs 30" seln_id="850628001" disporder="10" player_id="19134198" seln_sort="P1:30">
+              <Price prc_type="LP" dec_prc="7.40" bet_ref="ODUwNjI4MDAxOjY0MC8xMDA6OjA" frac_prc="640/100" us_prc="+640" last_change="2020-03-29T19:14:03"/>
+            </Seln>
+            <Seln status="A" name="Άρτεμ Οσίποφ vs 40" seln_id="850628002" disporder="15" player_id="19134198" seln_sort="P1:40">
+              <Price prc_type="LP" dec_prc="7.65" bet_ref="ODUwNjI4MDAyOjY2NS8xMDA6OjA" frac_prc="665/100" us_prc="+665" last_change="2020-03-29T19:14:03"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ vs 0" seln_id="850628003" disporder="20" player_id="19135283" seln_sort="P2:0">
+              <Price prc_type="LP" dec_prc="7.60" bet_ref="ODUwNjI4MDAzOjY2MC8xMDA6OjA" frac_prc="660/100" us_prc="+660" last_change="2020-03-29T19:14:03"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ vs 15" seln_id="850628004" disporder="25" player_id="19135283" seln_sort="P2:15">
+              <Price prc_type="LP" dec_prc="4.70" bet_ref="ODUwNjI4MDA0OjM3MC8xMDA6OjA" frac_prc="370/100" us_prc="+370" last_change="2020-03-29T19:14:03"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ vs 30" seln_id="850628005" disporder="30" player_id="19135283" seln_sort="P2:30">
+              <Price prc_type="LP" dec_prc="4.50" bet_ref="ODUwNjI4MDA1OjcvMjo6MA" frac_prc="7/2" us_prc="+350" last_change="2020-03-29T19:14:02"/>
+            </Seln>
+            <Seln status="A" name="Βλάντισλαβ Ζάιτσεβ vs 40" seln_id="850628006" disporder="35" player_id="19135283" seln_sort="P2:40">
+              <Price prc_type="LP" dec_prc="4.55" bet_ref="ODUwNjI4MDA2OjM1NS8xMDA6OjA" frac_prc="355/100" us_prc="+355" last_change="2020-03-29T19:14:02"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

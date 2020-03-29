@@ -1,0 +1,127 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTgxMzg3Mzo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="ICEH" allow_cash_out="Y" name="Χόκεϊ Επί Πάγου" disporder="9">
+    <SBClass sb_class_id="10558" disporder="0" name="Ρωσία">
+      <SBType sb_type_id="194264" name="Liga Pro Short Hockey" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Έσελον Μόσχας - Άις Μπάντα" allow_cash_out="Y" start_time="2020-03-29T19:10:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="12" ev_id="5147074" disporder="200">
+          <Notes>3*10 λεπτά</Notes>
+          <EvDetail br_match_id="21750995"/>
+          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="600" correct_at="2020-03-29T19:17:20" inplay_period_finished="N" extra_period_length="300" score_a="0" score_b="0" inplay_period_name="Έναρξη" num_periods="3" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="0" score_string="0-0" scoring_system="match" last_change="2020-03-29T11:43:09" inplay_secs="0">
+            <Scores/>
+          </Inplay>
+          <InplayDetail period_length_mins="10" period_stoppage_secs="0" score_team_B="0" score_team_A="0"/>
+          <Stats>
+            <Stat name="EV_STAT_SUSP" title="TEAM_STAT_SUSP" type="team" away="0" home="0" stat_type="SUSP"/>
+          </Stats>
+          <Teams>
+            <Team team_id="1952484" team_order="0" name="Έσελον Μόσχας" short_name="Έσελον Μόσχας"/>
+            <Team team_id="1952488" team_order="1" name="Άις Μπάντα" short_name="Άις Μπάντα"/>
+          </Teams>
+          <Mkt status="A" name="Νικητής (1Χ2)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200620088" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Αγώνες">
+            <Seln status="A" name="Έσελον Μόσχας" seln_id="850506869" team_id="1952484" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.50" bet_ref="ODUwNTA2ODY5OjYvNDo6MA" frac_prc="6/4" us_prc="+150" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" seln_id="850506870" seln_sort="D" name="Ισοπαλία" disporder="1">
+              <Price prc_type="LP" dec_prc="4.85" bet_ref="ODUwNTA2ODcwOjc3LzIwOjow" frac_prc="77/20" us_prc="+385" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" name="Άις Μπάντα" seln_id="850506871" team_id="1952488" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="2.08" bet_ref="ODUwNTA2ODcxOjI3LzI1Ojow" frac_prc="27/25" us_prc="+108" last_change="2020-03-29T14:24:06"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Νικητής (με παράταση και πέναλτι)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200620089" inplay_avail="N" disporder="30" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Έσελον Μόσχας" seln_id="850506872" team_id="1952484" disporder="0" seln_sort="P1"/>
+            <Seln status="A" name="Άις Μπάντα" seln_id="850506873" team_id="1952488" disporder="1" seln_sort="P2"/>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ (Over/Under)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657344" handicap="6.5" inplay_avail="Y" disporder="40" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="6.5" seln_id="850627550" disporder="1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.60" bet_ref="ODUwNjI3NTUwOjMvNToyNjow" frac_prc="3/5" us_prc="-167" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="6.5" seln_id="850627549" disporder="2" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.25" bet_ref="ODUwNjI3NTQ5OjUvNDoyNjow" frac_prc="5/4" us_prc="+125" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ (Over/Under)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200631423" handicap="7" inplay_avail="Y" disporder="40" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="7" seln_id="850545895" disporder="1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.833" bet_ref="ODUwNTQ1ODk1OjUvNjoyODow" frac_prc="5/6" us_prc="-120" last_change="2020-03-29T11:43:43"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="7" seln_id="850545894" disporder="2" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.909" bet_ref="ODUwNTQ1ODk0OjEwLzExOjI4OjA" frac_prc="10/11" us_prc="-110" last_change="2020-03-29T11:43:43"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ (Over/Under)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657345" handicap="7.5" inplay_avail="Y" disporder="40" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="7.5" seln_id="850627552" disporder="1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNjI3NTUyOjExLzEwOjMwOjA" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="7.5" seln_id="850627551" disporder="2" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODUwNjI3NTUxOjcvMTA6MzA6MA" frac_prc="7/10" us_prc="-143" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ (Over/Under)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657346" handicap="8.5" inplay_avail="Y" disporder="40" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="8.5" seln_id="850627554" disporder="1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="3.00" bet_ref="ODUwNjI3NTU0OjIvMTozNDow" frac_prc="2/1" us_prc="+200" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="8.5" seln_id="850627553" disporder="2" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.36" bet_ref="ODUwNjI3NTUzOjkvMjU6MzQ6MA" frac_prc="9/25" us_prc="-278" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ" allow_cash_out="N" allow_cash_out_pre_ev="N" displayed="Y" mkt_id="200657343" handicap="+1" inplay_avail="Y" disporder="50" allow_cash_out_inplay="N" sp_avail="N" mkt_sort="FHMR" lp_avail="Y" mkt_sort_name="Handicap Match Result">
+            <Seln status="A" name="Έσελον Μόσχας" handicap="+1" seln_id="850627546" team_id="1952484" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.727" bet_ref="ODUwNjI3NTQ2OjgvMTE6NDow" frac_prc="8/11" us_prc="-138" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" name="Ισοπαλία" handicap="+1" seln_id="850627547" disporder="2" seln_sort="T">
+              <Price prc_type="LP" dec_prc="6.50" bet_ref="ODUwNjI3NTQ3OjExLzI6NDow" frac_prc="11/2" us_prc="+550" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+            <Seln status="A" name="Άις Μπάντα" handicap="-1" seln_id="850627548" team_id="1952488" disporder="5" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODUwNjI3NTQ4OjkvNTo0OjA" frac_prc="9/5" us_prc="+180" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="I001" name="Επόμενη ομάδα που θα σκοράρει (Γκολ 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657347" inplay_avail="Y" disporder="55" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="INTS" lp_avail="Y" mkt_sort_name="Επόμενη ομάδα που θα σκοράρει">
+            <Seln status="A" name="Έσελον Μόσχας" seln_id="850627555" team_id="1952484" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNjI3NTU1OjE5LzIwOjow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" seln_id="850627556" seln_sort="N" name="Κανένα γκολ" disporder="2">
+              <Price prc_type="LP" dec_prc="41.00" bet_ref="ODUwNjI3NTU2OjQwLzE6OjA" frac_prc="40/1" us_prc="+4000" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" name="Άις Μπάντα" seln_id="850627557" team_id="1952488" disporder="103" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNjI3NTU3OjMvNDo6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Διπλή ευκαιρία" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657351" inplay_avail="Y" disporder="60" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="DBLC" lp_avail="Y" mkt_sort_name="Διπλή ευκαιρία">
+            <Seln status="A" seln_id="850627565" seln_sort="HD" name="Έσελον Μόσχας/Ισοπαλία" disporder="-50">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODUwNjI3NTY1OjQvNjo6MA" frac_prc="4/6" us_prc="-150" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" seln_id="850627564" seln_sort="AD" name="Άις Μπάντα/Ισοπαλία" disporder="2">
+              <Price prc_type="LP" dec_prc="1.444" bet_ref="ODUwNjI3NTY0OjQvOTo6MA" frac_prc="4/9" us_prc="-225" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" seln_id="850627566" seln_sort="HA" name="Έσελον Μόσχας/Άις Μπάντα" disporder="50">
+              <Price prc_type="LP" dec_prc="1.125" bet_ref="ODUwNjI3NTY2OjEvODo6MA" frac_prc="1/8" us_prc="-800" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Draw No Bet" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657348" inplay_avail="Y" disporder="70" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="DNOB" lp_avail="Y" mkt_sort_name="Draw No Bet">
+            <Seln status="A" name="Έσελον Μόσχας" seln_id="850627558" team_id="1952484" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODUwNjI3NTU4OjIxLzIwOjow" frac_prc="21/20" us_prc="+105" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+            <Seln status="A" name="Άις Μπάντα" seln_id="850627559" team_id="1952488" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODUwNjI3NTU5OjcvMTA6OjA" frac_prc="7/10" us_prc="-143" last_change="2020-03-29T19:11:30"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Έσελον Μόσχας Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657349" handicap="3.5" inplay_avail="Y" disporder="100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHG" lp_avail="Y" mkt_sort_name="Συνολικά γκολ γηπεδούχων - Πάνω/Κάτω">
+            <Seln status="A" name="Over" handicap="3.5" seln_id="850627560" disporder="-50" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODUwNjI3NTYwOjUxLzUwOjE0OjA" frac_prc="51/50" us_prc="+102" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="3.5" seln_id="850627561" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNjI3NTYxOjMvNDoxNDow" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Άις Μπάντα Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657350" handicap="3.5" inplay_avail="Y" disporder="110" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAG" lp_avail="Y" mkt_sort_name="Συνολικά γκολ φιλοξενούμενης (Πάνω/Κάτω)">
+            <Seln status="A" name="Over" handicap="3.5" seln_id="850627562" disporder="-50" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNjI3NTYyOjQvNToxNDow" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="3.5" seln_id="850627563" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNjI3NTYzOjE5LzIwOjE0OjA" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T19:12:20"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>
