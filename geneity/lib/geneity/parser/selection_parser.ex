@@ -1,0 +1,52 @@
+defmodule Geneity.Parser.SelectionParser do
+  alias Model.Selection
+
+  def handle_event(:start_element, {"Seln", attributes}, state) do
+    fields =
+      attributes
+      |> Enum.reduce([], fn
+        {"seln_id", id}, acc ->
+          [{:id, String.to_integer(id)} | acc]
+
+        {"status", status}, acc ->
+          [{:active, status == "A"} | acc]
+
+        {"seln_sort", type}, acc ->
+          [{:type_id, type} | acc]
+
+        {"handicap", handicap}, acc ->
+          {modifier, _} = Float.parse(handicap)
+          [{:modifier, modifier} | acc]
+
+        _, acc ->
+          acc
+      end)
+
+    selection = struct!(Selection, fields)
+    %{markets: [market | rest_markets]} = state
+    market = %{market | selections: [selection | market.selections]}
+    {:ok, %{state | markets: [market | rest_markets]}}
+  end
+
+  def handle_event(:start_element, {"Price", attributes}, state) do
+    %{markets: [%{selections: [selection | rest_selections]} = market | rest_markets]} = state
+
+    selection =
+      attributes
+      |> Enum.reduce(selection, fn
+        {"dec_prc", decimal_price}, acc ->
+          {price, _} = Float.parse(decimal_price)
+          %{acc | price_decimal: price}
+
+        _, acc ->
+          acc
+      end)
+
+    market = %{market | selections: [selection | rest_selections]}
+    {:ok, %{state | markets: [market | rest_markets]}}
+  end
+
+  def handle_event(_type, _data, state) do
+    {:ok, state}
+  end
+end
