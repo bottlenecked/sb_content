@@ -1,0 +1,179 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTk2ODUyOTo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="VOLL" allow_cash_out="Y" name="Βόλεϊ" disporder="5">
+    <SBClass sb_class_id="10649" disporder="-1" name="Ρωσία">
+      <SBType sb_type_id="194201" name="Ural League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Ουράλ Μιλιτέρι - Πανεπιστήμιο Ουράλ" allow_cash_out="Y" start_time="2020-03-30T11:40:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="7" ev_id="5153369" disporder="-101">
+          <Inplay inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-03-30T12:00:45" inplay_period_finished="N" score_a="1" score_b="0" inplay_period_name="Ζωντανά" num_periods="5" clock_mode="FORWARD" inplay_period="live" score_string="1-0" scoring_system="set-match" last_change="2020-03-30T11:46:31" inplay_secs="1200">
+            <Scores>
+              <PeriodScore score_a="25" score_b="23" score_string="25-23" period="1"/>
+              <PeriodScore score_a="13" score_b="13" score_string="13-13" period="2"/>
+            </Scores>
+          </Inplay>
+          <InplayDetail period_length_mins="0" period_start="2020-03-30T11:40:45" period_stoppage_secs="0" score_team_B="0" score_team_A="1"/>
+          <Stats>
+            <Stat name="EV_STAT_SWIN" title="TEAM_STAT_SWIN" type="team" away="0" home="1" stat_type="SWIN"/>
+            <Stat name="EV_STAT_PWIN" title="TEAM_STAT_PWIN" type="team" away="36" home="38" stat_type="PWIN"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="189430278" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="20" team_id="1956321" inplay_total_mins="20" time="2020-03-30T12:00:40" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430275" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="20" team_id="1956321" inplay_total_mins="20" time="2020-03-30T12:00:19" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430271" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="20" team_id="1956329" inplay_total_mins="20" time="2020-03-30T11:59:58" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430263" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="19" team_id="1956329" inplay_total_mins="19" time="2020-03-30T11:59:35" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430255" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="19" team_id="1956321" inplay_total_mins="19" time="2020-03-30T11:59:05" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430246" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="18" team_id="1956329" inplay_total_mins="18" time="2020-03-30T11:58:36" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430242" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="18" team_id="1956329" inplay_total_mins="18" time="2020-03-30T11:58:17" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430232" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="18" team_id="1956329" inplay_total_mins="18" time="2020-03-30T11:57:53" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430220" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="17" team_id="1956329" inplay_total_mins="17" time="2020-03-30T11:57:23" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430216" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="17" team_id="1956321" inplay_total_mins="17" time="2020-03-30T11:57:00" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430213" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="16" team_id="1956321" inplay_total_mins="16" time="2020-03-30T11:56:42" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430205" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="15" team_id="1956321" inplay_total_mins="15" time="2020-03-30T11:55:24" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430202" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="15" team_id="1956329" inplay_total_mins="15" time="2020-03-30T11:55:05" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430200" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="14" team_id="1956321" inplay_total_mins="14" time="2020-03-30T11:54:43" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430192" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="14" team_id="1956321" inplay_total_mins="14" time="2020-03-30T11:54:12" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430190" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="14" team_id="1956329" inplay_total_mins="14" time="2020-03-30T11:53:50" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430186" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="13" team_id="1956321" inplay_total_mins="13" time="2020-03-30T11:53:30" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430183" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="13" team_id="1956329" inplay_total_mins="13" time="2020-03-30T11:52:59" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430178" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="12" team_id="1956329" inplay_total_mins="12" time="2020-03-30T11:52:37" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430173" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="12" team_id="1956321" inplay_total_mins="12" time="2020-03-30T11:52:07" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430169" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="12" team_id="1956321" inplay_total_mins="12" time="2020-03-30T11:51:55" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430165" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="11" team_id="1956321" inplay_total_mins="11" time="2020-03-30T11:51:40" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430162" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="11" team_id="1956329" inplay_total_mins="11" time="2020-03-30T11:51:13" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430159" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="10" team_id="1956329" inplay_total_mins="10" time="2020-03-30T11:50:43" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430149" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="10" team_id="1956321" inplay_total_mins="10" time="2020-03-30T11:50:08" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430144" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="9" team_id="1956329" inplay_total_mins="9" time="2020-03-30T11:49:33" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430105" description="Έναρξη σετ 2" inplay_period_mins="6" team_id="1956321" inplay_total_mins="6" time="2020-03-30T11:46:30" inplay_period="live" type="SSRT"/>
+            <Incident incident_id="189430104" description="Νικητής Σετ: Ουράλ Μιλιτέρι" inplay_period_mins="6" team_id="1956329" inplay_total_mins="6" time="2020-03-30T11:46:30" inplay_period="intermission" type="SWIN"/>
+            <Incident incident_id="189430103" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="6" team_id="1956329" inplay_total_mins="6" time="2020-03-30T11:46:30" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430081" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="5" team_id="1956321" inplay_total_mins="5" time="2020-03-30T11:45:16" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430078" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="5" team_id="1956321" inplay_total_mins="5" time="2020-03-30T11:44:56" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430075" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="4" team_id="1956329" inplay_total_mins="4" time="2020-03-30T11:44:42" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430069" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="4" team_id="1956329" inplay_total_mins="4" time="2020-03-30T11:44:32" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430065" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="4" team_id="1956329" inplay_total_mins="4" time="2020-03-30T11:44:04" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430063" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="4" team_id="1956321" inplay_total_mins="4" time="2020-03-30T11:43:48" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430062" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:38" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430061" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:33" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430060" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="3" team_id="1956321" inplay_total_mins="3" time="2020-03-30T11:43:28" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430058" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="3" team_id="1956321" inplay_total_mins="3" time="2020-03-30T11:43:22" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430056" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:19" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430055" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:15" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430054" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:09" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430053" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:06" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430052" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:43:02" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430051" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="3" team_id="1956329" inplay_total_mins="3" time="2020-03-30T11:42:58" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430048" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="3" team_id="1956321" inplay_total_mins="3" time="2020-03-30T11:42:50" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430047" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="3" team_id="1956321" inplay_total_mins="3" time="2020-03-30T11:42:47" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430046" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:44" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430045" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:41" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430044" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:38" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430043" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:33" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430042" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:30" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430041" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:26" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430039" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:23" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430038" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:42:20" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430037" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:42:17" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430034" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:42:14" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430031" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:42:11" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430030" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:42:08" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430029" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:42:04" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430028" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:42:00" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430025" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:41:55" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430022" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="2" team_id="1956329" inplay_total_mins="2" time="2020-03-30T11:41:51" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430021" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="2" team_id="1956321" inplay_total_mins="2" time="2020-03-30T11:41:46" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430019" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:41" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430017" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:36" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430016" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:33" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430015" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:30" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430014" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:27" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430013" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:24" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430012" description="Τον πόντο κέρδισε ο/η Πανεπιστήμιο Ουράλ" inplay_period_mins="1" team_id="1956321" inplay_total_mins="1" time="2020-03-30T11:41:20" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430011" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="1" team_id="1956329" inplay_total_mins="1" time="2020-03-30T11:41:15" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430009" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="1" team_id="1956329" inplay_total_mins="1" time="2020-03-30T11:41:06" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430007" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="1" team_id="1956329" inplay_total_mins="1" time="2020-03-30T11:41:02" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430006" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="1" team_id="1956329" inplay_total_mins="1" time="2020-03-30T11:40:59" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430003" description="Τον πόντο κέρδισε ο/η Ουράλ Μιλιτέρι" inplay_period_mins="1" team_id="1956329" inplay_total_mins="1" time="2020-03-30T11:40:53" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="189430002" description="Έναρξη σετ 1" inplay_period_mins="1" team_id="1956329" inplay_total_mins="1" time="2020-03-30T11:40:45" inplay_period="live" type="SSRT"/>
+            <Incident incident_id="189430001" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-30T11:40:45" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Teams>
+            <Team team_id="1956329" team_order="0" name="Ουράλ Μιλιτέρι" short_name="Ουράλ Μιλιτέρι"/>
+            <Team team_id="1956321" team_order="1" name="Πανεπιστήμιο Ουράλ" short_name="Πανεπιστήμιο Ουράλ"/>
+          </Teams>
+          <Mkt status="A" name="Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684437" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Ουράλ Μιλιτέρι" seln_id="850734164" team_id="1956329" disporder="-1" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.30" bet_ref="ODUwNzM0MTY0OjMvMTA6OjA" frac_prc="3/10" us_prc="-334" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Ουράλ" seln_id="850734165" team_id="1956321" disporder="0" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="3.30" bet_ref="ODUwNzM0MTY1OjIzLzEwOjow" frac_prc="23/10" us_prc="+230" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S02" name="Νικητής Σετ (Σετ 2)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684474" inplay_avail="Y" disporder="-90" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="STWT" lp_avail="Y" mkt_sort_name="Νικητής Σετ">
+            <Seln status="A" name="Ουράλ Μιλιτέρι" seln_id="850734255" team_id="1956329" disporder="-1" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.63" bet_ref="ODUwNzM0MjU1OjYzLzEwMDo6MA" frac_prc="63/100" us_prc="-159" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Ουράλ" seln_id="850734256" team_id="1956321" disporder="0" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODUwNzM0MjU2OjYvNTo6MA" frac_prc="6/5" us_prc="+120" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Over/Under Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200685044" handicap="187.5" inplay_avail="Y" disporder="-75" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FOUT" lp_avail="Y" mkt_sort_name="MKT_SORT-FOUT">
+            <Seln status="A" name="Over" handicap="187.5" seln_id="850737537" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNzM3NTM3OjkvMTA6NzUwOjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="187.5" seln_id="850737538" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODUwNzM3NTM4OjE3LzIwOjc1MDow" frac_prc="17/20" us_prc="-118" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ Σετ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684482" handicap="-1.5" inplay_avail="Y" disporder="-20" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TSHC" lp_avail="Y" mkt_sort_name="MKT_SORT-TSHC">
+            <Seln status="A" name="Ουράλ Μιλιτέρι" handicap="-1.5" seln_id="850734268" disporder="-1" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.61" bet_ref="ODUwNzM0MjY4OjYxLzEwMDotNjow" frac_prc="61/100" us_prc="-164" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Ουράλ" handicap="+1.5" seln_id="850734269" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNzM0MjY5OjYxLzUwOi02OjA" frac_prc="61/50" us_prc="+122" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ακριβές Σετ Σκορ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684435" inplay_avail="Y" disporder="65" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TCSS" lp_avail="Y" mkt_sort_name="MKT_SORT-TCSS">
+            <Seln status="A" seln_id="850734159" seln_sort="1-3" name="Ουράλ Μιλιτέρι 1 - 3 Πανεπιστήμιο Ουράλ" disporder="103">
+              <Price prc_type="LP" dec_prc="6.80" bet_ref="ODUwNzM0MTU5OjU4MC8xMDA6OjA" frac_prc="580/100" us_prc="+580" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734161" seln_sort="2-3" name="Ουράλ Μιλιτέρι 2 - 3 Πανεπιστήμιο Ουράλ" disporder="203">
+              <Price prc_type="LP" dec_prc="5.55" bet_ref="ODUwNzM0MTYxOjQ1NS8xMDA6OjA" frac_prc="455/100" us_prc="+455" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734156" seln_sort="3-0" name="Ουράλ Μιλιτέρι 3 - 0 Πανεπιστήμιο Ουράλ" disporder="300">
+              <Price prc_type="LP" dec_prc="2.75" bet_ref="ODUwNzM0MTU2OjcvNDo6MA" frac_prc="7/4" us_prc="+175" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734158" seln_sort="3-1" name="Ουράλ Μιλιτέρι 3 - 1 Πανεπιστήμιο Ουράλ" disporder="301">
+              <Price prc_type="LP" dec_prc="3.50" bet_ref="ODUwNzM0MTU4OjUvMjo6MA" frac_prc="5/2" us_prc="+250" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734160" seln_sort="3-2" name="Ουράλ Μιλιτέρι 3 - 2 Πανεπιστήμιο Ουράλ" disporder="302">
+              <Price prc_type="LP" dec_prc="5.75" bet_ref="ODUwNzM0MTYwOjE5LzQ6OjA" frac_prc="19/4" us_prc="+475" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="2ο Σετ - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200685170" handicap="47.5" inplay_avail="Y" disporder="92" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
+            <Seln status="A" name="Over" handicap="47.5" seln_id="850737870" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODUwNzM3ODcwOjEvMToxOTA6MA" frac_prc="1/1" us_prc="+100" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="47.5" seln_id="850737871" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNzM3ODcxOjMvNDoxOTA6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Πόσα Σετ θα κριθούν σε &quot;παράταση&quot;" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684438" inplay_avail="Y" disporder="120" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SESL" lp_avail="Y" mkt_sort_name="Number of Sets to Exceed Score Limit">
+            <Seln status="A" seln_id="850734166" seln_sort="0-0" name="0" disporder="-20">
+              <Price prc_type="LP" dec_prc="1.73" bet_ref="ODUwNzM0MTY2OjczLzEwMDo6MA" frac_prc="73/100" us_prc="-137" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734167" seln_sort="1-1" name="1" disporder="-18">
+              <Price prc_type="LP" dec_prc="2.40" bet_ref="ODUwNzM0MTY3OjcvNTo6MA" frac_prc="7/5" us_prc="+140" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734168" seln_sort="2-2" name="2" disporder="-16">
+              <Price prc_type="LP" dec_prc="7.90" bet_ref="ODUwNzM0MTY4OjY5MC8xMDA6OjA" frac_prc="690/100" us_prc="+690" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734169" seln_sort="3-3" name="3" disporder="-14">
+              <Price prc_type="LP" dec_prc="46.00" bet_ref="ODUwNzM0MTY5OjQ1LzE6OjA" frac_prc="45/1" us_prc="+4500" last_change="2020-03-30T12:00:41"/>
+            </Seln>
+            <Seln status="A" seln_id="850734170" seln_sort="4-4" name="4" disporder="-10">
+              <Price prc_type="LP" dec_prc="176.00" bet_ref="ODUwNzM0MTcwOjE3NS8xOjow" frac_prc="175/1" us_prc="+17500" last_change="2020-03-30T11:48:10"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

@@ -1,355 +1,332 @@
-<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTc4MzE3Nzo0OmVs" version="1.0" request="get_inplay_event_detail">
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTk2ODI3OTo0OmVs" version="1.0" request="get_inplay_event_detail">
   <Sport sport_code="BASK" allow_cash_out="Y" name="Μπάσκετ" disporder="2">
     <SBClass sb_class_id="189059" disporder="-840" name="Κινεζική Ταϊπέι">
       <SBType sb_type_id="189331" name="SBL" disporder="-50">
-        <Ev inplay_allowed="Y" status="A" name="Μπανκ οφ Ταϊβάν - Παουιάν" allow_cash_out="Y" start_time="2020-03-30T09:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="35" ev_id="5148617" disporder="-498">
-          <EvDetail br_match_id="21769859" br_has_stats="Y"/>
-          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="600" correct_at="2020-03-29T17:41:19" inplay_period_finished="N" extra_period_length="300" score_a="0" score_b="0" inplay_period_name="Έναρξη" num_periods="4" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="5" score_string="0-0" scoring_system="match" last_change="2020-03-29T14:16:09" inplay_secs="0">
-            <Scores/>
+        <Ev inplay_allowed="Y" status="A" name="Ταϊβάν Μπιρ - Γιουλόν Ντίνος" allow_cash_out="Y" start_time="2020-03-30T11:19:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="16" ev_id="5148618" disporder="-498">
+          <EvDetail br_match_id="21769861"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="Q2" clock_status="TICKING" period_length="600" correct_at="2020-03-30T11:59:40" inplay_period_finished="N" extra_period_length="300" score_a="35" score_b="51" inplay_period_name="2nd Quarter" num_periods="4" clock_mode="BACKWARD" inplay_period="2_quarter" num_extra_periods="5" score_string="35-51" scoring_system="match" last_change="2020-03-30T11:58:55" inplay_secs="1196">
+            <Scores>
+              <PeriodScore score_a="18" score_b="30" score_string="18-30" period="1"/>
+              <PeriodScore score_a="35" score_b="51" score_string="35-51" period="2"/>
+            </Scores>
           </Inplay>
-          <InplayDetail period_length_mins="10" period_stoppage_secs="0" score_team_B="0" score_team_A="0"/>
+          <InplayDetail period_length_mins="10" period_start="2020-03-30T11:40:38" period_stoppage_secs="0" score_team_B="51" score_team_A="35"/>
+          <Stats>
+            <Stat name="EV_STAT_SCO1" title="TEAM_STAT_SCO1" type="team" away="5" home="2" stat_type="SCO1"/>
+            <Stat name="EV_STAT_SCO3" title="TEAM_STAT_SCO3" type="team" away="6" home="3" stat_type="SCO3"/>
+            <Stat name="EV_STAT_SCO2" title="TEAM_STAT_SCO2" type="team" away="14" home="12" stat_type="SCO2"/>
+            <Stat name="EV_STAT_FOUL" title="TEAM_STAT_FOUL" type="team" away="6" home="4" stat_type="FOUL"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="189430254" description="Συνέχεια αγώνα" inplay_period_mins="10" inplay_total_mins="20" time="2020-03-30T11:58:58" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430250" description="35-51 Ταϊβάν Μπιρ" inplay_period_mins="10" team_id="1918575" inplay_total_mins="20" time="2020-03-30T11:58:55" inplay_period="2_quarter" type="SCO1"/>
+            <Incident incident_id="189430244" description="2 free throws for Ταϊβάν Μπιρ" inplay_period_mins="10" team_id="1918575" inplay_total_mins="20" time="2020-03-30T11:58:25" inplay_period="2_quarter" type="FRE2"/>
+            <Incident incident_id="189430243" description="Γιουλόν Ντίνος" inplay_period_mins="10" team_id="1918744" inplay_total_mins="20" score_method="PERD" time="2020-03-30T11:58:25" inplay_period="2_quarter" type="FOUL"/>
+            <Incident incident_id="189430239" description="Διακοπή αγώνα" inplay_period_mins="10" inplay_total_mins="20" time="2020-03-30T11:58:15" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430237" description="34-51 Γιουλόν Ντίνος" inplay_period_mins="9" team_id="1918744" inplay_total_mins="19" time="2020-03-30T11:57:58" inplay_period="2_quarter" type="SCO3"/>
+            <Incident incident_id="189430236" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:57:58" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430234" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:57:58" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430231" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:57:52" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430229" description="Συνέχεια αγώνα" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:57:45" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430224" description="Γιουλόν Ντίνος" inplay_period_mins="9" team_id="1918744" inplay_total_mins="19" score_method="PERD" time="2020-03-30T11:57:25" inplay_period="2_quarter" type="FOUL"/>
+            <Incident incident_id="189430221" description="Διακοπή αγώνα" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:57:25" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430218" description="34-48 Γιουλόν Ντίνος" inplay_period_mins="9" team_id="1918744" inplay_total_mins="19" time="2020-03-30T11:57:14" inplay_period="2_quarter" type="SCO3"/>
+            <Incident incident_id="189430214" description="Συνέχεια αγώνα" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:56:54" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430211" description="Διακοπή αγώνα" inplay_period_mins="9" inplay_total_mins="19" time="2020-03-30T11:56:27" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430209" description="34-45 Γιουλόν Ντίνος" inplay_period_mins="8" team_id="1918744" inplay_total_mins="18" time="2020-03-30T11:56:08" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430207" description="34-43 Γιουλόν Ντίνος" inplay_period_mins="8" team_id="1918744" inplay_total_mins="18" time="2020-03-30T11:55:34" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430204" description="34-41 Ταϊβάν Μπιρ" inplay_period_mins="8" team_id="1918575" inplay_total_mins="18" time="2020-03-30T11:55:15" inplay_period="2_quarter" type="SCO3"/>
+            <Incident incident_id="189430197" description="Συνέχεια αγώνα" inplay_period_mins="7" inplay_total_mins="17" time="2020-03-30T11:54:35" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430196" description="Διακοπή αγώνα" inplay_period_mins="7" inplay_total_mins="17" time="2020-03-30T11:54:20" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430195" description="Συνέχεια αγώνα" inplay_period_mins="7" inplay_total_mins="17" time="2020-03-30T11:54:18" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430179" description="Διακοπή αγώνα" inplay_period_mins="7" inplay_total_mins="17" time="2020-03-30T11:52:38" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430177" description="31-41 Ταϊβάν Μπιρ" inplay_period_mins="6" team_id="1918575" inplay_total_mins="16" time="2020-03-30T11:52:09" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430176" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:52:09" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430174" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:52:09" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430172" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:52:06" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430168" description="Συνέχεια αγώνα" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:51:54" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430156" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:50:30" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430155" description="Διακοπή αγώνα" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:50:29" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430154" description="29-41 Ταϊβάν Μπιρ" inplay_period_mins="6" team_id="1918575" inplay_total_mins="16" time="2020-03-30T11:50:26" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430153" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:50:26" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430151" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:50:26" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430150" description="Συνέχεια αγώνα" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:50:17" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430148" description="Διακοπή αγώνα" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:49:58" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430147" inplay_period_mins="6" inplay_total_mins="16" time="2020-03-30T11:49:58" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430143" description="27-41 Γιουλόν Ντίνος" inplay_period_mins="5" team_id="1918744" inplay_total_mins="15" time="2020-03-30T11:49:31" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430140" description="27-39 Ταϊβάν Μπιρ" inplay_period_mins="5" team_id="1918575" inplay_total_mins="15" time="2020-03-30T11:49:08" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430138" inplay_period_mins="5" inplay_total_mins="15" time="2020-03-30T11:48:59" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430135" description="Συνέχεια αγώνα" inplay_period_mins="5" inplay_total_mins="15" time="2020-03-30T11:48:41" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430133" description="25-39 Ταϊβάν Μπιρ" inplay_period_mins="5" team_id="1918575" inplay_total_mins="15" time="2020-03-30T11:48:39" inplay_period="2_quarter" type="SCO1"/>
+            <Incident incident_id="189430127" description="1 free throw for Ταϊβάν Μπιρ" inplay_period_mins="5" team_id="1918575" inplay_total_mins="15" time="2020-03-30T11:48:15" inplay_period="2_quarter" type="FRE1"/>
+            <Incident incident_id="189430125" description="Γιουλόν Ντίνος" inplay_period_mins="5" team_id="1918744" inplay_total_mins="15" score_method="PERD" time="2020-03-30T11:48:14" inplay_period="2_quarter" type="FOUL"/>
+            <Incident incident_id="189430126" description="24-39 Ταϊβάν Μπιρ" inplay_period_mins="5" team_id="1918575" inplay_total_mins="15" time="2020-03-30T11:48:13" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430122" description="Διακοπή αγώνα" inplay_period_mins="5" inplay_total_mins="15" time="2020-03-30T11:48:13" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430119" description="22-39 Γιουλόν Ντίνος" inplay_period_mins="4" team_id="1918744" inplay_total_mins="14" time="2020-03-30T11:47:56" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430118" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:47:56" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430116" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:47:56" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430115" description="Συνέχεια αγώνα" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:47:49" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430114" description="Διακοπή αγώνα" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:47:13" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430113" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:47:13" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430112" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:47:05" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430109" description="Συνέχεια αγώνα" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:51" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430102" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:21" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430100" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:20" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430099" description="Διακοπή αγώνα" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:18" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430098" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:18" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430095" description="Συνέχεια αγώνα" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:14" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430092" description="Διακοπή αγώνα" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:13" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430091" inplay_period_mins="4" inplay_total_mins="14" time="2020-03-30T11:46:13" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430089" description="22-37 Γιουλόν Ντίνος" inplay_period_mins="3" team_id="1918744" inplay_total_mins="13" time="2020-03-30T11:45:44" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430085" description="22-35 Ταϊβάν Μπιρ" inplay_period_mins="3" team_id="1918575" inplay_total_mins="13" time="2020-03-30T11:45:26" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430080" inplay_period_mins="3" inplay_total_mins="13" time="2020-03-30T11:45:13" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430079" description="Συνέχεια αγώνα" inplay_period_mins="3" inplay_total_mins="13" time="2020-03-30T11:44:59" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430074" description="Ταϊβάν Μπιρ" inplay_period_mins="3" team_id="1918575" inplay_total_mins="13" score_method="PERD" time="2020-03-30T11:44:39" inplay_period="2_quarter" type="FOUL"/>
+            <Incident incident_id="189430071" description="Διακοπή αγώνα" inplay_period_mins="3" inplay_total_mins="13" time="2020-03-30T11:44:36" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430070" inplay_period_mins="3" inplay_total_mins="13" time="2020-03-30T11:44:36" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430068" inplay_period_mins="2" inplay_total_mins="12" time="2020-03-30T11:44:28" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430067" inplay_period_mins="2" inplay_total_mins="12" time="2020-03-30T11:44:21" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189430066" description="Συνέχεια αγώνα" inplay_period_mins="2" inplay_total_mins="12" time="2020-03-30T11:44:12" inplay_period="2_quarter" type="SEND"/>
+            <Incident incident_id="189430040" description="Διακοπή αγώνα" inplay_period_mins="2" inplay_total_mins="12" time="2020-03-30T11:42:24" inplay_period="2_quarter" type="SBEG"/>
+            <Incident incident_id="189430032" description="20-35 Γιουλόν Ντίνος" inplay_period_mins="2" team_id="1918744" inplay_total_mins="12" time="2020-03-30T11:42:11" inplay_period="2_quarter" type="SCO3"/>
+            <Incident incident_id="189430027" description="20-32 Ταϊβάν Μπιρ" inplay_period_mins="2" team_id="1918575" inplay_total_mins="12" time="2020-03-30T11:41:55" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189430020" description="18-32 Γιουλόν Ντίνος" inplay_period_mins="2" team_id="1918744" inplay_total_mins="12" time="2020-03-30T11:41:40" inplay_period="2_quarter" type="SCO2"/>
+            <Incident incident_id="189429999" inplay_period_mins="1" inplay_total_mins="11" time="2020-03-30T11:40:38" inplay_period="2_quarter" type="SYNC"/>
+            <Incident incident_id="189429998" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="11" time="2020-03-30T11:40:38" inplay_period="2_quarter" type="PBEG"/>
+            <Incident incident_id="189429970" inplay_period_mins="11" inplay_total_mins="11" time="2020-03-30T11:38:10" inplay_period="intermission" type="SYNC"/>
+            <Incident incident_id="189429969" description="Λήξη περιόδου" inplay_period_mins="11" inplay_total_mins="11" time="2020-03-30T11:38:10" inplay_period="intermission" type="PEND"/>
+            <Incident incident_id="189429968" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:38:06" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429967" description="Συνέχεια αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:37:59" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429964" description="Διακοπή αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:37:37" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429960" description="Συνέχεια αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:37:17" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429958" description="Διακοπή αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:36:58" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429957" description="Συνέχεια αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:36:54" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429955" description="18-30 Γιουλόν Ντίνος" inplay_period_mins="10" team_id="1918744" inplay_total_mins="10" time="2020-03-30T11:36:50" inplay_period="1_quarter" type="SCO1"/>
+            <Incident incident_id="189429953" description="18-29 Γιουλόν Ντίνος" inplay_period_mins="10" team_id="1918744" inplay_total_mins="10" time="2020-03-30T11:36:36" inplay_period="1_quarter" type="SCO1"/>
+            <Incident incident_id="189429952" description="2 free throws for Γιουλόν Ντίνος" inplay_period_mins="10" team_id="1918744" inplay_total_mins="10" time="2020-03-30T11:36:18" inplay_period="1_quarter" type="FRE2"/>
+            <Incident incident_id="189429951" description="Ταϊβάν Μπιρ" inplay_period_mins="10" team_id="1918575" inplay_total_mins="10" score_method="PERD" time="2020-03-30T11:36:18" inplay_period="1_quarter" type="FOUL"/>
+            <Incident incident_id="189429948" description="Διακοπή αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:36:17" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429946" description="Συνέχεια αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:36:06" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429934" description="Διακοπή αγώνα" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:34:30" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429933" inplay_period_mins="10" inplay_total_mins="10" time="2020-03-30T11:34:30" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429928" description="18-28 Ταϊβάν Μπιρ" inplay_period_mins="10" team_id="1918575" inplay_total_mins="10" time="2020-03-30T11:34:27" inplay_period="1_quarter" type="SCO3"/>
+            <Incident incident_id="189429926" description="15-28 Γιουλόν Ντίνος" inplay_period_mins="10" team_id="1918744" inplay_total_mins="10" time="2020-03-30T11:34:15" inplay_period="1_quarter" type="SCO3"/>
+            <Incident incident_id="189429921" description="15-25 Ταϊβάν Μπιρ" inplay_period_mins="9" team_id="1918575" inplay_total_mins="9" time="2020-03-30T11:33:49" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429919" inplay_period_mins="9" inplay_total_mins="9" time="2020-03-30T11:33:37" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429918" inplay_period_mins="9" inplay_total_mins="9" time="2020-03-30T11:33:35" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429917" description="Συνέχεια αγώνα" inplay_period_mins="9" inplay_total_mins="9" time="2020-03-30T11:33:24" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429913" description="Γιουλόν Ντίνος" inplay_period_mins="9" team_id="1918744" inplay_total_mins="9" score_method="PERD" time="2020-03-30T11:32:59" inplay_period="1_quarter" type="FOUL"/>
+            <Incident incident_id="189429910" description="Διακοπή αγώνα" inplay_period_mins="9" inplay_total_mins="9" time="2020-03-30T11:32:52" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429907" description="13-25 Γιουλόν Ντίνος" inplay_period_mins="8" team_id="1918744" inplay_total_mins="8" time="2020-03-30T11:32:37" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429900" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:32:11" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429901" description="13-23 Ταϊβάν Μπιρ" inplay_period_mins="8" team_id="1918575" inplay_total_mins="8" time="2020-03-30T11:32:07" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429899" description="Συνέχεια αγώνα" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:32:04" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429892" description="Γιουλόν Ντίνος" inplay_period_mins="8" team_id="1918744" inplay_total_mins="8" score_method="PERD" time="2020-03-30T11:31:44" inplay_period="1_quarter" type="FOUL"/>
+            <Incident incident_id="189429891" description="Διακοπή αγώνα" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:31:42" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429889" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:31:42" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429886" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:31:33" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429885" description="Συνέχεια αγώνα" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:31:30" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429879" description="Διακοπή αγώνα" inplay_period_mins="8" inplay_total_mins="8" time="2020-03-30T11:31:03" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429872" description="11-23 Γιουλόν Ντίνος" inplay_period_mins="7" team_id="1918744" inplay_total_mins="7" time="2020-03-30T11:30:34" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429855" description="11-21 Γιουλόν Ντίνος" inplay_period_mins="7" team_id="1918744" inplay_total_mins="7" time="2020-03-30T11:30:06" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429850" description="11-19 Γιουλόν Ντίνος" inplay_period_mins="6" team_id="1918744" inplay_total_mins="6" time="2020-03-30T11:29:30" inplay_period="1_quarter" type="SCO3"/>
+            <Incident incident_id="189429844" description="11-16 Ταϊβάν Μπιρ" inplay_period_mins="6" team_id="1918575" inplay_total_mins="6" time="2020-03-30T11:29:13" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429843" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:29:13" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429841" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:29:13" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429837" description="Συνέχεια αγώνα" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:29:05" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429835" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:28:53" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429834" description="Γιουλόν Ντίνος" inplay_period_mins="6" team_id="1918744" inplay_total_mins="6" score_method="PERD" time="2020-03-30T11:28:51" inplay_period="1_quarter" type="FOUL"/>
+            <Incident incident_id="189429833" description="Διακοπή αγώνα" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:28:48" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429831" description="Συνέχεια αγώνα" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:28:39" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429805" description="Διακοπή αγώνα" inplay_period_mins="6" inplay_total_mins="6" time="2020-03-30T11:27:06" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429804" description="Συνέχεια αγώνα" inplay_period_mins="5" inplay_total_mins="5" time="2020-03-30T11:26:52" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429802" description="Διακοπή αγώνα" inplay_period_mins="5" inplay_total_mins="5" time="2020-03-30T11:26:34" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429799" description="9-16 Γιουλόν Ντίνος" inplay_period_mins="5" team_id="1918744" inplay_total_mins="5" time="2020-03-30T11:26:23" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429798" inplay_period_mins="5" inplay_total_mins="5" time="2020-03-30T11:26:23" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429796" inplay_period_mins="5" inplay_total_mins="5" time="2020-03-30T11:26:22" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429795" description="Συνέχεια αγώνα" inplay_period_mins="5" inplay_total_mins="5" time="2020-03-30T11:26:10" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429792" description="Διακοπή αγώνα" inplay_period_mins="5" inplay_total_mins="5" time="2020-03-30T11:25:56" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429789" description="9-14 Ταϊβάν Μπιρ" inplay_period_mins="5" team_id="1918575" inplay_total_mins="5" time="2020-03-30T11:25:38" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429785" description="7-14 Ταϊβάν Μπιρ" inplay_period_mins="4" team_id="1918575" inplay_total_mins="4" time="2020-03-30T11:25:20" inplay_period="1_quarter" type="SCO3"/>
+            <Incident incident_id="189429783" description="Συνέχεια αγώνα" inplay_period_mins="4" inplay_total_mins="4" time="2020-03-30T11:25:03" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429782" description="4-14 Γιουλόν Ντίνος" inplay_period_mins="4" team_id="1918744" inplay_total_mins="4" time="2020-03-30T11:25:00" inplay_period="1_quarter" type="SCO1"/>
+            <Incident incident_id="189429779" description="4-13 Γιουλόν Ντίνος" inplay_period_mins="4" team_id="1918744" inplay_total_mins="4" time="2020-03-30T11:24:48" inplay_period="1_quarter" type="SCO1"/>
+            <Incident incident_id="189429772" description="2 free throws for Γιουλόν Ντίνος" inplay_period_mins="4" team_id="1918744" inplay_total_mins="4" time="2020-03-30T11:24:14" inplay_period="1_quarter" type="FRE2"/>
+            <Incident incident_id="189429769" description="Ταϊβάν Μπιρ" inplay_period_mins="4" team_id="1918575" inplay_total_mins="4" score_method="PERD" time="2020-03-30T11:24:13" inplay_period="1_quarter" type="FOUL"/>
+            <Incident incident_id="189429768" description="Διακοπή αγώνα" inplay_period_mins="4" inplay_total_mins="4" time="2020-03-30T11:24:12" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429767" inplay_period_mins="4" inplay_total_mins="4" time="2020-03-30T11:24:12" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429765" inplay_period_mins="4" inplay_total_mins="4" time="2020-03-30T11:24:05" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429762" description="Συνέχεια αγώνα" inplay_period_mins="4" inplay_total_mins="4" time="2020-03-30T11:23:45" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429756" description="4-12 Γιουλόν Ντίνος" inplay_period_mins="4" team_id="1918744" inplay_total_mins="4" time="2020-03-30T11:23:27" inplay_period="1_quarter" type="SCO1"/>
+            <Incident incident_id="189429751" description="2 free throws for Γιουλόν Ντίνος" inplay_period_mins="4" team_id="1918744" inplay_total_mins="4" time="2020-03-30T11:23:01" inplay_period="1_quarter" type="FRE2"/>
+            <Incident incident_id="189429750" description="Ταϊβάν Μπιρ" inplay_period_mins="4" team_id="1918575" inplay_total_mins="4" score_method="PERD" time="2020-03-30T11:23:00" inplay_period="1_quarter" type="FOUL"/>
+            <Incident incident_id="189429749" description="Διακοπή αγώνα" inplay_period_mins="4" inplay_total_mins="4" time="2020-03-30T11:22:59" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429745" description="4-11 Γιουλόν Ντίνος" inplay_period_mins="3" team_id="1918744" inplay_total_mins="3" time="2020-03-30T11:22:40" inplay_period="1_quarter" type="SCO3"/>
+            <Incident incident_id="189429743" description="Συνέχεια αγώνα" inplay_period_mins="3" inplay_total_mins="3" time="2020-03-30T11:22:34" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429742" description="Διακοπή αγώνα" inplay_period_mins="3" inplay_total_mins="3" time="2020-03-30T11:22:12" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429741" inplay_period_mins="3" inplay_total_mins="3" time="2020-03-30T11:22:12" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429740" inplay_period_mins="3" inplay_total_mins="3" time="2020-03-30T11:22:04" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429738" description="Συνέχεια αγώνα" inplay_period_mins="3" inplay_total_mins="3" time="2020-03-30T11:21:56" inplay_period="1_quarter" type="SEND"/>
+            <Incident incident_id="189429733" description="Διακοπή αγώνα" inplay_period_mins="3" inplay_total_mins="3" time="2020-03-30T11:21:39" inplay_period="1_quarter" type="SBEG"/>
+            <Incident incident_id="189429730" description="4-8 Γιουλόν Ντίνος" inplay_period_mins="2" team_id="1918744" inplay_total_mins="2" time="2020-03-30T11:21:08" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429728" description="4-6 Γιουλόν Ντίνος" inplay_period_mins="2" team_id="1918744" inplay_total_mins="2" time="2020-03-30T11:20:50" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429727" description="4-4 Γιουλόν Ντίνος" inplay_period_mins="2" team_id="1918744" inplay_total_mins="2" time="2020-03-30T11:20:18" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429726" description="4-2 Ταϊβάν Μπιρ" inplay_period_mins="1" team_id="1918575" inplay_total_mins="1" time="2020-03-30T11:20:11" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429724" description="2-2 Γιουλόν Ντίνος" inplay_period_mins="1" team_id="1918744" inplay_total_mins="1" time="2020-03-30T11:19:53" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429723" description="2-0 Ταϊβάν Μπιρ" inplay_period_mins="1" team_id="1918575" inplay_total_mins="1" time="2020-03-30T11:19:34" inplay_period="1_quarter" type="SCO2"/>
+            <Incident incident_id="189429722" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-30T11:19:34" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429719" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-30T11:19:20" inplay_period="1_quarter" type="SYNC"/>
+            <Incident incident_id="189429718" description="Έναρξη περιόδου" inplay_period_mins="1" team_id="1918744" inplay_total_mins="1" time="2020-03-30T11:19:17" inplay_period="1_quarter" type="PBEG"/>
+            <Incident incident_id="189429717" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-30T11:19:17" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
           <Teams>
-            <Team team_id="1918723" team_order="0" name="Μπανκ οφ Ταϊβάν" short_name="Μπανκ οφ Ταϊβάν"/>
-            <Team team_id="1906390" team_order="1" name="Παουιάν" short_name="Παουιάν"/>
+            <Team team_id="1918575" team_order="0" name="Ταϊβάν Μπιρ" short_name="Ταϊβάν Μπιρ"/>
+            <Team team_id="1918744" team_order="1" name="Γιουλόν Ντίνος" short_name="Γιουλόν Ντίνος"/>
           </Teams>
-          <Mkt status="A" name="Νικητής (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639478" inplay_avail="Y" disporder="-1500" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570800" team_id="1918723" disporder="0" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODUwNTcwODAwOjkvNTo6MA" frac_prc="9/5" us_prc="+180" last_change="2020-03-29T16:46:23"/>
+          <Mkt status="A" name="Νικητής (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639642" inplay_avail="Y" disporder="-1500" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Ταϊβάν Μπιρ" seln_id="850571195" team_id="1918575" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="3.35" bet_ref="ODUwNTcxMTk1OjQ3LzIwOjow" frac_prc="47/20" us_prc="+235" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" seln_id="850570801" team_id="1906390" disporder="1" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="1.40" bet_ref="ODUwNTcwODAxOjIvNTo6MA" frac_prc="2/5" us_prc="-250" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639583" handicap="+3.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+3.5" seln_id="850571058" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="2.17" bet_ref="ODUwNTcxMDU4OjExNy8xMDA6MTQ6MA" frac_prc="117/100" us_prc="+117" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-3.5" seln_id="850571059" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="1.66" bet_ref="ODUwNTcxMDU5OjMzLzUwOjE0OjA" frac_prc="33/50" us_prc="-152" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Γιουλόν Ντίνος" seln_id="850571196" team_id="1918744" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.30" bet_ref="ODUwNTcxMTk2OjMvMTA6OjA" frac_prc="3/10" us_prc="-334" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639584" handicap="+4.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+4.5" seln_id="850571060" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODUwNTcxMDYwOjIxLzIwOjE4OjA" frac_prc="21/20" us_prc="+105" last_change="2020-03-29T16:46:23"/>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684856" handicap="+7.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Ταϊβάν Μπιρ" handicap="+7.5" seln_id="850737109" team_id="1918575" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.93" bet_ref="ODUwNzM3MTA5OjkzLzEwMDozMDow" frac_prc="93/100" us_prc="-108" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-4.5" seln_id="850571061" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="1.77" bet_ref="ODUwNTcxMDYxOjc3LzEwMDoxODow" frac_prc="77/100" us_prc="-130" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639585" handicap="+5.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+5.5" seln_id="850571062" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODUwNTcxMDYyOjE3LzIwOjIyOjA" frac_prc="17/20" us_prc="-118" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-5.5" seln_id="850571063" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNTcxMDYzOjk3LzEwMDoyMjow" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Γιουλόν Ντίνος" handicap="-7.5" seln_id="850737110" team_id="1918744" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNzM3MTEwOjc4LzEwMDozMDow" frac_prc="78/100" us_prc="-129" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639586" handicap="+6.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+6.5" seln_id="850571064" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNTcxMDY0OjE4LzI1OjI2OjA" frac_prc="18/25" us_prc="-139" last_change="2020-03-29T16:46:23"/>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200685163" handicap="+8.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Ταϊβάν Μπιρ" handicap="+8.5" seln_id="850737856" team_id="1918575" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNzM3ODU2OjQvNTozNDow" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-6.5" seln_id="850571065" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTcxMDY1OjExLzEwOjI2OjA" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200644632" handicap="+7.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+7.5" seln_id="850587163" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="1.65" bet_ref="ODUwNTg3MTYzOjEzLzIwOjMwOjA" frac_prc="13/20" us_prc="-154" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-7.5" seln_id="850587164" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODUwNTg3MTY0OjYvNTozMDow" frac_prc="6/5" us_prc="+120" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Γιουλόν Ντίνος" handicap="-8.5" seln_id="850737857" team_id="1918744" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNzM3ODU3OjkvMTA6MzQ6MA" frac_prc="9/10" us_prc="-112" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200644465" handicap="180.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
-            <Seln status="A" name="Over" handicap="180.5" seln_id="850586705" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNTg2NzA1OjE4LzI1OjcyMjow" frac_prc="18/25" us_prc="-139" last_change="2020-03-29T17:32:24"/>
+          <Mkt status="A" name="Χάντικαπ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200685164" handicap="+9.5" inplay_avail="Y" disporder="-1450" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHOT" lp_avail="Y" mkt_sort_name="Alternate Handicap">
+            <Seln status="A" name="Ταϊβάν Μπιρ" handicap="+9.5" seln_id="850737858" team_id="1918575" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNzM3ODU4OjE4LzI1OjM4OjA" frac_prc="18/25" us_prc="-139" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="180.5" seln_id="850586706" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTg2NzA2OjExLzEwOjcyMjow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T17:32:24"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639587" handicap="181.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
-            <Seln status="A" name="Over" handicap="181.5" seln_id="850571066" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDY2OjQvNTo3MjY6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T17:32:24"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="181.5" seln_id="850571067" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODUwNTcxMDY3OjUxLzUwOjcyNjow" frac_prc="51/50" us_prc="+102" last_change="2020-03-29T17:32:24"/>
+            <Seln status="A" name="Γιουλόν Ντίνος" handicap="-9.5" seln_id="850737859" team_id="1918744" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODUwNzM3ODU5OjEvMTozODow" frac_prc="1/1" us_prc="+100" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639588" handicap="182.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
-            <Seln status="A" name="Over" handicap="182.5" seln_id="850571068" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDY4Ojg3LzEwMDo3MzA6MA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T17:32:24"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639751" handicap="175.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="175.5" seln_id="850571452" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNTcxNDUyOjc4LzEwMDo3MDI6MA" frac_prc="78/100" us_prc="-129" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="182.5" seln_id="850571069" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDY5OjE5LzIwOjczMDow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T17:32:24"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639589" handicap="183.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
-            <Seln status="A" name="Over" handicap="183.5" seln_id="850571070" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODUwNTcxMDcwOjUxLzUwOjczNDow" frac_prc="51/50" us_prc="+102" last_change="2020-03-29T16:00:13"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="183.5" seln_id="850571071" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDcxOjQvNTo3MzQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:00:13"/>
+            <Seln status="A" name="Under" handicap="175.5" seln_id="850571453" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.93" bet_ref="ODUwNTcxNDUzOjkzLzEwMDo3MDI6MA" frac_prc="93/100" us_prc="-108" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639590" handicap="184.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
-            <Seln status="A" name="Over" handicap="184.5" seln_id="850571072" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTcxMDcyOjExLzEwOjczODow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T17:31:23"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639752" handicap="176.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="176.5" seln_id="850571454" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.91" bet_ref="ODUwNTcxNDU0OjkxLzEwMDo3MDY6MA" frac_prc="91/100" us_prc="-110" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="184.5" seln_id="850571073" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.72" bet_ref="ODUwNTcxMDczOjE4LzI1OjczODow" frac_prc="18/25" us_prc="-139" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="1η Περίοδος - Nικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639469" inplay_avail="Y" disporder="-1300" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T1DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T1DN">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570773" team_id="1918723" disporder="-1" seln_sort="H">
-              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNTcwNzczOjYxLzUwOjow" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Παουιάν" seln_id="850570772" team_id="1906390" disporder="0" seln_sort="A">
-              <Price prc_type="LP" dec_prc="1.61" bet_ref="ODUwNTcwNzcyOjYxLzEwMDo6MA" frac_prc="61/100" us_prc="-164" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Under" handicap="176.5" seln_id="850571455" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxNDU1OjQvNTo3MDY6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="1η Περίοδος - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639581" handicap="+1.5" inplay_avail="Y" disporder="-1290" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FT1H" lp_avail="Y" mkt_sort_name="1st Period Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+1.5" seln_id="850571054" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDU0Ojg3LzEwMDo2OjA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:33:19"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639753" handicap="177.5" inplay_avail="Y" disporder="-1400" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="177.5" seln_id="850571456" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODUwNTcxNDU2OjUxLzUwOjcxMDow" frac_prc="51/50" us_prc="+102" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-1.5" seln_id="850571055" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDU1Ojg3LzEwMDo2OjA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:33:19"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="1η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639499" inplay_avail="Y" disporder="-1285" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT1W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT1W">
-            <Seln status="A" seln_id="850570859" seln_sort="H3-" name="Μπανκ οφ Ταϊβάν νίκη με 3+" disporder="0">
-              <Price prc_type="LP" dec_prc="3.10" bet_ref="ODUwNTcwODU5OjIxLzEwOjow" frac_prc="21/10" us_prc="+210" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570858" seln_sort="A3-" name="Παουιάν νίκη με 3+" disporder="1">
-              <Price prc_type="LP" dec_prc="2.10" bet_ref="ODUwNTcwODU4OjExLzEwOjow" frac_prc="11/10" us_prc="+110" last_change="2020-03-29T16:33:19"/>
-            </Seln>
-            <Seln status="A" seln_id="850570860" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
-              <Price prc_type="LP" dec_prc="3.30" bet_ref="ODUwNTcwODYwOjIzLzEwOjow" frac_prc="23/10" us_prc="+230" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Under" handicap="177.5" seln_id="850571457" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODUwNTcxNDU3OjcvMTA6NzEwOjA" frac_prc="7/10" us_prc="-143" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="1η Περίοδος - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639580" handicap="46.5" inplay_avail="Y" disporder="-1280" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP1O" lp_avail="Y" mkt_sort_name="1st Period Total Points">
-            <Seln status="A" name="Over" handicap="46.5" seln_id="850571052" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDUyOjE5LzIwOjE4Njow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T17:32:24"/>
+          <Mkt status="A" name="3η Περίοδος - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639649" inplay_avail="Y" disporder="-1140" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T3DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T3DN">
+            <Seln status="A" name="Ταϊβάν Μπιρ" seln_id="850571213" team_id="1918575" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.36" bet_ref="ODUwNTcxMjEzOjkvMjU6OjA" frac_prc="9/25" us_prc="-278" last_change="2020-03-30T11:57:18"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="46.5" seln_id="850571053" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDUzOjQvNToxODY6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T17:32:24"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="2η Περίοδος - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639481" inplay_avail="Y" disporder="-1240" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T2DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T2DN">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570807" team_id="1918723" disporder="0" seln_sort="H">
-              <Price prc_type="LP" dec_prc="2.12" bet_ref="ODUwNTcwODA3OjI4LzI1Ojow" frac_prc="28/25" us_prc="+112" last_change="2020-03-29T16:00:13"/>
-            </Seln>
-            <Seln status="A" name="Παουιάν" seln_id="850570806" team_id="1906390" disporder="1" seln_sort="A">
-              <Price prc_type="LP" dec_prc="1.67" bet_ref="ODUwNTcwODA2OjY3LzEwMDo6MA" frac_prc="67/100" us_prc="-150" last_change="2020-03-29T16:00:13"/>
+            <Seln status="A" name="Γιουλόν Ντίνος" seln_id="850571212" team_id="1918744" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="2.92" bet_ref="ODUwNTcxMjEyOjE5Mi8xMDA6OjA" frac_prc="192/100" us_prc="+192" last_change="2020-03-30T11:57:18"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="2η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639500" inplay_avail="Y" disporder="-1235" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT2W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT2W">
-            <Seln status="A" seln_id="850570862" seln_sort="H3-" name="Μπανκ οφ Ταϊβάν νίκη με 3+" disporder="0">
-              <Price prc_type="LP" dec_prc="3.00" bet_ref="ODUwNTcwODYyOjIvMTo6MA" frac_prc="2/1" us_prc="+200" last_change="2020-03-29T16:19:45"/>
+          <Mkt status="A" name="3η Περίοδος - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684429" handicap="-4.5" inplay_avail="Y" disporder="-1130" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FT3H" lp_avail="Y" mkt_sort_name="3rd Period Handicap">
+            <Seln status="A" name="Ταϊβάν Μπιρ" handicap="-4.5" seln_id="850734144" team_id="1918575" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNzM0MTQ0OjkvMTA6LTE4OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-30T11:57:19"/>
             </Seln>
-            <Seln status="A" seln_id="850570861" seln_sort="A3-" name="Παουιάν νίκη με 3+" disporder="1">
-              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNTcwODYxOjYxLzUwOjow" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570863" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
-              <Price prc_type="LP" dec_prc="3.25" bet_ref="ODUwNTcwODYzOjkvNDo6MA" frac_prc="9/4" us_prc="+225" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Γιουλόν Ντίνος" handicap="+4.5" seln_id="850734145" team_id="1918744" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNzM0MTQ1OjQvNTotMTg6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:57:19"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="2η Περίοδος - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639569" handicap="+1.5" inplay_avail="Y" disporder="-1230" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FT2H" lp_avail="Y" mkt_sort_name="2nd Period Handicap">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+1.5" seln_id="850571030" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUwNTcxMDMwOjc4LzEwMDo2OjA" frac_prc="78/100" us_prc="-129" last_change="2020-03-29T16:00:13"/>
+          <Mkt status="A" name="3η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639661" inplay_avail="Y" disporder="-1125" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT3W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT3W">
+            <Seln status="A" seln_id="850571244" seln_sort="H3-" name="Ταϊβάν Μπιρ νίκη με 3+" disporder="0">
+              <Price prc_type="LP" dec_prc="1.61" bet_ref="ODUwNTcxMjQ0OjYxLzEwMDo6MA" frac_prc="61/100" us_prc="-164" last_change="2020-03-30T11:57:19"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-1.5" seln_id="850571031" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUwNTcxMDMxOjk3LzEwMDo2OjA" frac_prc="97/100" us_prc="-104" last_change="2020-03-29T16:00:13"/>
+            <Seln status="A" seln_id="850571243" seln_sort="A3-" name="Γιουλόν Ντίνος νίκη με 3+" disporder="1">
+              <Price prc_type="LP" dec_prc="4.05" bet_ref="ODUwNTcxMjQzOjMwNS8xMDA6OjA" frac_prc="305/100" us_prc="+305" last_change="2020-03-30T11:58:02"/>
             </Seln>
-          </Mkt>
-          <Mkt status="A" name="2η Περίοδος - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639579" handicap="44.5" inplay_avail="Y" disporder="-1220" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
-            <Seln status="A" name="Over" handicap="44.5" seln_id="850571050" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMDUwOjkvMTA6MTc4OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-29T17:32:24"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="44.5" seln_id="850571051" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODUwNTcxMDUxOjE3LzIwOjE3ODow" frac_prc="17/20" us_prc="-118" last_change="2020-03-29T17:32:24"/>
+            <Seln status="A" seln_id="850571245" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
+              <Price prc_type="LP" dec_prc="4.20" bet_ref="ODUwNTcxMjQ1OjE2LzU6OjA" frac_prc="16/5" us_prc="+320" last_change="2020-03-30T11:57:19"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="1ο Ημίχρονο - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639468" inplay_avail="Y" disporder="-1180" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="1DNB" lp_avail="Y" mkt_sort_name="Ημίχρονο - Εξαίρεση ισοπαλίας">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570771" team_id="1918723" disporder="0" seln_sort="H">
-              <Price prc_type="LP" dec_prc="2.45" bet_ref="ODUwNTcwNzcxOjI5LzIwOjow" frac_prc="29/20" us_prc="+145" last_change="2020-03-29T16:46:23"/>
+          <Mkt status="A" name="3η Περίοδος - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639735" handicap="43.5" inplay_avail="Y" disporder="-1120" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP3O" lp_avail="Y" mkt_sort_name="3rd Period Total Points (Over/Under)">
+            <Seln status="A" name="Over" handicap="43.5" seln_id="850571420" disporder="-1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxNDIwOjQvNToxNzQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:52:14"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" seln_id="850570770" team_id="1906390" disporder="1" seln_sort="A">
-              <Price prc_type="LP" dec_prc="1.51" bet_ref="ODUwNTcwNzcwOjUxLzEwMDo6MA" frac_prc="51/100" us_prc="-197" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="1ο Ημίχρονο - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639570" handicap="+2.5" inplay_avail="Y" disporder="-1170" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FAHT" lp_avail="Y" mkt_sort_name="Asian Handicap (Half-Time)">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" handicap="+2.5" seln_id="850571032" team_id="1918723" disporder="0" seln_sort="1">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDMyOjg3LzEwMDoxMDow" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:00:13"/>
-            </Seln>
-            <Seln status="A" name="Παουιάν" handicap="-2.5" seln_id="850571033" team_id="1906390" disporder="1" seln_sort="2">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDMzOjg3LzEwMDoxMDow" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T16:00:13"/>
+            <Seln status="A" name="Under" handicap="43.5" seln_id="850571421" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.91" bet_ref="ODUwNTcxNDIxOjkxLzEwMDoxNzQ6MA" frac_prc="91/100" us_prc="-110" last_change="2020-03-30T11:52:14"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="1ο Ημίχρονο - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639568" handicap="90.5" inplay_avail="Y" disporder="-1160" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUH1" lp_avail="Y" mkt_sort_name="Πρώτο ημίχρονο (Πάνω/Κάτω)">
-            <Seln status="A" name="Over" handicap="90.5" seln_id="850571028" disporder="-1" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDI4Ojg3LzEwMDozNjI6MA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T17:31:23"/>
+          <Mkt status="A" name="Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639662" inplay_avail="Y" disporder="1020" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="WM07" lp_avail="Y" mkt_sort_name="MKT_SORT-WM07">
+            <Seln status="A" seln_id="850571246" seln_sort="01T05" name="1-5" disporder="0">
+              <Price prc_type="LP" dec_prc="3.25" bet_ref="ODUwNTcxMjQ2OjkvNDo6MA" frac_prc="9/4" us_prc="+225" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="90.5" seln_id="850571029" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNTcxMDI5Ojg3LzEwMDozNjI6MA" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T17:31:23"/>
+            <Seln status="A" seln_id="850571247" seln_sort="06T10" name="6-10" disporder="1">
+              <Price prc_type="LP" dec_prc="3.40" bet_ref="ODUwNTcxMjQ3OjEyLzU6OjA" frac_prc="12/5" us_prc="+240" last_change="2020-03-30T11:59:35"/>
             </Seln>
-          </Mkt>
-          <Mkt status="A" name="4η Περίοδος - Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639473" inplay_avail="Y" disporder="-1081" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="T4DN" lp_avail="Y" mkt_sort_name="MKT_SORT-T4DN">
-            <Seln status="A" name="Μπανκ οφ Ταϊβάν" seln_id="850570784" team_id="1918723" disporder="0" seln_sort="H">
-              <Price prc_type="LP" dec_prc="2.07" bet_ref="ODUwNTcwNzg0OjEwNy8xMDA6OjA" frac_prc="107/100" us_prc="+107" last_change="2020-03-29T16:19:45"/>
+            <Seln status="A" seln_id="850571248" seln_sort="11T15" name="11-15" disporder="2">
+              <Price prc_type="LP" dec_prc="4.15" bet_ref="ODUwNTcxMjQ4OjYzLzIwOjow" frac_prc="63/20" us_prc="+315" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" name="Παουιάν" seln_id="850570783" team_id="1906390" disporder="1" seln_sort="A">
-              <Price prc_type="LP" dec_prc="1.67" bet_ref="ODUwNTcwNzgzOjY3LzEwMDo6MA" frac_prc="67/100" us_prc="-150" last_change="2020-03-29T16:19:45"/>
+            <Seln status="A" seln_id="850571249" seln_sort="16T20" name="16-20" disporder="3">
+              <Price prc_type="LP" dec_prc="5.45" bet_ref="ODUwNTcxMjQ5OjQ0NS8xMDA6OjA" frac_prc="445/100" us_prc="+445" last_change="2020-03-30T11:59:35"/>
             </Seln>
-          </Mkt>
-          <Mkt status="A" name="4η Περίοδος - Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639502" inplay_avail="Y" disporder="-1080" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="IT4W" lp_avail="Y" mkt_sort_name="MKT_SORT-IT4W">
-            <Seln status="A" seln_id="850570875" seln_sort="H3-" name="Μπανκ οφ Ταϊβάν νίκη με 3+" disporder="0">
-              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODUwNTcwODc1OjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" seln_id="850571250" seln_sort="21T25" name="21-25" disporder="4">
+              <Price prc_type="LP" dec_prc="7.90" bet_ref="ODUwNTcxMjUwOjY5MC8xMDA6OjA" frac_prc="690/100" us_prc="+690" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" seln_id="850570874" seln_sort="A3-" name="Παουιάν νίκη με 3+" disporder="1">
-              <Price prc_type="LP" dec_prc="2.25" bet_ref="ODUwNTcwODc0OjUvNDo6MA" frac_prc="5/4" us_prc="+125" last_change="2020-03-29T16:18:45"/>
+            <Seln status="A" seln_id="850571251" seln_sort="26T30" name="26-30" disporder="5">
+              <Price prc_type="LP" dec_prc="12.60" bet_ref="ODUwNTcxMjUxOjU4LzU6OjA" frac_prc="58/5" us_prc="+1160" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" seln_id="850570876" seln_sort="O" name="Καμία ομάδα νίκη με 3+" disporder="2">
-              <Price prc_type="LP" dec_prc="3.15" bet_ref="ODUwNTcwODc2OjQzLzIwOjow" frac_prc="43/20" us_prc="+215" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" seln_id="850571252" seln_sort="31T-" name="31+" disporder="6">
+              <Price prc_type="LP" dec_prc="15.00" bet_ref="ODUwNTcxMjUyOjE0LzE6OjA" frac_prc="14/1" us_prc="+1400" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639501" inplay_avail="N" disporder="-45" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TOTP" lp_avail="Y" mkt_sort_name="MKT_SORT-TOTP">
-            <Seln status="A" seln_id="850570864" seln_sort="0-99" name="&lt;100" disporder="1">
-              <Price prc_type="LP" dec_prc="201.00" bet_ref="ODUwNTcwODY0OjIwMC8xOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-29T14:17:23"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι Ταϊβάν Μπιρ (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200685203" handicap="83.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="83.5" seln_id="850737956" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNzM3OTU2OjQvNTozMzQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" seln_id="850570865" seln_sort="100-109" name="100-109" disporder="2">
-              <Price prc_type="LP" dec_prc="201.00" bet_ref="ODUwNTcwODY1OjIwMC8xOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-29T14:17:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570866" seln_sort="110-119" name="110-119" disporder="3">
-              <Price prc_type="LP" dec_prc="201.00" bet_ref="ODUwNTcwODY2OjIwMC8xOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-29T14:17:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570867" seln_sort="120-129" name="120-129" disporder="4">
-              <Price prc_type="LP" dec_prc="126.00" bet_ref="ODUwNTcwODY3OjEyNS8xOjow" frac_prc="125/1" us_prc="+12500" last_change="2020-03-29T16:00:13"/>
-            </Seln>
-            <Seln status="A" seln_id="850570868" seln_sort="130-139" name="130-139" disporder="5">
-              <Price prc_type="LP" dec_prc="46.00" bet_ref="ODUwNTcwODY4OjQ1LzE6OjA" frac_prc="45/1" us_prc="+4500" last_change="2020-03-29T16:19:45"/>
-            </Seln>
-            <Seln status="A" seln_id="850570869" seln_sort="140-149" name="140-149" disporder="6">
-              <Price prc_type="LP" dec_prc="16.00" bet_ref="ODUwNTcwODY5OjE1LzE6OjA" frac_prc="15/1" us_prc="+1500" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570870" seln_sort="150-159" name="150-159" disporder="7">
-              <Price prc_type="LP" dec_prc="7.15" bet_ref="ODUwNTcwODcwOjYxNS8xMDA6OjA" frac_prc="615/100" us_prc="+615" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570871" seln_sort="160-169" name="160-169" disporder="8">
-              <Price prc_type="LP" dec_prc="4.05" bet_ref="ODUwNTcwODcxOjMwNS8xMDA6OjA" frac_prc="305/100" us_prc="+305" last_change="2020-03-29T16:19:45"/>
-            </Seln>
-            <Seln status="A" seln_id="850570872" seln_sort="170-179" name="170-179" disporder="9">
-              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODUwNTcwODcyOjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-03-29T15:53:43"/>
-            </Seln>
-            <Seln status="A" seln_id="850570873" seln_sort="180-" name="180+" disporder="10">
-              <Price prc_type="LP" dec_prc="1.65" bet_ref="ODUwNTcwODczOjEzLzIwOjow" frac_prc="13/20" us_prc="-154" last_change="2020-03-29T16:00:13"/>
+            <Seln status="A" name="Under" handicap="83.5" seln_id="850737958" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNzM3OTU4OjkvMTA6MzM0OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Ημίχρονο / Τελικό" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639477" inplay_avail="Y" disporder="900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOT" lp_avail="Y" mkt_sort_name="Half-Time/Full-Time (incl Overtime)">
-            <Seln status="A" seln_id="850570799" seln_sort="HH" name="1/1" disporder="1">
-              <Price prc_type="LP" dec_prc="3.80" bet_ref="ODUwNTcwNzk5OjE0LzU6OjA" frac_prc="14/5" us_prc="+280" last_change="2020-03-29T16:46:23"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι Γιουλόν Ντίνος (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200684279" handicap="92.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
+            <Seln status="A" name="Over" handicap="92.5" seln_id="850733412" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.91" bet_ref="ODUwNzMzNDEyOjkxLzEwMDozNzA6MA" frac_prc="91/100" us_prc="-110" last_change="2020-03-30T11:59:35"/>
             </Seln>
-            <Seln status="A" seln_id="850570797" seln_sort="DH" name="X/1" disporder="2">
-              <Price prc_type="LP" dec_prc="29.00" bet_ref="ODUwNTcwNzk3OjI4LzE6OjA" frac_prc="28/1" us_prc="+2800" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570795" seln_sort="AH" name="2/1" disporder="3">
-              <Price prc_type="LP" dec_prc="7.70" bet_ref="ODUwNTcwNzk1OjY3MC8xMDA6OjA" frac_prc="670/100" us_prc="+670" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570798" seln_sort="HA" name="1/2" disporder="4">
-              <Price prc_type="LP" dec_prc="5.95" bet_ref="ODUwNTcwNzk4OjQ5NS8xMDA6OjA" frac_prc="495/100" us_prc="+495" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570796" seln_sort="DA" name="X/2" disporder="5">
-              <Price prc_type="LP" dec_prc="20.50" bet_ref="ODUwNTcwNzk2OjM5LzI6OjA" frac_prc="39/2" us_prc="+1950" last_change="2020-03-29T16:18:45"/>
-            </Seln>
-            <Seln status="A" seln_id="850570794" seln_sort="AA" name="2/2" disporder="6">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcwNzk0OjQvNTo6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:46:23"/>
+            <Seln status="A" name="Under" handicap="92.5" seln_id="850733413" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNzMzNDEzOjQvNTozNzA6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:59:35"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639498" inplay_avail="Y" disporder="1020" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="WM07" lp_avail="Y" mkt_sort_name="MKT_SORT-WM07">
-            <Seln status="A" seln_id="850570851" seln_sort="01T05" name="1-5" disporder="0">
-              <Price prc_type="LP" dec_prc="2.72" bet_ref="ODUwNTcwODUxOjE3Mi8xMDA6OjA" frac_prc="172/100" us_prc="+172" last_change="2020-03-29T16:46:23"/>
+          <Mkt status="A" name="Ματς να πάει στην παράταση" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639643" inplay_avail="Y" disporder="1800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OVRT" lp_avail="Y" mkt_sort_name="Will there be overtime?">
+            <Seln status="A" seln_id="850571198" seln_sort="Y" name="Ναι" disporder="0">
+              <Price prc_type="LP" dec_prc="11.00" bet_ref="ODUwNTcxMTk4OjEwLzE6OjA" frac_prc="10/1" us_prc="+1000" last_change="2020-03-30T11:57:53"/>
             </Seln>
-            <Seln status="A" seln_id="850570852" seln_sort="06T10" name="6-10" disporder="1">
-              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODUwNTcwODUyOjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570853" seln_sort="11T15" name="11-15" disporder="2">
-              <Price prc_type="LP" dec_prc="4.00" bet_ref="ODUwNTcwODUzOjMvMTo6MA" frac_prc="3/1" us_prc="+300" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570854" seln_sort="16T20" name="16-20" disporder="3">
-              <Price prc_type="LP" dec_prc="6.05" bet_ref="ODUwNTcwODU0OjUwNS8xMDA6OjA" frac_prc="505/100" us_prc="+505" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570855" seln_sort="21T25" name="21-25" disporder="4">
-              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUwNTcwODU1OjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570856" seln_sort="26T30" name="26-30" disporder="5">
-              <Price prc_type="LP" dec_prc="20.00" bet_ref="ODUwNTcwODU2OjE5LzE6OjA" frac_prc="19/1" us_prc="+1900" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-            <Seln status="A" seln_id="850570857" seln_sort="31T-" name="31+" disporder="6">
-              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODUwNTcwODU3OjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-03-29T17:31:23"/>
+            <Seln status="A" seln_id="850571197" seln_sort="N" name="Όχι" disporder="1">
+              <Price prc_type="LP" dec_prc="1.01" bet_ref="ODUwNTcxMTk3OjEvMTAwOjow" frac_prc="1/100" us_prc="-10000" last_change="2020-03-30T11:57:53"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι Μπανκ οφ Ταϊβάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200644631" handicap="87.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
-            <Seln status="A" name="Over" handicap="87.5" seln_id="850587161" disporder="0" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODUwNTg3MTYxOjcvMTA6MzUwOjA" frac_prc="7/10" us_prc="-143" last_change="2020-03-29T17:31:23"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι - Μονά/Ζυγά (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639644" inplay_avail="Y" disporder="1900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OEOT" lp_avail="Y" mkt_sort_name="Odd/Even Total Points">
+            <Seln status="A" seln_id="850571200" seln_sort="O" name="Μονά" disporder="-1">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMjAwOjQvNTo6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-30T11:20:42"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="87.5" seln_id="850587162" disporder="1" seln_sort="U">
-              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODUwNTg3MTYyOjIxLzIwOjM1MDow" frac_prc="21/20" us_prc="+105" last_change="2020-03-29T17:31:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι Μπανκ οφ Ταϊβάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639573" handicap="88.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
-            <Seln status="A" name="Over" handicap="88.5" seln_id="850571038" disporder="0" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDM4OjQvNTozNTQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="88.5" seln_id="850571039" disporder="1" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMDM5OjkvMTA6MzU0OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι Μπανκ οφ Ταϊβάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639574" handicap="89.5" inplay_avail="Y" disporder="1050" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHO" lp_avail="Y" mkt_sort_name="Over/Under Away Total Goals (incl OT)">
-            <Seln status="A" name="Over" handicap="89.5" seln_id="850571040" disporder="0" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDQwOjE5LzIwOjM1ODow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="89.5" seln_id="850571041" disporder="1" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNTcxMDQxOjMvNDozNTg6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι Παουιάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639576" handicap="93.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
-            <Seln status="A" name="Over" handicap="93.5" seln_id="850571044" disporder="0" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNTcxMDQ0OjMvNDozNzQ6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T16:18:45"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="93.5" seln_id="850571045" disporder="1" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNTcxMDQ1OjE5LzIwOjM3NDow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T16:18:45"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι Παουιάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639577" handicap="94.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
-            <Seln status="A" name="Over" handicap="94.5" seln_id="850571046" disporder="0" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMDQ2OjkvMTA6Mzc4OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="94.5" seln_id="850571047" disporder="1" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcxMDQ3OjQvNTozNzg6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:46:23"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι Παουιάν (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639578" handicap="95.5" inplay_avail="Y" disporder="1100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAO" lp_avail="Y" mkt_sort_name="Over/Under Home Total Goals (incl OT)">
-            <Seln status="A" name="Over" handicap="95.5" seln_id="850571048" disporder="0" seln_sort="O">
-              <Price prc_type="LP" dec_prc="2.08" bet_ref="ODUwNTcxMDQ4OjI3LzI1OjM4Mjow" frac_prc="27/25" us_prc="+108" last_change="2020-03-29T16:18:45"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="95.5" seln_id="850571049" disporder="1" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODUwNTcxMDQ5OjQvNjozODI6MA" frac_prc="4/6" us_prc="-150" last_change="2020-03-29T16:18:45"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Ματς να πάει στην παράταση" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639479" inplay_avail="Y" disporder="1800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OVRT" lp_avail="Y" mkt_sort_name="Will there be overtime?">
-            <Seln status="A" seln_id="850570803" seln_sort="Y" name="Ναι" disporder="0">
-              <Price prc_type="LP" dec_prc="11.00" bet_ref="ODUwNTcwODAzOjEwLzE6OjA" frac_prc="10/1" us_prc="+1000" last_change="2020-03-29T15:53:25"/>
-            </Seln>
-            <Seln status="A" seln_id="850570802" seln_sort="N" name="Όχι" disporder="1">
-              <Price prc_type="LP" dec_prc="1.025" bet_ref="ODUwNTcwODAyOjEvNDA6OjA" frac_prc="1/40" us_prc="-4000" last_change="2020-03-29T15:53:25"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι - Μονά/Ζυγά (περιλαμβ. Παράταση)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200639480" inplay_avail="Y" disporder="1900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OEOT" lp_avail="Y" mkt_sort_name="Odd/Even Total Points">
-            <Seln status="A" seln_id="850570805" seln_sort="O" name="Μονά" disporder="-1">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNTcwODA1OjQvNTo6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T16:10:43"/>
-            </Seln>
-            <Seln status="A" seln_id="850570804" seln_sort="E" name="Ζυγά" disporder="0">
-              <Price prc_type="LP" dec_prc="1.91" bet_ref="ODUwNTcwODA0OjkxLzEwMDo6MA" frac_prc="91/100" us_prc="-110" last_change="2020-03-29T16:10:43"/>
+            <Seln status="A" seln_id="850571199" seln_sort="E" name="Ζυγά" disporder="0">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODUwNTcxMTk5OjkvMTA6OjA" frac_prc="9/10" us_prc="-112" last_change="2020-03-30T11:57:59"/>
             </Seln>
           </Mkt>
         </Ev>
