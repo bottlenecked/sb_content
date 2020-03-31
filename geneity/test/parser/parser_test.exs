@@ -16,9 +16,9 @@ defmodule Geneity.Parser.Test do
              zone_id: 11395,
              league_id: 17221,
              start_time: ~U[2020-03-29 15:00:00Z],
-             active: true,
-             displayed: true,
-             live: true,
+             active?: true,
+             displayed?: true,
+             live?: true,
              display_order: -1200,
              markets: markets
            } = result
@@ -27,8 +27,8 @@ defmodule Geneity.Parser.Test do
              %Market{
                id: 200_196_701,
                type_id: "MRES",
-               active: true,
-               displayed: true,
+               active?: true,
+               displayed?: true,
                selections: selections
              }
              | _
@@ -40,7 +40,7 @@ defmodule Geneity.Parser.Test do
              %Selection{
                id: 848_691_656,
                type_id: "H",
-               active: true,
+               active?: true,
                price_decimal: 2.85
              }
              | _

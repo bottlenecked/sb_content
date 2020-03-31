@@ -7,11 +7,11 @@ defmodule Model.Event do
     :zone_id,
     :league_id,
     :event_id,
-    :active,
+    :active?,
     :start_time,
-    :live,
+    :live?,
     :display_order,
-    displayed: true,
+    displayed?: true,
     markets: []
   ]
 end

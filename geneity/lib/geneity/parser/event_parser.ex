@@ -48,10 +48,10 @@ defmodule Geneity.Parser.EventParser do
           %{acc | start_time: start_time}
 
         {"inplay_now", inplay}, acc ->
-          %{acc | live: inplay == "Y"}
+          %{acc | live?: inplay == "Y"}
 
         {"status", status}, acc ->
-          %{acc | active: status == "A"}
+          %{acc | active?: status == "A"}
 
         {"disporder", order}, acc ->
           %{acc | display_order: String.to_integer(order)}

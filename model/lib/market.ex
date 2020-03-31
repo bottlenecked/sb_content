@@ -2,9 +2,9 @@ defmodule Model.Market do
   defstruct [
     :id,
     :type_id,
-    :active,
+    :active?,
     :modifier,
-    displayed: true,
+    displayed?: true,
     selections: []
   ]
 end

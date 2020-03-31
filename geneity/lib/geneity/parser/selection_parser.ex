@@ -9,7 +9,7 @@ defmodule Geneity.Parser.SelectionParser do
           [{:id, String.to_integer(id)} | acc]
 
         {"status", status}, acc ->
-          [{:active, status == "A"} | acc]
+          [{:active?, status == "A"} | acc]
 
         {"seln_sort", type}, acc ->
           [{:type_id, type} | acc]

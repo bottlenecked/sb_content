@@ -2,8 +2,8 @@ defmodule Model.Selection do
   defstruct [
     :id,
     :type_id,
-    :active,
-    :displayed,
+    :active?,
+    :displayed?,
     :modifier,
     :price_decimal
   ]
