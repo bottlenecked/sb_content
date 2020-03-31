@@ -36,7 +36,10 @@ defmodule Geneity.Parser.MarketParser do
     {:ok, %{state | markets: [market | rest]}}
   end
 
-  def handle_event(_type, _data, state) do
-    {:ok, state}
+  def handle_event(:end_element, "Ev", state) do
+    %{markets: markets} = state
+    {:ok, %{state | markets: Enum.reverse(markets)}}
   end
+
+  def handle_event(_type, _data, state), do: {:ok, state}
 end

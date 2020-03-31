@@ -1,8 +1,6 @@
 defmodule Geneity.Parser.EventParser do
   @behaviour Saxy.Handler
 
-  alias Geneity.Parser.{MarketParser, SelectionParser}
-
   def handle_event(:start_element, {"Sport", attributes}, state) do
     state =
       attributes
@@ -63,14 +61,16 @@ defmodule Geneity.Parser.EventParser do
     {:ok, state}
   end
 
-  def handle_event(:end_element, "Ev", state) do
-    %{markets: markets} = state
-    {:ok, %{state | markets: Enum.reverse(markets)}}
-  end
+  def handle_event(:start_element, {"EvDetail", attributes}, state) do
+    state =
+      attributes
+      |> Enum.reduce(state, fn
+        {"br_match_id", id}, acc -> %{acc | br_match_id: String.to_integer(id)}
+        _, acc -> acc
+      end)
 
-  def handle_event(type, data, state) do
-    {:ok, state} = MarketParser.handle_event(type, data, state)
-    {:ok, state} = SelectionParser.handle_event(type, data, state)
     {:ok, state}
   end
+
+  def handle_event(_, _, state), do: {:ok, state}
 end

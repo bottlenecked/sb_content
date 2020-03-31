@@ -46,7 +46,5 @@ defmodule Geneity.Parser.SelectionParser do
     {:ok, %{state | markets: [market | rest_markets]}}
   end
 
-  def handle_event(_type, _data, state) do
-    {:ok, state}
-  end
+  def handle_event(_, _, state), do: {:ok, state}
 end

@@ -1,0 +1,120 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNjE2MTk2NDo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="FOOT" allow_cash_out="Y" name="Ποδόσφαιρο" disporder="-300">
+    <SBClass sb_class_id="189439" disporder="0" name="EURO">
+      <SBType sb_type_id="194253" name="EURO 2021" disporder="0">
+        <Ev inplay_allowed="N" status="A" outright="Y" name="EURO 2021 - Νικητής" allow_cash_out="Y" start_time="2021-07-01T18:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="1" ev_id="5086009" disporder="-300">
+          <Mkt status="A" name="Νικητής Διοργάνωσης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="199848566" inplay_avail="N" disporder="-9900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUTR" lp_avail="Y" mkt_sort_name="MKT_SORT-OUTR" mkt_close_at="2021-06-11T12:00:00">
+            <Seln status="A" seln_id="847302879" disporder="0" name="Αγγλία">
+              <Price prc_type="LP" dec_prc="5.00" bet_ref="ODQ3MzAyODc5OjQwMDAvMTAwMDo6MA" frac_prc="4/1" us_prc="+400" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302877" disporder="0" name="Βέλγιο">
+              <Price prc_type="LP" dec_prc="6.00" bet_ref="ODQ3MzAyODc3OjUwMDAvMTAwMDo6MA" frac_prc="5/1" us_prc="+500" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302875" disporder="0" name="Γαλλία">
+              <Price prc_type="LP" dec_prc="6.50" bet_ref="ODQ3MzAyODc1OjU1MDAvMTAwMDo6MA" frac_prc="11/2" us_prc="+550" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302881" disporder="0" name="Ολλανδία">
+              <Price prc_type="LP" dec_prc="8.00" bet_ref="ODQ3MzAyODgxOjcwMDAvMTAwMDo6MA" frac_prc="7/1" us_prc="+700" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302874" disporder="0" name="Γερμανία">
+              <Price prc_type="LP" dec_prc="9.00" bet_ref="ODQ3MzAyODc0OjgwMDAvMTAwMDo6MA" frac_prc="8/1" us_prc="+800" last_change="2020-03-26T09:42:32"/>
+            </Seln>
+            <Seln status="A" seln_id="847302880" disporder="0" name="Ιταλία">
+              <Price prc_type="LP" dec_prc="9.00" bet_ref="ODQ3MzAyODgwOjgwMDAvMTAwMDo6MA" frac_prc="8/1" us_prc="+800" last_change="2020-03-18T21:27:59"/>
+            </Seln>
+            <Seln status="A" seln_id="847302876" disporder="0" name="Ισπανία">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODQ3MzAyODc2OjkwMDAvMTAwMDo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302878" disporder="0" name="Πορτογαλία">
+              <Price prc_type="LP" dec_prc="18.00" bet_ref="ODQ3MzAyODc4OjE3MDAwLzEwMDA6OjA" frac_prc="17/1" us_prc="+1700" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302882" disporder="0" name="Κροατία">
+              <Price prc_type="LP" dec_prc="25.00" bet_ref="ODQ3MzAyODgyOjI0MDAwLzEwMDA6OjA" frac_prc="24/1" us_prc="+2400" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302885" disporder="0" name="Ελβετία">
+              <Price prc_type="LP" dec_prc="75.00" bet_ref="ODQ3MzAyODg1Ojc0MDAwLzEwMDA6OjA" frac_prc="70/1" us_prc="+7000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302890" disporder="0" name="Ουκρανία">
+              <Price prc_type="LP" dec_prc="75.00" bet_ref="ODQ3MzAyODkwOjc0MDAwLzEwMDA6OjA" frac_prc="70/1" us_prc="+7000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302891" disporder="0" name="Δανία">
+              <Price prc_type="LP" dec_prc="75.00" bet_ref="ODQ3MzAyODkxOjc0MDAwLzEwMDA6OjA" frac_prc="70/1" us_prc="+7000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302883" disporder="0" name="Πολωνία">
+              <Price prc_type="LP" dec_prc="100.00" bet_ref="ODQ3MzAyODgzOjk5MDAwLzEwMDA6OjA" frac_prc="90/1" us_prc="+9000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302884" disporder="0" name="Ουαλία">
+              <Price prc_type="LP" dec_prc="100.00" bet_ref="ODQ3MzAyODg0Ojk5MDAwLzEwMDA6OjA" frac_prc="90/1" us_prc="+9000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302886" disporder="0" name="Ρωσία">
+              <Price prc_type="LP" dec_prc="100.00" bet_ref="ODQ3MzAyODg2Ojk5MDAwLzEwMDA6OjA" frac_prc="90/1" us_prc="+9000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302887" disporder="0" name="Αυστρία">
+              <Price prc_type="LP" dec_prc="100.00" bet_ref="ODQ3MzAyODg3Ojk5MDAwLzEwMDA6OjA" frac_prc="90/1" us_prc="+9000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302889" disporder="0" name="Τουρκία">
+              <Price prc_type="LP" dec_prc="100.00" bet_ref="ODQ3MzAyODg5Ojk5MDAwLzEwMDA6OjA" frac_prc="90/1" us_prc="+9000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302894" disporder="0" name="Σερβία">
+              <Price prc_type="LP" dec_prc="100.00" bet_ref="ODQ3MzAyODk0Ojk5MDAwLzEwMDA6OjA" frac_prc="90/1" us_prc="+9000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302888" disporder="0" name="Σουηδία">
+              <Price prc_type="LP" dec_prc="125.00" bet_ref="ODQ3MzAyODg4OjEyNDAwMC8xMDAwOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302898" disporder="0" name="Νορβηγία">
+              <Price prc_type="LP" dec_prc="125.00" bet_ref="ODQ3MzAyODk4OjEyNDAwMC8xMDAwOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302893" disporder="0" name="Τσεχία">
+              <Price prc_type="LP" dec_prc="150.00" bet_ref="ODQ3MzAyODkzOjE0OTAwMC8xMDAwOjow" frac_prc="125/1" us_prc="+12500" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302899" disporder="0" name="Ρουμανία">
+              <Price prc_type="LP" dec_prc="150.00" bet_ref="ODQ3MzAyODk5OjE0OTAwMC8xMDAwOjow" frac_prc="125/1" us_prc="+12500" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302892" disporder="0" name="Βοσνία">
+              <Price prc_type="LP" dec_prc="200.00" bet_ref="ODQ3MzAyODkyOjE5OTAwMC8xMDAwOjow" frac_prc="175/1" us_prc="+17500" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302896" disporder="0" name="Ιρλανδία">
+              <Price prc_type="LP" dec_prc="200.00" bet_ref="ODQ3MzAyODk2OjE5OTAwMC8xMDAwOjow" frac_prc="175/1" us_prc="+17500" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302895" disporder="0" name="Ισλανδία">
+              <Price prc_type="LP" dec_prc="250.00" bet_ref="ODQ3MzAyODk1OjI0OTAwMC8xMDAwOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302897" disporder="0" name="Σλοβακία">
+              <Price prc_type="LP" dec_prc="250.00" bet_ref="ODQ3MzAyODk3OjI0OTAwMC8xMDAwOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302905" disporder="0" name="Φινλανδία">
+              <Price prc_type="LP" dec_prc="250.00" bet_ref="ODQ3MzAyOTA1OjI0OTAwMC8xMDAwOjow" frac_prc="200/1" us_prc="+20000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302900" disporder="0" name="Ουγγαρία">
+              <Price prc_type="LP" dec_prc="300.00" bet_ref="ODQ3MzAyOTAwOjI5OTAwMC8xMDAwOjow" frac_prc="250/1" us_prc="+25000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302902" disporder="0" name="B. Ιρλανδία">
+              <Price prc_type="LP" dec_prc="500.00" bet_ref="ODQ3MzAyOTAyOjQ5OTAwMC8xMDAwOjow" frac_prc="450/1" us_prc="+45000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302901" disporder="0" name="Ισραήλ">
+              <Price prc_type="LP" dec_prc="750.00" bet_ref="ODQ3MzAyOTAxOjc0OTAwMC8xMDAwOjow" frac_prc="700/1" us_prc="+70000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302903" disporder="0" name="Σκωτία">
+              <Price prc_type="LP" dec_prc="750.00" bet_ref="ODQ3MzAyOTAzOjc0OTAwMC8xMDAwOjow" frac_prc="700/1" us_prc="+70000" last_change="2020-03-18T16:40:06"/>
+            </Seln>
+            <Seln status="A" seln_id="847302907" disporder="0" name="Κόσοβο">
+              <Price prc_type="LP" dec_prc="1000.00" bet_ref="ODQ3MzAyOTA3Ojk5OTAwMC8xMDAwOjow" frac_prc="950/1" us_prc="+95000" last_change="2020-03-18T16:41:59"/>
+            </Seln>
+            <Seln status="A" seln_id="847302909" disporder="0" name="Βόρεια Μακεδονία">
+              <Price prc_type="LP" dec_prc="1000.00" bet_ref="ODQ3MzAyOTA5Ojk5OTAwMC8xMDAwOjow" frac_prc="950/1" us_prc="+95000" last_change="2020-03-18T16:41:59"/>
+            </Seln>
+            <Seln status="A" seln_id="847302904" disporder="0" name="Βουλγαρία">
+              <Price prc_type="LP" dec_prc="1500.00" bet_ref="ODQ3MzAyOTA0OjE0OTkwMDAvMTAwMDo6MA" frac_prc="1000/1" us_prc="+100000" last_change="2020-03-18T16:41:59"/>
+            </Seln>
+            <Seln status="A" seln_id="847302906" disporder="0" name="Λευκορωσία">
+              <Price prc_type="LP" dec_prc="2500.00" bet_ref="ODQ3MzAyOTA2OjI0OTkwMDAvMTAwMDo6MA" frac_prc="2499/1" us_prc="+249900" last_change="2020-03-18T16:41:59"/>
+            </Seln>
+            <Seln status="A" seln_id="847302908" disporder="0" name="Γεωργία">
+              <Price prc_type="LP" dec_prc="2500.00" bet_ref="ODQ3MzAyOTA4OjI0OTkwMDAvMTAwMDo6MA" frac_prc="2499/1" us_prc="+249900" last_change="2020-03-18T16:41:59"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

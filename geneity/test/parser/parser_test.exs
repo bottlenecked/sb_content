@@ -1,8 +1,8 @@
-defmodule Geneity.Parser.Test do
-  use ExUnit.Case
+defmodule Geneity.ParserTest do
+  use ExUnit.Case, async: true
   doctest Geneity.Parser
 
-  alias Model.{Event, Market, Selection}
+  alias Model.{Event, Market, Selection, Team}
 
   test "Parse football event" do
     result =
@@ -15,12 +15,15 @@ defmodule Geneity.Parser.Test do
              sport_id: "FOOT",
              zone_id: 11395,
              league_id: 17221,
+             br_match_id: 21_752_575,
              start_time: ~U[2020-03-29 15:00:00Z],
              active?: true,
              displayed?: true,
              live?: true,
              display_order: -1200,
-             markets: markets
+             markets: markets,
+             teams: teams,
+             live_data: live_data
            } = result
 
     assert [
@@ -47,5 +50,7 @@ defmodule Geneity.Parser.Test do
            ] = selections
 
     assert Enum.count(selections) == 3
+
+    assert [%Team{id: 107_953}, %Team{}] = teams
   end
 end
