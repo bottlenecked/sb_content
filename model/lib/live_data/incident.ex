@@ -1,4 +1,5 @@
 defmodule Model.LiveData.Incident do
+  @type p :: %__MODULE__{}
   defstruct [
     :id,
     :type,
