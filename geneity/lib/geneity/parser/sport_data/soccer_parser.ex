@@ -1,9 +1,7 @@
 defmodule Geneity.Parser.SportData.SoccerParser do
   @soccer "FOOT"
   alias Model.LiveData.{SoccerLiveData, Incident}
-  alias Model.LiveData.SoccerLiveData.IncidentType
-
-  alias Geneity.Parser.TeamParser
+  alias Model.LiveData.IncidentType.{CommonIncident, SoccerIncident}
 
   def handle_event(:start_element, {"Inplay", attributes}, %{sport_id: @soccer} = state) do
     live_data =
@@ -16,7 +14,7 @@ defmodule Geneity.Parser.SportData.SoccerParser do
           %{acc | extra_period_length: String.to_integer(value)}
 
         {"inplay_secs", value}, acc ->
-          %{acc | period_ellapsed_seconds: String.to_integer(value)}
+          %{acc | total_ellapsed_seconds: String.to_integer(value)}
 
         {"correct_at", value}, acc ->
           {:ok, value, 0} = DateTime.from_iso8601(value <> "Z")
@@ -77,6 +75,20 @@ defmodule Geneity.Parser.SportData.SoccerParser do
   def handle_event(:end_element, "Ev", %{sport_id: @soccer} = state) do
     # when we are done with parsing individual incidents, we need to
     # enumerate over them and update live data counters (scores, red cards etc.)
+    # but it is only safe to do it at the end of Ev element, because Teams follow incidents
+    # in the XML structure and and we need the home team id to do it
+    %{
+      live_data:
+        %{
+          # incidents are now ordered first to last
+          incidents: incidents
+        } = live_data,
+      teams: [home_team, _]
+    } = state
+
+    live_data = SoccerLiveData.update_live_data(incidents, live_data, home_team.id)
+    live_data = %{live_data | incidents: Enum.reverse(incidents)}
+    state = %{state | live_data: live_data}
     {:ok, state}
   end
 
@@ -84,8 +96,38 @@ defmodule Geneity.Parser.SportData.SoccerParser do
 
   defp map_incident_type(geneity_type) do
     case geneity_type do
-      "GOAL" ->
-        IncidentType.goal()
+      "EBEG" ->
+        CommonIncident.event_start()
+
+      "EEND" ->
+        CommonIncident.event_end()
+
+      "PBEG" ->
+        CommonIncident.period_start()
+
+      "PEND" ->
+        CommonIncident.period_end()
+
+      "CMNT" ->
+        CommonIncident.comment()
+
+      "CRNR" ->
+        SoccerIncident.corner()
+
+      "RED" ->
+        SoccerIncident.red_card()
+
+      "YELL" ->
+        SoccerIncident.yellow_card()
+
+      "FKIC" ->
+        SoccerIncident.free_kick()
+
+      "THRO" ->
+        SoccerIncident.throw_in()
+
+      "GKIC" ->
+        SoccerIncident.goal_kick()
 
       _ ->
         :ignore

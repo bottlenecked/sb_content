@@ -2,7 +2,7 @@ defmodule Model.LiveData.SoccerLiveDataTest do
   use ExUnit.Case, async: true
 
   alias Model.LiveData.{SoccerLiveData, Incident}
-  alias Model.LiveData.SoccerLiveData.IncidentType, as: Type
+  alias Model.LiveData.IncidentType.{CommonIncident, SoccerIncident}
 
   test "adding and subtracting goals" do
     home_team_id = 1
@@ -10,13 +10,13 @@ defmodule Model.LiveData.SoccerLiveDataTest do
 
     data =
       [
-        {home_team_id, Type.goal()},
-        {away_team_id, Type.goal()},
-        {home_team_id, Type.goal()},
-        {home_team_id, Type.goal()},
-        {home_team_id, Type.cancel_goal()},
-        {away_team_id, Type.cancel_goal()},
-        {away_team_id, Type.goal()}
+        {home_team_id, SoccerIncident.goal()},
+        {away_team_id, SoccerIncident.goal()},
+        {home_team_id, SoccerIncident.goal()},
+        {home_team_id, SoccerIncident.goal()},
+        {home_team_id, SoccerIncident.cancel_goal()},
+        {away_team_id, SoccerIncident.cancel_goal()},
+        {away_team_id, SoccerIncident.goal()}
       ]
       |> Enum.with_index()
       |> Enum.map(fn {{team_id, type}, idx} ->
@@ -34,13 +34,13 @@ defmodule Model.LiveData.SoccerLiveDataTest do
 
     data =
       [
-        {home_team_id, Type.corner()},
-        {away_team_id, Type.corner()},
-        {home_team_id, Type.corner()},
-        {home_team_id, Type.corner()},
-        {home_team_id, Type.cancel_corner()},
-        {away_team_id, Type.cancel_corner()},
-        {away_team_id, Type.corner()}
+        {home_team_id, SoccerIncident.corner()},
+        {away_team_id, SoccerIncident.corner()},
+        {home_team_id, SoccerIncident.corner()},
+        {home_team_id, SoccerIncident.corner()},
+        {home_team_id, SoccerIncident.cancel_corner()},
+        {away_team_id, SoccerIncident.cancel_corner()},
+        {away_team_id, SoccerIncident.corner()}
       ]
       |> Enum.with_index()
       |> Enum.map(fn {{team_id, type}, idx} ->
@@ -58,13 +58,13 @@ defmodule Model.LiveData.SoccerLiveDataTest do
 
     data =
       [
-        {home_team_id, Type.red_card()},
-        {away_team_id, Type.red_card()},
-        {home_team_id, Type.red_card()},
-        {home_team_id, Type.red_card()},
-        {home_team_id, Type.cancel_red_card()},
-        {away_team_id, Type.cancel_red_card()},
-        {away_team_id, Type.red_card()}
+        {home_team_id, SoccerIncident.red_card()},
+        {away_team_id, SoccerIncident.red_card()},
+        {home_team_id, SoccerIncident.red_card()},
+        {home_team_id, SoccerIncident.red_card()},
+        {home_team_id, SoccerIncident.cancel_red_card()},
+        {away_team_id, SoccerIncident.cancel_red_card()},
+        {away_team_id, SoccerIncident.red_card()}
       ]
       |> Enum.with_index()
       |> Enum.map(fn {{team_id, type}, idx} ->
@@ -82,13 +82,13 @@ defmodule Model.LiveData.SoccerLiveDataTest do
 
     data =
       [
-        {home_team_id, Type.yellow_card()},
-        {away_team_id, Type.yellow_card()},
-        {home_team_id, Type.yellow_card()},
-        {home_team_id, Type.yellow_card()},
-        {home_team_id, Type.cancel_yellow_card()},
-        {away_team_id, Type.cancel_yellow_card()},
-        {away_team_id, Type.yellow_card()}
+        {home_team_id, SoccerIncident.yellow_card()},
+        {away_team_id, SoccerIncident.yellow_card()},
+        {home_team_id, SoccerIncident.yellow_card()},
+        {home_team_id, SoccerIncident.yellow_card()},
+        {home_team_id, SoccerIncident.cancel_yellow_card()},
+        {away_team_id, SoccerIncident.cancel_yellow_card()},
+        {away_team_id, SoccerIncident.yellow_card()}
       ]
       |> Enum.with_index()
       |> Enum.map(fn {{team_id, type}, idx} ->
@@ -98,5 +98,25 @@ defmodule Model.LiveData.SoccerLiveDataTest do
 
     assert data.yellow_cards.home == 2
     assert data.yellow_cards.away == 1
+  end
+
+  test "period counting" do
+    data =
+      [
+        CommonIncident.event_start(),
+        CommonIncident.period_start(),
+        CommonIncident.period_end(),
+        CommonIncident.period_start(),
+        CommonIncident.period_end(),
+        CommonIncident.period_start(),
+        CommonIncident.period_end()
+      ]
+      |> Enum.with_index()
+      |> Enum.map(fn {type, idx} ->
+        %Incident{id: idx, type: type}
+      end)
+      |> SoccerLiveData.update_live_data(%SoccerLiveData{}, :none)
+
+    assert data.current_period == 3
   end
 end

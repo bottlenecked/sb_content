@@ -1,0 +1,212 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNjk3NDE4Njo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="FOOT" allow_cash_out="Y" name="Ποδόσφαιρο" disporder="-300">
+    <SBClass sb_class_id="188477" disporder="5000" name="Κινεζική Ταϊπέι">
+      <SBType sb_type_id="194415" name="Πανεπιστημιακή Λίγκα" disporder="0">
+        <Ev inplay_allowed="Y" status="S" name="Πανεπιστήμιο Κινεζικής Ταϊπέι - Πανεπιστήμιο Μινγκ Τσουάν" allow_cash_out="Y" start_time="2020-04-02T08:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="10" ev_id="5164252" disporder="-700">
+          <Notes>Σε ουδέτερο (Τελικός)</Notes>
+          <Inplay inplay_period_num="3" inplay_period_name_short="PERIOD_extra_time_first_half_SHORT" clock_status="TICKING" period_length="2700" correct_at="2020-04-02T10:17:11" inplay_period_finished="N" extra_period_length="900" score_a="2" score_b="1" inplay_period_name="Extra Time First Half" num_periods="2" clock_mode="FORWARD" inplay_period="extra_time_first_half" num_extra_periods="2" score_string="2-1" scoring_system="match" last_change="2020-04-02T10:16:55" inplay_secs="5993">
+            <Scores>
+              <PeriodScore score_a="0" score_b="0" score_string="0-0" period="1"/>
+              <PeriodScore score_a="1" score_b="1" score_string="1-1" period="2"/>
+              <PeriodScore score_a="2" score_b="1" score_string="2-1" period="3"/>
+            </Scores>
+          </Inplay>
+          <InplayDetail period_length_mins="45" period_start="2020-04-02T10:07:44" period_stoppage_secs="0" score_team_B="1" score_team_A="2"/>
+          <Stats>
+            <Stat name="EV_STAT_YELL" title="TEAM_STAT_YELL" type="team" away="0" home="1" stat_type="YELL"/>
+            <Stat name="EV_STAT_CRNR" title="TEAM_STAT_CRNR" type="team" away="8" home="4" stat_type="CRNR"/>
+            <Stat name="EV_STAT_GOAL" title="TEAM_STAT_GOAL" type="team" away="1" home="2" stat_type="GOAL"/>
+            <Stat name="EV_STAT_PENL" title="TEAM_STAT_PENL" type="team" away="0" home="0" stat_type="PENL"/>
+            <Stat name="EV_STAT_SUBS" title="TEAM_STAT_SUBS" type="team" away="0" home="0" stat_type="SUBS"/>
+            <Stat name="EV_STAT_RED" title="TEAM_STAT_RED" type="team" away="0" home="0" stat_type="RED"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="189469704" description="2-1 Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="10" team_id="1914301" inplay_total_mins="100" time="2020-04-02T10:16:52" inplay_period="extra_time_first_half" type="GOAL"/>
+            <Incident incident_id="189469688" inplay_period_mins="9" inplay_total_mins="99" time="2020-04-02T10:15:41" inplay_period="extra_time_first_half" type="SYNC"/>
+            <Incident incident_id="189469608" inplay_period_mins="1" inplay_total_mins="91" time="2020-04-02T10:07:53" inplay_period="extra_time_first_half" type="SYNC"/>
+            <Incident incident_id="189469607" description="Έναρξη πρώτου ημιχρόνου παράτασης" inplay_period_mins="1" inplay_total_mins="91" time="2020-04-02T10:07:44" inplay_period="extra_time_first_half" type="PBEG"/>
+            <Incident incident_id="189469551" description="Λήξη δευτέρου ημιχρόνου" inplay_period_mins="46" inplay_total_mins="91" time="2020-04-02T09:59:41" inplay_period="pre_extra_time" type="PEND"/>
+            <Incident incident_id="189469519" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="45" team_id="1940658" inplay_total_mins="90" time="2020-04-02T09:55:35" inplay_period="second_half" type="CRNR"/>
+            <Incident incident_id="189469497" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="43" team_id="1940658" inplay_total_mins="88" time="2020-04-02T09:53:25" inplay_period="second_half" type="CRNR"/>
+            <Incident incident_id="189469425" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="33" team_id="1940658" inplay_total_mins="78" time="2020-04-02T09:43:38" inplay_period="second_half" type="CRNR"/>
+            <Incident incident_id="189469337" description="1-1 Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="23" team_id="1940658" inplay_total_mins="68" time="2020-04-02T09:33:07" inplay_period="second_half" type="GOAL"/>
+            <Incident incident_id="189469333" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="22" team_id="1940658" inplay_total_mins="67" time="2020-04-02T09:32:42" inplay_period="second_half" type="CRNR"/>
+            <Incident incident_id="189469297" description="1-0 Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="16" team_id="1914301" inplay_total_mins="61" time="2020-04-02T09:26:07" inplay_period="second_half" type="GOAL"/>
+            <Incident incident_id="189469256" description="Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="8" team_id="1914301" inplay_total_mins="53" time="2020-04-02T09:18:42" inplay_period="second_half" type="YELL"/>
+            <Incident incident_id="189469234" inplay_period_mins="4" inplay_total_mins="49" time="2020-04-02T09:14:07" inplay_period="second_half" type="SYNC"/>
+            <Incident incident_id="189469233" inplay_period_mins="3" inplay_total_mins="48" time="2020-04-02T09:13:21" inplay_period="second_half" type="SYNC"/>
+            <Incident incident_id="189469232" inplay_period_mins="1" inplay_total_mins="46" time="2020-04-02T09:13:10" inplay_period="second_half" type="SYNC"/>
+            <Incident incident_id="189469231" description="Έναρξη Δεύτερου Ημιχρόνου" inplay_period_mins="1" inplay_total_mins="46" time="2020-04-02T09:13:10" inplay_period="second_half" type="PBEG"/>
+            <Incident incident_id="189469131" inplay_period_mins="46" inplay_total_mins="46" time="2020-04-02T08:56:08" inplay_period="half_time" type="SYNC"/>
+            <Incident incident_id="189469130" description="Λήξη Πρώτου Ημιχρόνου" inplay_period_mins="46" inplay_total_mins="46" time="2020-04-02T08:56:08" inplay_period="half_time" type="PEND"/>
+            <Incident incident_id="189469038" description="Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="38" team_id="1914301" inplay_total_mins="38" time="2020-04-02T08:47:06" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468981" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="32" team_id="1940658" inplay_total_mins="32" time="2020-04-02T08:41:07" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468962" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="31" team_id="1940658" inplay_total_mins="31" time="2020-04-02T08:40:26" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468960" inplay_period_mins="31" inplay_total_mins="31" time="2020-04-02T08:39:44" inplay_period="first_half" type="SYNC"/>
+            <Incident incident_id="189468954" inplay_period_mins="30" inplay_total_mins="30" time="2020-04-02T08:39:14" inplay_period="first_half" type="SYNC"/>
+            <Incident incident_id="189468953" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="23" team_id="1940658" inplay_total_mins="23" time="2020-04-02T08:39:06" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468952" inplay_period_mins="23" inplay_total_mins="23" time="2020-04-02T08:39:03" inplay_period="first_half" type="SYNC"/>
+            <Incident incident_id="189468950" inplay_period_mins="18" inplay_total_mins="18" time="2020-04-02T08:38:56" inplay_period="first_half" type="SYNC"/>
+            <Incident incident_id="189468949" description="Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="17" team_id="1914301" inplay_total_mins="17" time="2020-04-02T08:38:51" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468948" description="Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="17" team_id="1914301" inplay_total_mins="17" time="2020-04-02T08:38:42" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468947" inplay_period_mins="17" inplay_total_mins="17" time="2020-04-02T08:38:41" inplay_period="first_half" type="SYNC"/>
+            <Incident incident_id="189468801" description="Πανεπιστήμιο Μινγκ Τσουάν" inplay_period_mins="12" team_id="1940658" inplay_total_mins="12" time="2020-04-02T08:21:18" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468689" description="Πανεπιστήμιο Κινεζικής Ταϊπέι" inplay_period_mins="1" team_id="1914301" inplay_total_mins="1" time="2020-04-02T08:10:31" inplay_period="first_half" type="CRNR"/>
+            <Incident incident_id="189468682" description="Έναρξη Πρώτου Ημιχρόνου" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-02T08:09:46" inplay_period="first_half" type="PBEG"/>
+            <Incident incident_id="189468681" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-02T08:09:46" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Teams>
+            <Team team_id="1914301" team_order="0" name="Πανεπιστήμιο Κινεζικής Ταϊπέι" short_name="Πανεπιστήμιο Κινεζικής Ταϊπέι"/>
+            <Team team_id="1940658" team_order="1" name="Πανεπιστήμιο Μινγκ Τσουάν" short_name="Πανεπιστήμιο Μινγκ Τσουάν"/>
+          </Teams>
+          <Mkt status="S" name="Αποτέλεσμα Παράτασης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845053" inplay_avail="Y" disporder="-999999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="ETRS" lp_avail="Y" mkt_sort_name="Αποτέλεσμα παράτασης">
+            <Seln status="A" name="Πανεπιστήμιο Κινεζικής Ταϊπέι" seln_id="851437626" team_id="1914301" disporder="-10" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.10" bet_ref="ODUxNDM3NjI2OjEvMTA6OjA" frac_prc="1/10" us_prc="-1000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437625" seln_sort="D" name="Ισοπαλία" disporder="0">
+              <Price prc_type="LP" dec_prc="7.65" bet_ref="ODUxNDM3NjI1OjY2NS8xMDA6OjA" frac_prc="665/100" us_prc="+665" last_change="2020-04-02T10:16:58"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Μινγκ Τσουάν" seln_id="851437624" team_id="1940658" disporder="10" seln_sort="A">
+              <Price prc_type="LP" dec_prc="61.00" bet_ref="ODUxNDM3NjI0OjYwLzE6OjA" frac_prc="60/1" us_prc="+6000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Νικητής Τροπαίου" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200791221" inplay_avail="Y" disporder="-98830" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TLTC" lp_avail="Y" mkt_sort_name="MKT_SORT-TLTC">
+            <Seln status="A" name="Πανεπιστήμιο Κινεζικής Ταϊπέι" seln_id="851231455" team_id="1914301" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.04" bet_ref="ODUxMjMxNDU1OjEvMjU6OjA" frac_prc="1/25" us_prc="-2500" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Μινγκ Τσουάν" seln_id="851231454" team_id="1940658" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="9.00" bet_ref="ODUxMjMxNDU0OjgvMTo6MA" frac_prc="8/1" us_prc="+800" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Μέθοδος Νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200790904" inplay_avail="Y" disporder="-98820" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MOFW" lp_avail="Y" mkt_sort_name="MKT_SORT-MOFW">
+            <Seln status="A" seln_id="851230738" seln_sort="HET" name="Πανεπιστήμιο Κινεζικής Ταϊπέι στην παράταση" disporder="3">
+              <Price prc_type="LP" dec_prc="1.10" bet_ref="ODUxMjMwNzM4OjEvMTA6OjA" frac_prc="1/10" us_prc="-1000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851230735" seln_sort="AET" name="Πανεπιστήμιο Μινγκ Τσουάν στην παράταση" disporder="4">
+              <Price prc_type="LP" dec_prc="61.00" bet_ref="ODUxMjMwNzM1OjYwLzE6OjA" frac_prc="60/1" us_prc="+6000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851230740" seln_sort="HPE" name="Πανεπιστήμιο Κινεζικής Ταϊπέι στα πέναλτι" disporder="5">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUxMjMwNzQwOjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851230737" seln_sort="APE" name="Πανεπιστήμιο Μινγκ Τσουάν στα πέναλτι" disporder="6">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODUxMjMwNzM3OjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Παράταση Γκολ Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845051" handicap="1.5" inplay_avail="Y" disporder="-9900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCEG" lp_avail="Y" mkt_sort_name="Χάντικαπ γκολ παράτασης">
+            <Seln status="A" name="Over" handicap="1.5" seln_id="851437620" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.97" bet_ref="ODUxNDM3NjIwOjk3LzEwMDo2OjA" frac_prc="97/100" us_prc="-104" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="1.5" seln_id="851437621" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUxNDM3NjIxOjc4LzEwMDo2OjA" frac_prc="78/100" us_prc="-129" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Παράταση Γκολ Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845052" handicap="2.5" inplay_avail="Y" disporder="-9900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCEG" lp_avail="Y" mkt_sort_name="Χάντικαπ γκολ παράτασης">
+            <Seln status="A" name="Over" handicap="2.5" seln_id="851437622" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="5.95" bet_ref="ODUxNDM3NjIyOjQ5NS8xMDA6MTA6MA" frac_prc="495/100" us_prc="+495" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="2.5" seln_id="851437623" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.10" bet_ref="ODUxNDM3NjIzOjEvMTA6MTA6MA" frac_prc="1/10" us_prc="-1000" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" mkt_extra="I002" name="2ο Γκολ στην Παράταση" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845896" inplay_avail="Y" disporder="-9800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="ETNT" lp_avail="Y" mkt_sort_name="Next Team to Score in Extra Time">
+            <Seln status="A" name="Πανεπιστήμιο Κινεζικής Ταϊπέι" seln_id="851440024" team_id="1914301" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.72" bet_ref="ODUxNDQwMDI0OjE3Mi8xMDA6OjA" frac_prc="172/100" us_prc="+172" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851440025" seln_sort="N" name="Κανένα γκολ" disporder="2">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUxNDQwMDI1Ojc4LzEwMDo6MA" frac_prc="78/100" us_prc="-129" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Μινγκ Τσουάν" seln_id="851440023" team_id="1940658" disporder="4" seln_sort="A">
+              <Price prc_type="LP" dec_prc="5.70" bet_ref="ODUxNDQwMDIzOjQ3MC8xMDA6OjA" frac_prc="470/100" us_prc="+470" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Αποτέλεσμα 1ου Ημιχρόνου Παράτασης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845055" inplay_avail="Y" disporder="-9700" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="E1RS" lp_avail="Y" mkt_sort_name="MKT_SORT-E1RS">
+            <Seln status="A" name="Πανεπιστήμιο Κινεζικής Ταϊπέι" seln_id="851437632" team_id="1914301" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.03" bet_ref="ODUxNDM3NjMyOjMvMTAwOjow" frac_prc="3/100" us_prc="-3334" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437631" seln_sort="D" name="Ισοπαλία" disporder="1">
+              <Price prc_type="LP" dec_prc="12.00" bet_ref="ODUxNDM3NjMxOjExLzE6OjA" frac_prc="11/1" us_prc="+1100" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" name="Πανεπιστήμιο Μινγκ Τσουάν" seln_id="851437630" team_id="1940658" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="126.00" bet_ref="ODUxNDM3NjMwOjEyNS8xOjow" frac_prc="125/1" us_prc="+12500" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="1ο Ημίχρονο Παράτασης - Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845058" handicap="1.5" inplay_avail="Y" disporder="-9650" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="E1FO" lp_avail="Y" mkt_sort_name="MKT_SORT-E1FO">
+            <Seln status="A" name="Over" handicap="1.5" seln_id="851437645" disporder="0" seln_sort="O">
+              <Price prc_type="LP" dec_prc="5.70" bet_ref="ODUxNDM3NjQ1OjQ3MC8xMDA6Njow" frac_prc="470/100" us_prc="+470" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="1.5" seln_id="851437644" disporder="1" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.13" bet_ref="ODUxNDM3NjQ0OjEzLzEwMDo2OjA" frac_prc="13/100" us_prc="-770" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Ακριβές Σκορ Παράτασης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845049" inplay_avail="Y" disporder="-9310" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="ETCS" lp_avail="Y" mkt_sort_name="Επιπλέον χρόνος, ακριβές σκορ">
+            <Seln status="A" seln_id="851437615" seln_sort="1-0" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 1 - 0 Πανεπιστήμιο Μινγκ Τσουάν" disporder="10">
+              <Price prc_type="LP" dec_prc="1.78" bet_ref="ODUxNDM3NjE1Ojc4LzEwMDo6MA" frac_prc="78/100" us_prc="-129" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437617" seln_sort="2-0" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 2 - 0 Πανεπιστήμιο Μινγκ Τσουάν" disporder="20">
+              <Price prc_type="LP" dec_prc="3.70" bet_ref="ODUxNDM3NjE3OjI3LzEwOjow" frac_prc="27/10" us_prc="+270" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437649" seln_sort="2-1" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 2 - 1 Πανεπιστήμιο Μινγκ Τσουάν" disporder="21">
+              <Price prc_type="LP" dec_prc="13.00" bet_ref="ODUxNDM3NjQ5OjEyLzE6OjA" frac_prc="12/1" us_prc="+1200" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437651" seln_sort="3-0" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 3 - 0 Πανεπιστήμιο Μινγκ Τσουάν" disporder="30">
+              <Price prc_type="LP" dec_prc="12.00" bet_ref="ODUxNDM3NjUxOjExLzE6OjA" frac_prc="11/1" us_prc="+1100" last_change="2020-04-02T10:16:58"/>
+            </Seln>
+            <Seln status="A" seln_id="851437652" seln_sort="3-1" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 3 - 1 Πανεπιστήμιο Μινγκ Τσουάν" disporder="31">
+              <Price prc_type="LP" dec_prc="51.00" bet_ref="ODUxNDM3NjUyOjUwLzE6OjA" frac_prc="50/1" us_prc="+5000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437653" seln_sort="3-2" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 3 - 2 Πανεπιστήμιο Μινγκ Τσουάν" disporder="32">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODUxNDM3NjUzOjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437654" seln_sort="4-0" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 4 - 0 Πανεπιστήμιο Μινγκ Τσουάν" disporder="40">
+              <Price prc_type="LP" dec_prc="67.00" bet_ref="ODUxNDM3NjU0OjY2LzE6OjA" frac_prc="66/1" us_prc="+6600" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437655" seln_sort="4-1" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 4 - 1 Πανεπιστήμιο Μινγκ Τσουάν" disporder="41">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODUxNDM3NjU1OjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437616" seln_sort="1-1" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 1 - 1 Πανεπιστήμιο Μινγκ Τσουάν" disporder="1011">
+              <Price prc_type="LP" dec_prc="7.45" bet_ref="ODUxNDM3NjE2OjY0NS8xMDA6OjA" frac_prc="645/100" us_prc="+645" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437650" seln_sort="2-2" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 2 - 2 Πανεπιστήμιο Μινγκ Τσουάν" disporder="1022">
+              <Price prc_type="LP" dec_prc="81.00" bet_ref="ODUxNDM3NjUwOjgwLzE6OjA" frac_prc="80/1" us_prc="+8000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437647" seln_sort="1-2" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 1 - 2 Πανεπιστήμιο Μινγκ Τσουάν" disporder="2021">
+              <Price prc_type="LP" dec_prc="56.00" bet_ref="ODUxNDM3NjQ3OjU1LzE6OjA" frac_prc="55/1" us_prc="+5500" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437648" seln_sort="1-3" name="Πανεπιστήμιο Κινεζικής Ταϊπέι 1 - 3 Πανεπιστήμιο Μινγκ Τσουάν" disporder="2031">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODUxNDM3NjQ4OjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="S" name="Ημίχρονο / Τελικό Παράτασης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200845056" inplay_avail="Y" disporder="-9300" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HFET" lp_avail="Y" mkt_sort_name="MKT_SORT-HFET">
+            <Seln status="A" seln_id="851437641" seln_sort="HH" name="1/1" disporder="0">
+              <Price prc_type="LP" dec_prc="1.08" bet_ref="ODUxNDM3NjQxOjIvMjU6OjA" frac_prc="2/25" us_prc="-1250" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437640" seln_sort="HD" name="1/X" disporder="1">
+              <Price prc_type="LP" dec_prc="7.15" bet_ref="ODUxNDM3NjQwOjYxNS8xMDA6OjA" frac_prc="615/100" us_prc="+615" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437639" seln_sort="HA" name="1/2" disporder="2">
+              <Price prc_type="LP" dec_prc="41.00" bet_ref="ODUxNDM3NjM5OjQwLzE6OjA" frac_prc="40/1" us_prc="+4000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437638" seln_sort="DH" name="X/1" disporder="3">
+              <Price prc_type="LP" dec_prc="29.00" bet_ref="ODUxNDM3NjM4OjI4LzE6OjA" frac_prc="28/1" us_prc="+2800" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437637" seln_sort="DD" name="X/X" disporder="4">
+              <Price prc_type="LP" dec_prc="16.50" bet_ref="ODUxNDM3NjM3OjMxLzI6OjA" frac_prc="31/2" us_prc="+1550" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437636" seln_sort="DA" name="X/2" disporder="5">
+              <Price prc_type="LP" dec_prc="46.00" bet_ref="ODUxNDM3NjM2OjQ1LzE6OjA" frac_prc="45/1" us_prc="+4500" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437635" seln_sort="AH" name="2/1" disporder="6">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODUxNDM3NjM1OjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+            <Seln status="A" seln_id="851437634" seln_sort="AD" name="2/X" disporder="7">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODUxNDM3NjM0OjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-02T10:17:08"/>
+            </Seln>
+            <Seln status="A" seln_id="851437633" seln_sort="AA" name="2/2" disporder="8">
+              <Price prc_type="LP" dec_prc="81.00" bet_ref="ODUxNDM3NjMzOjgwLzE6OjA" frac_prc="80/1" us_prc="+8000" last_change="2020-04-02T10:16:57"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>
