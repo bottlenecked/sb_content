@@ -92,7 +92,7 @@ defmodule Model.LiveData.SoccerLiveData do
   # red cards
 
   @red_card SoccerIncident.red_card()
-  @cancel_red_card SoccerIncident.red_card()
+  @cancel_red_card SoccerIncident.cancel_red_card()
 
   defp handle_incident(%{type: @red_card, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
