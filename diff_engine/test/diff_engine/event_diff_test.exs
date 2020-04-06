@@ -2,7 +2,10 @@ defmodule DiffEngine.EventDiffTest do
   use ExUnit.Case, async: true
   alias Model.Event
   alias DiffEngine.EventDiff
-  alias DiffEngine.Result.{NoDiff, StartTimeChanged}
+
+  require DiffEngine.Result
+
+  DiffEngine.Result.alias_result_structs()
 
   test "start time diff" do
     now = DateTime.utc_now()
@@ -18,6 +21,66 @@ defmodule DiffEngine.EventDiffTest do
 
     diff = EventDiff.diff_start_time(prev, next)
 
-    assert %StartTimeChanged{new_start_time: ^new_time} = diff
+    assert %StartTimeChanged{start_time: ^new_time} = diff
+  end
+
+  test "status diff" do
+    prev = %Event{active?: false}
+    next = %Event{active?: false}
+
+    diff = EventDiff.diff_status(prev, next)
+
+    assert diff == NoDiff.value()
+
+    next = %Event{active?: true}
+
+    diff = EventDiff.diff_status(prev, next)
+
+    assert %StatusChanged{active?: true} = diff
+  end
+
+  test "live diff" do
+    prev = %Event{live?: false}
+    next = %Event{live?: false}
+
+    diff = EventDiff.diff_status(prev, next)
+
+    assert diff == NoDiff.value()
+
+    next = %Event{live?: true}
+
+    diff = EventDiff.diff_live_status(prev, next)
+
+    assert %LiveStatusChanged{live?: true} = diff
+  end
+
+  test "display order diff" do
+    prev = %Event{display_order: 1}
+    next = %Event{display_order: 1}
+
+    diff = EventDiff.diff_status(prev, next)
+
+    assert diff == NoDiff.value()
+
+    next = %Event{display_order: 2}
+
+    diff = EventDiff.diff_display_order(prev, next)
+
+    assert %DisplayOrderChanged{display_order: 2} = diff
+  end
+
+  test "visibility diff" do
+    prev = %Event{displayed?: false}
+    next = %Event{displayed?: false}
+
+    diff = EventDiff.diff_status(prev, next)
+
+    assert diff == NoDiff.value()
+
+    next = %Event{displayed?: true}
+
+    diff = EventDiff.diff_visibility(prev, next)
+
+    assert %VisibilityChanged{displayed?: true} = diff
   end
 end
