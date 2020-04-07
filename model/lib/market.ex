@@ -4,6 +4,7 @@ defmodule Model.Market do
     :type_id,
     :active?,
     :modifier,
+    :order,
     displayed?: true,
     selections: []
   ]

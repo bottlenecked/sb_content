@@ -33,7 +33,7 @@ defmodule Geneity.ParserTest do
                id: 200_196_701,
                type_id: "MRES",
                active?: true,
-               displayed?: true,
+               displayed?: false,
                selections: selections
              }
              | _

@@ -11,6 +11,9 @@ defmodule Geneity.Parser.MarketParser do
         {"status", status}, acc ->
           [{:active?, status == "A"} | acc]
 
+        {"displayed", status}, acc ->
+          [{:displayed?, status == "Y"} | acc]
+
         {"mkt_sort", type}, acc ->
           [{:type_id, type} | acc]
 
@@ -38,7 +41,14 @@ defmodule Geneity.Parser.MarketParser do
 
   def handle_event(:end_element, "Ev", state) do
     %{markets: markets} = state
-    {:ok, %{state | markets: Enum.reverse(markets)}}
+
+    markets =
+      markets
+      |> Enum.reverse()
+      |> Enum.with_index()
+      |> Enum.map(fn {mkt, idx} -> %{mkt | order: idx} end)
+
+    {:ok, %{state | markets: markets}}
   end
 
   def handle_event(_type, _data, state), do: {:ok, state}

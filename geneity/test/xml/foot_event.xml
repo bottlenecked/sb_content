@@ -98,7 +98,7 @@
             <Player first_name="Wanderson" last_name="Melo" name="Βάντερσον" team_id="107978" player_id="19138210" position="MIDF"/>
             <Player first_name="Daniel" last_name="Stojkovic" name="Daniel Stojkovic" team_id="107953" player_id="18983461" position="DEFN"/>
           </Players>
-          <Mkt status="A" name="Τελικό Αποτέλεσμα" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200196701" inplay_avail="Y" disporder="-99000" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Αγώνες">
+          <Mkt status="A" name="Τελικό Αποτέλεσμα" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="N" mkt_id="200196701" inplay_avail="Y" disporder="-99000" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Αγώνες">
             <Seln status="A" name="Νέμαν Γκρόντνο" seln_id="848691656" team_id="107953" disporder="1" seln_sort="H">
               <Price prc_type="LP" dec_prc="2.85" bet_ref="ODQ4NjkxNjU2OjM3LzIwOjow" frac_prc="37/20" us_prc="+185" last_change="2020-03-29T15:18:47"/>
             </Seln>
