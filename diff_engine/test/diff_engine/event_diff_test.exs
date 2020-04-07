@@ -3,9 +3,15 @@ defmodule DiffEngine.EventDiffTest do
   alias Model.Event
   alias DiffEngine.EventDiff
 
-  require DiffEngine.Result
+  alias DiffEngine.Result.NoDiff
 
-  DiffEngine.Result.alias_result_structs()
+  alias DiffEngine.Result.Event.{
+    StartTimeChanged,
+    StatusChanged,
+    LiveStatusChanged,
+    DisplayOrderChanged,
+    VisibilityChanged
+  }
 
   test "start time diff" do
     now = DateTime.utc_now()
