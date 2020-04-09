@@ -3,7 +3,7 @@ defmodule DiffEngine.MarketDiffTest do
 
   alias Model.{Event, Market}
   alias DiffEngine.MarketDiff
-  alias DiffEngine.Result.Market.{MarketRemoved, MarketCreated}
+  alias DiffEngine.Result.Market.{MarketRemoved, MarketCreated, MarketOrderChanged}
 
   test "markets tracked correctly when added or removed" do
     prev_markets =
@@ -27,6 +27,38 @@ defmodule DiffEngine.MarketDiffTest do
              %MarketRemoved{event_id: ev_id, market_id: 2},
              %MarketCreated{event_id: ev_id, market: %Market{id: 6}},
              %MarketCreated{event_id: ev_id, market: %Market{id: 7}}
+           ] = diffs
+  end
+
+  test "market order changed test" do
+    prev_markets =
+      [
+        {1, 1},
+        {2, 2},
+        {3, 3}
+      ]
+      |> Enum.map(fn {id, order} -> %Market{id: id, order: order} end)
+
+    next_markets =
+      [
+        # swap first and third markets
+        {1, 3},
+        {2, 2},
+        {3, 1}
+      ]
+      |> Enum.map(fn {id, order} -> %Market{id: id, order: order} end)
+
+    ev_id = 1
+
+    diffs =
+      MarketDiff.diff(%Event{id: ev_id, markets: prev_markets}, %Event{
+        id: ev_id,
+        markets: next_markets
+      })
+
+    assert [
+             %MarketOrderChanged{event_id: ev_id, market_id: 1, order: 3},
+             %MarketOrderChanged{event_id: ev_id, market_id: 3, order: 1}
            ] = diffs
   end
 end
