@@ -6,7 +6,8 @@ defmodule DiffEngine.MarketDiff do
     MarketRemoved,
     MarketCreated,
     MarketOrderChanged,
-    MarketStatusChanged
+    MarketStatusChanged,
+    MarketVisibilityChanged
   }
 
   def diff(%{markets: prev_markets}, %{id: ev_id, markets: next_markets}) do
@@ -33,7 +34,8 @@ defmodule DiffEngine.MarketDiff do
 
     comparison_funs = [
       &diff_order/2,
-      &diff_status/2
+      &diff_status/2,
+      &diff_visibility/2
     ]
 
     comparison_results =
@@ -60,6 +62,13 @@ defmodule DiffEngine.MarketDiff do
 
   def diff_status(_prev, %Market{active?: next_value, id: id}),
     do: %MarketStatusChanged{market_id: id, active?: next_value}
+
+  def diff_visibility(%Market{displayed?: prev_value}, %Market{displayed?: next_value})
+      when prev_value == next_value,
+      do: NoDiff.value()
+
+  def diff_visibility(_prev, %Market{displayed?: next_value, id: id}),
+    do: %MarketVisibilityChanged{market_id: id, displayed?: next_value}
 
   defp detect_missing_markets(base_line, target) do
     base_line

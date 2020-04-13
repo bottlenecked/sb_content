@@ -8,7 +8,8 @@ defmodule DiffEngine.MarketDiffTest do
     MarketRemoved,
     MarketCreated,
     MarketOrderChanged,
-    MarketStatusChanged
+    MarketStatusChanged,
+    MarketVisibilityChanged
   }
 
   test "markets tracked correctly when added or removed" do
@@ -94,6 +95,35 @@ defmodule DiffEngine.MarketDiffTest do
 
     assert [
              %MarketStatusChanged{event_id: ev_id, market_id: 2, active?: true}
+           ] = diffs
+  end
+
+  test "market visibility changed test" do
+    prev_markets =
+      [
+        {1, true},
+        {2, false}
+      ]
+      |> Enum.map(fn {id, value} -> %Market{id: id, displayed?: value} end)
+
+    next_markets =
+      [
+        # make 2nd market displayed
+        {1, true},
+        {2, true}
+      ]
+      |> Enum.map(fn {id, value} -> %Market{id: id, displayed?: value} end)
+
+    ev_id = 1
+
+    diffs =
+      MarketDiff.diff(%Event{id: ev_id, markets: prev_markets}, %Event{
+        id: ev_id,
+        markets: next_markets
+      })
+
+    assert [
+             %MarketVisibilityChanged{event_id: ev_id, market_id: 2, displayed?: true}
            ] = diffs
   end
 end
