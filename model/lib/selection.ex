@@ -5,6 +5,7 @@ defmodule Model.Selection do
     :active?,
     :displayed?,
     :modifier,
-    :price_decimal
+    :price_decimal,
+    :order
   ]
 end

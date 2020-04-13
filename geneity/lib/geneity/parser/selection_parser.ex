@@ -46,5 +46,20 @@ defmodule Geneity.Parser.SelectionParser do
     {:ok, %{state | markets: [market | rest_markets]}}
   end
 
+  def handle_event(:end_element, "Mkt", state) do
+    %{markets: [market | rest]} = state
+    %{selections: selections} = market
+
+    selections =
+      selections
+      |> Enum.reverse()
+      |> Enum.with_index()
+      |> Enum.map(fn {seln, index} -> %{seln | order: index} end)
+
+    market = %{market | selections: selections}
+
+    {:ok, %{state | markets: [market | rest]}}
+  end
+
   def handle_event(_, _, state), do: {:ok, state}
 end

@@ -46,7 +46,8 @@ defmodule Geneity.ParserTest do
                id: 848_691_656,
                type_id: "H",
                active?: true,
-               price_decimal: 2.85
+               price_decimal: 2.85,
+               order: 0
              }
              | _
            ] = selections
