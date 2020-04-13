@@ -1,7 +1,13 @@
 defmodule DiffEngine.MarketDiff do
   alias Model.Market
   alias DiffEngine.Result.NoDiff
-  alias DiffEngine.Result.Market.{MarketRemoved, MarketCreated, MarketOrderChanged}
+
+  alias DiffEngine.Result.Market.{
+    MarketRemoved,
+    MarketCreated,
+    MarketOrderChanged,
+    MarketStatusChanged
+  }
 
   def diff(%{markets: prev_markets}, %{id: ev_id, markets: next_markets}) do
     next_markets_map = markets_to_map(next_markets)
@@ -25,13 +31,15 @@ defmodule DiffEngine.MarketDiff do
       |> Enum.map(fn mkt -> {mkt, Map.get(next_markets_map, mkt.id)} end)
       |> Enum.filter(fn {_prev, next} -> next != nil end)
 
-    diff_funs = [
-      &diff_order/2
+    comparison_funs = [
+      &diff_order/2,
+      &diff_status/2
     ]
 
     comparison_results =
-      for {prev_market, next_market} <- market_pairs_to_compare, diff_fun <- diff_funs do
-        diff_fun.(prev_market, next_market)
+      for {prev_market, next_market} <- market_pairs_to_compare,
+          comparison_fun <- comparison_funs do
+        comparison_fun.(prev_market, next_market)
       end
       |> Enum.filter(fn res -> res != NoDiff.value() end)
 
@@ -45,6 +53,13 @@ defmodule DiffEngine.MarketDiff do
 
   def diff_order(_prev, %Market{order: next_value, id: id}),
     do: %MarketOrderChanged{market_id: id, order: next_value}
+
+  def diff_status(%Market{active?: prev_value}, %Market{active?: next_value})
+      when prev_value == next_value,
+      do: NoDiff.value()
+
+  def diff_status(_prev, %Market{active?: next_value, id: id}),
+    do: %MarketStatusChanged{market_id: id, active?: next_value}
 
   defp detect_missing_markets(base_line, target) do
     base_line
