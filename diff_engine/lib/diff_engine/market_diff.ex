@@ -10,6 +10,8 @@ defmodule DiffEngine.MarketDiff do
     MarketVisibilityChanged
   }
 
+  alias DiffEngine.SelectionDiff
+
   def diff(%{markets: prev_markets}, %{id: ev_id, markets: next_markets}) do
     next_markets_map = markets_to_map(next_markets)
     prev_markets_map = markets_to_map(prev_markets)
@@ -35,7 +37,8 @@ defmodule DiffEngine.MarketDiff do
     comparison_funs = [
       &diff_order/2,
       &diff_status/2,
-      &diff_visibility/2
+      &diff_visibility/2,
+      &SelectionDiff.diff/2
     ]
 
     comparison_results =
@@ -43,6 +46,7 @@ defmodule DiffEngine.MarketDiff do
           comparison_fun <- comparison_funs do
         comparison_fun.(prev_market, next_market)
       end
+      |> List.flatten()
       |> Enum.filter(fn res -> res != NoDiff.value() end)
 
     (removed_markets_results ++ created_markets_results ++ comparison_results)
