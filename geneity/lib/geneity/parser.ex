@@ -1,5 +1,6 @@
 defmodule Geneity.Parser do
   @behaviour Saxy.Handler
+
   alias Model.Event
 
   alias Geneity.Parser.{EventParser, MarketParser, SelectionParser, TeamParser}
@@ -7,8 +8,8 @@ defmodule Geneity.Parser do
 
   @spec parse_event_xml(String.t()) :: Event.t()
   def parse_event_xml(xml_content) do
-    {:ok, xml} = Saxy.parse_string(xml_content, Geneity.Parser, %Event{})
-    xml
+    {:ok, event} = Saxy.parse_string(xml_content, __MODULE__, %Event{})
+    event
   end
 
   @impl true

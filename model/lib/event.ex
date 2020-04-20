@@ -6,7 +6,6 @@ defmodule Model.Event do
     :sport_id,
     :zone_id,
     :league_id,
-    :event_id,
     :br_match_id,
     :active?,
     :start_time,
