@@ -6,10 +6,22 @@ defmodule Geneity.Parser do
   alias Geneity.Parser.{EventParser, MarketParser, SelectionParser, TeamParser}
   alias Geneity.Parser.SportData.{SoccerParser}
 
-  @spec parse_event_xml(String.t()) :: Event.t()
+  @spec parse_event_xml(String.t() | iolist()) :: Event.t()
+  def parse_event_xml(xml_content)
+
+  def parse_event_xml(xml_content) when is_binary(xml_content) do
+    Saxy.parse_string(xml_content, __MODULE__, %Event{})
+  end
+
   def parse_event_xml(xml_content) do
-    {:ok, event} = Saxy.parse_string(xml_content, __MODULE__, %Event{})
-    event
+    Saxy.parse_stream(xml_content, __MODULE__, %Event{})
+  end
+
+  def parse_event_xml!(xml_content) do
+    case parse_event_xml(xml_content) do
+      {:ok, event} -> event
+      {:error, reason} -> raise reason
+    end
   end
 
   @impl true

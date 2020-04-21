@@ -1,3 +1,5 @@
 %{
+  "freshness": {:hex, :freshness, "0.2.0", "ea0282b93f83317b1d7384b87e5bfbd98bb44aab1a6f32109dd95fc8639ea8db", [:mix], [{:mint, "~> 1.0", [hex: :mint, repo: "hexpm", optional: false]}], "hexpm", "f63b52ba7d4b0e151a9c8ce059a9c9ecf45f35723b8567dde692ca48d1a21df0"},
+  "mint": {:hex, :mint, "1.0.0", "ca5ab33497ba2bdcc42f6cdd3927420a6159116be87c8173658e93c8746703da", [:mix], [{:castore, "~> 0.1.0", [hex: :castore, repo: "hexpm", optional: true]}], "hexpm", "b8943ef1e630879538dd6620bfc189d4d75fab3ad39f3fe9c50539879f7efd84"},
   "saxy": {:hex, :saxy, "1.1.0", "7f31951a120f6c14bbbd03c7b9dc20a555247c253fdf0f38e4c7284ee15b9bda", [:mix], [], "hexpm", "1865c9a3e24c783fbe364a556c4dba6bb1b1ee06e178d413ac40297b8695872e"},
 }
