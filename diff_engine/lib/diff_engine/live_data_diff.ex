@@ -7,8 +7,8 @@ defprotocol DiffEngine.LiveDataDiff do
 end
 
 defimpl DiffEngine.LiveDataDiff, for: Model.Event do
-  def diff(%{live_data: prev}, %{live_data: next}, _ev_id),
-    do: DiffEngine.LiveDataDiff.diff(prev, next, prev.id)
+  def diff(%{live_data: prev, id: id}, %{live_data: next}, _ev_id),
+    do: DiffEngine.LiveDataDiff.diff(prev, next, id)
 end
 
 defimpl DiffEngine.LiveDataDiff, for: Any do
