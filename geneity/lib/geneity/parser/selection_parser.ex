@@ -22,6 +22,10 @@ defmodule Geneity.Parser.SelectionParser do
           acc
       end)
 
+    # geneity does not set the displayed attribute on selections,
+    # but we need to support it in our system, so we set it always to true
+    fields = [{:displayed?, true} | fields]
+
     selection = struct!(Selection, fields)
     %{markets: [market | rest_markets]} = state
     market = %{market | selections: [selection | market.selections]}

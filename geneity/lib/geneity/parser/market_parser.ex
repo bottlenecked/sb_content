@@ -11,8 +11,8 @@ defmodule Geneity.Parser.MarketParser do
         {"status", status}, acc ->
           [{:active?, status == "A"} | acc]
 
-        {"displayed", status}, acc ->
-          [{:displayed?, status == "Y"} | acc]
+        {"displayed", displayed}, acc ->
+          [{:displayed?, displayed == "Y"} | acc]
 
         {"mkt_sort", type}, acc ->
           [{:type_id, type} | acc]

@@ -1,206 +1,134 @@
-<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgyNTgxMzQ2Njo0OmVs" version="1.0" request="get_inplay_event_detail">
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzNTYwOTIzNTo0OmVs" version="1.0" request="get_inplay_event_detail">
   <Sport sport_code="TABL" allow_cash_out="Y" name="Πινγκ πονγκ" disporder="4">
     <SBClass sb_class_id="189435" disporder="0" name="Ρωσία">
       <SBType sb_type_id="194227" name="Liga Pro" disporder="0">
-        <Ev inplay_allowed="Y" status="A" name="Αλεξάντερ Γκρίμπκοφ - Αλεξάντρ Πετρόβ" allow_cash_out="Y" start_time="2020-03-29T19:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="21" ev_id="5149660" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Σεργκέι Κούζμιν - Βλαντιμίρ Ζουλιάμπιν" allow_cash_out="Y" start_time="2020-04-21T10:30:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="7" ev_id="5278885" disporder="0">
           <Notes>Best of 5</Notes>
-          <EvDetail br_match_id="21783527"/>
-          <Inplay inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-03-29T19:15:45" inplay_period_finished="N" score_a="1" score_b="0" inplay_period_name="Ζωντανά" clock_mode="FORWARD" inplay_period="live" score_string="1-0" scoring_system="match" last_change="2020-03-29T19:15:33" inplay_secs="253">
+          <EvDetail br_match_id="21881173"/>
+          <Inplay inplay_period_num="3" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-21T10:42:39" inplay_period_finished="Y" score_a="1" score_b="1" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="1-1" scoring_system="match" last_change="2020-04-21T10:39:24" inplay_secs="196">
             <Scores/>
           </Inplay>
-          <InplayDetail period_length_mins="0" period_start="2020-03-29T19:11:32" period_stoppage_secs="0" score_team_B="0" score_team_A="1"/>
+          <InplayDetail period_length_mins="0" period_start="2020-04-21T10:33:06" period_stoppage_secs="0" score_team_B="1" score_team_A="1"/>
           <Incidents>
-            <Incident incident_id="189421521" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T19:11:32" inplay_period="live" type="PBEG"/>
-            <Incident incident_id="189421520" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-03-29T19:11:32" inplay_period="match_started" type="EBEG"/>
+            <Incident incident_id="190267541" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:42:27" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267504" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:42:06" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267492" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:41:55" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267473" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:41:43" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267461" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:41:33" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267450" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:41:24" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267434" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:41:06" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267427" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:40:58" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267412" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:40:42" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267390" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:40:29" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267376" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:40:15" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267373" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:40:13" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267301" description="Έναρξη σετ 3" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:39:23" inplay_period="intermission" type="SSRT"/>
+            <Incident incident_id="190267300" description="Νικητής Σετ: Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:39:23" inplay_period="intermission" type="SWIN"/>
+            <Incident incident_id="190267299" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:39:23" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267297" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:39:19" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267275" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:38:59" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267246" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:38:43" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267218" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:38:14" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267212" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:38:03" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267208" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:38:00" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267207" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:38:00" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267180" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:37:38" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267170" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:37:29" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267138" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:37:04" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267137" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:37:04" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267119" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:36:51" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267101" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:36:35" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267073" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:36:23" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267055" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:36:12" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190267000" description="Έναρξη σετ 2" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:35:32" inplay_period="intermission" type="SSRT"/>
+            <Incident incident_id="190266999" description="Νικητής Σετ: Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:35:32" inplay_period="intermission" type="SWIN"/>
+            <Incident incident_id="190266998" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:35:32" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266978" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:35:18" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266966" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:35:12" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266951" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:35:01" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266932" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:34:51" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266914" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:34:36" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266898" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:34:22" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266890" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:34:15" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266857" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:59" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266844" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:47" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266835" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:40" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266812" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:33:22" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266803" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:16" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266792" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:13" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266788" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:33:10" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266782" description="Τον πόντο κέρδισε ο/η Zhulyabin" inplay_period_mins="1" player1_id="19149333" inplay_total_mins="1" time="2020-04-21T10:33:09" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266778" description="Τον πόντο κέρδισε ο/η Kuzmin" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:07" inplay_period="live" type="PWIN"/>
+            <Incident incident_id="190266771" description="Έναρξη σετ 1" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:06" inplay_period="intermission" type="SSRT"/>
+            <Incident incident_id="190266770" description="Έναρξη αγώνα" inplay_period_mins="1" player1_id="19139310" inplay_total_mins="1" time="2020-04-21T10:33:06" inplay_period="match_started" type="EBEG"/>
           </Incidents>
           <Players/>
-          <Mkt status="A" name="Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200656975" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850626265" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.142" bet_ref="ODUwNjI2MjY1OjEvNzo6MA" frac_prc="1/7" us_prc="-700" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" name="Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202277625" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Σεργκέι Κούζμιν" seln_id="856739128" disporder="0" player_id="19139310" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.153" bet_ref="ODU2NzM5MTI4OjIvMTM6OjA" frac_prc="2/13" us_prc="-650" last_change="2020-04-21T10:42:31"/>
             </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850626266" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="5.20" bet_ref="ODUwNjI2MjY2OjIxLzU6OjA" frac_prc="21/5" us_prc="+420" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657472" handicap="73.5" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
-            <Seln status="A" name="Over" handicap="73.5" seln_id="850627926" disporder="-100" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODUwNjI3OTI2OjE5LzIwOjI5NDow" frac_prc="19/20" us_prc="-106" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="73.5" seln_id="850627925" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODUwNjI3OTI1OjQvNToyOTQ6MA" frac_prc="4/5" us_prc="-125" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" name="Βλαντιμίρ Ζουλιάμπιν" seln_id="856739129" disporder="1" player_id="19149333" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="5.00" bet_ref="ODU2NzM5MTI5OjQvMTo6MA" frac_prc="4/1" us_prc="+400" last_change="2020-04-21T10:42:28"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" mkt_extra="S02" name="Νικητής Σετ (Σετ 2)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657571" inplay_avail="Y" disporder="2" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="STWN" lp_avail="Y" mkt_sort_name="Νικητής Σετ">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850628309" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.47" bet_ref="ODUwNjI4MzA5OjQ3LzEwMDo6MA" frac_prc="47/100" us_prc="-213" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" name="Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202341715" handicap="70.5" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="70.5" seln_id="856961107" disporder="-100" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.90" bet_ref="ODU2OTYxMTA3OjkvMTA6MjgyOjA" frac_prc="9/10" us_prc="-112" last_change="2020-04-21T10:34:51"/>
             </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850628310" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="2.55" bet_ref="ODUwNjI4MzEwOjMxLzIwOjow" frac_prc="31/20" us_prc="+155" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Χάντικαπ Πόντων" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657452" handicap="-7.5" inplay_avail="Y" disporder="4" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FAHP" lp_avail="Y" mkt_sort_name="MKT_SORT-FAHP">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" handicap="-7.5" seln_id="850627885" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODUwNjI3ODg1OjEvMTotMzA6MA" frac_prc="1/1" us_prc="+100" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" handicap="+7.5" seln_id="850627886" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNjI3ODg2OjMvNDotMzA6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" name="Under" handicap="70.5" seln_id="856961106" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODU2OTYxMTA2OjE3LzIwOjI4Mjow" frac_prc="17/20" us_prc="-118" last_change="2020-04-21T10:34:51"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="2ο Σετ - Χάντικαπ Πόντων" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657567" handicap="-3.5" inplay_avail="Y" disporder="6" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHP2" lp_avail="Y" mkt_sort_name="MKT_SORT-FHP2">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" handicap="-3.5" seln_id="850628301" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="2.625" bet_ref="ODUwNjI4MzAxOjEzLzg6LTE0OjA" frac_prc="13/8" us_prc="+162" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" name="Χάντικαπ Πόντων" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202341641" handicap="-8.5" inplay_avail="Y" disporder="4" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FAHP" lp_avail="Y" mkt_sort_name="MKT_SORT-FAHP">
+            <Seln status="A" name="Σεργκέι Κούζμιν" handicap="-8.5" seln_id="856960737" disporder="0" player_id="19139310" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.12" bet_ref="ODU2OTYwNzM3OjI4LzI1Oi0zNDow" frac_prc="28/25" us_prc="+112" last_change="2020-04-21T10:42:28"/>
             </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" handicap="+3.5" seln_id="850628302" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="1.444" bet_ref="ODUwNjI4MzAyOjQvOTotMTQ6MA" frac_prc="4/9" us_prc="-225" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="2ο Σετ - Χάντικαπ Πόντων" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657566" handicap="-2.5" inplay_avail="Y" disporder="6" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHP2" lp_avail="Y" mkt_sort_name="MKT_SORT-FHP2">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" handicap="-2.5" seln_id="850628299" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="2.08" bet_ref="ODUwNjI4Mjk5OjI3LzI1Oi0xMDow" frac_prc="27/25" us_prc="+108" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" handicap="+2.5" seln_id="850628300" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODUwNjI4MzAwOjcvMTA6LTEwOjA" frac_prc="7/10" us_prc="-143" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" name="Βλαντιμίρ Ζουλιάμπιν" handicap="+8.5" seln_id="856960738" disporder="1" player_id="19149333" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODU2OTYwNzM4OjQvNjotMzQ6MA" frac_prc="4/6" us_prc="-150" last_change="2020-04-21T10:42:28"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="2ο Σετ - Χάντικαπ Πόντων" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657568" handicap="+2.5" inplay_avail="Y" disporder="6" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHP2" lp_avail="Y" mkt_sort_name="MKT_SORT-FHP2">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" handicap="+2.5" seln_id="850628303" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.222" bet_ref="ODUwNjI4MzAzOjIvOToxMDow" frac_prc="2/9" us_prc="-450" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" mkt_extra="P015" name="3ο Σετ - Ποιος θα σκοράρει τον πόντο; (Πόντος 15)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202342481" inplay_avail="Y" disporder="14" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="P3SP" lp_avail="Y" mkt_sort_name="MKT_SORT-P3SP">
+            <Seln status="A" name="Σεργκέι Κούζμιν" seln_id="856963532" disporder="0" player_id="19139310" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODU2OTYzNTMyOjQvNjo6MA" frac_prc="4/6" us_prc="-150" last_change="2020-04-21T10:41:34"/>
             </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" handicap="-2.5" seln_id="850628304" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="4.00" bet_ref="ODUwNjI4MzA0OjMvMToxMDow" frac_prc="3/1" us_prc="+300" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="2ο Σετ - Χάντικαπ Πόντων" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657569" handicap="+3.5" inplay_avail="Y" disporder="6" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHP2" lp_avail="Y" mkt_sort_name="MKT_SORT-FHP2">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" handicap="+3.5" seln_id="850628305" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.133" bet_ref="ODUwNjI4MzA1OjIvMTU6MTQ6MA" frac_prc="2/15" us_prc="-750" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" handicap="-3.5" seln_id="850628306" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="5.25" bet_ref="ODUwNjI4MzA2OjE3LzQ6MTQ6MA" frac_prc="17/4" us_prc="+425" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" name="Βλαντιμίρ Ζουλιάμπιν" seln_id="856963533" disporder="1" player_id="19149333" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.12" bet_ref="ODU2OTYzNTMzOjI4LzI1Ojow" frac_prc="28/25" us_prc="+112" last_change="2020-04-21T10:41:34"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" mkt_extra="P005" name="2ο Σετ - Ποιος θα σκοράρει τον πόντο; (Πόντος 5)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657562" inplay_avail="Y" disporder="13" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="P2SP" lp_avail="Y" mkt_sort_name="MKT_SORT-P2SP">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850628291" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODUwNjI4MjkxOjMvNDo6MA" frac_prc="3/4" us_prc="-134" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" name="Ακριβές Σετ Σκορ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202340411" inplay_avail="Y" disporder="19" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="PCSM" lp_avail="Y" mkt_sort_name="MKT_SORT-PCSM">
+            <Seln status="A" seln_id="856957346" seln_sort="1-3" name="1:3" disporder="1003">
+              <Price prc_type="LP" dec_prc="76.00" bet_ref="ODU2OTU3MzQ2Ojc1LzE6OjA" frac_prc="75/1" us_prc="+7500" last_change="2020-04-21T10:42:28"/>
             </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850628292" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODUwNjI4MjkyOjEvMTo6MA" frac_prc="1/1" us_prc="+100" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957348" seln_sort="2-3" name="2:3" disporder="2003">
+              <Price prc_type="LP" dec_prc="5.00" bet_ref="ODU2OTU3MzQ4OjQvMTo6MA" frac_prc="4/1" us_prc="+400" last_change="2020-04-21T10:42:11"/>
             </Seln>
-          </Mkt>
-          <Mkt status="A" name="Ακριβές Σετ Σκορ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657353" inplay_avail="Y" disporder="19" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="PCSM" lp_avail="Y" mkt_sort_name="MKT_SORT-PCSM">
-            <Seln status="A" seln_id="850627569" seln_sort="1-3" name="1:3" disporder="1003">
-              <Price prc_type="LP" dec_prc="12.25" bet_ref="ODUwNjI3NTY5OjQ1LzQ6OjA" frac_prc="45/4" us_prc="+1125" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957351" seln_sort="3-1" name="3:1" disporder="3001">
+              <Price prc_type="LP" dec_prc="1.50" bet_ref="ODU2OTU3MzUxOjEvMjo6MA" frac_prc="1/2" us_prc="-200" last_change="2020-04-21T10:42:28"/>
             </Seln>
-            <Seln status="A" seln_id="850627571" seln_sort="2-3" name="2:3" disporder="2003">
-              <Price prc_type="LP" dec_prc="8.00" bet_ref="ODUwNjI3NTcxOjcvMTo6MA" frac_prc="7/1" us_prc="+700" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627573" seln_sort="3-0" name="3:0" disporder="3000">
-              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODUwNjI3NTczOjYvNTo6MA" frac_prc="6/5" us_prc="+120" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627574" seln_sort="3-1" name="3:1" disporder="3001">
-              <Price prc_type="LP" dec_prc="3.25" bet_ref="ODUwNjI3NTc0OjkvNDo6MA" frac_prc="9/4" us_prc="+225" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627572" seln_sort="3-2" name="3:2" disporder="3002">
-              <Price prc_type="LP" dec_prc="5.60" bet_ref="ODUwNjI3NTcyOjIzLzU6OjA" frac_prc="23/5" us_prc="+460" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957349" seln_sort="3-2" name="3:2" disporder="3002">
+              <Price prc_type="LP" dec_prc="3.65" bet_ref="ODU2OTU3MzQ5OjUzLzIwOjow" frac_prc="53/20" us_prc="+265" last_change="2020-04-21T10:42:11"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="Αριθμός Σετ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657367" inplay_avail="Y" disporder="20" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="NMST" lp_avail="Y" mkt_sort_name="Αριθμός Σετ στον αγώνα">
-            <Seln status="A" seln_id="850627605" disporder="0" name="3">
-              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODUwNjI3NjA1OjYvNTo6MA" frac_prc="6/5" us_prc="+120" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" name="Αριθμός Σετ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202340413" inplay_avail="Y" disporder="20" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="NMST" lp_avail="Y" mkt_sort_name="Αριθμός Σετ στον αγώνα">
+            <Seln status="A" seln_id="856957356" disporder="0" name="4">
+              <Price prc_type="LP" dec_prc="1.50" bet_ref="ODU2OTU3MzU2OjEvMjo6MA" frac_prc="1/2" us_prc="-200" last_change="2020-04-21T10:41:56"/>
             </Seln>
-            <Seln status="A" seln_id="850627607" disporder="0" name="4">
-              <Price prc_type="LP" dec_prc="2.65" bet_ref="ODUwNjI3NjA3OjMzLzIwOjow" frac_prc="33/20" us_prc="+165" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627606" disporder="0" name="5">
-              <Price prc_type="LP" dec_prc="3.60" bet_ref="ODUwNjI3NjA2OjEzLzU6OjA" frac_prc="13/5" us_prc="+260" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957355" disporder="0" name="5">
+              <Price prc_type="LP" dec_prc="2.25" bet_ref="ODU2OTU3MzU1OjUvNDo6MA" frac_prc="5/4" us_prc="+125" last_change="2020-04-21T10:41:56"/>
             </Seln>
           </Mkt>
-          <Mkt status="A" name="2ο Σετ - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657560" handicap="17.5" inplay_avail="Y" disporder="22" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
-            <Seln status="A" name="Over" handicap="17.5" seln_id="850628287" disporder="-22" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.47" bet_ref="ODUwNjI4Mjg3OjQ3LzEwMDo3MDow" frac_prc="47/100" us_prc="-213" last_change="2020-03-29T19:15:33"/>
+          <Mkt status="A" name="Πόσα Σετ θα κριθούν σε &quot;παράταση&quot;" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202340417" inplay_avail="Y" disporder="34" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SESL" lp_avail="Y" mkt_sort_name="Number of Sets to Exceed Score Limit">
+            <Seln status="A" seln_id="856957364" seln_sort="0-0" name="0" disporder="0">
+              <Price prc_type="LP" dec_prc="1.222" bet_ref="ODU2OTU3MzY0OjIvOTo6MA" frac_prc="2/9" us_prc="-450" last_change="2020-04-21T10:42:28"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="17.5" seln_id="850628288" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="2.55" bet_ref="ODUwNjI4Mjg4OjMxLzIwOjcwOjA" frac_prc="31/20" us_prc="+155" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957363" seln_sort="1-1" name="1" disporder="1">
+              <Price prc_type="LP" dec_prc="3.70" bet_ref="ODU2OTU3MzYzOjI3LzEwOjow" frac_prc="27/10" us_prc="+270" last_change="2020-04-21T10:42:28"/>
             </Seln>
-          </Mkt>
-          <Mkt status="A" name="2ο Σετ - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657565" handicap="18.5" inplay_avail="Y" disporder="22" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
-            <Seln status="A" name="Over" handicap="18.5" seln_id="850628297" disporder="-22" seln_sort="O">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNjI4Mjk3Ojg3LzEwMDo3NDow" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957366" seln_sort="2-2" name="2" disporder="2">
+              <Price prc_type="LP" dec_prc="29.00" bet_ref="ODU2OTU3MzY2OjI4LzE6OjA" frac_prc="28/1" us_prc="+2800" last_change="2020-04-21T10:42:28"/>
             </Seln>
-            <Seln status="A" name="Under" handicap="18.5" seln_id="850628298" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODUwNjI4Mjk4Ojg3LzEwMDo3NDow" frac_prc="87/100" us_prc="-115" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="2ο Σετ - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657564" handicap="19.5" inplay_avail="Y" disporder="22" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
-            <Seln status="A" name="Over" handicap="19.5" seln_id="850628295" disporder="-22" seln_sort="O">
-              <Price prc_type="LP" dec_prc="2.65" bet_ref="ODUwNjI4Mjk1OjMzLzIwOjc4OjA" frac_prc="33/20" us_prc="+165" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="19.5" seln_id="850628296" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.44" bet_ref="ODUwNjI4Mjk2OjExLzI1Ojc4OjA" frac_prc="11/25" us_prc="-228" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="2ο Σετ - Συνολικοί Πόντοι" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657573" handicap="20.5" inplay_avail="Y" disporder="22" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FP2O" lp_avail="Y" mkt_sort_name="2nd Period Total Points (Over/Under)">
-            <Seln status="A" name="Over" handicap="20.5" seln_id="850628313" disporder="-22" seln_sort="O">
-              <Price prc_type="LP" dec_prc="5.00" bet_ref="ODUwNjI4MzEzOjQvMTo4Mjow" frac_prc="4/1" us_prc="+400" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Under" handicap="20.5" seln_id="850628314" disporder="0" seln_sort="U">
-              <Price prc_type="LP" dec_prc="1.153" bet_ref="ODUwNjI4MzE0OjIvMTM6ODI6MA" frac_prc="2/13" us_prc="-650" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="2ο Σετ - Μονά/Ζυγά" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657572" inplay_avail="Y" disporder="28" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="P2OE" lp_avail="Y" mkt_sort_name="MKT_SORT-P2OE">
-            <Seln status="A" seln_id="850628312" seln_sort="O" name="Μονά" disporder="0">
-              <Price prc_type="LP" dec_prc="2.40" bet_ref="ODUwNjI4MzEyOjcvNTo6MA" frac_prc="7/5" us_prc="+140" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850628311" seln_sort="E" name="Ζυγά" disporder="1">
-              <Price prc_type="LP" dec_prc="1.533" bet_ref="ODUwNjI4MzExOjgvMTU6OjA" frac_prc="8/15" us_prc="-188" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" name="Πόσα Σετ θα κριθούν σε &quot;παράταση&quot;" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657359" inplay_avail="Y" disporder="34" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SESL" lp_avail="Y" mkt_sort_name="Number of Sets to Exceed Score Limit">
-            <Seln status="A" seln_id="850627586" seln_sort="0-0" name="0" disporder="0">
-              <Price prc_type="LP" dec_prc="1.533" bet_ref="ODUwNjI3NTg2OjgvMTU6OjA" frac_prc="8/15" us_prc="-188" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627585" seln_sort="1-1" name="1" disporder="1">
-              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODUwNjI3NTg1OjkvNTo6MA" frac_prc="9/5" us_prc="+180" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627588" seln_sort="2-2" name="2" disporder="2">
-              <Price prc_type="LP" dec_prc="13.00" bet_ref="ODUwNjI3NTg4OjEyLzE6OjA" frac_prc="12/1" us_prc="+1200" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627587" seln_sort="3-3" name="3" disporder="3">
-              <Price prc_type="LP" dec_prc="31.00" bet_ref="ODUwNjI3NTg3OjMwLzE6OjA" frac_prc="30/1" us_prc="+3000" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" seln_id="850627590" seln_sort="4-4" name="4" disporder="4">
-              <Price prc_type="LP" dec_prc="31.00" bet_ref="ODUwNjI3NTkwOjMwLzE6OjA" frac_prc="30/1" us_prc="+3000" last_change="2020-03-29T19:15:04"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" mkt_extra="P003" name="2ο Σετ - Πρώτος στους Χ πόντους (Πόντος 3)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657558" inplay_avail="Y" disporder="36" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="R2PP" lp_avail="Y" mkt_sort_name="MKT_SORT-R2PP">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850628283" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODUwNjI4MjgzOjQvNjo6MA" frac_prc="4/6" us_prc="-150" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850628284" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="2.12" bet_ref="ODUwNjI4Mjg0OjI4LzI1Ojow" frac_prc="28/25" us_prc="+112" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" mkt_extra="P005" name="2ο Σετ - Πρώτος στους Χ πόντους (Πόντος 5)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657559" inplay_avail="Y" disporder="36" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="R2PP" lp_avail="Y" mkt_sort_name="MKT_SORT-R2PP">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850628285" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.615" bet_ref="ODUwNjI4Mjg1OjgvMTM6OjA" frac_prc="8/13" us_prc="-163" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850628286" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="2.22" bet_ref="ODUwNjI4Mjg2OjYxLzUwOjow" frac_prc="61/50" us_prc="+122" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" mkt_extra="P007" name="2ο Σετ - Πρώτος στους Χ πόντους (Πόντος 7)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657561" inplay_avail="Y" disporder="36" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="R2PP" lp_avail="Y" mkt_sort_name="MKT_SORT-R2PP">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850628289" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.571" bet_ref="ODUwNjI4Mjg5OjQvNzo6MA" frac_prc="4/7" us_prc="-175" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850628290" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="2.30" bet_ref="ODUwNjI4MjkwOjEzLzEwOjow" frac_prc="13/10" us_prc="+130" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-          </Mkt>
-          <Mkt status="A" mkt_extra="P009" name="2ο Σετ - Πρώτος στους Χ πόντους (Πόντος 9)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="200657570" inplay_avail="Y" disporder="36" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="R2PP" lp_avail="Y" mkt_sort_name="MKT_SORT-R2PP">
-            <Seln status="A" name="Αλεξάντερ Γκρίμπκοφ" seln_id="850628307" disporder="0" player_id="19138995" seln_sort="P1">
-              <Price prc_type="LP" dec_prc="1.50" bet_ref="ODUwNjI4MzA3OjEvMjo6MA" frac_prc="1/2" us_prc="-200" last_change="2020-03-29T19:15:33"/>
-            </Seln>
-            <Seln status="A" name="Αλεξάντρ Πετρόβ" seln_id="850628308" disporder="1" player_id="19138212" seln_sort="P2">
-              <Price prc_type="LP" dec_prc="2.45" bet_ref="ODUwNjI4MzA4OjI5LzIwOjow" frac_prc="29/20" us_prc="+145" last_change="2020-03-29T19:15:33"/>
+            <Seln status="A" seln_id="856957365" seln_sort="3-3" name="3" disporder="3">
+              <Price prc_type="LP" dec_prc="29.00" bet_ref="ODU2OTU3MzY1OjI4LzE6OjA" frac_prc="28/1" us_prc="+2800" last_change="2020-04-21T10:42:11"/>
             </Seln>
           </Mkt>
         </Ev>

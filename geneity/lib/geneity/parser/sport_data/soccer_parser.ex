@@ -111,6 +111,9 @@ defmodule Geneity.Parser.SportData.SoccerParser do
       "CMNT" ->
         CommonIncident.comment()
 
+      "GOAL" ->
+        SoccerIncident.goal()
+
       "CRNR" ->
         SoccerIncident.corner()
 

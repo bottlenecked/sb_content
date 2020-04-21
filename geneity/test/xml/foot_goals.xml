@@ -1,0 +1,165 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzNTYwMDgzMzo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="FOOT" allow_cash_out="Y" name="Ποδόσφαιρο" disporder="-300">
+    <SBClass sb_class_id="189438" disporder="0" name="Esports">
+      <SBType sb_type_id="194426" name="Esoccer Battle - Premier League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Liverpool (Chellovekk) Esports - Manchester United (FEARGGWP) Esports" allow_cash_out="Y" start_time="2020-04-21T10:24:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="7" ev_id="5278338" disporder="-325">
+          <Notes>Αγώνας 2X4 λεπτών</Notes>
+          <EvDetail br_match_id="21881401"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="PERIOD_second_half_SHORT" clock_status="TICKING" period_length="240" correct_at="2020-04-21T10:29:41" inplay_period_finished="N" extra_period_length="60" score_a="1" score_b="2" inplay_period_name="Second Half" num_periods="2" clock_mode="FORWARD" inplay_period="second_half" num_extra_periods="2" score_string="1-2" scoring_system="match" last_change="2020-04-21T10:28:07" inplay_secs="285">
+            <Scores>
+              <PeriodScore score_a="1" score_b="2" score_string="1-2" period="1"/>
+              <PeriodScore score_a="1" score_b="2" score_string="1-2" period="2"/>
+            </Scores>
+          </Inplay>
+          <InplayDetail period_length_mins="4" period_start="2020-04-21T10:28:56" period_stoppage_secs="0" score_team_B="2" score_team_A="1"/>
+          <Stats>
+            <Stat name="EV_STAT_GOAL" title="TEAM_STAT_GOAL" type="team" away="2" home="1" stat_type="GOAL"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="190266224" inplay_period_mins="1" inplay_total_mins="5" time="2020-04-21T10:28:56" inplay_period="second_half" type="SYNC"/>
+            <Incident incident_id="190266223" description="Έναρξη Δεύτερου Ημιχρόνου" inplay_period_mins="1" inplay_total_mins="5" time="2020-04-21T10:28:56" inplay_period="second_half" type="PBEG"/>
+            <Incident incident_id="190266217" inplay_period_mins="4" inplay_total_mins="4" time="2020-04-21T10:28:53" inplay_period="half_time" type="SYNC"/>
+            <Incident incident_id="190266216" description="Λήξη Πρώτου Ημιχρόνου" inplay_period_mins="4" inplay_total_mins="4" time="2020-04-21T10:28:53" inplay_period="half_time" type="PEND"/>
+            <Incident incident_id="190266150" description="1-2 Manchester United (FEARGGWP) Esports" inplay_period_mins="4" team_id="1957753" inplay_total_mins="4" time="2020-04-21T10:27:11" inplay_period="first_half" type="GOAL"/>
+            <Incident incident_id="190265784" description="1-1 Manchester United (FEARGGWP) Esports" inplay_period_mins="2" team_id="1957753" inplay_total_mins="2" time="2020-04-21T10:25:11" inplay_period="first_half" type="GOAL"/>
+            <Incident incident_id="190265701" description="1-0 Liverpool (Chellovekk) Esports" inplay_period_mins="1" team_id="1957764" inplay_total_mins="1" time="2020-04-21T10:24:11" inplay_period="first_half" type="GOAL"/>
+            <Incident incident_id="190265682" description="Έναρξη Πρώτου Ημιχρόνου" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-21T10:24:11" inplay_period="first_half" type="PBEG"/>
+            <Incident incident_id="190265681" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-21T10:24:11" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Teams>
+            <Team team_id="1957764" team_order="0" name="Liverpool (Chellovekk) Esports" short_name="Liverpool (Chellovekk) Esports"/>
+            <Team team_id="1957753" team_order="1" name="Manchester United (FEARGGWP) Esports" short_name="Manchester United (FEARGGWP) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Τελικό Αποτέλεσμα" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202272270" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Αγώνες">
+            <Seln status="A" name="Liverpool (Chellovekk) Esports" seln_id="856713423" team_id="1957764" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="9.50" bet_ref="ODU2NzEzNDIzOjE3LzI6OjA" frac_prc="17/2" us_prc="+850" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713422" seln_sort="D" name="Ισοπαλία" disporder="3">
+              <Price prc_type="LP" dec_prc="3.55" bet_ref="ODU2NzEzNDIyOjUxLzIwOjow" frac_prc="51/20" us_prc="+255" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" name="Manchester United (FEARGGWP) Esports" seln_id="856713421" team_id="1957753" disporder="5" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.40" bet_ref="ODU2NzEzNDIxOjIvNTo6MA" frac_prc="2/5" us_prc="-250" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Γκολ Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202340812" handicap="4.5" inplay_avail="Y" disporder="-9900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="4.5" seln_id="856958416" disporder="1" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODU2OTU4NDE2OjkvNToxODow" frac_prc="9/5" us_prc="+180" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="4.5" seln_id="856958417" disporder="2" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.38" bet_ref="ODU2OTU4NDE3OjE5LzUwOjE4OjA" frac_prc="19/50" us_prc="-264" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="I004" name="Επόμενη ομάδα που θα σκοράρει (Γκολ 4)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202340809" inplay_avail="Y" disporder="-9800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="INTS" lp_avail="Y" mkt_sort_name="Επόμενη ομάδα που θα σκοράρει">
+            <Seln status="A" name="Liverpool (Chellovekk) Esports" seln_id="856958409" team_id="1957764" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.42" bet_ref="ODU2OTU4NDA5OjE0Mi8xMDA6OjA" frac_prc="142/100" us_prc="+142" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856958410" seln_sort="N" name="Κανένα γκολ" disporder="2">
+              <Price prc_type="LP" dec_prc="2.85" bet_ref="ODU2OTU4NDEwOjM3LzIwOjow" frac_prc="37/20" us_prc="+185" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" name="Manchester United (FEARGGWP) Esports" seln_id="856958408" team_id="1957753" disporder="3" seln_sort="A">
+              <Price prc_type="LP" dec_prc="2.80" bet_ref="ODU2OTU4NDA4OjkvNTo6MA" frac_prc="9/5" us_prc="+180" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Διπλή ευκαιρία" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202272268" inplay_avail="Y" disporder="-9200" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="DBLC" lp_avail="Y" mkt_sort_name="Διπλή ευκαιρία">
+            <Seln status="A" seln_id="856713418" seln_sort="HD" name="1X" disporder="0">
+              <Price prc_type="LP" dec_prc="2.82" bet_ref="ODU2NzEzNDE4OjE4Mi8xMDA6OjA" frac_prc="182/100" us_prc="+182" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713416" seln_sort="AD" name="2X" disporder="2">
+              <Price prc_type="LP" dec_prc="1.04" bet_ref="ODU2NzEzNDE2OjEvMjU6OjA" frac_prc="1/25" us_prc="-2500" last_change="2020-04-21T10:28:13"/>
+            </Seln>
+            <Seln status="A" seln_id="856713417" seln_sort="HA" name="12" disporder="3">
+              <Price prc_type="LP" dec_prc="1.25" bet_ref="ODU2NzEzNDE3OjEvNDo6MA" frac_prc="1/4" us_prc="-400" last_change="2020-04-21T10:29:38"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Draw No Bet" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202272269" inplay_avail="Y" disporder="-9100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="DNOB" lp_avail="Y" mkt_sort_name="Draw No Bet">
+            <Seln status="A" name="Liverpool (Chellovekk) Esports" seln_id="856713420" team_id="1957764" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="7.45" bet_ref="ODU2NzEzNDIwOjY0NS8xMDA6OjA" frac_prc="645/100" us_prc="+645" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" name="Manchester United (FEARGGWP) Esports" seln_id="856713419" team_id="1957753" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.06" bet_ref="ODU2NzEzNDE5OjMvNTA6OjA" frac_prc="3/50" us_prc="-1667" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ακριβές σκορ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202272267" inplay_avail="Y" disporder="-8900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="CSFT" lp_avail="Y" mkt_sort_name="Σωστό σκορ">
+            <Seln status="A" seln_id="856713358" seln_sort="3-2" name="3-2" disporder="32">
+              <Price prc_type="LP" dec_prc="13.50" bet_ref="ODU2NzEzMzU4OjI1LzI6OjA" frac_prc="25/2" us_prc="+1250" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713369" seln_sort="4-2" name="4-2" disporder="42">
+              <Price prc_type="LP" dec_prc="67.00" bet_ref="ODU2NzEzMzY5OjY2LzE6OjA" frac_prc="66/1" us_prc="+6600" last_change="2020-04-21T10:29:38"/>
+            </Seln>
+            <Seln status="A" seln_id="856713370" seln_sort="4-3" name="4-3" disporder="43">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODU2NzEzMzcwOjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713379" seln_sort="5-2" name="5-2" disporder="52">
+              <Price prc_type="LP" dec_prc="251.00" bet_ref="ODU2NzEzMzc5OjI1MC8xOjow" frac_prc="250/1" us_prc="+25000" last_change="2020-04-21T10:28:09"/>
+            </Seln>
+            <Seln status="A" seln_id="856713380" seln_sort="5-3" name="5-3" disporder="53">
+              <Price prc_type="LP" dec_prc="351.00" bet_ref="ODU2NzEzMzgwOjM1MC8xOjow" frac_prc="350/1" us_prc="+35000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713381" seln_sort="5-4" name="5-4" disporder="54">
+              <Price prc_type="LP" dec_prc="451.00" bet_ref="ODU2NzEzMzgxOjQ1MC8xOjow" frac_prc="450/1" us_prc="+45000" last_change="2020-04-21T10:28:13"/>
+            </Seln>
+            <Seln status="A" seln_id="856713347" seln_sort="2-2" name="2-2" disporder="1022">
+              <Price prc_type="LP" dec_prc="4.00" bet_ref="ODU2NzEzMzQ3OjMvMTo6MA" frac_prc="3/1" us_prc="+300" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713359" seln_sort="3-3" name="3-3" disporder="1033">
+              <Price prc_type="LP" dec_prc="18.00" bet_ref="ODU2NzEzMzU5OjE3LzE6OjA" frac_prc="17/1" us_prc="+1700" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713371" seln_sort="4-4" name="4-4" disporder="1044">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODU2NzEzMzcxOjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713382" seln_sort="5-5" name="5-5" disporder="1055">
+              <Price prc_type="LP" dec_prc="251.00" bet_ref="ODU2NzEzMzgyOjI1MC8xOjow" frac_prc="250/1" us_prc="+25000" last_change="2020-04-21T10:28:09"/>
+            </Seln>
+            <Seln status="A" seln_id="856713336" seln_sort="1-2" name="1-2" disporder="2021">
+              <Price prc_type="LP" dec_prc="2.85" bet_ref="ODU2NzEzMzM2OjM3LzIwOjow" frac_prc="37/20" us_prc="+185" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713337" seln_sort="1-3" name="1-3" disporder="2031">
+              <Price prc_type="LP" dec_prc="4.80" bet_ref="ODU2NzEzMzM3OjM4MC8xMDA6OjA" frac_prc="380/100" us_prc="+380" last_change="2020-04-21T10:29:38"/>
+            </Seln>
+            <Seln status="A" seln_id="856713348" seln_sort="2-3" name="2-3" disporder="2032">
+              <Price prc_type="LP" dec_prc="7.25" bet_ref="ODU2NzEzMzQ4OjI1LzQ6OjA" frac_prc="25/4" us_prc="+625" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713338" seln_sort="1-4" name="1-4" disporder="2041">
+              <Price prc_type="LP" dec_prc="16.75" bet_ref="ODU2NzEzMzM4OjYzLzQ6OjA" frac_prc="63/4" us_prc="+1575" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713349" seln_sort="2-4" name="2-4" disporder="2042">
+              <Price prc_type="LP" dec_prc="25.00" bet_ref="ODU2NzEzMzQ5OjI0LzE6OjA" frac_prc="24/1" us_prc="+2400" last_change="2020-04-21T10:29:28"/>
+            </Seln>
+            <Seln status="A" seln_id="856713360" seln_sort="3-4" name="3-4" disporder="2043">
+              <Price prc_type="LP" dec_prc="76.00" bet_ref="ODU2NzEzMzYwOjc1LzE6OjA" frac_prc="75/1" us_prc="+7500" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713339" seln_sort="1-5" name="1-5" disporder="2051">
+              <Price prc_type="LP" dec_prc="81.00" bet_ref="ODU2NzEzMzM5OjgwLzE6OjA" frac_prc="80/1" us_prc="+8000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713350" seln_sort="2-5" name="2-5" disporder="2052">
+              <Price prc_type="LP" dec_prc="101.00" bet_ref="ODU2NzEzMzUwOjEwMC8xOjow" frac_prc="100/1" us_prc="+10000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713361" seln_sort="3-5" name="3-5" disporder="2053">
+              <Price prc_type="LP" dec_prc="251.00" bet_ref="ODU2NzEzMzYxOjI1MC8xOjow" frac_prc="250/1" us_prc="+25000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713372" seln_sort="4-5" name="4-5" disporder="2054">
+              <Price prc_type="LP" dec_prc="451.00" bet_ref="ODU2NzEzMzcyOjQ1MC8xOjow" frac_prc="450/1" us_prc="+45000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713340" seln_sort="1-6" name="1-6" disporder="2061">
+              <Price prc_type="LP" dec_prc="301.00" bet_ref="ODU2NzEzMzQwOjMwMC8xOjow" frac_prc="300/1" us_prc="+30000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713351" seln_sort="2-6" name="2-6" disporder="2062">
+              <Price prc_type="LP" dec_prc="351.00" bet_ref="ODU2NzEzMzUxOjM1MC8xOjow" frac_prc="350/1" us_prc="+35000" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713362" seln_sort="3-6" name="3-6" disporder="2063">
+              <Price prc_type="LP" dec_prc="451.00" bet_ref="ODU2NzEzMzYyOjQ1MC8xOjow" frac_prc="450/1" us_prc="+45000" last_change="2020-04-21T10:28:09"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ Μονά/Ζυγά" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202272272" inplay_avail="Y" disporder="-4000" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="ODEV" lp_avail="Y" mkt_sort_name="Συνολικά γκολ Μονά/Ζυγά">
+            <Seln status="A" seln_id="856713428" seln_sort="O" name="Μονά" disporder="0">
+              <Price prc_type="LP" dec_prc="1.73" bet_ref="ODU2NzEzNDI4OjczLzEwMDo6MA" frac_prc="73/100" us_prc="-137" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+            <Seln status="A" seln_id="856713427" seln_sort="E" name="Ζυγά" disporder="1">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODU2NzEzNDI3OjEvMTo6MA" frac_prc="1/1" us_prc="+100" last_change="2020-04-21T10:29:27"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

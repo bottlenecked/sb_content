@@ -10,7 +10,7 @@ defmodule Geneity.ParserTest do
     result =
       "foot_event"
       |> Helpers.load_xml_file()
-      |> Geneity.Parser.parse_event_xml()
+      |> Geneity.Parser.parse_event_xml!()
 
     assert %Event{
              id: 5_113_307,
@@ -95,5 +95,15 @@ defmodule Geneity.ParserTest do
     assert free_kick_type == SoccerIncident.free_kick()
     assert comment_type = CommonIncident.comment()
     assert Enum.count(incidents) == 32
+  end
+
+  test "Parse event with goals" do
+    result =
+      "foot_goals"
+      |> Helpers.load_xml_file()
+      |> Geneity.Parser.parse_event_xml!()
+
+    assert %{live_data: %SoccerLiveData{} = live_data} = result
+    assert %{score: %{home: 1, away: 2}} = live_data
   end
 end
