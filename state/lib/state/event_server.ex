@@ -64,7 +64,10 @@ defmodule State.EventServer do
     else
       {:fetch, {:error, :event_not_found}} ->
         publish_event_removed(state)
-        {:stop, :event_not_found}
+        {:stop, :normal}
+
+      {:fetch, {:error, %{reason: :closed}}} ->
+        do_work(state)
 
       {:fetch, {:error, reason}} ->
         IO.inspect(error: reason)
@@ -82,11 +85,12 @@ defmodule State.EventServer do
   end
 
   defp publish_event_removed(state) do
-    IO.inspect(event_removed: state.id)
+    IO.inspect(event_removed: state.event_id)
   end
 
   defp schedule_next_poll(state) do
     next_tick = state.polling_interval_millis + jitter_millis(-200, 200)
+    IO.inspect(next_tick: next_tick)
     Process.send_after(self(), :poll, next_tick)
   end
 

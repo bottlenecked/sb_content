@@ -12,7 +12,10 @@ defmodule Geneity.Api do
         operator_id
       }"
 
-    headers = [{"X-Geneity-Site", operator_id}]
+    headers = [
+      {"Connection", "Keep-Alive"},
+      {"X-Geneity-Site", operator_id}
+    ]
 
     case Freshness.get(:geneity, path, headers) do
       {:ok, response} -> process_event_response(response)

@@ -1,0 +1,104 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzNjI2NTM1NTo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="DART" allow_cash_out="Y" name="Darts" disporder="45">
+    <SBClass sb_class_id="188578" disporder="-10" name="Διεθνή">
+      <SBType sb_type_id="194484" name="Modus Icons of Darts Live League" disporder="1">
+        <Ev inplay_allowed="Y" status="A" name="Ντιόγκο Πορτέλα - Άρον Μονκ" allow_cash_out="Y" start_time="2020-04-22T12:55:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="8" ev_id="5285086" disporder="1">
+          <EvDetail br_match_id="21878563"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="PERIOD_match_started_SHORT" clock_status="STOPPED" correct_at="2020-04-22T13:07:08" inplay_period_finished="N" score_a="0" score_b="0" inplay_period_name="PERIOD_match_started" num_periods="1" clock_mode="NONE" inplay_period="match_started" score_string="0-0" scoring_system="game-match" last_change="2020-04-21T17:16:09" inplay_secs="0">
+            <Scores>
+              <Score score_a="0" score_b="0" name="current_set_games_won"/>
+              <Score score_a="0" score_b="0" name="sets_won"/>
+              <Score score_a="N" score_b="N" name="is_server"/>
+            </Scores>
+          </Inplay>
+          <InplayDetail period_length_mins="0" period_start="2020-04-22T12:57:13" period_stoppage_secs="0" score_team_B="0" score_team_A="0"/>
+          <Incidents>
+            <Incident incident_id="190350066" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-22T12:57:13" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Participant name="Ντιόγκο Πορτέλα" full_name="Ντιόγκο Πορτέλα">
+            <Player first_name="Diogo" last_name="Portela" name="Ντιόγκο Πορτέλα" number="1" player_id="18932647" initials="D"/>
+          </Participant>
+          <Participant name="Άρον Μονκ" full_name="Άρον Μονκ">
+            <Player first_name="Arron" last_name="Monk" name="Άρον Μονκ" number="2" player_id="18961164" initials="A"/>
+          </Participant>
+          <Mkt status="A" name="Νικητής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202380651" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Ένας Εναντίον Ενός">
+            <Seln status="A" name="Ντιόγκο Πορτέλα" seln_id="857075589" disporder="0" player_id="18932647" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="13.50" bet_ref="ODU3MDc1NTg5OjI1LzI6OjA" frac_prc="25/2" us_prc="+1250" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" name="Άρον Μονκ" seln_id="857075590" disporder="1" player_id="18961164" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.015" bet_ref="ODU3MDc1NTkwOjEvNjY6OjA" frac_prc="1/66" us_prc="-6600" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01" name="Χάντικαπ Leg (Σετ 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472268" handicap="+2.5" inplay_avail="Y" disporder="-9940" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="ALHS" lp_avail="Y" mkt_sort_name="MKT_SORT-ALHS">
+            <Seln status="A" name="Ντιόγκο Πορτέλα" handicap="+2.5" seln_id="857397384" disporder="0" player_id="18932647" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="5.20" bet_ref="ODU3Mzk3Mzg0OjIxLzU6MTA6MA" frac_prc="21/5" us_prc="+420" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" name="Άρον Μονκ" handicap="-2.5" seln_id="857397385" disporder="1" player_id="18961164" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.142" bet_ref="ODU3Mzk3Mzg1OjEvNzoxMDow" frac_prc="1/7" us_prc="-700" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01" name="Χάντικαπ Leg (Σετ 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472337" handicap="+3.5" inplay_avail="Y" disporder="-9940" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="ALHS" lp_avail="Y" mkt_sort_name="MKT_SORT-ALHS">
+            <Seln status="A" name="Ντιόγκο Πορτέλα" handicap="+3.5" seln_id="857397554" disporder="0" player_id="18932647" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODU3Mzk3NTU0OjMvNDoxNDow" frac_prc="3/4" us_prc="-134" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" name="Άρον Μονκ" handicap="-3.5" seln_id="857397555" disporder="1" player_id="18961164" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODU3Mzk3NTU1OjEvMToxNDow" frac_prc="1/1" us_prc="+100" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01L06" name="Νικητής Leg (Σετ 1, Leg 6)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472994" inplay_avail="Y" disporder="-9930" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="SLMW" lp_avail="Y" mkt_sort_name="MKT_SORT-SLMW">
+            <Seln status="A" name="Ντιόγκο Πορτέλα" seln_id="857399343" disporder="0" player_id="18932647" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODU3Mzk5MzQzOjQvNjo6MA" frac_prc="4/6" us_prc="-150" last_change="2020-04-22T13:06:59"/>
+            </Seln>
+            <Seln status="A" name="Άρον Μονκ" seln_id="857399344" disporder="1" player_id="18961164" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.17" bet_ref="ODU3Mzk5MzQ0OjExNy8xMDA6OjA" frac_prc="117/100" us_prc="+117" last_change="2020-04-22T13:06:59"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01P101P204" name="Να κερδίσει το υπόλοιπο του σετ (Σετ 1, Τρέχον σκορ 1:4)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202473144" inplay_avail="Y" disporder="-9870" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="WIRS" lp_avail="Y" mkt_sort_name="MKT_SORT-WIRS">
+            <Seln status="A" name="Ντιόγκο Πορτέλα" seln_id="857399670" disporder="1" player_id="18932647" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="5.60" bet_ref="ODU3Mzk5NjcwOjIzLzU6OjA" frac_prc="23/5" us_prc="+460" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" seln_id="857399671" seln_sort="T" name="Ισοπαλία" disporder="3">
+              <Price prc_type="LP" dec_prc="2.60" bet_ref="ODU3Mzk5NjcxOjgvNTo6MA" frac_prc="8/5" us_prc="+160" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" name="Άρον Μονκ" seln_id="857399672" disporder="20" player_id="18961164" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODU3Mzk5NjcyOjUxLzUwOjow" frac_prc="51/50" us_prc="+102" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01" name="Σκορ στο σετ (Σετ 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202380661" inplay_avail="Y" disporder="-8800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="STSC" lp_avail="Y" mkt_sort_name="Σκορ σετ">
+            <Seln status="A" seln_id="857075612" seln_sort="1-5" name="1 - 5" disporder="105">
+              <Price prc_type="LP" dec_prc="1.93" bet_ref="ODU3MDc1NjEyOjkzLzEwMDo6MA" frac_prc="93/100" us_prc="-108" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" seln_id="857075614" seln_sort="2-5" name="2 - 5" disporder="205">
+              <Price prc_type="LP" dec_prc="2.35" bet_ref="ODU3MDc1NjE0OjI3LzIwOjow" frac_prc="27/20" us_prc="+135" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" seln_id="857075616" seln_sort="3-5" name="3 - 5" disporder="305">
+              <Price prc_type="LP" dec_prc="10.00" bet_ref="ODU3MDc1NjE2OjkvMTo6MA" frac_prc="9/1" us_prc="+900" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" seln_id="857075618" seln_sort="4-5" name="4 - 5" disporder="405">
+              <Price prc_type="LP" dec_prc="11.00" bet_ref="ODU3MDc1NjE4OjEwLzE6OjA" frac_prc="10/1" us_prc="+1000" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" seln_id="857075617" seln_sort="5-4" name="5 - 4" disporder="504">
+              <Price prc_type="LP" dec_prc="16.00" bet_ref="ODU3MDc1NjE3OjE1LzE6OjA" frac_prc="15/1" us_prc="+1500" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01" name="Συνολικά Legs στο σετ (Σετ 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472269" handicap="6.5" inplay_avail="Y" disporder="-8100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TLES" lp_avail="Y" mkt_sort_name="MKT_SORT-TLES">
+            <Seln status="A" name="Over" handicap="6.5" seln_id="857397386" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODU3Mzk3Mzg2OjMvNDoyNjow" frac_prc="3/4" us_prc="-134" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="6.5" seln_id="857397387" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.02" bet_ref="ODU3Mzk3Mzg3OjUxLzUwOjI2OjA" frac_prc="51/50" us_prc="+102" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" mkt_extra="S01" name="Συνολικά Legs στο σετ (Σετ 1)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472270" handicap="7.5" inplay_avail="Y" disporder="-8100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="TLES" lp_avail="Y" mkt_sort_name="MKT_SORT-TLES">
+            <Seln status="A" name="Over" handicap="7.5" seln_id="857397388" disporder="-10" seln_sort="O">
+              <Price prc_type="LP" dec_prc="5.25" bet_ref="ODU3Mzk3Mzg4OjE3LzQ6MzA6MA" frac_prc="17/4" us_prc="+425" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="7.5" seln_id="857397389" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.15" bet_ref="ODU3Mzk3Mzg5OjMvMjA6MzA6MA" frac_prc="3/20" us_prc="-667" last_change="2020-04-22T13:07:00"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

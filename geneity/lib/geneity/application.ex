@@ -1,9 +1,9 @@
 defmodule Geneity.Application do
   use Application
 
-  @imple true
+  @impl true
   def start(_, _) do
-    config = Freshness.Config.new(:geneity, 100, :http, "varnishcontapi.stoiximan.eu", 80, [])
+    config = Freshness.Config.new(:geneity, 10, :http, "varnishcontapi.stoiximan.eu", 80, [])
 
     children = [
       {Registry, keys: :unique, name: Freshness.Config.registry_name()},

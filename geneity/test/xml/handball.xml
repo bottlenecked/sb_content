@@ -1,0 +1,291 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzNjI2NjIzMzo0OmVs" version="1.0" request="get_inplay_event_detail">
+  <Sport sport_code="HAND" allow_cash_out="Y" name="Χάντμπολ" disporder="40">
+    <SBClass sb_class_id="188618" disporder="0" name="Λευκορωσία">
+      <SBType sb_type_id="183287" name="1η Κατηγορία" disporder="-10">
+        <Ev inplay_allowed="Y" status="S" name="Μασέκα Μοτζίλεφ - Μπρεστ" allow_cash_out="Y" start_time="2020-04-22T13:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="20" ev_id="5283934" disporder="-1">
+          <EvDetail br_match_id="21887839"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="Delayed" clock_status="STOPPED" period_length="1800" correct_at="2020-04-22T13:08:31" inplay_period_finished="N" extra_period_length="300" score_a="6" score_b="3" inplay_period_name="Καθυστερημένο" num_periods="2" clock_mode="FORWARD" inplay_period="delay" num_extra_periods="2" score_string="6-3" scoring_system="match" last_change="2020-04-22T13:07:53" inplay_secs="420">
+            <Scores>
+              <PeriodScore score_a="6" score_b="3" score_string="6-3" period="1"/>
+            </Scores>
+          </Inplay>
+          <InplayDetail period_length_mins="30" period_start="2020-04-22T12:57:40" period_stoppage_secs="0" score_team_B="3" score_team_A="6"/>
+          <Stats>
+            <Stat name="EV_STAT_GOAL" title="TEAM_STAT_GOAL" type="team" away="3" home="6" stat_type="GOAL"/>
+          </Stats>
+          <Incidents>
+            <Incident incident_id="190350843" description="Διακοπή αγώνα" inplay_period_mins="8" inplay_total_mins="8" time="2020-04-22T13:08:05" inplay_period="delay" type="SBEG"/>
+            <Incident incident_id="190350832" description="6-3 Μασέκα Μοτζίλεφ" inplay_period_mins="8" team_id="1889596" inplay_total_mins="8" time="2020-04-22T13:07:28" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350781" description="5-3 Μασέκα Μοτζίλεφ" inplay_period_mins="7" team_id="1889596" inplay_total_mins="7" time="2020-04-22T13:06:28" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350731" description="4-3 Μασέκα Μοτζίλεφ" inplay_period_mins="7" team_id="1889596" inplay_total_mins="7" time="2020-04-22T13:06:28" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350600" description="3-3 Μασέκα Μοτζίλεφ" inplay_period_mins="5" team_id="1889596" inplay_total_mins="5" time="2020-04-22T13:04:28" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350580" description="2-3 Μπρεστ" inplay_period_mins="5" team_id="1882393" inplay_total_mins="5" time="2020-04-22T13:04:28" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350526" inplay_period_mins="5" inplay_total_mins="5" time="2020-04-22T13:04:28" inplay_period="live" type="SYNC"/>
+            <Incident incident_id="190350499" description="Συνέχεια αγώνα" inplay_period_mins="4" inplay_total_mins="4" time="2020-04-22T13:04:08" inplay_period="live" type="SEND"/>
+            <Incident incident_id="190350328" description="Διακοπή αγώνα" inplay_period_mins="4" inplay_total_mins="4" time="2020-04-22T13:01:38" inplay_period="delay" type="SBEG"/>
+            <Incident incident_id="190350253" description="2-2 Μασέκα Μοτζίλεφ" inplay_period_mins="3" team_id="1889596" inplay_total_mins="3" time="2020-04-22T12:59:40" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350189" description="1-2 Μπρεστ" inplay_period_mins="2" team_id="1882393" inplay_total_mins="2" time="2020-04-22T12:58:40" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350154" description="1-1 Μασέκα Μοτζίλεφ" inplay_period_mins="2" team_id="1889596" inplay_total_mins="2" time="2020-04-22T12:58:40" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350133" description="0-1 Μπρεστ" inplay_period_mins="1" team_id="1882393" inplay_total_mins="1" time="2020-04-22T12:57:40" inplay_period="live" type="GOAL"/>
+            <Incident incident_id="190350095" description="Έναρξη περιόδου" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-22T12:57:40" inplay_period="live" type="PBEG"/>
+            <Incident incident_id="190350094" description="Έναρξη αγώνα" inplay_period_mins="1" inplay_total_mins="1" time="2020-04-22T12:57:40" inplay_period="match_started" type="EBEG"/>
+          </Incidents>
+          <Teams>
+            <Team team_id="1889596" team_order="0" name="Μασέκα Μοτζίλεφ" short_name="Μασέκα Μοτζίλεφ"/>
+            <Team team_id="1882393" team_order="1" name="Μπρεστ" short_name="Μπρεστ"/>
+          </Teams>
+          <Mkt status="A" name="Γκολ Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202473188" handicap="58.5" inplay_avail="Y" disporder="-900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="58.5" seln_id="857399790" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.444" bet_ref="ODU3Mzk5NzkwOjQvOToyMzQ6MA" frac_prc="4/9" us_prc="-225" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="58.5" seln_id="857399789" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="2.65" bet_ref="ODU3Mzk5Nzg5OjMzLzIwOjIzNDow" frac_prc="33/20" us_prc="+165" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Γκολ Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472907" handicap="60.5" inplay_avail="Y" disporder="-900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="60.5" seln_id="857399012" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODU3Mzk5MDEyOjQvNToyNDI6MA" frac_prc="4/5" us_prc="-125" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="60.5" seln_id="857399011" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODU3Mzk5MDExOjE5LzIwOjI0Mjow" frac_prc="19/20" us_prc="-106" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Γκολ Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202471948" handicap="62.5" inplay_avail="Y" disporder="-900" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HCTG" lp_avail="Y" mkt_sort_name="Χάντικαπ συνολικών γκολ">
+            <Seln status="A" name="Over" handicap="62.5" seln_id="857396617" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.30" bet_ref="ODU3Mzk2NjE3OjEzLzEwOjI1MDow" frac_prc="13/10" us_prc="+130" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="62.5" seln_id="857396616" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.571" bet_ref="ODU3Mzk2NjE2OjQvNzoyNTA6MA" frac_prc="4/7" us_prc="-175" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472307" handicap="+11.5" inplay_avail="Y" disporder="-800" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FAHC" lp_avail="Y" mkt_sort_name="Asian Handicap / Goal Line">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ" handicap="+11.5" seln_id="857397475" team_id="1889596" disporder="-22" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODU3Mzk3NDc1OjE5LzIwOjQ2OjA" frac_prc="19/20" us_prc="-106" last_change="2020-04-22T13:07:56"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ" handicap="-11.5" seln_id="857397476" team_id="1882393" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODU3Mzk3NDc2OjQvNTo0Njow" frac_prc="4/5" us_prc="-125" last_change="2020-04-22T13:07:56"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Χάντικαπ τριπλής επιλογής" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472308" handicap="+12" inplay_avail="Y" disporder="-750" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHMR" lp_avail="Y" mkt_sort_name="Handicap Match Result">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ" handicap="+12" seln_id="857397477" team_id="1889596" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.909" bet_ref="ODU3Mzk3NDc3OjEwLzExOjQ4OjA" frac_prc="10/11" us_prc="-110" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Ισοπαλία" handicap="+12" seln_id="857397478" disporder="2" seln_sort="T">
+              <Price prc_type="LP" dec_prc="14.00" bet_ref="ODU3Mzk3NDc4OjEzLzE6NDg6MA" frac_prc="13/1" us_prc="+1300" last_change="2020-04-22T13:07:28"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ" handicap="-12" seln_id="857397479" team_id="1882393" disporder="12" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODU3Mzk3NDc5OjIxLzIwOjQ4OjA" frac_prc="21/20" us_prc="+105" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Draw No Bet" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202356207" inplay_avail="Y" disporder="-700" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="DNOB" lp_avail="Y" mkt_sort_name="Draw No Bet">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ" seln_id="857006215" team_id="1889596" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="16.50" bet_ref="ODU3MDA2MjE1OjMxLzI6OjA" frac_prc="31/2" us_prc="+1550" last_change="2020-04-22T13:04:39"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ" seln_id="857006214" team_id="1882393" disporder="1" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.007" bet_ref="ODU3MDA2MjE0OjcvMTAwMDo6MA" frac_prc="7/1000" us_prc="-14286" last_change="2020-04-22T13:04:39"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Αποτέλεσμα &amp; Συνολικά Γκολ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202473189" handicap="60.5" inplay_avail="Y" disporder="-665" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MROU" lp_avail="Y" mkt_sort_name="MKT_SORT-MROU">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ &amp; Over" handicap="60.5" seln_id="857399795" team_id="1889596" disporder="0" seln_sort="HO">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3Mzk5Nzk1OjMzLzE6MjQyOjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:07:28"/>
+            </Seln>
+            <Seln status="A" name="Μασέκα Μοτζίλεφ &amp; Under" handicap="60.5" seln_id="857399796" team_id="1889596" disporder="1" seln_sort="HU">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3Mzk5Nzk2OjMzLzE6MjQyOjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:07:28"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ &amp; Over" handicap="60.5" seln_id="857399793" team_id="1882393" disporder="2" seln_sort="AO">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODU3Mzk5NzkzOjE3LzIwOjI0Mjow" frac_prc="17/20" us_prc="-118" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ &amp; Under" handicap="60.5" seln_id="857399792" team_id="1882393" disporder="3" seln_sort="AU">
+              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODU3Mzk5NzkyOjIxLzIwOjI0Mjow" frac_prc="21/20" us_prc="+105" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="X &amp; Over" handicap="60.5" seln_id="857399791" disporder="4" seln_sort="DO">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3Mzk5NzkxOjMzLzE6MjQyOjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:07:28"/>
+            </Seln>
+            <Seln status="A" name="X &amp; Under" handicap="60.5" seln_id="857399794" disporder="5" seln_sort="DU">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3Mzk5Nzk0OjMzLzE6MjQyOjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:07:28"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Περιθώριο νίκης" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202356205" inplay_avail="Y" disporder="-660" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="BWMR" lp_avail="Y" mkt_sort_name="Basketball Winning Margins">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ να κερδίσει με 1-5 Γκολ" seln_id="857006206" team_id="1889596" disporder="-22" seln_sort="01H05">
+              <Price prc_type="LP" dec_prc="41.00" bet_ref="ODU3MDA2MjA2OjQwLzE6OjA" frac_prc="40/1" us_prc="+4000" last_change="2020-04-22T13:07:32"/>
+            </Seln>
+            <Seln status="A" name="Μασέκα Μοτζίλεφ να κερδίσει με 6-10 Γκολ" seln_id="857006208" team_id="1889596" disporder="-15" seln_sort="06H10">
+              <Price prc_type="LP" dec_prc="41.00" bet_ref="ODU3MDA2MjA4OjQwLzE6OjA" frac_prc="40/1" us_prc="+4000" last_change="2020-04-22T13:06:37"/>
+            </Seln>
+            <Seln status="A" name="Μασέκα Μοτζίλεφ να κερδίσει με 11 ή περισσότερα Γκολ" seln_id="857006210" team_id="1889596" disporder="-7" seln_sort="11H99">
+              <Price prc_type="LP" dec_prc="41.00" bet_ref="ODU3MDA2MjEwOjQwLzE6OjA" frac_prc="40/1" us_prc="+4000" last_change="2020-04-22T13:06:37"/>
+            </Seln>
+            <Seln status="A" seln_id="857396609" disporder="0" name="Ισοπαλία">
+              <Price prc_type="LP" dec_prc="41.00" bet_ref="ODU3Mzk2NjA5OjQwLzE6OjA" frac_prc="40/1" us_prc="+4000" last_change="2020-04-22T13:06:37"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ να κερδίσει με 1-5 Γκολ" seln_id="857006205" team_id="1882393" disporder="1" seln_sort="01A05">
+              <Price prc_type="LP" dec_prc="7.00" bet_ref="ODU3MDA2MjA1OjYvMTo6MA" frac_prc="6/1" us_prc="+600" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ να κερδίσει με 6-10 Γκολ" seln_id="857006207" team_id="1882393" disporder="2" seln_sort="06A10">
+              <Price prc_type="LP" dec_prc="3.20" bet_ref="ODU3MDA2MjA3OjExLzU6OjA" frac_prc="11/5" us_prc="+220" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ να κερδίσει με 11 ή περισσότερα Γκολ" seln_id="857006209" team_id="1882393" disporder="3" seln_sort="11A99">
+              <Price prc_type="LP" dec_prc="1.60" bet_ref="ODU3MDA2MjA5OjMvNTo6MA" frac_prc="3/5" us_prc="-167" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ημίχρονο / Τελικό" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202356208" inplay_avail="Y" disporder="-655" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTFT" lp_avail="Y" mkt_sort_name="Ημίχρονο/Λήξη">
+            <Seln status="A" seln_id="857006224" seln_sort="HH" name="1/1" disporder="0">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3MDA2MjI0OjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857006223" seln_sort="HD" name="1/X" disporder="1">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3MDA2MjIzOjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857006222" seln_sort="HA" name="1/2" disporder="2">
+              <Price prc_type="LP" dec_prc="7.50" bet_ref="ODU3MDA2MjIyOjEzLzI6OjA" frac_prc="13/2" us_prc="+650" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857006221" seln_sort="DH" name="X/1" disporder="3">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3MDA2MjIxOjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857006220" seln_sort="DD" name="X/X" disporder="4">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3MDA2MjIwOjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857006219" seln_sort="DA" name="X/2" disporder="5">
+              <Price prc_type="LP" dec_prc="13.00" bet_ref="ODU3MDA2MjE5OjEyLzE6OjA" frac_prc="12/1" us_prc="+1200" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857006218" seln_sort="AH" name="2/1" disporder="6">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3MDA2MjE4OjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857006217" seln_sort="AD" name="2/X" disporder="7">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU3MDA2MjE3OjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857006216" seln_sort="AA" name="2/2" disporder="8">
+              <Price prc_type="LP" dec_prc="1.26" bet_ref="ODU3MDA2MjE2OjEzLzUwOjow" frac_prc="13/50" us_prc="-385" last_change="2020-04-22T13:07:53"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Αποτέλεσμα 1ου Ημιχρόνου" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202471946" inplay_avail="Y" disporder="-650" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H1RS" lp_avail="Y" mkt_sort_name="Αποτέλεσμα 1ου ημιχρόνου">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ" seln_id="857396610" team_id="1889596" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="6.00" bet_ref="ODU3Mzk2NjEwOjUvMTo6MA" frac_prc="5/1" us_prc="+500" last_change="2020-04-22T13:07:53"/>
+            </Seln>
+            <Seln status="A" seln_id="857396611" seln_sort="D" name="Ισοπαλία" disporder="1">
+              <Price prc_type="LP" dec_prc="11.75" bet_ref="ODU3Mzk2NjExOjQzLzQ6OjA" frac_prc="43/4" us_prc="+1075" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ" seln_id="857396612" team_id="1882393" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.222" bet_ref="ODU3Mzk2NjEyOjIvOTo6MA" frac_prc="2/9" us_prc="-450" last_change="2020-04-22T13:07:53"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202473160" handicap="+4" inplay_avail="Y" disporder="-644" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FHH1" lp_avail="Y" mkt_sort_name="Handicap First Half">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ" handicap="+4" seln_id="857399705" team_id="1889596" disporder="0" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODU3Mzk5NzA1OjQvNToxNjow" frac_prc="4/5" us_prc="-125" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Ισοπαλία" handicap="+4" seln_id="857399706" disporder="2" seln_sort="T">
+              <Price prc_type="LP" dec_prc="8.50" bet_ref="ODU3Mzk5NzA2OjE1LzI6MTY6MA" frac_prc="15/2" us_prc="+750" last_change="2020-04-22T13:07:50"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ" handicap="-4" seln_id="857399707" team_id="1882393" disporder="222" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.60" bet_ref="ODU3Mzk5NzA3OjgvNToxNjow" frac_prc="8/5" us_prc="+160" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Χάντικαπ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202473161" handicap="+3.5" inplay_avail="Y" disporder="-640" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FAHT" lp_avail="Y" mkt_sort_name="Asian Handicap (Half-Time)">
+            <Seln status="A" name="Μασέκα Μοτζίλεφ" handicap="+3.5" seln_id="857399708" team_id="1889596" disporder="-22" seln_sort="1">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODU3Mzk5NzA4OjQvNToxNDow" frac_prc="4/5" us_prc="-125" last_change="2020-04-22T13:07:53"/>
+            </Seln>
+            <Seln status="A" name="Μπρεστ" handicap="-3.5" seln_id="857399709" team_id="1882393" disporder="1" seln_sort="2">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODU3Mzk5NzA5OjEvMToxNDow" frac_prc="1/1" us_prc="+100" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472896" handicap="28.5" inplay_avail="Y" disporder="-640" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUH1" lp_avail="Y" mkt_sort_name="Πρώτο ημίχρονο (Πάνω/Κάτω)">
+            <Seln status="A" name="Over" handicap="28.5" seln_id="857398986" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.35" bet_ref="ODU3Mzk4OTg2OjcvMjA6MTE0OjA" frac_prc="7/20" us_prc="-286" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="28.5" seln_id="857398985" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="3.15" bet_ref="ODU3Mzk4OTg1OjQzLzIwOjExNDow" frac_prc="43/20" us_prc="+215" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472302" handicap="30.5" inplay_avail="Y" disporder="-640" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUH1" lp_avail="Y" mkt_sort_name="Πρώτο ημίχρονο (Πάνω/Κάτω)">
+            <Seln status="A" name="Over" handicap="30.5" seln_id="857397466" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.87" bet_ref="ODU3Mzk3NDY2Ojg3LzEwMDoxMjI6MA" frac_prc="87/100" us_prc="-115" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="30.5" seln_id="857397465" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.909" bet_ref="ODU3Mzk3NDY1OjEwLzExOjEyMjow" frac_prc="10/11" us_prc="-110" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="1ο Ημίχρονο - Over/Under" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202472303" handicap="32.5" inplay_avail="Y" disporder="-640" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUH1" lp_avail="Y" mkt_sort_name="Πρώτο ημίχρονο (Πάνω/Κάτω)">
+            <Seln status="A" name="Over" handicap="32.5" seln_id="857397468" disporder="-22" seln_sort="O">
+              <Price prc_type="LP" dec_prc="3.10" bet_ref="ODU3Mzk3NDY4OjIxLzEwOjEzMDow" frac_prc="21/10" us_prc="+210" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="32.5" seln_id="857397467" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.36" bet_ref="ODU3Mzk3NDY3OjkvMjU6MTMwOjA" frac_prc="9/25" us_prc="-278" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ Over/Under Μασέκα Μοτζίλεφ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202473021" handicap="24.5" inplay_avail="Y" disporder="-623" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUHG" lp_avail="Y" mkt_sort_name="Συνολικά γκολ γηπεδούχων - Πάνω/Κάτω">
+            <Seln status="A" name="Over" handicap="24.5" seln_id="857399404" disporder="-12" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.88" bet_ref="ODU3Mzk5NDA0OjIyLzI1Ojk4OjA" frac_prc="22/25" us_prc="-114" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="24.5" seln_id="857399405" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODU3Mzk5NDA1OjE3LzIwOjk4OjA" frac_prc="17/20" us_prc="-118" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Συνολικά γκολ Over/Under Μπρεστ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202356235" handicap="36.5" inplay_avail="Y" disporder="-620" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="OUAG" lp_avail="Y" mkt_sort_name="Συνολικά γκολ φιλοξενούμενης (Πάνω/Κάτω)">
+            <Seln status="A" name="Over" handicap="36.5" seln_id="857006280" disporder="-12" seln_sort="O">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODU3MDA2MjgwOjE5LzIwOjE0Njow" frac_prc="19/20" us_prc="-106" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="36.5" seln_id="857006281" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODU3MDA2MjgxOjQvNToxNDY6MA" frac_prc="4/5" us_prc="-125" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Μασέκα Μοτζίλεφ Συνολικά γκολ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202471951" inplay_avail="Y" disporder="-613" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HGTO" lp_avail="Y" mkt_sort_name="Συνολικά γκολ γηπεδούχου ομάδας">
+            <Seln status="A" seln_id="857396623" seln_sort="0-19" name="&lt;20" disporder="19">
+              <Price prc_type="LP" dec_prc="11.00" bet_ref="ODU3Mzk2NjIzOjEwLzE6OjA" frac_prc="10/1" us_prc="+1000" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396629" seln_sort="20-22" name="20-22" disporder="20022">
+              <Price prc_type="LP" dec_prc="4.15" bet_ref="ODU3Mzk2NjI5OjYzLzIwOjow" frac_prc="63/20" us_prc="+315" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396626" seln_sort="23-25" name="23-25" disporder="23025">
+              <Price prc_type="LP" dec_prc="2.75" bet_ref="ODU3Mzk2NjI2OjcvNDo6MA" frac_prc="7/4" us_prc="+175" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396624" seln_sort="26-28" name="26-28" disporder="26028">
+              <Price prc_type="LP" dec_prc="3.55" bet_ref="ODU3Mzk2NjI0OjUxLzIwOjow" frac_prc="51/20" us_prc="+255" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396627" seln_sort="29-31" name="29-31" disporder="29031">
+              <Price prc_type="LP" dec_prc="8.00" bet_ref="ODU3Mzk2NjI3OjcvMTo6MA" frac_prc="7/1" us_prc="+700" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396628" seln_sort="32-34" name="32-34" disporder="32034">
+              <Price prc_type="LP" dec_prc="26.00" bet_ref="ODU3Mzk2NjI4OjI1LzE6OjA" frac_prc="25/1" us_prc="+2500" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396625" seln_sort="35-" name="&gt;34" disporder="35000">
+              <Price prc_type="LP" dec_prc="26.00" bet_ref="ODU3Mzk2NjI1OjI1LzE6OjA" frac_prc="25/1" us_prc="+2500" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Μπρεστ Συνολικά γκολ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202471952" inplay_avail="Y" disporder="-612" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="AGTO" lp_avail="Y" mkt_sort_name="Συνολικά Γκολ Φιλοξενούμενης Ομάδας">
+            <Seln status="A" seln_id="857396630" seln_sort="0-19" name="&lt;20" disporder="19">
+              <Price prc_type="LP" dec_prc="27.50" bet_ref="ODU3Mzk2NjMwOjUzLzI6OjA" frac_prc="53/2" us_prc="+2650" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857396636" seln_sort="20-22" name="20-22" disporder="20022">
+              <Price prc_type="LP" dec_prc="27.50" bet_ref="ODU3Mzk2NjM2OjUzLzI6OjA" frac_prc="53/2" us_prc="+2650" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857396633" seln_sort="23-25" name="23-25" disporder="23025">
+              <Price prc_type="LP" dec_prc="27.50" bet_ref="ODU3Mzk2NjMzOjUzLzI6OjA" frac_prc="53/2" us_prc="+2650" last_change="2020-04-22T13:08:07"/>
+            </Seln>
+            <Seln status="A" seln_id="857396631" seln_sort="26-28" name="26-28" disporder="26028">
+              <Price prc_type="LP" dec_prc="20.00" bet_ref="ODU3Mzk2NjMxOjE5LzE6OjA" frac_prc="19/1" us_prc="+1900" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396634" seln_sort="29-31" name="29-31" disporder="29031">
+              <Price prc_type="LP" dec_prc="8.00" bet_ref="ODU3Mzk2NjM0OjcvMTo6MA" frac_prc="7/1" us_prc="+700" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396635" seln_sort="32-34" name="32-34" disporder="32034">
+              <Price prc_type="LP" dec_prc="4.60" bet_ref="ODU3Mzk2NjM1OjE4LzU6OjA" frac_prc="18/5" us_prc="+360" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+            <Seln status="A" seln_id="857396632" seln_sort="35-" name="&gt;34" disporder="35000">
+              <Price prc_type="LP" dec_prc="1.47" bet_ref="ODU3Mzk2NjMyOjQ3LzEwMDo6MA" frac_prc="47/100" us_prc="-213" last_change="2020-04-22T13:08:05"/>
+            </Seln>
+          </Mkt>
+          <Mkt status="A" name="Ημίχρονο με τα περισσότερα γκολ" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202471947" inplay_avail="Y" disporder="300" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HSHL" lp_avail="Y" mkt_sort_name="MKT_SORT-HSHL">
+            <Seln status="A" seln_id="857396615" seln_sort="1" name="1ο Ημίχρονο" disporder="-33">
+              <Price prc_type="LP" dec_prc="2.05" bet_ref="ODU3Mzk2NjE1OjIxLzIwOjow" frac_prc="21/20" us_prc="+105" last_change="2020-04-22T13:07:55"/>
+            </Seln>
+            <Seln status="A" seln_id="857396614" seln_sort="E" name="Ισοπαλία" disporder="0">
+              <Price prc_type="LP" dec_prc="9.75" bet_ref="ODU3Mzk2NjE0OjM1LzQ6OjA" frac_prc="35/4" us_prc="+875" last_change="2020-04-22T13:07:50"/>
+            </Seln>
+            <Seln status="A" seln_id="857396613" seln_sort="2" name="2ο Ημίχρονο" disporder="50">
+              <Price prc_type="LP" dec_prc="1.85" bet_ref="ODU3Mzk2NjEzOjE3LzIwOjow" frac_prc="17/20" us_prc="-118" last_change="2020-04-22T13:07:55"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>
