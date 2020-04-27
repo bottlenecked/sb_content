@@ -1,0 +1,662 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzOTY0MjkyMTo0OmVu" version="1.0" request="get_inplay_schedule">
+  <Sport sport_code="FOOT" allow_cash_out="Y" name="Soccer" disporder="-300">
+    <SBClass sb_class_id="189438" disporder="0" name="Esports">
+      <SBType sb_type_id="194428" name="Esoccer Battle - Champions League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Tottenham (Pablik) Esports - PSG (mooneycb) Esports" allow_cash_out="Y" start_time="2020-04-27T14:24:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="9" ev_id="5322917" disporder="-325">
+          <Notes>2X4 minutes match</Notes>
+          <EvDetail br_match_id="21914105"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="PERIOD_first_half_SHORT" clock_status="TICKING" period_length="240" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="60" score_a="0" score_b="1" inplay_period_name="First Half" num_periods="2" clock_mode="FORWARD" inplay_period="first_half" num_extra_periods="2" score_string="0-1" scoring_system="match" last_change="2020-04-27T14:26:20" inplay_secs="168"/>
+          <Teams>
+            <Team team_id="1958658" team_order="0" name="Tottenham (Pablik) Esports" short_name="Tottenham (Pablik) Esports"/>
+            <Team team_id="1957179" team_order="1" name="PSG (mooneycb) Esports" short_name="PSG (mooneycb) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Full Time Result" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203000461" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Tottenham (Pablik) Esports" seln_id="859186035" team_id="1958658" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="6.95" bet_ref="ODU5MTg2MDM1OjU5NS8xMDA6OjA" frac_prc="595/100" us_prc="+595" last_change="2020-04-27T14:26:54"/>
+            </Seln>
+            <Seln status="A" seln_id="859186034" seln_sort="D" name="Draw" disporder="3">
+              <Price prc_type="LP" dec_prc="3.70" bet_ref="ODU5MTg2MDM0OjI3LzEwOjow" frac_prc="27/10" us_prc="+270" last_change="2020-04-27T14:26:33"/>
+            </Seln>
+            <Seln status="A" name="PSG (mooneycb) Esports" seln_id="859186033" team_id="1957179" disporder="5" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.46" bet_ref="ODU5MTg2MDMzOjQ2LzEwMDo6MA" frac_prc="46/100" us_prc="-218" last_change="2020-04-27T14:26:40"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Bayern Munich (Taka) Esports - Napoli (Olle) Esports" allow_cash_out="Y" start_time="2020-04-27T14:24:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="9" ev_id="5322918" disporder="-325">
+          <Notes>2X4 minutes match</Notes>
+          <EvDetail br_match_id="21914107"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="PERIOD_first_half_SHORT" clock_status="TICKING" period_length="240" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="60" score_a="0" score_b="1" inplay_period_name="First Half" num_periods="2" clock_mode="FORWARD" inplay_period="first_half" num_extra_periods="2" score_string="0-1" scoring_system="match" last_change="2020-04-27T14:25:11" inplay_secs="160"/>
+          <Teams>
+            <Team team_id="1959234" team_order="0" name="Bayern Munich (Taka) Esports" short_name="Bayern Munich (Taka) Esports"/>
+            <Team team_id="1960620" team_order="1" name="Napoli (Olle) Esports" short_name="Napoli (Olle) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Full Time Result" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203000470" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Bayern Munich (Taka) Esports" seln_id="859186147" team_id="1959234" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="7.25" bet_ref="ODU5MTg2MTQ3OjI1LzQ6OjA" frac_prc="25/4" us_prc="+625" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+            <Seln status="A" seln_id="859186146" seln_sort="D" name="Draw" disporder="3">
+              <Price prc_type="LP" dec_prc="3.80" bet_ref="ODU5MTg2MTQ2OjE0LzU6OjA" frac_prc="14/5" us_prc="+280" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+            <Seln status="A" name="Napoli (Olle) Esports" seln_id="859186145" team_id="1960620" disporder="5" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.43" bet_ref="ODU5MTg2MTQ1OjQzLzEwMDo6MA" frac_prc="43/100" us_prc="-233" last_change="2020-04-27T14:26:48"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194564" name="Cyber Europa League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Manchester United (Nicolasrage) Esports - FC Porto (L.A.I) Esports" allow_cash_out="Y" start_time="2020-04-27T14:15:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="11" ev_id="5323955" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914889"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="PERIOD_first_half_SHORT" clock_status="TICKING" period_length="300" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="120" score_a="1" score_b="0" inplay_period_name="First Half" num_periods="2" clock_mode="FORWARD" inplay_period="first_half" num_extra_periods="2" score_string="1-0" scoring_system="match" last_change="2020-04-27T14:25:22" inplay_secs="194"/>
+          <Teams>
+            <Team team_id="1961991" team_order="0" name="Manchester United (Nicolasrage) Esports" short_name="Manchester United (Nicolasrage) Esports"/>
+            <Team team_id="1961987" team_order="1" name="FC Porto (L.A.I) Esports" short_name="FC Porto (L.A.I) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Full Time Result" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203013382" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Manchester United (Nicolasrage) Esports" seln_id="859246687" team_id="1961991" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.06" bet_ref="ODU5MjQ2Njg3OjMvNTA6OjA" frac_prc="3/50" us_prc="-1667" last_change="2020-04-27T14:26:17"/>
+            </Seln>
+            <Seln status="A" seln_id="859246686" seln_sort="D" name="Draw" disporder="3">
+              <Price prc_type="LP" dec_prc="9.50" bet_ref="ODU5MjQ2Njg2OjE3LzI6OjA" frac_prc="17/2" us_prc="+850" last_change="2020-04-27T14:26:17"/>
+            </Seln>
+            <Seln status="A" name="FC Porto (L.A.I) Esports" seln_id="859246685" team_id="1961987" disporder="5" seln_sort="A">
+              <Price prc_type="LP" dec_prc="20.00" bet_ref="ODU5MjQ2Njg1OjE5LzE6OjA" frac_prc="19/1" us_prc="+1900" last_change="2020-04-27T14:26:57"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Lazio (Dimqaa) Esports - AS Roma (Carlwhizzer) Esports" allow_cash_out="Y" start_time="2020-04-27T14:15:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="8" ev_id="5323956" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914891"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="PERIOD_first_half_SHORT" clock_status="TICKING" period_length="300" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="120" score_a="0" score_b="2" inplay_period_name="First Half" num_periods="2" clock_mode="FORWARD" inplay_period="first_half" num_extra_periods="2" score_string="0-2" scoring_system="match" last_change="2020-04-27T14:25:37" inplay_secs="270"/>
+          <Teams>
+            <Team team_id="1961989" team_order="0" name="Lazio (Dimqaa) Esports" short_name="Lazio (Dimqaa) Esports"/>
+            <Team team_id="1961988" team_order="1" name="AS Roma (Carlwhizzer) Esports" short_name="AS Roma (Carlwhizzer) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Full Time Result" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203013410" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Lazio (Dimqaa) Esports" seln_id="859246838" team_id="1961989" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="34.00" bet_ref="ODU5MjQ2ODM4OjMzLzE6OjA" frac_prc="33/1" us_prc="+3300" last_change="2020-04-27T14:26:45"/>
+            </Seln>
+            <Seln status="A" seln_id="859246837" seln_sort="D" name="Draw" disporder="3">
+              <Price prc_type="LP" dec_prc="12.50" bet_ref="ODU5MjQ2ODM3OjIzLzI6OjA" frac_prc="23/2" us_prc="+1150" last_change="2020-04-27T14:26:45"/>
+            </Seln>
+            <Seln status="A" name="AS Roma (Carlwhizzer) Esports" seln_id="859246836" team_id="1961988" disporder="5" seln_sort="A">
+              <Price prc_type="LP" dec_prc="1.01" bet_ref="ODU5MjQ2ODM2OjEvMTAwOjow" frac_prc="1/100" us_prc="-10000" last_change="2020-04-27T14:26:26"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194565" name="Cyber World Cup" disporder="0">
+        <Ev inplay_allowed="Y" status="S" name="Switzerland (Indra13_27) Esports - Poland (Supernova) Esports" allow_cash_out="Y" start_time="2020-04-27T14:15:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="1" ev_id="5323884" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21915011"/>
+          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="300" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="120" score_a="0" score_b="0" inplay_period_name="Starting" num_periods="2" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="2" score_string="0-0" scoring_system="match" last_change="2020-04-26T21:03:13" inplay_secs="0"/>
+          <Teams>
+            <Team team_id="1961986" team_order="0" name="Switzerland (Indra13_27) Esports" short_name="Switzerland (Indra13_27) Esports"/>
+            <Team team_id="1961985" team_order="1" name="Poland (Supernova) Esports" short_name="Poland (Supernova) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Full Time Result" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203012485" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Switzerland (Indra13_27) Esports" seln_id="859244026" team_id="1961986" disporder="1" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.07" bet_ref="ODU5MjQ0MDI2OjEwNy8xMDA6OjA" frac_prc="107/100" us_prc="+107" last_change="2020-04-27T11:33:40"/>
+            </Seln>
+            <Seln status="A" seln_id="859244025" seln_sort="D" name="Draw" disporder="3">
+              <Price prc_type="LP" dec_prc="4.40" bet_ref="ODU5MjQ0MDI1OjM0MC8xMDA6OjA" frac_prc="340/100" us_prc="+340" last_change="2020-04-27T11:33:40"/>
+            </Seln>
+            <Seln status="A" name="Poland (Supernova) Esports" seln_id="859244024" team_id="1961985" disporder="5" seln_sort="A">
+              <Price prc_type="LP" dec_prc="2.55" bet_ref="ODU5MjQ0MDI0OjMxLzIwOjow" frac_prc="31/20" us_prc="+155" last_change="2020-04-27T11:33:40"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+  <Sport sport_code="BASK" allow_cash_out="Y" name="Basketball" disporder="2">
+    <SBClass sb_class_id="189456" disporder="0" name="Esports">
+      <SBType sb_type_id="194452" name="NBA 2K Cyber (4x5 min)" disporder="-240">
+        <Ev inplay_allowed="Y" status="A" name="Los Angeles Clippers (JoKeR) - Denver Nuggets (Zo0m)" allow_cash_out="Y" start_time="2020-04-27T14:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="3" ev_id="5324802" disporder="-450">
+          <EvDetail br_match_id="21915099"/>
+          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="300" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="180" inplay_period_name="Starting" num_periods="4" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="5" score_string="0-0" scoring_system="match" inplay_secs="0"/>
+          <Teams>
+            <Team team_id="1959685" team_order="0" name="Los Angeles Clippers (JoKeR)" short_name="Los Angeles Clippers (JoKeR)"/>
+            <Team team_id="1960787" team_order="1" name="Denver Nuggets (Zo0m)" short_name="Denver Nuggets (Zo0m)"/>
+          </Teams>
+          <Mkt status="A" name="Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203023262" inplay_avail="Y" disporder="-7500" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Los Angeles Clippers (JoKeR)" seln_id="859287400" team_id="1959685" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.20" bet_ref="ODU5Mjg3NDAwOjEvNTo6MA" frac_prc="1/5" us_prc="-500" last_change="2020-04-27T13:39:13"/>
+            </Seln>
+            <Seln status="A" name="Denver Nuggets (Zo0m)" seln_id="859287401" team_id="1960787" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="4.20" bet_ref="ODU5Mjg3NDAxOjE2LzU6OjA" frac_prc="16/5" us_prc="+320" last_change="2020-04-27T13:39:13"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Chicago Bulls (mrPanda) - Philadelphia 76ers (specialist)" allow_cash_out="Y" start_time="2020-04-27T14:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="3" ev_id="5324803" disporder="-450">
+          <EvDetail br_match_id="21915101"/>
+          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="300" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="180" inplay_period_name="Starting" num_periods="4" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="5" score_string="0-0" scoring_system="match" inplay_secs="0"/>
+          <Teams>
+            <Team team_id="1962005" team_order="0" name="Chicago Bulls (mrPanda)" short_name="Chicago Bulls (mrPanda)"/>
+            <Team team_id="1962004" team_order="1" name="Philadelphia 76ers (specialist)" short_name="Philadelphia 76ers (specialist)"/>
+          </Teams>
+          <Mkt status="A" name="Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203023266" inplay_avail="Y" disporder="-7500" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Chicago Bulls (mrPanda)" seln_id="859287408" team_id="1962005" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.35" bet_ref="ODU5Mjg3NDA4OjcvMjA6OjA" frac_prc="7/20" us_prc="-286" last_change="2020-04-27T13:58:46"/>
+            </Seln>
+            <Seln status="A" name="Philadelphia 76ers (specialist)" seln_id="859287409" team_id="1962004" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="3.05" bet_ref="ODU5Mjg3NDA5OjQxLzIwOjow" frac_prc="41/20" us_prc="+205" last_change="2020-04-27T13:58:46"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+  <Sport sport_code="TABL" allow_cash_out="Y" name="Table Tennis" disporder="4">
+    <SBClass sb_class_id="189433" disporder="0" name="Armenia">
+      <SBType sb_type_id="194640" name="ITT Cup" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Trasdamad Jokaklian - Gegham Gevorgyan" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="12" ev_id="5324530" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21913607"/>
+          <Inplay inplay_period_num="3" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="0" score_b="2" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="0-2" scoring_system="match" last_change="2020-04-27T14:25:43" inplay_secs="77"/>
+          <Mkt status="A" name="Total Points" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203097790" handicap="43.5" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="43.5" seln_id="859495651" disporder="-100" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.12" bet_ref="ODU5NDk1NjUxOjI4LzI1OjE3NDow" frac_prc="28/25" us_prc="+112" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="43.5" seln_id="859495650" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.666" bet_ref="ODU5NDk1NjUwOjQvNjoxNzQ6MA" frac_prc="4/6" us_prc="-150" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194642" name="ITT Cup (W)" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Elen Bakhchajyan - Marianna Sahakyan" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="18" ev_id="5322418" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21913837"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="1" score_b="0" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="1-0" scoring_system="match" last_change="2020-04-27T14:25:26" inplay_secs="93"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202992620" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Elen Bakhchajyan" seln_id="859152147" disporder="0" player_id="19149676" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.015" bet_ref="ODU5MTUyMTQ3OjEvNjY6OjA" frac_prc="1/66" us_prc="-6600" last_change="2020-04-27T14:26:53"/>
+            </Seln>
+            <Seln status="A" name="Marianna Sahakyan" seln_id="859152148" disporder="1" player_id="19149646" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="12.00" bet_ref="ODU5MTUyMTQ4OjExLzE6OjA" frac_prc="11/1" us_prc="+1100" last_change="2020-04-27T14:26:53"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Rubina Vardanyan - Mery Hovhannisyan" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="19" ev_id="5322419" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21913839"/>
+          <Inplay inplay_period_num="3" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="2" score_b="0" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="2-0" scoring_system="match" last_change="2020-04-27T14:26:24" inplay_secs="36"/>
+          <Mkt status="A" name="Total Points" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203097397" handicap="55.5" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="FTPO" lp_avail="Y" mkt_sort_name="Total (including Overtime) (Fixed hcap)">
+            <Seln status="A" name="Over" handicap="55.5" seln_id="859494611" disporder="-100" seln_sort="O">
+              <Price prc_type="LP" dec_prc="2.20" bet_ref="ODU5NDk0NjExOjYvNToyMjI6MA" frac_prc="6/5" us_prc="+120" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+            <Seln status="A" name="Under" handicap="55.5" seln_id="859494610" disporder="0" seln_sort="U">
+              <Price prc_type="LP" dec_prc="1.615" bet_ref="ODU5NDk0NjEwOjgvMTM6MjIyOjA" frac_prc="8/13" us_prc="-163" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+    <SBClass sb_class_id="189435" disporder="0" name="Russia">
+      <SBType sb_type_id="194227" name="Liga Pro" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Evgeniy Ilyukhin - Vladimir Nemashkalo" allow_cash_out="Y" start_time="2020-04-27T14:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="11" ev_id="5323046" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21914509"/>
+          <Inplay inplay_period_num="5" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="2" score_b="2" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="2-2" scoring_system="match" last_change="2020-04-27T14:21:28" inplay_secs="332"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203001996" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Evgeniy Ilyukhin" seln_id="859193092" disporder="0" player_id="19135379" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.80" bet_ref="ODU5MTkzMDkyOjQvNTo6MA" frac_prc="4/5" us_prc="-125" last_change="2020-04-27T14:26:56"/>
+            </Seln>
+            <Seln status="A" name="Vladimir Nemashkalo" seln_id="859193093" disporder="1" player_id="19135424" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.95" bet_ref="ODU5MTkzMDkzOjE5LzIwOjow" frac_prc="19/20" us_prc="-106" last_change="2020-04-27T14:26:56"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+    <SBClass sb_class_id="189477" disporder="0" name="Ukraine">
+      <SBType sb_type_id="194561" name="Win Cup" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Yuriy Medvedev - Denis Marchenko" allow_cash_out="Y" start_time="2020-04-27T14:10:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="21" ev_id="5323729" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21915401"/>
+          <Inplay inplay_period_num="3" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="1" score_b="1" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="1-1" scoring_system="match" last_change="2020-04-27T14:25:18" inplay_secs="102"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203011506" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Yuriy Medvedev" seln_id="859238212" disporder="0" player_id="19149527" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.08" bet_ref="ODU5MjM4MjEyOjI3LzI1Ojow" frac_prc="27/25" us_prc="+108" last_change="2020-04-27T14:26:53"/>
+            </Seln>
+            <Seln status="A" name="Denis Marchenko" seln_id="859238213" disporder="1" player_id="19149520" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.70" bet_ref="ODU5MjM4MjEzOjcvMTA6OjA" frac_prc="7/10" us_prc="-143" last_change="2020-04-27T14:26:53"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Mikhail Varchenko - Oleg Pavlyuk" allow_cash_out="Y" start_time="2020-04-27T14:10:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="20" ev_id="5323731" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21915403"/>
+          <Inplay inplay_period_num="4" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="1" score_b="2" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="1-2" scoring_system="match" last_change="2020-04-27T14:25:38" inplay_secs="82"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203011512" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Mikhail Varchenko" seln_id="859238224" disporder="0" player_id="19149352" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="6.20" bet_ref="ODU5MjM4MjI0OjI2LzU6OjA" frac_prc="26/5" us_prc="+520" last_change="2020-04-27T14:26:57"/>
+            </Seln>
+            <Seln status="A" name="Oleg Pavlyuk" seln_id="859238225" disporder="1" player_id="19149387" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.10" bet_ref="ODU5MjM4MjI1OjEvMTA6OjA" frac_prc="1/10" us_prc="-1000" last_change="2020-04-27T14:26:57"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194578" name="Win Cup (W)" disporder="0">
+        <Ev inplay_allowed="Y" status="S" name="Anna Lapa - Anastasia Gordinskaya" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="15" ev_id="5323794" disporder="0">
+          <EvDetail br_match_id="21915503"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="1" score_b="0" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="1-0" scoring_system="match" last_change="2020-04-27T14:24:51" inplay_secs="129"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203011727" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Anna Lapa" seln_id="859238670" disporder="0" player_id="19131129" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.181" bet_ref="ODU5MjM4NjcwOjIvMTE6OjA" frac_prc="2/11" us_prc="-550" last_change="2020-04-27T14:26:52"/>
+            </Seln>
+            <Seln status="A" name="Anastasia Gordinskaya" seln_id="859238671" disporder="1" player_id="19149651" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="4.45" bet_ref="ODU5MjM4NjcxOjY5LzIwOjow" frac_prc="69/20" us_prc="+345" last_change="2020-04-27T14:26:52"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Alina Stefanyuk - Aleksandra Sova" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="16" ev_id="5323795" disporder="0">
+          <EvDetail br_match_id="21915505"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="1" score_b="0" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="1-0" scoring_system="match" last_change="2020-04-27T14:23:38" inplay_secs="202"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203011730" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Alina Stefanyuk" seln_id="859238676" disporder="0" player_id="19141934" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODU5MjM4Njc2OjEvMTo6MA" frac_prc="1/1" us_prc="+100" last_change="2020-04-27T14:26:49"/>
+            </Seln>
+            <Seln status="A" name="Aleksandra Sova" seln_id="859238677" disporder="1" player_id="19149652" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODU5MjM4Njc3OjMvNDo6MA" frac_prc="3/4" us_prc="-134" last_change="2020-04-27T14:26:49"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+    <SBClass sb_class_id="188527" disporder="1" name="International">
+      <SBType sb_type_id="186626" name="Challenger Series" disporder="-10">
+        <Ev inplay_allowed="Y" status="A" name="Liang Qiu - Florian Bluhm" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="21" ev_id="5328490" disporder="0">
+          <EvDetail br_match_id="21921871"/>
+          <Inplay inplay_period_num="3" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="0" score_b="2" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="0-2" scoring_system="match" last_change="2020-04-27T14:26:01" inplay_secs="59"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203091491" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Liang Qiu" seln_id="859479219" disporder="0" player_id="18926803" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="5.20" bet_ref="ODU5NDc5MjE5OjIxLzU6OjA" frac_prc="21/5" us_prc="+420" last_change="2020-04-27T14:26:52"/>
+            </Seln>
+            <Seln status="A" name="Florian Bluhm" seln_id="859479220" disporder="1" player_id="18926384" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.142" bet_ref="ODU5NDc5MjIwOjEvNzo6MA" frac_prc="1/7" us_prc="-700" last_change="2020-04-27T14:26:52"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194189" name="TT Cup" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Andriy Savchenko - Andrey Tsykhotskiy" allow_cash_out="Y" start_time="2020-04-27T14:25:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="18" ev_id="5323706" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21915615"/>
+          <Inplay inplay_period_num="1" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="0" score_b="0" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="0-0" scoring_system="match" last_change="2020-04-26T20:49:53" inplay_secs="80"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203011350" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Andriy Savchenko" seln_id="859237504" disporder="0" player_id="19135811" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.95" bet_ref="ODU5MjM3NTA0OjM5LzIwOjow" frac_prc="39/20" us_prc="+195" last_change="2020-04-27T14:26:51"/>
+            </Seln>
+            <Seln status="A" name="Andrey Tsykhotskiy" seln_id="859237505" disporder="1" player_id="19132755" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.363" bet_ref="ODU5MjM3NTA1OjQvMTE6OjA" frac_prc="4/11" us_prc="-275" last_change="2020-04-27T14:26:51"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194299" name="Setka Cup" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Alexander Naida - Ruslan Solomko" allow_cash_out="Y" start_time="2020-04-27T14:05:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="18" ev_id="5322113" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21913205"/>
+          <Inplay inplay_period_num="5" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="2" score_b="2" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="2-2" scoring_system="match" last_change="2020-04-27T14:25:21" inplay_secs="99"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202989570" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Alexander Naida" seln_id="859139375" disporder="0" player_id="19136930" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.47" bet_ref="ODU5MTM5Mzc1OjQ3LzEwMDo6MA" frac_prc="47/100" us_prc="-213" last_change="2020-04-27T14:26:48"/>
+            </Seln>
+            <Seln status="A" name="Ruslan Solomko" seln_id="859139376" disporder="1" player_id="19142608" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.55" bet_ref="ODU5MTM5Mzc2OjMxLzIwOjow" frac_prc="31/20" us_prc="+155" last_change="2020-04-27T14:26:48"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Ihor Hudushyn - Dmytro Khairov" allow_cash_out="Y" start_time="2020-04-27T14:15:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="20" ev_id="5322114" disporder="0">
+          <Notes>Best of 5</Notes>
+          <EvDetail br_match_id="21913207"/>
+          <Inplay inplay_period_num="4" inplay_period_name_short="Intermission" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" score_a="2" score_b="1" inplay_period_name="Intermission" clock_mode="FORWARD" inplay_period="intermission" score_string="2-1" scoring_system="match" last_change="2020-04-27T14:25:52" inplay_secs="69"/>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202989573" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Ihor Hudushyn" seln_id="859139381" disporder="0" player_id="19137669" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.10" bet_ref="ODU5MTM5MzgxOjEvMTA6OjA" frac_prc="1/10" us_prc="-1000" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+            <Seln status="A" name="Dmytro Khairov" seln_id="859139382" disporder="1" player_id="19137092" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="6.20" bet_ref="ODU5MTM5MzgyOjI2LzU6OjA" frac_prc="26/5" us_prc="+520" last_change="2020-04-27T14:26:58"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+  <Sport sport_code="VOLL" allow_cash_out="Y" name="Volleyball" disporder="5">
+    <SBClass sb_class_id="10649" disporder="-1" name="Russia">
+      <SBType sb_type_id="194201" name="Ural League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Ural Military - Ural Air Force" allow_cash_out="Y" start_time="2020-04-27T13:39:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="5" ev_id="5327209" disporder="-700">
+          <Inplay inplay_period_num="3" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="0" score_b="2" inplay_period_name="Live" num_periods="5" clock_mode="FORWARD" inplay_period="live" score_string="0-2" scoring_system="set-match" last_change="2020-04-27T14:26:44" inplay_secs="2851"/>
+          <Teams>
+            <Team team_id="1956329" team_order="0" name="Ural Military" short_name="Ural Military"/>
+            <Team team_id="1956320" team_order="1" name="Ural Air Force" short_name="Ural Air Force"/>
+          </Teams>
+          <Mkt status="A" name="Match Winner" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203059564" inplay_avail="Y" disporder="-100" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Ural Military" seln_id="859394540" team_id="1956329" disporder="-1" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="7.10" bet_ref="ODU5Mzk0NTQwOjYxMC8xMDA6OjA" frac_prc="610/100" us_prc="+610" last_change="2020-04-27T14:26:48"/>
+            </Seln>
+            <Seln status="A" name="Ural Air Force" seln_id="859394541" team_id="1956320" disporder="0" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.08" bet_ref="ODU5Mzk0NTQxOjIvMjU6OjA" frac_prc="2/25" us_prc="-1250" last_change="2020-04-27T14:26:20"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+  <Sport sport_code="ESPS" allow_cash_out="Y" name="Esports" disporder="9">
+    <SBClass sb_class_id="189391" disporder="-300" name="DOTA 2">
+      <SBType sb_type_id="194659" name="WePlay! Pushka League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Team Spirit - VP.Prodigy" allow_cash_out="Y" start_time="2020-04-27T14:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="9" ev_id="5318920" disporder="-4">
+          <Inplay inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="0" score_b="0" inplay_period_name="Live" clock_mode="FORWARD" inplay_period="live" score_string="0-0" scoring_system="match" last_change="2020-04-27T14:02:02" inplay_secs="1507"/>
+          <Teams>
+            <Team team_id="1952242" team_order="0" name="Team Spirit" short_name="Team Spirit"/>
+            <Team team_id="1958873" team_order="1" name="VP.Prodigy" short_name="VP.Prodigy"/>
+          </Teams>
+          <Mkt status="A" name="Match Winner" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202918235" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Team Spirit" seln_id="858923586" team_id="1952242" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.27" bet_ref="ODU4OTIzNTg2OjEyNy8xMDA6OjA" frac_prc="127/100" us_prc="+127" last_change="2020-04-27T14:25:51"/>
+            </Seln>
+            <Seln status="A" name="VP.Prodigy" seln_id="858923585" team_id="1958873" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.59" bet_ref="ODU4OTIzNTg1OjU5LzEwMDo6MA" frac_prc="59/100" us_prc="-170" last_change="2020-04-27T14:25:51"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194598" name="Epic Prime League" disporder="50">
+        <Ev inplay_allowed="Y" status="A" name="Winstrike - Cyber Legacy" allow_cash_out="Y" start_time="2020-04-27T13:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="8" ev_id="5299393" disporder="-4">
+          <EvDetail br_match_id="21915015"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="1" score_b="0" inplay_period_name="Live" clock_mode="FORWARD" inplay_period="live" score_string="1-0" scoring_system="match" last_change="2020-04-27T14:22:14" inplay_secs="5207"/>
+          <Teams>
+            <Team team_id="1952158" team_order="0" name="Winstrike" short_name="Winstrike"/>
+            <Team team_id="1953787" team_order="1" name="Cyber Legacy" short_name="Cyber Legacy"/>
+          </Teams>
+          <Mkt status="A" name="Match Winner" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="202604847" inplay_avail="Y" disporder="-9999" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="H2HT" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Winstrike" seln_id="857846096" team_id="1952158" disporder="0" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.75" bet_ref="ODU3ODQ2MDk2OjMvNDo6MA" frac_prc="3/4" us_prc="-134" last_change="2020-04-27T14:22:28"/>
+            </Seln>
+            <Seln status="A" name="Cyber Legacy" seln_id="857846095" team_id="1953787" disporder="1" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.00" bet_ref="ODU3ODQ2MDk1OjEvMTo6MA" frac_prc="1/1" us_prc="+100" last_change="2020-04-27T14:22:28"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+  <Sport sport_code="ICEH" allow_cash_out="Y" name="Ice Hockey" disporder="10">
+    <SBClass sb_class_id="10558" disporder="0" name="Russia">
+      <SBType sb_type_id="194264" name="Liga Pro Short Hockey" disporder="0">
+        <Ev inplay_allowed="Y" status="S" name="Reaktivatori - Kings Town" allow_cash_out="Y" start_time="2020-04-27T14:10:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="12" ev_id="5325354" disporder="-35">
+          <Notes>3*10 minutes</Notes>
+          <EvDetail br_match_id="21915857"/>
+          <Inplay inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" period_length="600" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="300" score_a="0" score_b="0" inplay_period_name="Starting" num_periods="3" clock_mode="NONE" inplay_period="pre_match" num_extra_periods="1" score_string="0-0" scoring_system="match" last_change="2020-04-27T01:43:16" inplay_secs="0"/>
+          <Teams>
+            <Team team_id="1956264" team_order="0" name="Reaktivatori" short_name="Reaktivatori"/>
+            <Team team_id="1956263" team_order="1" name="Kings Town" short_name="Kings Town"/>
+          </Teams>
+          <Mkt status="A" name="Match Result (Team based)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203028738" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Reaktivatori" seln_id="859305405" team_id="1956264" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.30" bet_ref="ODU5MzA1NDA1OjEzLzEwOjow" frac_prc="13/10" us_prc="+130" last_change="2020-04-27T14:16:56"/>
+            </Seln>
+            <Seln status="A" seln_id="859305404" seln_sort="D" name="Draw" disporder="1">
+              <Price prc_type="LP" dec_prc="4.50" bet_ref="ODU5MzA1NDA0OjcvMjo6MA" frac_prc="7/2" us_prc="+350" last_change="2020-04-27T14:08:56"/>
+            </Seln>
+            <Seln status="A" name="Kings Town" seln_id="859305403" team_id="1956263" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="2.30" bet_ref="ODU5MzA1NDAzOjEzLzEwOjow" frac_prc="13/10" us_prc="+130" last_change="2020-04-27T14:16:56"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194644" name="Comet Short Hockey" disporder="0">
+        <Ev inplay_allowed="Y" status="S" name="Ershistyye Tigry - Stalker" allow_cash_out="Y" start_time="2020-04-27T14:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="10" ev_id="5325358" disporder="-35">
+          <Notes>3*10 minutes</Notes>
+          <EvDetail br_match_id="21915847"/>
+          <Inplay inplay_period_num="2" inplay_period_name_short="Delayed" clock_status="STOPPED" period_length="600" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" extra_period_length="300" score_a="4" score_b="3" inplay_period_name="Delayed" num_periods="3" clock_mode="FORWARD" inplay_period="delay" num_extra_periods="1" score_string="4-3" scoring_system="match" last_change="2020-04-27T14:26:52" inplay_secs="1041"/>
+          <Teams>
+            <Team team_id="1961310" team_order="0" name="Ershistyye Tigry" short_name="Ershistyye Tigry"/>
+            <Team team_id="1960723" team_order="1" name="Stalker" short_name="Stalker"/>
+          </Teams>
+          <Mkt status="A" name="Match Result (Team based)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203028993" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="Ershistyye Tigry" seln_id="859305946" team_id="1961310" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="1.222" bet_ref="ODU5MzA1OTQ2OjIvOTo6MA" frac_prc="2/9" us_prc="-450" last_change="2020-04-27T14:26:08"/>
+            </Seln>
+            <Seln status="A" seln_id="859305945" seln_sort="D" name="Draw" disporder="1">
+              <Price prc_type="LP" dec_prc="6.00" bet_ref="ODU5MzA1OTQ1OjUvMTo6MA" frac_prc="5/1" us_prc="+500" last_change="2020-04-27T14:26:08"/>
+            </Seln>
+            <Seln status="A" name="Stalker" seln_id="859305944" team_id="1960723" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="9.50" bet_ref="ODU5MzA1OTQ0OjE3LzI6OjA" frac_prc="17/2" us_prc="+850" last_change="2020-04-27T14:26:34"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+    <SBClass sb_class_id="189455" disporder="0" name=" Esports">
+      <SBType sb_type_id="194407" name="Liga Pro eHockey (3x4')" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="I Love you (ILY) Esports - Saint Petersburg (SPB) Esports" allow_cash_out="Y" start_time="2020-04-27T14:10:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="2" ev_id="5328603" disporder="-35">
+          <Inplay inplay_period_num="2" inplay_period_name_short="Intermission" clock_status="STOPPED" period_length="240" correct_at="2020-04-27T14:26:59" inplay_period_finished="Y" extra_period_length="300" score_a="1" score_b="1" inplay_period_name="Intermission" num_periods="3" clock_mode="FORWARD" inplay_period="intermission" num_extra_periods="1" score_string="1-1" scoring_system="match" last_change="2020-04-27T14:24:31" inplay_secs="480"/>
+          <Teams>
+            <Team team_id="1958693" team_order="0" name="I Love you (ILY) Esports" short_name="I Love you (ILY) Esports"/>
+            <Team team_id="1958692" team_order="1" name="Saint Petersburg (SPB) Esports" short_name="Saint Petersburg (SPB) Esports"/>
+          </Teams>
+          <Mkt status="A" name="Match Result (Team based)" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203095525" inplay_avail="Y" disporder="10" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="MRES" lp_avail="Y" mkt_sort_name="Matches">
+            <Seln status="A" name="I Love you (ILY) Esports" seln_id="859489443" team_id="1958693" disporder="0" seln_sort="H">
+              <Price prc_type="LP" dec_prc="2.45" bet_ref="ODU5NDg5NDQzOjE0NTAvMTAwMDo6MA" frac_prc="29/20" us_prc="+145" last_change="2020-04-27T14:24:56"/>
+            </Seln>
+            <Seln status="A" seln_id="859489442" seln_sort="D" name="Draw" disporder="1">
+              <Price prc_type="LP" dec_prc="3.00" bet_ref="ODU5NDg5NDQyOjIwMDAvMTAwMDo6MA" frac_prc="2/1" us_prc="+200" last_change="2020-04-27T14:24:56"/>
+            </Seln>
+            <Seln status="A" name="Saint Petersburg (SPB) Esports" seln_id="859489441" team_id="1958692" disporder="2" seln_sort="A">
+              <Price prc_type="LP" dec_prc="2.70" bet_ref="ODU5NDg5NDQxOjE3MDAvMTAwMDo6MA" frac_prc="17/10" us_prc="+170" last_change="2020-04-27T14:24:56"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+  <Sport sport_code="TENN" allow_cash_out="Y" name="Tennis" disporder="10">
+    <SBClass sb_class_id="189459" disporder="-1200" name="Esports">
+      <SBType sb_type_id="194675" name="Madrid Open" disporder="-25">
+        <Ev inplay_allowed="Y" status="S" name="Benoit Paire - Andy Murray" allow_cash_out="Y" start_time="2020-04-27T14:10:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="1" ev_id="5327235" disporder="23">
+          <Notes>1 set - Next Gen Scoring</Notes>
+          <EvDetail br_match_id="21921365"/>
+          <Inplay tennis_sets="3" inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="0" score_b="0" inplay_period_name="Starting" num_periods="3" clock_mode="NONE" inplay_period="pre_match" score_string="0-0" scoring_system="game-set-match" last_change="2020-04-27T08:55:16" inplay_secs="0"/>
+          <Participant name="Benoit Paire" full_name="Benoit Paire">
+            <Player player_id="1006849" first_name="Benoit" last_name="Paire" name="Benoit Paire" number="1"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="0"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Andy Murray" full_name="Andy Murray">
+            <Player player_id="1006698" first_name="Andy" last_name="Murray" name="Andy Murray" number="2"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="0"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203061203" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Benoit Paire" seln_id="859398512" disporder="10" player_id="1006849" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.35" bet_ref="ODU5Mzk4NTEyOjI3LzIwOjow" frac_prc="27/20" us_prc="+135" last_change="2020-04-27T14:03:38"/>
+            </Seln>
+            <Seln status="A" name="Andy Murray" seln_id="859398513" disporder="20" player_id="1006698" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.55" bet_ref="ODU5Mzk4NTEzOjExLzIwOjow" frac_prc="11/20" us_prc="-182" last_change="2020-04-27T14:03:38"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+    <SBClass sb_class_id="11308" disporder="-1011" name="Exhibition">
+      <SBType sb_type_id="194646" name="International Tennis Series" disporder="-500">
+        <Ev inplay_allowed="Y" status="A" name="Nicolas Mejia - Roberto Cid" allow_cash_out="Y" start_time="2020-04-27T13:40:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="38" ev_id="5323511" disporder="9">
+          <Notes>Next Gen Scoring, Best of 3</Notes>
+          <EvDetail br_match_id="21915265"/>
+          <Inplay tennis_sets="3" inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="1" score_b="0" inplay_period_name="Live" num_periods="3" clock_mode="FORWARD" inplay_period="live" score_string="1-0" scoring_system="game-set-match" last_change="2020-04-27T14:14:51" inplay_secs="2715"/>
+          <Participant name="Nicolas Mejia" full_name="Nicolas Mejia">
+            <Player first_name="Nicolas" last_name="Mejia" name="Nicolas Mejia" number="1" player_id="18918562" initials="N"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="1"/>
+              <MatchStat name="sets_won" value="1"/>
+              <MatchStat name="is_server" value="Y"/>
+              <MatchStat name="set_1_games" value="4"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Roberto Cid" full_name="Roberto Cid">
+            <Player player_id="1004923" first_name="Roberto" last_name="Cid" name="Roberto Cid" number="2"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="15"/>
+              <MatchStat name="current_set_games_won" value="2"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+              <MatchStat name="set_1_games" value="3"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203008707" inplay_avail="Y" disporder="0" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Nicolas Mejia" seln_id="859224264" disporder="10" player_id="18918562" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="2.30" bet_ref="ODU5MjI0MjY0OjEzLzEwOjow" frac_prc="13/10" us_prc="+130" last_change="2020-04-27T14:26:53"/>
+            </Seln>
+            <Seln status="A" name="Roberto Cid" seln_id="859224265" disporder="20" player_id="1004923" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.60" bet_ref="ODU5MjI0MjY1OjMvNTo6MA" frac_prc="3/5" us_prc="-167" last_change="2020-04-27T14:26:53"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Evan King - Nicolas Mejia" allow_cash_out="Y" start_time="2020-04-27T14:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="UTC" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="13" ev_id="5323512" disporder="9">
+          <Notes>Next Gen Scoring, Best of 3</Notes>
+          <EvDetail br_match_id="21915267"/>
+          <Inplay tennis_sets="3" inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="0" score_b="0" inplay_period_name="Starting" num_periods="3" clock_mode="NONE" inplay_period="pre_match" score_string="0-0" scoring_system="game-set-match" last_change="2020-04-26T20:31:10" inplay_secs="0"/>
+          <Participant name="Evan King" full_name="Evan King">
+            <Player player_id="1005991" first_name="Evan" last_name="King" name="Evan King" number="1"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="0"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Nicolas Mejia" full_name="Nicolas Mejia">
+            <Player first_name="Nicolas" last_name="Mejia" name="Nicolas Mejia" number="2" player_id="18918562" initials="N"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="0"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203008756" inplay_avail="Y" disporder="0" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Evan King" seln_id="859224430" disporder="10" player_id="1005991" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="4.15" bet_ref="ODU5MjI0NDMwOjYzLzIwOjow" frac_prc="63/20" us_prc="+315" last_change="2020-04-27T14:04:22"/>
+            </Seln>
+            <Seln status="A" name="Nicolas Mejia" seln_id="859224431" disporder="20" player_id="18918562" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="1.22" bet_ref="ODU5MjI0NDMxOjExLzUwOjow" frac_prc="11/50" us_prc="-455" last_change="2020-04-27T10:54:27"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+    <SBClass sb_class_id="189431" disporder="-1010" name="Russia">
+      <SBType sb_type_id="194246" name="Pro League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Maxim Poluyanovich - Victor Shusha" allow_cash_out="Y" start_time="2020-04-27T13:20:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="23" ev_id="5328542" disporder="23">
+          <Inplay tennis_sets="3" inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="1" score_b="0" inplay_period_name="Live" num_periods="3" clock_mode="FORWARD" inplay_period="live" score_string="1-0" scoring_system="game-set-match" last_change="2020-04-27T13:56:02" inplay_secs="1879"/>
+          <Participant name="Maxim Poluyanovich" full_name="Maxim Poluyanovich">
+            <Player first_name="Maxim" last_name="Poluyanovich" name="Maxim Poluyanovich" number="1" player_id="19148015" initials="M"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="15"/>
+              <MatchStat name="current_set_games_won" value="4"/>
+              <MatchStat name="sets_won" value="1"/>
+              <MatchStat name="is_server" value="Y"/>
+              <MatchStat name="set_1_games" value="6"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Victor Shusha" full_name="Victor Shusha">
+            <Player first_name="Victor" last_name="Shusha" name="Victor Shusha" number="2" player_id="19150043" initials="V"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="4"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+              <MatchStat name="set_1_games" value="3"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203093737" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Maxim Poluyanovich" seln_id="859485039" disporder="10" player_id="19148015" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.14" bet_ref="ODU5NDg1MDM5OjcvNTA6OjA" frac_prc="7/50" us_prc="-715" last_change="2020-04-27T14:26:45"/>
+            </Seln>
+            <Seln status="A" name="Victor Shusha" seln_id="859485040" disporder="20" player_id="19150043" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="5.20" bet_ref="ODU5NDg1MDQwOjIxLzU6OjA" frac_prc="21/5" us_prc="+420" last_change="2020-04-27T14:26:45"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+        <Ev inplay_allowed="Y" status="S" name="Mohammad Khaled Abou Khamis - Leonid Glebov" allow_cash_out="Y" start_time="2020-04-27T14:00:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="N" mkt_count="3" ev_id="5323420" disporder="23">
+          <EvDetail br_match_id="21915017"/>
+          <Inplay tennis_sets="3" inplay_period_num="0" inplay_period_name_short="PERIOD_pre_match_SHORT" clock_status="STOPPED" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="0" score_b="0" inplay_period_name="Starting" num_periods="3" clock_mode="NONE" inplay_period="pre_match" score_string="0-0" scoring_system="game-set-match" last_change="2020-04-26T20:18:55" inplay_secs="0"/>
+          <Participant name="Mohammad Khaled Abou Khamis" full_name="Mohammad Khaled Abou Khamis">
+            <Player first_name="Mohammad Khaled Abou" last_name="Khamis" name="Mohammad Khaled Abou Khamis" number="1" player_id="18985668" initials="MKA"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="0"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Leonid Glebov" full_name="Leonid Glebov">
+            <Player first_name="Leonid" last_name="Glebov" name="Leonid Glebov" number="2" player_id="19149746" initials="L"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="0"/>
+              <MatchStat name="current_set_games_won" value="0"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="N"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203007216" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Mohammad Khaled Abou Khamis" seln_id="859218660" disporder="10" player_id="18985668" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.53" bet_ref="ODU5MjE4NjYwOjUzLzEwMDo6MA" frac_prc="53/100" us_prc="-189" last_change="2020-04-27T14:01:22"/>
+            </Seln>
+            <Seln status="A" name="Leonid Glebov" seln_id="859218661" disporder="20" player_id="19149746" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="2.40" bet_ref="ODU5MjE4NjYxOjcvNTo6MA" frac_prc="7/5" us_prc="+140" last_change="2020-04-27T14:01:22"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+      <SBType sb_type_id="194507" name="VS Open Women" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Lilia Grebenyuk - Elena Nikolaeva" allow_cash_out="Y" start_time="2020-04-27T13:50:00" allow_cash_out_pre_ev="Y" virtual="N" ev_timezone="Europe/London" allow_cash_out_inplay="Y" inplay_now="Y" mkt_count="10" ev_id="5328541" disporder="16">
+          <Inplay tennis_sets="3" inplay_period_num="2" inplay_period_name_short="PERIOD_live_SHORT" clock_status="TICKING" correct_at="2020-04-27T14:26:59" inplay_period_finished="N" score_a="1" score_b="0" inplay_period_name="Live" num_periods="3" clock_mode="FORWARD" inplay_period="live" score_string="1-0" scoring_system="game-set-match" last_change="2020-04-27T13:57:36" inplay_secs="1807"/>
+          <Participant name="Lilia Grebenyuk" full_name="Lilia Grebenyuk">
+            <Player first_name="Lilia" last_name="Grebenyuk" name="Lilia Grebenyuk" number="1" player_id="19147843" initials="L"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="A"/>
+              <MatchStat name="current_set_games_won" value="4"/>
+              <MatchStat name="sets_won" value="1"/>
+              <MatchStat name="is_server" value="N"/>
+              <MatchStat name="set_1_games" value="7"/>
+            </MatchStats>
+          </Participant>
+          <Participant name="Elena Nikolaeva" full_name="Elena Nikolaeva">
+            <Player first_name="Elena" last_name="Nikolaeva" name="Elena Nikolaeva" number="2" player_id="19147842" initials="E"/>
+            <MatchStats>
+              <MatchStat name="current_game_score" value="40"/>
+              <MatchStat name="current_set_games_won" value="2"/>
+              <MatchStat name="sets_won" value="0"/>
+              <MatchStat name="is_server" value="Y"/>
+              <MatchStat name="set_1_games" value="6"/>
+            </MatchStats>
+          </Participant>
+          <Mkt status="A" name="Match Head to Head" allow_cash_out="Y" allow_cash_out_pre_ev="Y" displayed="Y" mkt_id="203093448" inplay_avail="Y" disporder="1" allow_cash_out_inplay="Y" sp_avail="N" mkt_sort="HTOH" lp_avail="Y" mkt_sort_name="Head to head">
+            <Seln status="A" name="Lilia Grebenyuk" seln_id="859484387" disporder="10" player_id="19147843" seln_sort="P1">
+              <Price prc_type="LP" dec_prc="1.01" bet_ref="ODU5NDg0Mzg3OjEvMTAwOjow" frac_prc="1/100" us_prc="-10000" last_change="2020-04-27T14:26:50"/>
+            </Seln>
+            <Seln status="A" name="Elena Nikolaeva" seln_id="859484388" disporder="20" player_id="19147842" seln_sort="P2">
+              <Price prc_type="LP" dec_prc="22.00" bet_ref="ODU5NDg0Mzg4OjIxLzE6OjA" frac_prc="21/1" us_prc="+2100" last_change="2020-04-27T14:26:50"/>
+            </Seln>
+          </Mkt>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

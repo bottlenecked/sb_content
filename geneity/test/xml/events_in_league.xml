@@ -1,0 +1,168 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzOTY1MzY3ODo0OmVu" version="1.0" request="get_events_for_type">
+  <Sport sport_code="FOOT" name="Soccer" disporder="-300">
+    <SBClass sb_class_id="189438" disporder="0" name="Esports">
+      <SBType sb_type_id="194563" name="Cyber Champions League" disporder="0">
+        <Ev inplay_allowed="Y" status="A" name="Ajax (Sambo) Esports - Bayer Leverkusen (Indra13_27) Esports" start_time="2020-04-27T18:00:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324043" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914797"/>
+          <Teams>
+            <Team team_id="1961992" team_order="0" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+            <Team team_id="1961993" team_order="1" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Atalanta (Ishking11) Esports - Valencia (Supernova) Esports" start_time="2020-04-27T18:00:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324044" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914799"/>
+          <Teams>
+            <Team team_id="1961994" team_order="0" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+            <Team team_id="1961995" team_order="1" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Benfica (Fric) Esports - Ajax (Sambo) Esports" start_time="2020-04-27T18:15:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324060" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914801"/>
+          <Teams>
+            <Team team_id="1961996" team_order="0" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+            <Team team_id="1961992" team_order="1" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Atalanta (Ishking11) Esports - Bayer Leverkusen (Indra13_27) Esports" start_time="2020-04-27T18:15:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324061" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914803"/>
+          <Teams>
+            <Team team_id="1961994" team_order="0" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+            <Team team_id="1961993" team_order="1" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Atalanta (Ishking11) Esports - Ajax (Sambo) Esports" start_time="2020-04-27T18:30:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324062" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914805"/>
+          <Teams>
+            <Team team_id="1961994" team_order="0" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+            <Team team_id="1961992" team_order="1" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Benfica (Fric) Esports - Valencia (Supernova) Esports" start_time="2020-04-27T18:30:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324063" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914807"/>
+          <Teams>
+            <Team team_id="1961996" team_order="0" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+            <Team team_id="1961995" team_order="1" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Benfica (Fric) Esports - Bayer Leverkusen (Indra13_27) Esports" start_time="2020-04-27T18:45:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324064" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914809"/>
+          <Teams>
+            <Team team_id="1961996" team_order="0" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+            <Team team_id="1961993" team_order="1" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Valencia (Supernova) Esports - Ajax (Sambo) Esports" start_time="2020-04-27T18:45:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324065" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914811"/>
+          <Teams>
+            <Team team_id="1961995" team_order="0" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+            <Team team_id="1961992" team_order="1" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Benfica (Fric) Esports - Atalanta (Ishking11) Esports" start_time="2020-04-27T19:00:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324066" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914813"/>
+          <Teams>
+            <Team team_id="1961996" team_order="0" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+            <Team team_id="1961994" team_order="1" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Valencia (Supernova) Esports - Bayer Leverkusen (Indra13_27) Esports" start_time="2020-04-27T19:00:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324067" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914815"/>
+          <Teams>
+            <Team team_id="1961995" team_order="0" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+            <Team team_id="1961993" team_order="1" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Valencia (Supernova) Esports - Atalanta (Ishking11) Esports" start_time="2020-04-27T19:15:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324068" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914817"/>
+          <Teams>
+            <Team team_id="1961995" team_order="0" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+            <Team team_id="1961994" team_order="1" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Bayer Leverkusen (Indra13_27) Esports - Ajax (Sambo) Esports" start_time="2020-04-27T19:15:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324069" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914819"/>
+          <Teams>
+            <Team team_id="1961993" team_order="0" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+            <Team team_id="1961992" team_order="1" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Ajax (Sambo) Esports - Benfica (Fric) Esports" start_time="2020-04-27T19:30:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324070" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914821"/>
+          <Teams>
+            <Team team_id="1961992" team_order="0" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+            <Team team_id="1961996" team_order="1" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Bayer Leverkusen (Indra13_27) Esports - Atalanta (Ishking11) Esports" start_time="2020-04-27T19:30:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324071" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914823"/>
+          <Teams>
+            <Team team_id="1961993" team_order="0" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+            <Team team_id="1961994" team_order="1" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Valencia (Supernova) Esports - Benfica (Fric) Esports" start_time="2020-04-27T19:45:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324072" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914825"/>
+          <Teams>
+            <Team team_id="1961995" team_order="0" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+            <Team team_id="1961996" team_order="1" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Ajax (Sambo) Esports - Atalanta (Ishking11) Esports" start_time="2020-04-27T19:45:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324073" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914827"/>
+          <Teams>
+            <Team team_id="1961992" team_order="0" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+            <Team team_id="1961994" team_order="1" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="N" status="A" name="Bayer Leverkusen (Indra13_27) Esports - Benfica (Fric) Esports" start_time="2020-04-27T20:00:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324074" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914829"/>
+          <Teams>
+            <Team team_id="1961993" team_order="0" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+            <Team team_id="1961996" team_order="1" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Ajax (Sambo) Esports - Valencia (Supernova) Esports" start_time="2020-04-27T20:00:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324075" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914831"/>
+          <Teams>
+            <Team team_id="1961992" team_order="0" name="Ajax (Sambo) Esports" short_name="Ajax (Sambo) Esports"/>
+            <Team team_id="1961995" team_order="1" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Atalanta (Ishking11) Esports - Benfica (Fric) Esports" start_time="2020-04-27T20:15:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324076" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914833"/>
+          <Teams>
+            <Team team_id="1961994" team_order="0" name="Atalanta (Ishking11) Esports" short_name="Atalanta (Ishking11) Esports"/>
+            <Team team_id="1961996" team_order="1" name="Benfica (Fric) Esports" short_name="Benfica (Fric) Esports"/>
+          </Teams>
+        </Ev>
+        <Ev inplay_allowed="Y" status="A" name="Bayer Leverkusen (Indra13_27) Esports - Valencia (Supernova) Esports" start_time="2020-04-27T20:15:00" virtual="N" ev_timezone="Europe/London" inplay_now="N" mkt_count="1" ev_id="5324077" disporder="-350">
+          <Notes>2X5 minutes match</Notes>
+          <EvDetail br_match_id="21914835"/>
+          <Teams>
+            <Team team_id="1961993" team_order="0" name="Bayer Leverkusen (Indra13_27) Esports" short_name="Bayer Leverkusen (Indra13_27) Esports"/>
+            <Team team_id="1961995" team_order="1" name="Valencia (Supernova) Esports" short_name="Valencia (Supernova) Esports"/>
+          </Teams>
+        </Ev>
+      </SBType>
+    </SBClass>
+  </Sport>
+</ContentAPI>

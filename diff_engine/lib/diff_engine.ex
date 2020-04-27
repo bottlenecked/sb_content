@@ -18,6 +18,6 @@ defmodule DiffEngine do
       &MarketDiff.diff/2
     ]
     |> Enum.map(fn fun -> fun.(old_event, new_event) end)
-    |> Enum.flat_map(& &1)
+    |> List.flatten()
   end
 end

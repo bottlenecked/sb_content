@@ -1,0 +1,81 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzOTYxMzMyMjo0OmVu" version="1.0" request="get_hierarchy">
+  <Sport sport_code="FOOT" name="Soccer" disporder="-300">
+    <SBClass sb_class_id="188566" disporder="-9750" name="Champions League">
+      <SBType sb_type_id="182758" name="Outright Winner" has_events="Y" disporder="10"/>
+    </SBClass>
+    <SBClass sb_class_id="188567" disporder="-9700" name="Europa League">
+      <SBType sb_type_id="182760" name="Outright Winner" has_events="Y" disporder="10"/>
+    </SBClass>
+    <SBClass sb_class_id="11364" disporder="-9640" name="International">
+      <SBType sb_type_id="183994" name="Players Specials" has_events="Y" disporder="-9640"/>
+      <SBType sb_type_id="183993" name="Manager Specials" has_events="Y" disporder="5"/>
+    </SBClass>
+    <SBClass sb_class_id="1" disporder="-9600" name="England">
+      <SBType sb_type_id="1" name="Premier League" has_events="Y" disporder="-9999"/>
+      <SBType sb_type_id="2" name="Championship" has_events="Y" disporder="-7999"/>
+    </SBClass>
+    <SBClass sb_class_id="24" disporder="-8000" name="Germany">
+      <SBType sb_type_id="216" name="Bundesliga" has_events="Y" disporder="-999"/>
+      <SBType sb_type_id="217" name="2.Bundesliga" has_events="Y" disporder="-799"/>
+      <SBType sb_type_id="17313" name="3.Liga" has_events="Y" disporder="-699"/>
+    </SBClass>
+    <SBClass sb_class_id="23" disporder="-7000" name="France">
+      <SBType sb_type_id="215" name="Ligue 1" has_events="Y" disporder="0"/>
+    </SBClass>
+    <SBClass sb_class_id="11382" disporder="-6500" name="Portugal">
+      <SBType sb_type_id="17083" name="Primeira Liga" has_events="Y" disporder="0"/>
+    </SBClass>
+    <SBClass sb_class_id="11384" disporder="-5300" name="Turkey">
+      <SBType sb_type_id="17093" name="Süper Lig" has_events="Y" disporder="-100"/>
+    </SBClass>
+    <SBClass sb_class_id="189439" disporder="-3000" name="EURO">
+      <SBType sb_type_id="194253" name="EURO 2021" has_events="Y" disporder="0"/>
+    </SBClass>
+    <SBClass sb_class_id="188650" disporder="-2000" name="Copa América">
+      <SBType sb_type_id="183732" name="Outright Winner" has_events="Y" disporder="-8800"/>
+    </SBClass>
+    <SBClass sb_class_id="11395" disporder="-840" name="Belarus">
+      <SBType sb_type_id="17221" name="Vysheyshaya Liga" has_events="Y" disporder="-9999"/>
+      <SBType sb_type_id="17217" name="Cup" has_events="Y" disporder="-9600"/>
+    </SBClass>
+    <SBClass sb_class_id="188621" disporder="-560" name="Nicaragua">
+      <SBType sb_type_id="183321" name="Primera Division" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="191238" name="U20 Liga Primera Juvenil" has_events="Y" disporder="1"/>
+    </SBClass>
+    <SBClass sb_class_id="11373" disporder="-545" name="South Korea">
+      <SBType sb_type_id="17060" name="K League" has_events="Y" disporder="-9999"/>
+    </SBClass>
+    <SBClass sb_class_id="11385" disporder="-445" name="Russia">
+      <SBType sb_type_id="17098" name="Premier League" has_events="Y" disporder="-1000"/>
+    </SBClass>
+    <SBClass sb_class_id="189230" disporder="-378" name="Turkmenistan">
+      <SBType sb_type_id="191425" name="Yokary Liga" has_events="Y" disporder="0"/>
+    </SBClass>
+    <SBClass sb_class_id="189438" disporder="0" name="Esports">
+      <SBType sb_type_id="194563" name="Cyber Champions League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194564" name="Cyber Europa League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194565" name="Cyber World Cup" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194570" name="England Cyber Stars League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194428" name="Esoccer Battle - Champions League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194432" name="Esoccer Battle - Euro 2020" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194430" name="Esoccer Battle - International" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194442" name="Esoccer Battle - Nations League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194426" name="Esoccer Battle - Premier League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194241" name="Esoccer Liga Pro" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194573" name="France Cyber Stars League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194577" name="Italy Cyber Stars League" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194343" name="eEURO2020" has_events="Y" disporder="0"/>
+      <SBType sb_type_id="194548" name="eLiga MX" has_events="Y" disporder="0"/>
+    </SBClass>
+    <SBClass sb_class_id="188975" disporder="0" name="UEFA">
+      <SBType sb_type_id="189482" name="UEFA Nations League" has_events="Y" disporder="-1000"/>
+      <SBType sb_type_id="189635" name="UEFA Nations League A" has_events="Y" disporder="-900"/>
+      <SBType sb_type_id="189636" name="UEFA Nations League B" has_events="Y" disporder="-800"/>
+      <SBType sb_type_id="189637" name="UEFA Nations League C" has_events="Y" disporder="-700"/>
+      <SBType sb_type_id="189638" name="UEFA Nations League D" has_events="Y" disporder="-600"/>
+    </SBClass>
+    <SBClass sb_class_id="189167" disporder="1000" name="World Cup 2022">
+      <SBType sb_type_id="190635" name="Outright Winner" has_events="Y" disporder="1000"/>
+    </SBClass>
+  </Sport>
+</ContentAPI>

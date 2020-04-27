@@ -1,0 +1,54 @@
+<ContentAPI xmlns="http://www.geneity.co.uk/genbet/ContentAPI" status="OK" timezone="UTC" msg_stamp="MTgzOTQ2MDQ0Mjo0OmVu" version="1.0" request="get_sports">
+  <Sport sport_code="FOOT" name="Soccer" has_events="Y" disporder="-300"/>
+  <Sport sport_code="BASK" name="Basketball" has_events="Y" disporder="2"/>
+  <Sport sport_code="TABL" name="Table Tennis" has_events="Y" disporder="4"/>
+  <Sport sport_code="VOLL" name="Volleyball" has_events="Y" disporder="5"/>
+  <Sport sport_code="BCHV" name="Beach Volleyball" has_events="N" disporder="6"/>
+  <Sport sport_code="ESPS" name="Esports" has_events="Y" disporder="9"/>
+  <Sport sport_code="ICEH" name="Ice Hockey" has_events="Y" disporder="10"/>
+  <Sport sport_code="TENN" name="Tennis" has_events="Y" disporder="10"/>
+  <Sport sport_code="BASE" name="Baseball" has_events="Y" disporder="11"/>
+  <Sport sport_code="AMFO" name="American Football" has_events="Y" disporder="12"/>
+  <Sport sport_code="FRM1" name="Formula 1" has_events="N" disporder="30"/>
+  <Sport sport_code="MOGP" name="Moto GP" has_events="Y" disporder="31"/>
+  <Sport sport_code="RALL" name="WRC" has_events="N" disporder="32"/>
+  <Sport sport_code="MOTO" name="Motor Sport" has_events="Y" disporder="33"/>
+  <Sport sport_code="HAND" name="Handball" has_events="Y" disporder="40"/>
+  <Sport sport_code="WTPL" name="Water Polo" has_events="Y" disporder="41"/>
+  <Sport sport_code="FUTS" name="Futsal" has_events="Y" disporder="43"/>
+  <Sport sport_code="DART" name="Darts" has_events="Y" disporder="45"/>
+  <Sport sport_code="SNOO" name="Snooker" has_events="Y" disporder="46"/>
+  <Sport sport_code="MMAF" name="MMA" has_events="Y" disporder="89"/>
+  <Sport sport_code="BOXI" name="Boxing" has_events="Y" disporder="90"/>
+  <Sport sport_code="RUGU" name="Rugby Union" has_events="Y" disporder="95"/>
+  <Sport sport_code="RUGL" name="Rugby League" has_events="N" disporder="96"/>
+  <Sport sport_code="CRIC" name="Cricket" has_events="Y" disporder="97"/>
+  <Sport sport_code="BCHS" name="Beach Soccer" has_events="N" disporder="99"/>
+  <Sport sport_code="ATHL" name="Athletics" has_events="N" disporder="100"/>
+  <Sport sport_code="BEHA" name="Beach Handball" has_events="N" disporder="115"/>
+  <Sport sport_code="GREY" name="Greyhounds" has_events="Y" disporder="118"/>
+  <Sport sport_code="HORS" name="Horse Racing" has_events="Y" disporder="119"/>
+  <Sport sport_code="SPED" name="Speedway" has_events="Y" disporder="120"/>
+  <Sport sport_code="BADM" name="Badminton" has_events="Y" disporder="121"/>
+  <Sport sport_code="CYCL" name="Cycling" has_events="Y" disporder="122"/>
+  <Sport sport_code="WINT" name="Winter Sports" has_events="Y" disporder="124"/>
+  <Sport sport_code="GYMA" name="Gymnastics" has_events="N" disporder="126"/>
+  <Sport sport_code="SWIM" name="Swimming" has_events="N" disporder="128"/>
+  <Sport sport_code="POOL" name="Pool" has_events="Y" disporder="130"/>
+  <Sport sport_code="HOCK" name="Field Hockey" has_events="N" disporder="140"/>
+  <Sport sport_code="GOLF" name="Golf" has_events="Y" disporder="150"/>
+  <Sport sport_code="CHES" name="Chess" has_events="Y" disporder="160"/>
+  <Sport sport_code="WRES" name="Wrestling" has_events="N" disporder="180"/>
+  <Sport sport_code="POKE" name="Poker" has_events="N" disporder="190"/>
+  <Sport sport_code="TROT" name="Trotting" has_events="N" disporder="240"/>
+  <Sport sport_code="FENC" name="Fencing" has_events="N" disporder="505"/>
+  <Sport sport_code="TAEK" name="Taekwondo" has_events="N" disporder="506"/>
+  <Sport sport_code="BNDY" name="Bandy" has_events="N" disporder="599"/>
+  <Sport sport_code="JUDO" name="Judo" has_events="N" disporder="600"/>
+  <Sport sport_code="RUSE" name="Rugby Sevens" has_events="N" disporder="700"/>
+  <Sport sport_code="Olmp" name="Olympics 2016" has_events="N" disporder="1100"/>
+  <Sport sport_code="PLTC" name="Politics" has_events="Y" disporder="1499"/>
+  <Sport sport_code="Entr" name="Entertainment" has_events="Y" disporder="2121"/>
+  <Sport sport_code="SPEC" name="Specials" has_events="N" disporder="9999"/>
+  <Sport sport_code="WINO" name="Winter Olympics 2018" has_events="N" disporder="99999"/>
+</ContentAPI>
