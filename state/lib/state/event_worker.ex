@@ -1,5 +1,5 @@
-defmodule State.EventServer do
-  use GenServer
+defmodule State.EventWorker do
+  use GenServer, restart: :transient
 
   alias State.Content
 
