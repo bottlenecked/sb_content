@@ -89,18 +89,8 @@ defmodule State.EventWorker do
   end
 
   defp schedule_next_poll(state) do
-    next_tick = state.polling_interval_millis + jitter_millis(-200, 200)
-    IO.inspect(next_tick: next_tick)
+    next_tick = Utils.Jitter.jitter(state.polling_interval_millis, 200)
     Process.send_after(self(), :poll, next_tick)
-  end
-
-  defp jitter_millis(min, max) do
-    rnd =
-      (max - min)
-      |> abs()
-      |> :rand.uniform()
-
-    min + rnd - 1
   end
 
   defp via_tuple(event_id, operator_id),
