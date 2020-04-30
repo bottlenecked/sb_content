@@ -1,5 +1,6 @@
 defmodule Geneity.Api do
   alias Geneity.Api.Operator
+  alias Geneity.Api.ResponseProcessor
 
   @spec get_event_data(pos_integer(), Operator.t(), String.t()) ::
           {:ok, Event.t()} | {:error, any()}
@@ -16,7 +17,11 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> Geneity.Api.EventResponseProcessor.process()
+    |> ResponseProcessor.process(&Geneity.Parser.parse_event_xml/1)
+    |> case do
+      {:ok, %{id: nil}} -> {:error, :event_not_found}
+      other -> other
+    end
   end
 
   @spec get_sport_ids(Operator.t()) ::
@@ -31,7 +36,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> Geneity.Api.ListProcessor.process(&Geneity.Parser.SportListParser.get_sport_ids/1)
+    |> ResponseProcessor.process(&Geneity.Parser.SportListParser.get_sport_ids/1)
   end
 
   @spec get_league_ids_for_sport(String.t(), Operator.t()) ::
@@ -46,7 +51,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> Geneity.Api.ListProcessor.process(&Geneity.Parser.HierarchyParser.get_league_ids/1)
+    |> ResponseProcessor.process(&Geneity.Parser.HierarchyParser.get_league_ids/1)
   end
 
   @spec get_event_ids_for_league(non_neg_integer(), Operator.t()) ::
@@ -64,7 +69,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> Geneity.Api.ListProcessor.process(&Geneity.Parser.LeagueParser.get_event_ids/1)
+    |> ResponseProcessor.process(&Geneity.Parser.LeagueParser.get_event_ids/1)
   end
 
   @spec get_live_event_ids(Operator.t()) ::
@@ -79,7 +84,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> Geneity.Api.ListProcessor.process(&Geneity.Parser.LeagueParser.get_event_ids/1)
+    |> ResponseProcessor.process(&Geneity.Parser.LeagueParser.get_event_ids/1)
   end
 
   defp do_request(path, headers) do
