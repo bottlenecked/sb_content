@@ -1,4 +1,4 @@
-defmodule Geneity.ContentDiscovery.ScrapeServer do
+defmodule Geneity.ContentDiscovery.ScrapeWorker do
   use GenServer
   require Logger
 

@@ -8,7 +8,7 @@ defmodule Geneity.ContentDiscovery.ScrapeSupervisor do
   def init(_) do
     Geneity.Api.Operator.all()
     |> Enum.map(fn operator_id ->
-      Supervisor.child_spec({Geneity.ContentDiscovery.ScrapeServer, operator_id},
+      Supervisor.child_spec({Geneity.ContentDiscovery.ScrapeWorker, operator_id},
         id: operator_id
       )
     end)

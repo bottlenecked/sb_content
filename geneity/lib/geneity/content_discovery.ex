@@ -72,16 +72,9 @@ defmodule Geneity.ContentDiscovery do
   defp scrape_for_leagues(sport_ids, operator_id) do
     result =
       sport_ids
-      |> Enum.map(fn sport_id ->
-        Task.async(fn ->
-          Api.get_league_ids_for_sport(sport_id, operator_id)
-        end)
-      end)
-      |> Task.yield_many(10_000)
-      |> Enum.map(fn {task, res} ->
-        # Shut down the tasks that did not reply nor exit
-        res || Task.shutdown(task, :brutal_kill)
-      end)
+      |> Task.async_stream(fn sport_id -> Api.get_league_ids_for_sport(sport_id, operator_id) end,
+        max_concurrency: 8
+      )
       |> Enum.zip(sport_ids)
       |> Enum.reduce(%__MODULE__{}, &reduce_sport_result/2)
 
@@ -91,16 +84,10 @@ defmodule Geneity.ContentDiscovery do
   defp scrape_for_events(result, operator_id) do
     result =
       result.league_ids
-      |> Enum.map(fn league_id ->
-        Task.async(fn ->
-          Api.get_event_ids_for_league(league_id, operator_id)
-        end)
-      end)
-      |> Task.yield_many(10_000)
-      |> Enum.map(fn {task, res} ->
-        # Shut down the tasks that did not reply nor exit
-        res || Task.shutdown(task, :brutal_kill)
-      end)
+      |> Task.async_stream(
+        fn league_id -> Api.get_event_ids_for_league(league_id, operator_id) end,
+        max_concurrency: 8
+      )
       |> Enum.zip(result.league_ids)
       |> Enum.reduce(result, &reduce_league_result/2)
 

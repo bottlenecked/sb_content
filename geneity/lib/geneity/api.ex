@@ -88,5 +88,9 @@ defmodule Geneity.Api do
     catch
       :exit, error -> {:error, error}
     end
+    |> case do
+      {:error, %{reason: :closed}} -> do_request(path, headers)
+      other -> other
+    end
   end
 end
