@@ -7,7 +7,9 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   defstruct [
     :operator_id,
     :live_interval,
-    :regular_interval
+    :regular_interval,
+    live_events: MapSet.new(),
+    pre_events: MapSet.new()
   ]
 
   def start_link(operator_id) do
@@ -29,9 +31,10 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
 
   @impl true
   def handle_info(:scrape_live = type, state) do
-    state.operator_id
-    |> ContentDiscovery.scrape_live()
-    |> handle_scrape_results(state.operator_id)
+    state =
+      state.operator_id
+      |> ContentDiscovery.scrape_live()
+      |> handle_scrape_results(type, state)
 
     state.live_interval
     |> Utils.Jitter.jitter(200)
@@ -42,9 +45,10 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
 
   @impl true
   def handle_info(:scrape_pre = type, state) do
-    state.operator_id
-    |> ContentDiscovery.scrape()
-    |> handle_scrape_results(state.operator_id)
+    state =
+      state.operator_id
+      |> ContentDiscovery.scrape()
+      |> handle_scrape_results(type, state)
 
     state.regular_interval
     |> Utils.Jitter.jitter(200)
@@ -53,15 +57,20 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     {:noreply, state}
   end
 
-  defp handle_scrape_results(results, operator_id) do
+  defp handle_scrape_results(results, type, %{operator_id: operator_id} = state) do
     results
-    |> log_errors(operator_id)
-    |> publish_event_ids(operator_id)
+    |> log_errors(type, operator_id)
+    |> search_for_possibly_new_event_ids(state)
+    |> publish_possibly_new_event_ids(state.operator_id)
+
+    update_state(type, results, state)
   end
 
-  defp log_errors(%ContentDiscovery{} = result, operator_id) do
+  defp log_errors(%ContentDiscovery{} = result, type, operator_id) do
     if result.error do
-      Logger.error("Error fetching content for operator #{operator_id}: #{inspect(result.error)}")
+      Logger.error(
+        "Error fetching #{type} content for operator #{operator_id}: #{inspect(result.error)}"
+      )
     end
 
     if result.failed_sport_lookups != [] do
@@ -85,9 +94,29 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     result
   end
 
-  defp publish_event_ids(%ContentDiscovery{event_ids: event_ids}, operator_id) do
-    IO.inspect(operator: operator_id, events: event_ids)
+  defp search_for_possibly_new_event_ids(%ContentDiscovery{event_ids: event_ids}, state) do
+    # Note: we are searching for _possibly_ new events because previous poll might have encountered errors for some sports or leagues
+    # and thus not return event ids. Since each polling round the result is stored, we might end up re-discovering new events
+    # because in the new polling round we managed to scrape without errors
+    event_ids
+    |> Enum.filter(fn id -> !MapSet.member?(state.live_events, id) end)
+    |> Enum.filter(fn id -> !MapSet.member?(state.pre_events, id) end)
   end
+
+  defp publish_possibly_new_event_ids(new_event_ids, operator_id) do
+    IO.inspect(operator: operator_id, possible_new_events: new_event_ids)
+    new_event_ids
+  end
+
+  defp update_state(:scrape_live, %ContentDiscovery{event_ids: event_ids, error: nil}, state),
+    do: %{state | live_events: MapSet.new(event_ids)}
+
+  defp update_state(:scrape_pre, %ContentDiscovery{event_ids: event_ids, error: nil}, state),
+    do: %{state | pre_events: MapSet.new(event_ids)}
+
+  # minor optimization to avoid too much publishing: do not update state if top-level request failed
+  defp update_state(_, _, state),
+    do: state
 
   @spec schedule_next_scrape(non_neg_integer(), :scrape_pre | :scrape_live) :: reference()
   defp schedule_next_scrape(millis_after, type),
