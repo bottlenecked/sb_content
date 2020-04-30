@@ -9,7 +9,8 @@ defmodule State.EventWorker do
     :data,
     :last_polled_on,
     :last_successful_update_on,
-    polling_interval_millis: 5000
+    polling_interval_millis_live: 5000,
+    polling_interval_millis_pre: 60000
   ]
 
   def start_link(config) do
@@ -89,9 +90,25 @@ defmodule State.EventWorker do
   end
 
   defp schedule_next_poll(state) do
-    next_tick = Utils.Jitter.jitter(state.polling_interval_millis, 200)
+    interval =
+      if live_now_or_close_enough?(state) do
+        state.polling_interval_millis_live
+      else
+        state.polling_interval_millis_pre
+      end
+
+    next_tick = Utils.Jitter.jitter(interval, 200)
     Process.send_after(self(), :poll, next_tick)
   end
+
+  defp live_now_or_close_enough?(%{data: %{live?: true}}), do: true
+
+  defp live_now_or_close_enough?(%{data: %{start_time: time}}) do
+    now = DateTime.utc_now()
+    DateTime.diff(time, now, :second) <= 120
+  end
+
+  defp live_now_or_close_enough?(_), do: false
 
   defp via_tuple(event_id, operator_id),
     do: {:via, Registry, {registry_name(), {:event, event_id, operator_id}}}
