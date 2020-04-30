@@ -22,6 +22,11 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     GenServer.start_link(__MODULE__, args, name: via_tuple(operator_id))
   end
 
+  def get_current_event_ids(operator_id) do
+    name = via_tuple(operator_id)
+    GenServer.call(name, :get_event_ids)
+  end
+
   @impl true
   def init(state) do
     schedule_next_scrape(Utils.Jitter.between(0, 150), :scrape_live)
@@ -30,32 +35,34 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   end
 
   @impl true
-  def handle_info(:scrape_live = type, state) do
-    state =
-      state.operator_id
-      |> ContentDiscovery.scrape_live()
-      |> handle_scrape_results(type, state)
+  def handle_call(:get_event_ids, _from, state) do
+    result =
+      [
+        MapSet.to_list(state.live_events),
+        MapSet.to_list(state.pre_events)
+      ]
+      |> List.flatten()
+      |> Enum.uniq()
 
-    state.live_interval
-    |> Utils.Jitter.jitter(200)
-    |> schedule_next_scrape(type)
-
-    {:noreply, state}
+    {:reply, result, state}
   end
 
   @impl true
-  def handle_info(:scrape_pre = type, state) do
+  def handle_info(scrape_type, state) do
     state =
-      state.operator_id
-      |> ContentDiscovery.scrape()
-      |> handle_scrape_results(type, state)
+      scrape_type
+      |> do_scrape(state.operator_id)
+      |> handle_scrape_results(scrape_type, state)
 
-    state.regular_interval
+    state.live_interval
     |> Utils.Jitter.jitter(200)
-    |> schedule_next_scrape(type)
+    |> schedule_next_scrape(scrape_type)
 
     {:noreply, state}
   end
+
+  defp do_scrape(:scrape_pre, operator_id), do: ContentDiscovery.scrape(operator_id)
+  defp do_scrape(:scrape_live, operator_id), do: ContentDiscovery.scrape_live(operator_id)
 
   defp handle_scrape_results(results, type, %{operator_id: operator_id} = state) do
     results
@@ -104,8 +111,9 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   end
 
   defp publish_possibly_new_event_ids(new_event_ids, operator_id) do
-    IO.inspect(operator: operator_id, possible_new_events: new_event_ids)
-    new_event_ids
+    if new_event_ids != [] do
+      Geneity.PubSub.publish_new_events(operator_id, new_event_ids)
+    end
   end
 
   defp update_state(:scrape_live, %ContentDiscovery{event_ids: event_ids, error: nil}, state),

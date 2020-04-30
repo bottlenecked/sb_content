@@ -12,6 +12,11 @@ defmodule Geneity.Application do
       Supervisor.child_spec({Registry, keys: :unique, name: GeneityRegistry},
         id: GeneityRegistry
       ),
+      Supervisor.child_spec(
+        {Registry,
+         keys: :duplicate, partitions: System.schedulers_online(), name: Geneity.PubSub.name()},
+        id: Geneity.PubSub.name()
+      ),
       {Freshness.Supervisor, config},
       Geneity.ContentDiscovery.ScrapeSupervisor
     ]
