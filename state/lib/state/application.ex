@@ -8,7 +8,8 @@ defmodule State.Application do
   def start(_type, _args) do
     children = [
       {Registry, keys: :unique, name: EventServerRegistry},
-      State.EventSupervisor
+      State.EventSupervisor,
+      State.ContentListenerWorker
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
