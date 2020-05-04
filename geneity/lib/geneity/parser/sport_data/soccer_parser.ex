@@ -72,7 +72,7 @@ defmodule Geneity.Parser.SportData.SoccerParser do
     end
   end
 
-  def handle_event(:end_element, "Ev", %{sport_id: @soccer} = state) do
+  def handle_event(:end_element, "Ev", %{sport_id: @soccer, live_data: %SoccerLiveData{}} = state) do
     # when we are done with parsing individual incidents, we need to
     # enumerate over them and update live data counters (scores, red cards etc.)
     # but it is only safe to do it at the end of Ev element, because Teams follow incidents
