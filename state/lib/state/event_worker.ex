@@ -53,6 +53,10 @@ defmodule State.EventWorker do
     end
   end
 
+  # when freshness calls time out, we might get ghost replies later that we need to ignore
+  @impl true
+  def handle_info({ref, _}, state) when is_reference(ref), do: {:noreply, state}
+
   defp do_work(state) do
     now = DateTime.utc_now()
     state = %{state | last_polled_on: now}

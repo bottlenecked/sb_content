@@ -48,7 +48,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   end
 
   @impl true
-  def handle_info(scrape_type, state) do
+  def handle_info(scrape_type, state) when scrape_type in [:scrape_live, :scrape_pre] do
     state =
       scrape_type
       |> do_scrape(state.operator_id)
@@ -60,6 +60,10 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
 
     {:noreply, state}
   end
+
+  # when freshness calls time out, we might get ghost replies later that we need to ignore
+  @impl true
+  def handle_info({ref, _}, state) when is_reference(ref), do: {:noreply, state}
 
   defp do_scrape(:scrape_pre, operator_id), do: ContentDiscovery.scrape(operator_id)
   defp do_scrape(:scrape_live, operator_id), do: ContentDiscovery.scrape_live(operator_id)
