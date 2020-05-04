@@ -12,5 +12,5 @@ defimpl DiffEngine.LiveDataDiff, for: Model.Event do
 end
 
 defimpl DiffEngine.LiveDataDiff, for: Any do
-  def diff(_, _, _), do: DiffEngine.Result.NoDiff.value()
+  def diff(_, _, _), do: []
 end
