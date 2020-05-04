@@ -2,11 +2,7 @@ defmodule Geneity.Api.Operator do
   @type t() :: String.t()
 
   @operators [
-    # :betano_at,
-    # :betano_bg,
-    # :betano_br,
     :betano_de,
-    # :betano_pl,
     :betano_pt,
     :betano_ro,
     :stoiximan_gr
