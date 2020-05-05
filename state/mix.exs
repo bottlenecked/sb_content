@@ -22,6 +22,8 @@ defmodule State.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:telemetry, "~>0.4"},
+      {:telemetry_poller, "~>0.5"},
       {:geneity, path: "../geneity"},
       {:diff_engine, path: "../diff_engine"},
       {:utils, path: "../utils"}
