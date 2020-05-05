@@ -9,7 +9,8 @@ defmodule State.Application do
     children = [
       {Registry, keys: :unique, name: EventServerRegistry},
       State.EventSupervisor,
-      State.ContentListenerWorker
+      State.ContentListenerWorker,
+      State.Telemetry
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

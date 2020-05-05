@@ -8,8 +8,13 @@ defmodule State.ContentListenerWorker do
 
   @impl true
   def init(_) do
+    {:ok, %__MODULE__{}, {:continue, :continue_init}}
+  end
+
+  @impl true
+  def handle_continue(:continue_init, state) do
     Geneity.PubSub.subscribe_new_events()
-    {:ok, %__MODULE__{}}
+    {:noreply, state}
   end
 
   @impl true

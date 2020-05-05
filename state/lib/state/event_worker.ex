@@ -1,7 +1,7 @@
 defmodule State.EventWorker do
   use GenServer, restart: :transient
 
-  alias State.Content
+  alias State.{Content, Telemetry}
 
   defstruct [
     :event_id,
@@ -31,6 +31,8 @@ defmodule State.EventWorker do
 
   @impl true
   def handle_continue(:continue_init, state) do
+    Telemetry.register_sb_event(state.operator_id)
+
     case do_work(state) do
       {:ok, new_state} ->
         schedule_next_poll(state)
@@ -57,6 +59,12 @@ defmodule State.EventWorker do
   @impl true
   def handle_info({ref, _}, state) when is_reference(ref), do: {:noreply, state}
 
+  @impl true
+  def terminate(_reason, state) do
+    Telemetry.unregister_sb_event(state.operator_id)
+    :ok
+  end
+
   defp do_work(state) do
     now = DateTime.utc_now()
     state = %{state | last_polled_on: now}
@@ -64,7 +72,7 @@ defmodule State.EventWorker do
     with {:fetch, {:ok, new_data}} <- {:fetch, fetch_fresh(state)} do
       state = %{state | last_successful_update_on: now}
       changes = diff(state.data, new_data)
-      publish_changes(changes)
+      publish_changes(changes, state.operator_id)
       {:ok, %{state | data: new_data}}
     else
       {:fetch, {:error, :event_not_found}} ->
@@ -85,8 +93,10 @@ defmodule State.EventWorker do
 
   defp diff(old_data, new_data), do: DiffEngine.diff(old_data, new_data)
 
-  defp publish_changes(changes) do
-    IO.inspect(changes: changes)
+  defp publish_changes(changes, operator_id) do
+    changes
+    |> length()
+    |> Telemetry.changes_count(operator_id)
   end
 
   defp publish_event_removed(state) do
