@@ -19,6 +19,12 @@ defmodule State.EventWorker do
 
   def registry_name(), do: EventServerRegistry
 
+  def get_event_data(event_id, operator_id) do
+    event_id
+    |> via_tuple(operator_id)
+    |> GenServer.call(:get_event_data)
+  end
+
   @impl true
   def init(config) do
     state = %__MODULE__{
@@ -41,6 +47,11 @@ defmodule State.EventWorker do
       {:stop, reason} ->
         {:stop, reason, state}
     end
+  end
+
+  @impl true
+  def handle_call(:get_event_data, _from, state) do
+    {:reply, state.data, state}
   end
 
   @impl true
