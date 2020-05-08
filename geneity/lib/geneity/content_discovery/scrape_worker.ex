@@ -54,7 +54,11 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
       |> do_scrape(state.operator_id)
       |> handle_scrape_results(scrape_type, state)
 
-    state.live_interval
+    if scrape_type == :scrape_pre do
+      state.regular_interval
+    else
+      state.live_interval
+    end
     |> Utils.Jitter.jitter(200)
     |> schedule_next_scrape(scrape_type)
 

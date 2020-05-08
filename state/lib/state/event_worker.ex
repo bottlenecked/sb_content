@@ -44,6 +44,10 @@ defmodule State.EventWorker do
         schedule_next_poll(state)
         {:noreply, new_state}
 
+      {:ok, new_state, interval} ->
+        schedule_next_poll(interval, 10000)
+        {:noreply, new_state}
+
       {:stop, reason} ->
         {:stop, reason, state}
     end
@@ -59,6 +63,10 @@ defmodule State.EventWorker do
     case do_work(state) do
       {:ok, new_state} ->
         schedule_next_poll(state)
+        {:noreply, new_state}
+
+      {:ok, new_state, interval} ->
+        schedule_next_poll(interval)
         {:noreply, new_state}
 
       {:stop, reason} ->
@@ -84,6 +92,7 @@ defmodule State.EventWorker do
       state = %{state | last_successful_update_on: now}
       changes = diff(state.data, new_data)
       publish_changes(changes, state.operator_id)
+      set_tags(changes)
       {:ok, %{state | data: new_data}}
     else
       {:fetch, {:error, :event_not_found}} ->
@@ -94,9 +103,9 @@ defmodule State.EventWorker do
         do_work(state)
 
       {:fetch, {:error, reason}} ->
-        IO.inspect(error: reason)
+        IO.inspect(error: reason, event: state.event_id)
         # todo: log error
-        {:ok, state}
+        {:ok, state, 10_000}
     end
   end
 
@@ -110,19 +119,25 @@ defmodule State.EventWorker do
     |> Telemetry.changes_count(operator_id)
   end
 
+  defp set_tags(changes) do
+    Enum.each(changes, &State.Tags.tag/1)
+  end
+
   defp publish_event_removed(state) do
     IO.inspect(event_removed: state.event_id)
   end
 
-  defp schedule_next_poll(state) do
-    interval =
-      if live_now_or_close_enough?(state) do
-        state.polling_interval_millis_live
-      else
-        state.polling_interval_millis_pre
-      end
+  defp schedule_next_poll(%__MODULE__{} = state) do
+    if live_now_or_close_enough?(state) do
+      state.polling_interval_millis_live
+    else
+      state.polling_interval_millis_pre
+    end
+    |> schedule_next_poll(200)
+  end
 
-    next_tick = Utils.Jitter.jitter(interval, 200)
+  defp schedule_next_poll(interval, jitter) when is_integer(interval) do
+    next_tick = Utils.Jitter.jitter(interval, jitter)
     Process.send_after(self(), :poll, next_tick)
   end
 
