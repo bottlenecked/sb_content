@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Event.StatusChanged do
+defmodule DiffEngine.Change.Event.StatusChanged do
   defstruct [
     :event_id,
     :active?

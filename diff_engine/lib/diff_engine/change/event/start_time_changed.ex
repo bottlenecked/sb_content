@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Event.StartTimeChanged do
+defmodule DiffEngine.Change.Event.StartTimeChanged do
   defstruct [
     :event_id,
     :start_time

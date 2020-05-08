@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Selection.SelectionRemoved do
+defmodule DiffEngine.Change.Selection.SelectionRemoved do
   defstruct [
     :event_id,
     :market_id,

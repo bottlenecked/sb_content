@@ -1,8 +1,8 @@
 defmodule DiffEngine.SelectionDiff do
   alias Model.{Market, Selection}
-  alias DiffEngine.Result.NoDiff
+  alias DiffEngine.Change.NoChange
 
-  alias DiffEngine.Result.Selection.{
+  alias DiffEngine.Change.Selection.{
     SelectionRemoved,
     SelectionCreated,
     SelectionOrderChanged,
@@ -48,7 +48,7 @@ defmodule DiffEngine.SelectionDiff do
           comparison_fun <- comparison_funs do
         comparison_fun.(prev_selections, next_selection)
       end
-      |> Enum.filter(fn res -> res != NoDiff.value() end)
+      |> Enum.filter(fn res -> res != NoChange.value() end)
 
     (removed_selections_results ++ created_selections_results ++ comparison_results)
     |> Enum.map(fn result -> %{result | market_id: market_id} end)
@@ -56,28 +56,28 @@ defmodule DiffEngine.SelectionDiff do
 
   def diff_order(%Selection{order: prev_value}, %Selection{order: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_order(_prev, %Selection{order: next_value, id: id}),
     do: %SelectionOrderChanged{selection_id: id, order: next_value}
 
   def diff_status(%Selection{active?: prev_value}, %Selection{active?: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_status(_prev, %Selection{active?: next_value, id: id}),
     do: %SelectionStatusChanged{selection_id: id, active?: next_value}
 
   def diff_visibility(%Selection{displayed?: prev_value}, %Selection{displayed?: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_visibility(_prev, %Selection{displayed?: next_value, id: id}),
     do: %SelectionVisibilityChanged{selection_id: id, displayed?: next_value}
 
   def diff_price(%Selection{price_decimal: prev_value}, %Selection{price_decimal: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_price(_prev, %Selection{price_decimal: next_value, id: id}),
     do: %SelectionPriceChanged{selection_id: id, price_decimal: next_value}

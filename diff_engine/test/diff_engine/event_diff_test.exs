@@ -3,9 +3,9 @@ defmodule DiffEngine.EventDiffTest do
   alias Model.Event
   alias DiffEngine.EventDiff
 
-  alias DiffEngine.Result.NoDiff
+  alias DiffEngine.Change.NoChange
 
-  alias DiffEngine.Result.Event.{
+  alias DiffEngine.Change.Event.{
     StartTimeChanged,
     StatusChanged,
     LiveStatusChanged,
@@ -20,7 +20,7 @@ defmodule DiffEngine.EventDiffTest do
 
     diff = EventDiff.diff_start_time(prev, next)
 
-    assert diff == NoDiff.value()
+    assert diff == NoChange.value()
 
     new_time = DateTime.add(now, 10)
     next = %Event{start_time: new_time}
@@ -36,7 +36,7 @@ defmodule DiffEngine.EventDiffTest do
 
     diff = EventDiff.diff_status(prev, next)
 
-    assert diff == NoDiff.value()
+    assert diff == NoChange.value()
 
     next = %Event{active?: true}
 
@@ -51,7 +51,7 @@ defmodule DiffEngine.EventDiffTest do
 
     diff = EventDiff.diff_status(prev, next)
 
-    assert diff == NoDiff.value()
+    assert diff == NoChange.value()
 
     next = %Event{live?: true}
 
@@ -66,7 +66,7 @@ defmodule DiffEngine.EventDiffTest do
 
     diff = EventDiff.diff_status(prev, next)
 
-    assert diff == NoDiff.value()
+    assert diff == NoChange.value()
 
     next = %Event{display_order: 2}
 
@@ -81,7 +81,7 @@ defmodule DiffEngine.EventDiffTest do
 
     diff = EventDiff.diff_status(prev, next)
 
-    assert diff == NoDiff.value()
+    assert diff == NoChange.value()
 
     next = %Event{displayed?: true}
 

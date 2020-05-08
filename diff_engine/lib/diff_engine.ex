@@ -2,7 +2,7 @@ defmodule DiffEngine do
   alias Model.Event
 
   alias DiffEngine.{EventDiff, LiveDataDiff, MarketDiff}
-  alias DiffEngine.Result.EventDiscovered
+  alias DiffEngine.Change.EventDiscovered
 
   @spec diff(Event.t() | nil, Event.t()) :: list(struct())
   def diff(old_event, new_event)

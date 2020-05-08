@@ -1,9 +1,9 @@
-defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
+defmodule DiffEngine.Change.LiveData.SoccerLiveDataDiff do
   alias DiffEngine.LiveDataDiff
   alias Model.LiveData.SoccerLiveData
-  alias DiffEngine.Result.NoDiff
+  alias DiffEngine.Change.NoChange
 
-  alias DiffEngine.Result.LiveData.Soccer.{
+  alias DiffEngine.Change.LiveData.Soccer.{
     SoccerClockChanged,
     SoccerScoreChanged,
     SoccerRedCardsChanged,
@@ -21,7 +21,7 @@ defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
         &diff_corners/2
       ]
       |> Enum.map(fn fun -> fun.(prev_data, next_data) end)
-      |> Enum.filter(fn diff -> diff != NoDiff.value() end)
+      |> Enum.filter(fn diff -> diff != NoChange.value() end)
       |> Enum.map(fn result -> %{result | event_id: ev_id} end)
     end
 
@@ -31,7 +31,7 @@ defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
 
       case prev_data do
         %{current_period: ^cp2, total_ellapsed_seconds: ^ts2, time_ticking?: ^tt2} ->
-          NoDiff.value()
+          NoChange.value()
 
         _ ->
           %SoccerClockChanged{
@@ -44,7 +44,7 @@ defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
     end
 
     def diff_score(%{score: old_value}, %{score: new_value}) when old_value == new_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
     def diff_score(_, %{score: new_value}) do
       %SoccerScoreChanged{
@@ -54,7 +54,7 @@ defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
 
     def diff_red_cards(%{red_cards: old_value}, %{red_cards: new_value})
         when old_value == new_value,
-        do: NoDiff.value()
+        do: NoChange.value()
 
     def diff_red_cards(_, %{red_cards: new_value}) do
       %SoccerRedCardsChanged{
@@ -64,7 +64,7 @@ defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
 
     def diff_yellow_cards(%{yellow_cards: old_value}, %{yellow_cards: new_value})
         when old_value == new_value,
-        do: NoDiff.value()
+        do: NoChange.value()
 
     def diff_yellow_cards(_, %{yellow_cards: new_value}) do
       %SoccerYellowCardsChanged{
@@ -73,7 +73,7 @@ defmodule DiffEngine.Result.LiveData.SoccerLiveDataDiff do
     end
 
     def diff_corners(%{corners: old_value}, %{corners: new_value}) when old_value == new_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
     def diff_corners(_, %{corners: new_value}) do
       %SoccerCornersChanged{

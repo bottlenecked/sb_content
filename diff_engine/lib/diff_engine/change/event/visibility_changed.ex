@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Event.VisibilityChanged do
+defmodule DiffEngine.Change.Event.VisibilityChanged do
   defstruct [
     :event_id,
     :displayed?

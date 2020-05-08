@@ -1,8 +1,8 @@
 defmodule DiffEngine.MarketDiff do
   alias Model.Market
-  alias DiffEngine.Result.NoDiff
+  alias DiffEngine.Change.NoChange
 
-  alias DiffEngine.Result.Market.{
+  alias DiffEngine.Change.Market.{
     MarketRemoved,
     MarketCreated,
     MarketOrderChanged,
@@ -47,7 +47,7 @@ defmodule DiffEngine.MarketDiff do
         comparison_fun.(prev_market, next_market)
       end
       |> List.flatten()
-      |> Enum.filter(fn res -> res != NoDiff.value() end)
+      |> Enum.filter(fn res -> res != NoChange.value() end)
 
     (removed_markets_results ++ created_markets_results ++ comparison_results)
     |> Enum.map(fn result -> %{result | event_id: ev_id} end)
@@ -55,21 +55,21 @@ defmodule DiffEngine.MarketDiff do
 
   def diff_order(%Market{order: prev_value}, %Market{order: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_order(_prev, %Market{order: next_value, id: id}),
     do: %MarketOrderChanged{market_id: id, order: next_value}
 
   def diff_status(%Market{active?: prev_value}, %Market{active?: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_status(_prev, %Market{active?: next_value, id: id}),
     do: %MarketStatusChanged{market_id: id, active?: next_value}
 
   def diff_visibility(%Market{displayed?: prev_value}, %Market{displayed?: next_value})
       when prev_value == next_value,
-      do: NoDiff.value()
+      do: NoChange.value()
 
   def diff_visibility(_prev, %Market{displayed?: next_value, id: id}),
     do: %MarketVisibilityChanged{market_id: id, displayed?: next_value}

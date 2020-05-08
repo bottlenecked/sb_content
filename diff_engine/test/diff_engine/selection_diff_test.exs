@@ -4,7 +4,7 @@ defmodule DiffEngine.MarketSelectionTest do
   alias Model.{Market, Selection}
   alias DiffEngine.SelectionDiff
 
-  alias DiffEngine.Result.Selection.{
+  alias DiffEngine.Change.Selection.{
     SelectionRemoved,
     SelectionCreated,
     SelectionOrderChanged,

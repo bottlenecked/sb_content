@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Market.MarketCreated do
+defmodule DiffEngine.Change.Market.MarketCreated do
   defstruct [
     :event_id,
     :market

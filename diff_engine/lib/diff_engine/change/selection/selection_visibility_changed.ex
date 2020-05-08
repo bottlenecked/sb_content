@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Selection.SelectionVisibilityChanged do
+defmodule DiffEngine.Change.Selection.SelectionVisibilityChanged do
   defstruct [
     :event_id,
     :market_id,

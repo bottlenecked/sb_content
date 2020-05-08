@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Event.DisplayOrderChanged do
+defmodule DiffEngine.Change.Event.DisplayOrderChanged do
   defstruct [
     :event_id,
     :display_order

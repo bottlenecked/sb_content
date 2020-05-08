@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.Selection.SelectionPriceChanged do
+defmodule DiffEngine.Change.Selection.SelectionPriceChanged do
   defstruct [
     :event_id,
     :market_id,

@@ -1,4 +1,4 @@
-defmodule DiffEngine.Result.LiveData.Soccer.SoccerClockChanged do
+defmodule DiffEngine.Change.LiveData.Soccer.SoccerClockChanged do
   defstruct [
     :event_id,
     :current_period,

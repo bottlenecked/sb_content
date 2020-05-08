@@ -5,7 +5,7 @@ defmodule DiffEngine.LiveData.SoccerLiveDataDiffTest do
   alias Model.LiveData.SoccerLiveData
   alias DiffEngine.LiveDataDiff
 
-  alias DiffEngine.Result.LiveData.Soccer.{
+  alias DiffEngine.Change.LiveData.Soccer.{
     SoccerClockChanged,
     SoccerScoreChanged,
     SoccerRedCardsChanged,

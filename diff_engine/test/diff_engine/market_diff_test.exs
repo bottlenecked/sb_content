@@ -4,7 +4,7 @@ defmodule DiffEngine.MarketDiffTest do
   alias Model.{Event, Market}
   alias DiffEngine.MarketDiff
 
-  alias DiffEngine.Result.Market.{
+  alias DiffEngine.Change.Market.{
     MarketRemoved,
     MarketCreated,
     MarketOrderChanged,
