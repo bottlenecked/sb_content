@@ -3,7 +3,7 @@ defmodule Geneity.Application do
 
   @impl true
   def start(_, _) do
-    config = Freshness.Config.new(:geneity, 20, :http, "varnishcontapi.stoiximan.eu", 80, [])
+    config = Freshness.Config.new(:geneity, 100, :http, "varnishcontapi.stoiximan.eu", 80, [])
 
     children = [
       Supervisor.child_spec({Registry, keys: :unique, name: Freshness.Config.registry_name()},
