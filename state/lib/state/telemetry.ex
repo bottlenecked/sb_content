@@ -24,7 +24,7 @@ defmodule State.Telemetry do
     [
       summary("connections.http.geneity"),
       last_value("state.events.total", tags: [:operator]),
-      summary("state.diffs.count", tags: [:operator])
+      last_value("state.diffs.count", tags: [:operator])
     ]
   end
 
