@@ -23,6 +23,7 @@ defmodule State.MixProject do
   defp deps do
     [
       {:telemetry, "~>0.4"},
+      {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~>0.5"},
       {:geneity, path: "../geneity"},
       {:diff_engine, path: "../diff_engine"},
