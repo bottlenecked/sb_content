@@ -2,9 +2,9 @@ defmodule Geneity.Api.Operator do
   @type t() :: String.t()
 
   @operators [
-    :betano_de,
-    :betano_pt,
-    :betano_ro,
+    # :betano_de,
+    # :betano_pt,
+    # :betano_ro,
     :stoiximan_gr
   ]
 

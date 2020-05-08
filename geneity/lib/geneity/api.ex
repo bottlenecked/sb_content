@@ -1,6 +1,7 @@
 defmodule Geneity.Api do
   alias Geneity.Api.Operator
-  alias Geneity.Api.ResponseProcessor
+  alias Model.Event
+  alias Freshness.Response
 
   @spec get_event_data(pos_integer(), Operator.t(), String.t()) ::
           {:ok, Event.t()} | {:error, any()}
@@ -17,9 +18,9 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> ResponseProcessor.process(&Geneity.Parser.parse_event_xml/1)
+    |> process_result(&Geneity.Parser.parse_event_xml/1)
     |> case do
-      {:ok, %{id: nil}} -> {:error, :event_not_found}
+      {:ok, %Event{id: nil}} -> {:error, :event_not_found}
       other -> other
     end
   end
@@ -36,7 +37,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> ResponseProcessor.process(&Geneity.Parser.SportListParser.get_sport_ids/1)
+    |> process_result(&Geneity.Parser.SportListParser.get_sport_ids/1)
   end
 
   @spec get_league_ids_for_sport(String.t(), Operator.t()) ::
@@ -51,7 +52,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> ResponseProcessor.process(&Geneity.Parser.HierarchyParser.get_league_ids/1)
+    |> process_result(&Geneity.Parser.HierarchyParser.get_league_ids/1)
   end
 
   @spec get_event_ids_for_league(non_neg_integer(), Operator.t()) ::
@@ -69,7 +70,7 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> ResponseProcessor.process(&Geneity.Parser.LeagueParser.get_event_ids/1)
+    |> process_result(&Geneity.Parser.LeagueParser.get_event_ids/1)
   end
 
   @spec get_live_event_ids(Operator.t()) ::
@@ -84,18 +85,25 @@ defmodule Geneity.Api do
 
     path
     |> do_request(headers)
-    |> ResponseProcessor.process(&Geneity.Parser.LeagueParser.get_event_ids/1)
+    |> process_result(&Geneity.Parser.LeagueParser.get_event_ids/1)
   end
 
   defp do_request(path, headers) do
-    try do
-      Freshness.get(:geneity, path, headers)
-    catch
-      :exit, error -> {:error, error}
-    end
-    |> case do
+    case Freshness.get(:geneity, path, headers) do
       {:error, %{reason: :closed}} -> do_request(path, headers)
       other -> other
+    end
+  end
+
+  defp process_result(result, parse_fun) do
+    with {:response, {:ok, response}} <- {:response, result},
+         {:status, %Response{status: 200} = resp} <- {:status, response},
+         {:parse, {:ok, response}} <- {:parse, parse_fun.(resp.data)} do
+      {:ok, response}
+    else
+      {:response, {:error, _} = error} -> error
+      {:status, %Response{status: status}} -> {:error, status}
+      {:parse, {:error, _xml_error} = error} -> error
     end
   end
 end
