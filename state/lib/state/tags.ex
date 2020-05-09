@@ -1,6 +1,6 @@
 defmodule State.Tags do
   @moduledoc """
-  tag/1 functions inside this module are meant to only be called from inside an EventWorker's process loop
+  tag/2 functions inside this module are meant to only be called from inside an EventWorker's process loop
   """
 
   alias DiffEngine.Change.EventDiscovered
@@ -9,24 +9,22 @@ defmodule State.Tags do
 
   @registry State.EventWorker.registry_name()
 
-  def tag(%EventDiscovered{event: %Event{} = event}) do
+  def tag(name, %EventDiscovered{event: %Event{} = event}) do
     keys = [:live?, :sport_id, :zone_id, :league_id, :active?, :displayed?]
 
     event
     |> Map.take(keys)
-    |> Enum.each(fn {key, value} -> register(key, value) end)
+    |> set(name)
   end
 
-  def tag(%LiveStatusChanged{live?: value}), do: re_register(:live?, value)
-  def tag(%StatusChanged{active?: value}), do: re_register(:active?, value)
-  def tag(%VisibilityChanged{displayed?: value}), do: re_register(:displayed?, value)
+  def tag(name, %LiveStatusChanged{live?: value}), do: update(name, :live?, value)
+  def tag(name, %StatusChanged{active?: value}), do: update(name, :active?, value)
+  def tag(name, %VisibilityChanged{displayed?: value}), do: update(name, :displayed?, value)
 
-  def tag(_), do: :ok
+  def tag(_, _), do: :ok
 
-  defp register(tag, value), do: Registry.register(@registry, tag, value)
+  defp set(value, name), do: Registry.update_value(@registry, name, fn _ -> value end)
 
-  defp re_register(tag, value) do
-    Registry.unregister(@registry, tag)
-    register(tag, value)
-  end
+  def update(name, key, value),
+    do: Registry.update_value(@registry, name, fn map -> Map.put(map, key, value) end)
 end

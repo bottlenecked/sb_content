@@ -45,7 +45,7 @@ defmodule State.EventWorker do
         {:noreply, new_state}
 
       {:ok, new_state, interval} ->
-        schedule_next_poll(interval, 10000)
+        schedule_next_poll(interval, 5000)
         {:noreply, new_state}
 
       {:stop, reason} ->
@@ -66,7 +66,7 @@ defmodule State.EventWorker do
         {:noreply, new_state}
 
       {:ok, new_state, interval} ->
-        schedule_next_poll(interval)
+        schedule_next_poll(interval, 2000)
         {:noreply, new_state}
 
       {:stop, reason} ->
@@ -92,7 +92,7 @@ defmodule State.EventWorker do
       state = %{state | last_successful_update_on: now}
       changes = diff(state.data, new_data)
       publish_changes(changes, state.operator_id)
-      set_tags(changes)
+      set_tags(state, changes)
       {:ok, %{state | data: new_data}}
     else
       {:fetch, {:error, :event_not_found}} ->
@@ -119,8 +119,9 @@ defmodule State.EventWorker do
     |> Telemetry.changes_count(operator_id)
   end
 
-  defp set_tags(changes) do
-    Enum.each(changes, &State.Tags.tag/1)
+  defp set_tags(state, changes) do
+    name = name(state.event_id, state.operator_id)
+    Enum.each(changes, fn change -> State.Tags.tag(name, change) end)
   end
 
   defp publish_event_removed(state) do
@@ -151,5 +152,7 @@ defmodule State.EventWorker do
   defp live_now_or_close_enough?(_), do: false
 
   defp via_tuple(event_id, operator_id),
-    do: {:via, Registry, {registry_name(), {:event, event_id, operator_id}}}
+    do: {:via, Registry, {registry_name(), name(event_id, operator_id)}}
+
+  defp name(event_id, operator_id), do: {:event, event_id, operator_id}
 end

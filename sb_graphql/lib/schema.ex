@@ -3,7 +3,12 @@ defmodule SbGraphql.Schema do
   alias SbGraphql.Resolvers.{EventResolvers}
 
   input_object :event_filter do
-    field(:sport_id, :id)
+    field(:sport_id, list_of(:id))
+    field(:zone_id, list_of(:id))
+    field(:league_id, list_of(:id))
+    field(:active, :boolean)
+    field(:displayed, :boolean)
+    field(:live, :boolean)
   end
 
   query do
