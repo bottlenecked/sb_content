@@ -1,4 +1,4 @@
-defmodule Geneity.ContentDiscovery.Scraper do
+defmodule Geneity.ContentDiscovery do
   alias Geneity.Api
   alias Geneity.Api.Operator
 
@@ -24,7 +24,7 @@ defmodule Geneity.ContentDiscovery.Scraper do
   be called more often than scrape, because some events are only ever offered live
   and are not discoverable during pre-event scrapping
   """
-  @spec scrape(Operator.t()) :: t()
+  @spec scrape_live(Operator.t()) :: t()
   def scrape_live(operator_id \\ Operator.stoiximan_gr()) do
     case Api.get_live_event_ids(operator_id) do
       {:ok, event_ids} ->

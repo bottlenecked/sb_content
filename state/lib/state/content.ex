@@ -4,5 +4,6 @@ defmodule State.Content do
   change the provider the changes should hopefully be limited to this file only
   """
 
-  def get_event_data(event_id, operator_id), do: Geneity.Api.get_event_data(event_id, operator_id)
+  def get_event_data(event_id, operator_id),
+    do: Geneity.Api.get_event_data(event_id, operator_id, "en")
 end
