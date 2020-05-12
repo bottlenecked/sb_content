@@ -1,7 +1,13 @@
 defmodule SbGraphql.Schema do
   use Absinthe.Schema
 
-  def middleware(middleware, %{identifier: identifier} = field, object)
+  def middleware(middleware, field, object) do
+    middleware
+    |> apply(:handle_questionmarks, field, object)
+    |> apply(:debug, field, object)
+  end
+
+  def apply(middleware, :handle_questionmarks, %{identifier: identifier} = field, object)
       when identifier in [
              :live,
              :active,
@@ -14,7 +20,15 @@ defmodule SbGraphql.Schema do
     |> Absinthe.Schema.replace_default(new_middleware, field, object)
   end
 
-  def middleware(middleware, _, _), do: middleware
+  def apply(middleware, :debug, _field, _object) do
+    if Mix.env() in [:dev, :test] do
+      [{SbGraphql.Schema.Middleware.Debug, :start}] ++ middleware
+    else
+      middleware
+    end
+  end
+
+  def apply(middleware, _, _, _), do: middleware
 
   import_types(__MODULE__.EventTypes)
 
