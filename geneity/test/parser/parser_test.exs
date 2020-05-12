@@ -8,7 +8,7 @@ defmodule Geneity.ParserTest do
 
   test "Parse football event" do
     result =
-      "foot_event"
+      "events/foot_event"
       |> Helpers.load_xml_file()
       |> Geneity.Parser.parse_event_xml!()
 
@@ -99,7 +99,7 @@ defmodule Geneity.ParserTest do
 
   test "Parse event with goals" do
     result =
-      "foot_goals"
+      "events/foot_goals"
       |> Helpers.load_xml_file()
       |> Geneity.Parser.parse_event_xml!()
 
