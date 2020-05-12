@@ -15,15 +15,28 @@ defmodule State.Lists do
   #    zone_id: 11537
   #  } = value}, ...]
 
+  def get_all_event_ids(operator_id, %{event_id: _values} = filters)
+      when not is_nil(operator_id) do
+    filters = normalize_filters(filters)
+    guard = guard_clause(:"$1", filters.event_id)
+
+    Registry.select(State.EventWorker.registry_name(), [
+      {{{:event, :"$1", operator_id}, :_, :_}, [guard], [:"$1"]}
+    ])
+  end
+
   def get_all_event_ids(operator_id, filters) when not is_nil(operator_id) do
-    {pattern, guards} = filters_to_match_specs(filters)
+    {pattern, guards} =
+      filters
+      |> normalize_filters()
+      |> filters_to_match_specs()
 
     Registry.select(State.EventWorker.registry_name(), [
       {{{:event, :"$1", operator_id}, :_, pattern}, guards, [:"$1"]}
     ])
   end
 
-  def filters_to_match_specs(filters) when is_nil(filters) or map_size(filters) == 0, do: {:_, []}
+  def filters_to_match_specs(filters) when map_size(filters) == 0, do: {:_, []}
 
   def filters_to_match_specs(filters) do
     {pattern, guards} =
@@ -56,15 +69,44 @@ defmodule State.Lists do
 
     {
       {key, var},
-      guard_clauses(var, values)
+      guard_clause(var, values)
     }
   end
 
-  def guard_clauses(variable, values) do
+  def guard_clause(variable, values) when is_list(values) do
     clauses =
       values
-      |> Enum.map(fn value -> {:"=:=", variable, value} end)
+      |> Enum.map(fn value -> guard_clause(variable, value) end)
 
     List.to_tuple([:orelse | clauses])
   end
+
+  def guard_clause(variable, value), do: {:"=:=", variable, value}
+
+  defp normalize_filters(nil), do: %{}
+
+  defp normalize_filters(filters) do
+    filters
+    |> Enum.filter(fn {key, _value} -> key in [:event_id, :zone_id, :league_id] end)
+    |> Enum.map(&fix_ids/1)
+    |> Enum.reduce(filters, fn {key, value}, acc -> Map.put(acc, key, value) end)
+  end
+
+  defp fix_ids({key, value}) do
+    {key, convert_to_ints(value)}
+  end
+
+  defp convert_to_ints(value) when is_binary(value) do
+    case Integer.parse(value) do
+      {int, _} -> int
+      _ -> value
+    end
+  end
+
+  defp convert_to_ints(values) when is_list(values) do
+    values
+    |> Enum.map(&convert_to_ints/1)
+  end
+
+  defp convert_to_ints(value), do: value
 end
