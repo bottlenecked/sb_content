@@ -2,7 +2,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   use GenServer
   require Logger
 
-  alias Geneity.ContentDiscovery
+  alias Geneity.ContentDiscovery.Scraper
 
   defstruct [
     :operator_id,
@@ -69,8 +69,8 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   @impl true
   def handle_info({ref, _}, state) when is_reference(ref), do: {:noreply, state}
 
-  defp do_scrape(:scrape_pre, operator_id), do: ContentDiscovery.scrape(operator_id)
-  defp do_scrape(:scrape_live, operator_id), do: ContentDiscovery.scrape_live(operator_id)
+  defp do_scrape(:scrape_pre, operator_id), do: Scraper.scrape(operator_id)
+  defp do_scrape(:scrape_live, operator_id), do: Scraper.scrape_live(operator_id)
 
   defp handle_scrape_results(results, type, %{operator_id: operator_id} = state) do
     results
@@ -81,7 +81,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     update_state(type, results, state)
   end
 
-  defp log_errors(%ContentDiscovery{} = result, type, operator_id) do
+  defp log_errors(%Scraper{} = result, type, operator_id) do
     if result.error do
       Logger.error(
         "Error fetching #{type} content for operator #{operator_id}: #{inspect(result.error)}"
@@ -109,7 +109,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     result
   end
 
-  defp search_for_possibly_new_event_ids(%ContentDiscovery{event_ids: event_ids}, state) do
+  defp search_for_possibly_new_event_ids(%Scraper{event_ids: event_ids}, state) do
     # Note: we are searching for _possibly_ new events because previous poll might have encountered errors for some sports or leagues
     # and thus not return event ids. Since each polling round the result is stored, we might end up re-discovering new events
     # because in the new polling round we managed to scrape without errors
@@ -124,10 +124,10 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     end
   end
 
-  defp update_state(:scrape_live, %ContentDiscovery{event_ids: event_ids, error: nil}, state),
+  defp update_state(:scrape_live, %Scraper{event_ids: event_ids, error: nil}, state),
     do: %{state | live_events: MapSet.new(event_ids)}
 
-  defp update_state(:scrape_pre, %ContentDiscovery{event_ids: event_ids, error: nil}, state),
+  defp update_state(:scrape_pre, %Scraper{event_ids: event_ids, error: nil}, state),
     do: %{state | pre_events: MapSet.new(event_ids)}
 
   # minor optimization to avoid too much publishing: do not update state if top-level request failed

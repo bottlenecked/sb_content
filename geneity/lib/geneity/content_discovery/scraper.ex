@@ -1,4 +1,4 @@
-defmodule Geneity.ContentDiscovery do
+defmodule Geneity.ContentDiscovery.Scraper do
   alias Geneity.Api
   alias Geneity.Api.Operator
 
