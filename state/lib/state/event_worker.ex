@@ -3,6 +3,8 @@ defmodule State.EventWorker do
 
   alias State.{Content, Telemetry}
 
+  require Logger
+
   defstruct [
     :event_id,
     :operator_id,
@@ -27,6 +29,8 @@ defmodule State.EventWorker do
 
   @impl true
   def init(config) do
+    Logger.metadata(event_id: config.event_id)
+
     state = %__MODULE__{
       event_id: config.event_id,
       operator_id: config.operator_id
@@ -40,16 +44,12 @@ defmodule State.EventWorker do
     Telemetry.register_sb_event(state.operator_id)
 
     case do_work(state) do
-      {:ok, new_state} ->
-        schedule_next_poll(state)
+      {:keep_polling, new_state, next_tick} ->
+        schedule_next_poll(next_tick)
         {:noreply, new_state}
 
-      {:ok, new_state, interval} ->
-        schedule_next_poll(interval, 5000)
-        {:noreply, new_state}
-
-      {:stop, reason} ->
-        {:stop, reason, state}
+      :stop ->
+        {:stop, :normal, state}
     end
   end
 
@@ -61,16 +61,12 @@ defmodule State.EventWorker do
   @impl true
   def handle_info(:poll, state) do
     case do_work(state) do
-      {:ok, new_state} ->
-        schedule_next_poll(state)
+      {:keep_polling, new_state, next_tick} ->
+        schedule_next_poll(next_tick)
         {:noreply, new_state}
 
-      {:ok, new_state, interval} ->
-        schedule_next_poll(interval, 2000)
-        {:noreply, new_state}
-
-      {:stop, reason} ->
-        {:stop, reason, state}
+      :stop ->
+        {:stop, :normal, state}
     end
   end
 
@@ -93,19 +89,19 @@ defmodule State.EventWorker do
       changes = diff(state.data, new_data)
       publish_changes(changes, state.operator_id)
       set_tags(state, changes)
-      {:ok, %{state | data: new_data}}
+      state = %{state | data: new_data}
+      next_poll = calculate_next_poll(state)
+      {:keep_polling, state, next_poll}
     else
       {:fetch, {:error, :event_not_found}} ->
         publish_event_removed(state)
-        {:stop, :normal}
-
-      {:fetch, {:error, %{reason: :closed}}} ->
-        do_work(state)
+        Logger.debug("event not found, monitoring stopped")
+        :stop
 
       {:fetch, {:error, reason}} ->
-        IO.inspect(error: reason, event: state.event_id)
-        # todo: log error
-        {:ok, state, 10_000}
+        Logger.error("event polling failed with reason: #{inspect(reason)}")
+        # TODO: perhaps exponential backoff would be more appropriate here?
+        {:keep_polling, state, 10_000}
     end
   end
 
@@ -128,18 +124,20 @@ defmodule State.EventWorker do
     IO.inspect(event_removed: state.event_id)
   end
 
-  defp schedule_next_poll(%__MODULE__{} = state) do
-    if live_now_or_close_enough?(state) do
-      state.polling_interval_millis_live
-    else
-      state.polling_interval_millis_pre
-    end
-    |> schedule_next_poll(200)
+  defp calculate_next_poll(%__MODULE__{} = state) do
+    interval =
+      if live_now_or_close_enough?(state) do
+        state.polling_interval_millis_live
+      else
+        state.polling_interval_millis_pre
+      end
+
+    # introduce a 5% jitter
+    Utils.Jitter.jitter(interval, trunc(interval * 0.05))
   end
 
-  defp schedule_next_poll(interval, jitter) when is_integer(interval) do
-    next_tick = Utils.Jitter.jitter(interval, jitter)
-    Process.send_after(self(), :poll, next_tick)
+  defp schedule_next_poll(how_long) when is_integer(how_long) do
+    Process.send_after(self(), :poll, how_long)
   end
 
   defp live_now_or_close_enough?(%{data: %{live?: true}}), do: true
