@@ -43,14 +43,7 @@ defmodule State.EventWorker do
   def handle_continue(:continue_init, state) do
     Telemetry.register_sb_event(state.operator_id)
 
-    case do_work(state) do
-      {:keep_polling, new_state, next_tick} ->
-        schedule_next_poll(next_tick)
-        {:noreply, new_state}
-
-      :stop ->
-        {:stop, :normal, state}
-    end
+    loop(state)
   end
 
   @impl true
@@ -60,14 +53,7 @@ defmodule State.EventWorker do
 
   @impl true
   def handle_info(:poll, state) do
-    case do_work(state) do
-      {:keep_polling, new_state, next_tick} ->
-        schedule_next_poll(next_tick)
-        {:noreply, new_state}
-
-      :stop ->
-        {:stop, :normal, state}
-    end
+    loop(state)
   end
 
   # when freshness calls time out, we might get ghost replies later that we need to ignore
@@ -78,6 +64,17 @@ defmodule State.EventWorker do
   def terminate(_reason, state) do
     Telemetry.unregister_sb_event(state.operator_id)
     :ok
+  end
+
+  defp loop(state) do
+    case do_work(state) do
+      {:keep_polling, new_state, next_tick} ->
+        schedule_next_poll(next_tick)
+        {:noreply, new_state}
+
+      :stop ->
+        {:stop, :normal, state}
+    end
   end
 
   defp do_work(state) do
