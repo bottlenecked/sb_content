@@ -5,8 +5,14 @@ defmodule SbGraphql.Resolvers.EventResolvers do
     events =
       operator_id
       |> Lists.get_all_event_ids(args[:filters])
-      |> Enum.take(5)
-      |> Enum.map(fn event_id -> EventWorker.get_event_data(event_id, operator_id) end)
+      |> Task.async_stream(fn event_id -> EventWorker.get_event_data(event_id, operator_id) end,
+        max_concurrency: 100
+      )
+      |> Enum.map(fn
+        {:ok, data} -> data
+        _ -> nil
+      end)
+      |> Enum.filter(fn data -> data != nil end)
 
     {:ok, events}
   end
