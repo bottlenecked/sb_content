@@ -25,6 +25,7 @@ defmodule State.MixProject do
       {:telemetry, "~>0.4"},
       {:telemetry_metrics, "~> 0.4"},
       {:telemetry_poller, "~>0.5"},
+      {:model, path: "../model"},
       {:geneity, path: "../geneity"},
       {:diff_engine, path: "../diff_engine"},
       {:utils, path: "../utils"}
