@@ -22,7 +22,7 @@ defmodule Geneity.ParserTest do
              active?: true,
              displayed?: true,
              live?: true,
-             display_order: -1200,
+             display_order: -33_749_001_200,
              markets: markets,
              teams: teams,
              live_data: live_data

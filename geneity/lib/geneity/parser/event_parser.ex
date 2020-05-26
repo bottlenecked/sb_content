@@ -5,8 +5,15 @@ defmodule Geneity.Parser.EventParser do
     state =
       attributes
       |> Enum.reduce(state, fn
-        {"sport_code", id}, acc -> %{acc | sport_id: id}
-        _, acc -> acc
+        {"sport_code", id}, acc ->
+          %{acc | sport_id: id}
+
+        {"disporder", value}, acc ->
+          # global display order needs to preserve importance of sport->zone->league->event display order
+          %{acc | display_order: String.to_integer(value) * 100_000_000}
+
+        _, acc ->
+          acc
       end)
 
     {:ok, state}
@@ -16,8 +23,15 @@ defmodule Geneity.Parser.EventParser do
     state =
       attributes
       |> Enum.reduce(state, fn
-        {"sb_class_id", id}, acc -> %{acc | zone_id: String.to_integer(id)}
-        _, acc -> acc
+        {"sb_class_id", id}, acc ->
+          %{acc | zone_id: String.to_integer(id)}
+
+        {"disporder", value}, acc ->
+          order = String.to_integer(value) * 10_000_000
+          %{acc | display_order: acc.display_order + order}
+
+        _, acc ->
+          acc
       end)
 
     {:ok, state}
@@ -27,8 +41,15 @@ defmodule Geneity.Parser.EventParser do
     state =
       attributes
       |> Enum.reduce(state, fn
-        {"sb_type_id", id}, acc -> %{acc | league_id: String.to_integer(id)}
-        _, acc -> acc
+        {"sb_type_id", id}, acc ->
+          %{acc | league_id: String.to_integer(id)}
+
+        {"disporder", value}, acc ->
+          order = String.to_integer(value) * 1_000_000
+          %{acc | display_order: acc.display_order + order}
+
+        _, acc ->
+          acc
       end)
 
     {:ok, state}
@@ -51,8 +72,9 @@ defmodule Geneity.Parser.EventParser do
         {"status", status}, acc ->
           %{acc | active?: status == "A"}
 
-        {"disporder", order}, acc ->
-          %{acc | display_order: String.to_integer(order)}
+        {"disporder", value}, acc ->
+          order = String.to_integer(value)
+          %{acc | display_order: acc.display_order + order}
 
         _, acc ->
           acc
