@@ -83,8 +83,6 @@ defmodule State.Lists do
 
   def guard_clause(variable, value), do: {:"=:=", variable, value}
 
-  defp normalize_filters(nil), do: %{}
-
   defp normalize_filters(filters) do
     filters
     |> Enum.filter(fn {key, _value} -> key in [:event_id, :zone_id, :league_id] end)

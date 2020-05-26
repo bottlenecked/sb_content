@@ -4,7 +4,8 @@ defmodule SbGraphql.Schema do
   def middleware(middleware, field, object) do
     middleware
     |> apply(:handle_questionmarks, field, object)
-    |> apply(:debug, field, object)
+
+    # |> apply(:debug, field, object)
   end
 
   def apply(middleware, :handle_questionmarks, %{identifier: identifier} = field, object)
