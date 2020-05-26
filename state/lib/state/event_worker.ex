@@ -21,6 +21,10 @@ defmodule State.EventWorker do
 
   def registry_name(), do: EventServerRegistry
 
+  def get_event_data(pid) when is_pid(pid) do
+    GenServer.call(pid, :get_event_data)
+  end
+
   def get_event_data(event_id, operator_id) do
     event_id
     |> via_tuple(operator_id)

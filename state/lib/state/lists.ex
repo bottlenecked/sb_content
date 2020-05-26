@@ -15,24 +15,36 @@ defmodule State.Lists do
   #    zone_id: 11537
   #  } = value}, ...]
 
-  def get_all_event_ids(operator_id, %{event_id: _values} = filters)
-      when not is_nil(operator_id) do
+  @registry_name State.EventWorker.registry_name()
+
+  @spec get_event_pids(operator_id :: String.t(), filters :: map()) :: [pid()]
+  def get_event_pids(operator_id, filters)
+
+  def get_event_pids(operator_id, %{event_id: [_ev_id]} = filters) do
+    # optimize single event_id lookup case
+    filters = normalize_filters(filters)
+
+    Registry.lookup(@registry_name, {:event, hd(filters.event_id), operator_id})
+    |> Enum.map(fn {pid, _value} -> pid end)
+  end
+
+  def get_event_pids(operator_id, %{event_id: _event_ids} = filters) do
     filters = normalize_filters(filters)
     guard = guard_clause(:"$1", filters.event_id)
 
-    Registry.select(State.EventWorker.registry_name(), [
-      {{{:event, :"$1", operator_id}, :_, :_}, [guard], [:"$1"]}
+    Registry.select(@registry_name, [
+      {{{:event, :"$1", operator_id}, :"$2", :_}, [guard], [:"$2"]}
     ])
   end
 
-  def get_all_event_ids(operator_id, filters) when not is_nil(operator_id) do
+  def get_event_pids(operator_id, filters) do
     {pattern, guards} =
       filters
       |> normalize_filters()
       |> filters_to_match_specs()
 
-    Registry.select(State.EventWorker.registry_name(), [
-      {{{:event, :"$1", operator_id}, :_, pattern}, guards, [:"$1"]}
+    Registry.select(@registry_name, [
+      {{{:event, :_, operator_id}, :"$1", pattern}, guards, [:"$1"]}
     ])
   end
 

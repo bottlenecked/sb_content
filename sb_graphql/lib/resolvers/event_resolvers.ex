@@ -1,18 +1,17 @@
 defmodule SbGraphql.Resolvers.EventResolvers do
   alias State.{Lists, EventWorker}
 
-  def events(_, %{operator_id: operator_id, filters: filters} = args, _) do
+  def events(_parent, %{operator_id: operator_id, filters: filters} = _args, _res) do
     events =
       operator_id
-      |> Lists.get_all_event_ids(filters)
-      |> Task.async_stream(fn event_id -> EventWorker.get_event_data(event_id, operator_id) end,
-        max_concurrency: 100
-      )
+      |> Lists.get_event_pids(filters)
+      |> Task.async_stream(&EventWorker.get_event_data/1, max_concurrency: 100)
       |> Enum.map(fn
         {:ok, data} -> data
         _ -> nil
       end)
       |> Enum.filter(fn data -> data != nil end)
+      |> Enum.sort_by(fn evt -> evt.display_order end)
 
     {:ok, events}
   end
