@@ -17,9 +17,10 @@ defmodule SbGraphql.Schema.EventTypes do
     field(:sport_id, :id)
     field(:zone_id, :id)
     field(:league_id, :id)
-    field(:live, :boolean)
-    field(:displayed, :boolean)
-    field(:active, :boolean)
+    field(:live, :boolean, default_value: false)
+    field(:displayed, :boolean, default_value: false)
+    field(:active, :boolean, default_value: false)
+    field(:markets, list_of(:market))
   end
 
   object :event_queries do

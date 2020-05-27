@@ -32,6 +32,7 @@ defmodule SbGraphql.Schema do
   def apply(middleware, _, _, _), do: middleware
 
   import_types(__MODULE__.EventTypes)
+  import_types(__MODULE__.MarketTypes)
 
   query do
     import_fields(:event_queries)
