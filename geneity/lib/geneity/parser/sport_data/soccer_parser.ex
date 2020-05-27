@@ -1,31 +1,12 @@
 defmodule Geneity.Parser.SportData.SoccerParser do
   @soccer "FOOT"
-  alias Model.LiveData.{SoccerLiveData, Incident}
-  alias Model.LiveData.IncidentType.{CommonIncident, SoccerIncident}
+  alias Geneity.Parser.SportData.{IncidentParser, InplayPeriodParser}
+
+  alias Model.LiveData.SoccerLiveData
+  alias Model.LiveData.IncidentType.SoccerIncident
 
   def handle_event(:start_element, {"Inplay", attributes}, %{sport_id: @soccer} = state) do
-    live_data =
-      attributes
-      |> Enum.reduce(%SoccerLiveData{}, fn
-        {"period_length", value}, acc ->
-          %{acc | regular_period_length: String.to_integer(value)}
-
-        {"extra_period_length", value}, acc ->
-          %{acc | extra_period_length: String.to_integer(value)}
-
-        {"inplay_secs", value}, acc ->
-          %{acc | total_ellapsed_seconds: String.to_integer(value)}
-
-        {"correct_at", value}, acc ->
-          {:ok, value, 0} = DateTime.from_iso8601(value <> "Z")
-          %{acc | correct_at: value}
-
-        {"clock_status", value}, acc ->
-          %{acc | time_ticking?: value == "TICKING"}
-
-        _, acc ->
-          acc
-      end)
+    live_data = InplayPeriodParser.parse_inplay_info(%SoccerLiveData{}, attributes)
 
     state = %{state | live_data: live_data}
     {:ok, state}
@@ -35,32 +16,7 @@ defmodule Geneity.Parser.SportData.SoccerParser do
     %{live_data: live_data} = state
     %{incidents: incidents} = live_data
 
-    incident =
-      attributes
-      |> Enum.reduce(%Incident{}, fn
-        {"incident_id", value}, acc ->
-          %{acc | id: String.to_integer(value)}
-
-        {"type", value}, acc ->
-          type = map_incident_type(value)
-          %{acc | type: type}
-
-        {"team_id", value}, acc ->
-          %{acc | team_id: String.to_integer(value)}
-
-        {"inplay_period_mins", value}, acc ->
-          %{acc | game_time: String.to_integer(value)}
-
-        {"time", value}, acc ->
-          {:ok, value, 0} = DateTime.from_iso8601(value <> "Z")
-          %{acc | timestamp: value}
-
-        {"comment", value}, acc ->
-          %{acc | extra: value}
-
-        _, acc ->
-          acc
-      end)
+    incident = IncidentParser.parse_incident(attributes, &map_incident_type/1)
 
     if incident.type == :ignore do
       {:ok, state}
@@ -96,21 +52,6 @@ defmodule Geneity.Parser.SportData.SoccerParser do
 
   defp map_incident_type(geneity_type) do
     case geneity_type do
-      "EBEG" ->
-        CommonIncident.event_start()
-
-      "EEND" ->
-        CommonIncident.event_end()
-
-      "PBEG" ->
-        CommonIncident.period_start()
-
-      "PEND" ->
-        CommonIncident.period_end()
-
-      "CMNT" ->
-        CommonIncident.comment()
-
       "GOAL" ->
         SoccerIncident.goal()
 
@@ -132,8 +73,8 @@ defmodule Geneity.Parser.SportData.SoccerParser do
       "GKIC" ->
         SoccerIncident.goal_kick()
 
-      _ ->
-        :ignore
+      other ->
+        IncidentParser.map_common_incident_type(other)
     end
   end
 end

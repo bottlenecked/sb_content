@@ -4,7 +4,7 @@ defmodule Geneity.Parser do
   alias Model.Event
 
   alias Geneity.Parser.{EventParser, MarketParser, SelectionParser, TeamParser}
-  alias Geneity.Parser.SportData.{SoccerParser}
+  alias Geneity.Parser.SportData.{SoccerParser, BasketBallParser}
 
   @spec parse_event_xml(String.t() | iolist()) :: Event.t()
   def parse_event_xml(xml_content)
@@ -31,6 +31,7 @@ defmodule Geneity.Parser do
     {:ok, state} = MarketParser.handle_event(type, data, state)
     {:ok, state} = SelectionParser.handle_event(type, data, state)
     {:ok, state} = SoccerParser.handle_event(type, data, state)
+    {:ok, state} = BasketBallParser.handle_event(type, data, state)
     {:ok, state}
   end
 end
