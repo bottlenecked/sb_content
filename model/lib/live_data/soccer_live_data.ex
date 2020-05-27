@@ -10,6 +10,8 @@ defmodule Model.LiveData.SoccerLiveData do
     :current_period,
     :total_ellapsed_seconds,
     :correct_at,
+    :regular_periods_count,
+    :max_extra_periods_count,
     :regular_period_length,
     :extra_period_length,
     :time_ticking?,

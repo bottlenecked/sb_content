@@ -10,6 +10,12 @@ defmodule Geneity.Parser.SportData.InplayPeriodParser do
       {"period_length", value}, acc ->
         %{acc | regular_period_length: String.to_integer(value)}
 
+      {"num_periods", value}, acc ->
+        %{acc | regular_periods_count: String.to_integer(value)}
+
+      {"num_extra_periods", value}, acc ->
+        %{acc | max_extra_periods_count: String.to_integer(value)}
+
       {"extra_period_length", value}, acc ->
         %{acc | extra_period_length: String.to_integer(value)}
 

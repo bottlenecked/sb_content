@@ -17,6 +17,8 @@ defmodule Geneity.BasketBallParserTest do
 
     assert %{
              current_period: 2,
+             regular_periods_count: 4,
+             max_extra_periods_count: 5,
              total_ellapsed_seconds: 1196,
              correct_at: ~U[2020-03-30 11:59:40Z],
              regular_period_length: 600,

@@ -58,6 +58,8 @@ defmodule Geneity.ParserTest do
 
     assert %SoccerLiveData{
              current_period: 1,
+             regular_periods_count: 2,
+             max_extra_periods_count: 2,
              total_ellapsed_seconds: 1026,
              correct_at: ~U[2020-03-29 15:18:54Z],
              regular_period_length: 2700,
