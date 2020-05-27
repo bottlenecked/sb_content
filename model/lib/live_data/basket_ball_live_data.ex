@@ -41,7 +41,7 @@ defmodule Model.LiveData.BasketBallLiveData do
   @period_start CommonIncident.period_start()
 
   defp handle_incident(%{type: @period_start}, data, _home_team_id) do
-    put_in(data.current_period, data.current_period + 1)
+    data = put_in(data.current_period, data.current_period + 1)
     put_in(data.period_scores, [@zero_stat | data.period_scores])
   end
 
@@ -52,14 +52,14 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defp handle_incident(%{type: @one_point, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
-    put_in(data.score.home, data.score.home + 1)
+    data = put_in(data.score.home, data.score.home + 1)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | home: period_score.home + 1}
     put_in(data.period_scores, [period_score | rest])
   end
 
   defp handle_incident(%{type: @one_point}, data, _home_team_id) do
-    put_in(data.score.away, data.score.away + 1)
+    data = put_in(data.score.away, data.score.away + 1)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | away: period_score.away + 1}
     put_in(data.period_scores, [period_score | rest])
@@ -67,14 +67,14 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defp handle_incident(%{type: @cancel_one_point, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
-    put_in(data.score.home, data.score.home - 1)
+    data = put_in(data.score.home, data.score.home - 1)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | home: period_score.home - 1}
     put_in(data.period_scores, [period_score | rest])
   end
 
   defp handle_incident(%{type: @cancel_one_point}, data, _home_team_id) do
-    put_in(data.score.away, data.score.away - 1)
+    data = put_in(data.score.away, data.score.away - 1)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | away: period_score.away - 1}
     put_in(data.period_scores, [period_score | rest])
@@ -85,14 +85,14 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defp handle_incident(%{type: @two_point, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
-    put_in(data.score.home, data.score.home + 2)
+    data = put_in(data.score.home, data.score.home + 2)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | home: period_score.home + 2}
     put_in(data.period_scores, [period_score | rest])
   end
 
   defp handle_incident(%{type: @two_point}, data, _home_team_id) do
-    put_in(data.score.away, data.score.away + 2)
+    data = put_in(data.score.away, data.score.away + 2)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | away: period_score.away + 2}
     put_in(data.period_scores, [period_score | rest])
@@ -100,14 +100,14 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defp handle_incident(%{type: @cancel_two_point, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
-    put_in(data.score.home, data.score.home - 2)
+    data = put_in(data.score.home, data.score.home - 2)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | home: period_score.home - 2}
     put_in(data.period_scores, [period_score | rest])
   end
 
   defp handle_incident(%{type: @cancel_two_point}, data, _home_team_id) do
-    put_in(data.score.away, data.score.away - 2)
+    data = put_in(data.score.away, data.score.away - 2)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | away: period_score.away - 2}
     put_in(data.period_scores, [period_score | rest])
@@ -118,14 +118,14 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defp handle_incident(%{type: @three_point, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
-    put_in(data.score.home, data.score.home + 3)
+    data = put_in(data.score.home, data.score.home + 3)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | home: period_score.home + 3}
     put_in(data.period_scores, [period_score | rest])
   end
 
   defp handle_incident(%{type: @three_point}, data, _home_team_id) do
-    put_in(data.score.away, data.score.away + 3)
+    data = put_in(data.score.away, data.score.away + 3)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | away: period_score.away + 3}
     put_in(data.period_scores, [period_score | rest])
@@ -133,14 +133,14 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defp handle_incident(%{type: @cancel_three_point, team_id: team_id}, data, home_team_id)
        when team_id == home_team_id do
-    put_in(data.score.home, data.score.home - 3)
+    data = put_in(data.score.home, data.score.home - 3)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | home: period_score.home - 3}
     put_in(data.period_scores, [period_score | rest])
   end
 
   defp handle_incident(%{type: @cancel_three_point}, data, _home_team_id) do
-    put_in(data.score.away, data.score.away - 3)
+    data = put_in(data.score.away, data.score.away - 3)
     [period_score | rest] = data.period_scores
     period_score = %{period_score | away: period_score.away - 3}
     put_in(data.period_scores, [period_score | rest])
