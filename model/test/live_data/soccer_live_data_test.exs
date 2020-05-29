@@ -8,7 +8,7 @@ defmodule Model.LiveData.SoccerLiveDataTest do
     home_team_id = 1
     away_team_id = 2
 
-    data =
+    incidents =
       [
         {home_team_id, SoccerIncident.goal()},
         {away_team_id, SoccerIncident.goal()},
@@ -22,7 +22,8 @@ defmodule Model.LiveData.SoccerLiveDataTest do
       |> Enum.map(fn {{team_id, type}, idx} ->
         %Incident{id: idx, type: type, team_id: team_id}
       end)
-      |> SoccerLiveData.update_live_data(%SoccerLiveData{}, home_team_id)
+
+    data = SoccerLiveData.update_live_data(%SoccerLiveData{}, incidents, home_team_id)
 
     assert data.score.home == 2
     assert data.score.away == 1
@@ -32,7 +33,7 @@ defmodule Model.LiveData.SoccerLiveDataTest do
     home_team_id = 1
     away_team_id = 2
 
-    data =
+    incidents =
       [
         {home_team_id, SoccerIncident.corner()},
         {away_team_id, SoccerIncident.corner()},
@@ -46,7 +47,8 @@ defmodule Model.LiveData.SoccerLiveDataTest do
       |> Enum.map(fn {{team_id, type}, idx} ->
         %Incident{id: idx, type: type, team_id: team_id}
       end)
-      |> SoccerLiveData.update_live_data(%SoccerLiveData{}, home_team_id)
+
+    data = SoccerLiveData.update_live_data(%SoccerLiveData{}, incidents, home_team_id)
 
     assert data.corners.home == 2
     assert data.corners.away == 1
@@ -56,7 +58,7 @@ defmodule Model.LiveData.SoccerLiveDataTest do
     home_team_id = 1
     away_team_id = 2
 
-    data =
+    incidents =
       [
         {home_team_id, SoccerIncident.red_card()},
         {away_team_id, SoccerIncident.red_card()},
@@ -70,7 +72,8 @@ defmodule Model.LiveData.SoccerLiveDataTest do
       |> Enum.map(fn {{team_id, type}, idx} ->
         %Incident{id: idx, type: type, team_id: team_id}
       end)
-      |> SoccerLiveData.update_live_data(%SoccerLiveData{}, home_team_id)
+
+    data = SoccerLiveData.update_live_data(%SoccerLiveData{}, incidents, home_team_id)
 
     assert data.red_cards.home == 2
     assert data.red_cards.away == 1
@@ -80,7 +83,7 @@ defmodule Model.LiveData.SoccerLiveDataTest do
     home_team_id = 1
     away_team_id = 2
 
-    data =
+    incidents =
       [
         {home_team_id, SoccerIncident.yellow_card()},
         {away_team_id, SoccerIncident.yellow_card()},
@@ -94,14 +97,15 @@ defmodule Model.LiveData.SoccerLiveDataTest do
       |> Enum.map(fn {{team_id, type}, idx} ->
         %Incident{id: idx, type: type, team_id: team_id}
       end)
-      |> SoccerLiveData.update_live_data(%SoccerLiveData{}, home_team_id)
+
+    data = SoccerLiveData.update_live_data(%SoccerLiveData{}, incidents, home_team_id)
 
     assert data.yellow_cards.home == 2
     assert data.yellow_cards.away == 1
   end
 
   test "period counting" do
-    data =
+    incidents =
       [
         CommonIncident.event_start(),
         CommonIncident.period_start(),
@@ -115,7 +119,8 @@ defmodule Model.LiveData.SoccerLiveDataTest do
       |> Enum.map(fn {type, idx} ->
         %Incident{id: idx, type: type}
       end)
-      |> SoccerLiveData.update_live_data(%SoccerLiveData{}, :none)
+
+    data = SoccerLiveData.update_live_data(%SoccerLiveData{}, incidents, :none)
 
     assert data.current_period == 3
   end

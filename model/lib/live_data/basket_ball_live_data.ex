@@ -8,7 +8,7 @@ defmodule Model.LiveData.BasketBallLiveData do
 
   defstruct [
     :current_period,
-    :total_ellapsed_seconds,
+    :remaining_seconds_in_period,
     :correct_at,
     :regular_periods_count,
     :max_extra_periods_count,
@@ -20,10 +20,16 @@ defmodule Model.LiveData.BasketBallLiveData do
     incidents: []
   ]
 
-  @spec update_live_data(list(Incident.t()), t(), integer()) :: t()
+  def calculate_remaining_seconds_in_period(%__MODULE__{} = data, total_seconds_ellapsed) do
+    data.regular_period_length * min(data.current_period, data.regular_periods_count) +
+      data.extra_period_length * max(0, data.current_period - data.regular_periods_count) -
+      total_seconds_ellapsed
+  end
+
+  @spec update_live_data(t(), list(Incident.t()), integer()) :: t()
   def update_live_data(
-        incidents_asc,
         %__MODULE__{} = data,
+        incidents_asc,
         home_team_id
       ) do
     data =
@@ -53,100 +59,66 @@ defmodule Model.LiveData.BasketBallLiveData do
   @cancel_one_point BasketBallIncident.cancel_one_point()
 
   defp handle_incident(%{type: @one_point, team_id: team_id}, data, home_team_id)
-       when team_id == home_team_id do
-    data = put_in(data.score.home, data.score.home + 1)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | home: period_score.home + 1}
-    put_in(data.period_scores, [period_score | rest])
-  end
+       when team_id == home_team_id,
+       do: update_score_data_by(data, :home, +1)
 
-  defp handle_incident(%{type: @one_point}, data, _home_team_id) do
-    data = put_in(data.score.away, data.score.away + 1)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | away: period_score.away + 1}
-    put_in(data.period_scores, [period_score | rest])
-  end
+  defp handle_incident(%{type: @one_point}, data, _home_team_id),
+    do: update_score_data_by(data, :away, +1)
 
   defp handle_incident(%{type: @cancel_one_point, team_id: team_id}, data, home_team_id)
-       when team_id == home_team_id do
-    data = put_in(data.score.home, data.score.home - 1)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | home: period_score.home - 1}
-    put_in(data.period_scores, [period_score | rest])
-  end
+       when team_id == home_team_id,
+       do: update_score_data_by(data, :home, -1)
 
-  defp handle_incident(%{type: @cancel_one_point}, data, _home_team_id) do
-    data = put_in(data.score.away, data.score.away - 1)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | away: period_score.away - 1}
-    put_in(data.period_scores, [period_score | rest])
-  end
+  defp handle_incident(%{type: @cancel_one_point}, data, _home_team_id),
+    do: update_score_data_by(data, :away, -1)
 
   @two_point BasketBallIncident.two_point()
   @cancel_two_point BasketBallIncident.cancel_two_point()
 
   defp handle_incident(%{type: @two_point, team_id: team_id}, data, home_team_id)
-       when team_id == home_team_id do
-    data = put_in(data.score.home, data.score.home + 2)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | home: period_score.home + 2}
-    put_in(data.period_scores, [period_score | rest])
-  end
+       when team_id == home_team_id,
+       do: update_score_data_by(data, :home, +2)
 
-  defp handle_incident(%{type: @two_point}, data, _home_team_id) do
-    data = put_in(data.score.away, data.score.away + 2)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | away: period_score.away + 2}
-    put_in(data.period_scores, [period_score | rest])
-  end
+  defp handle_incident(%{type: @two_point}, data, _home_team_id),
+    do: update_score_data_by(data, :away, +2)
 
   defp handle_incident(%{type: @cancel_two_point, team_id: team_id}, data, home_team_id)
-       when team_id == home_team_id do
-    data = put_in(data.score.home, data.score.home - 2)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | home: period_score.home - 2}
-    put_in(data.period_scores, [period_score | rest])
-  end
+       when team_id == home_team_id,
+       do: update_score_data_by(data, :home, -2)
 
-  defp handle_incident(%{type: @cancel_two_point}, data, _home_team_id) do
-    data = put_in(data.score.away, data.score.away - 2)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | away: period_score.away - 2}
-    put_in(data.period_scores, [period_score | rest])
-  end
+  defp handle_incident(%{type: @cancel_two_point}, data, _home_team_id),
+    do: update_score_data_by(data, :away, -2)
 
   @three_point BasketBallIncident.three_point()
   @cancel_three_point BasketBallIncident.cancel_three_point()
 
   defp handle_incident(%{type: @three_point, team_id: team_id}, data, home_team_id)
-       when team_id == home_team_id do
-    data = put_in(data.score.home, data.score.home + 3)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | home: period_score.home + 3}
-    put_in(data.period_scores, [period_score | rest])
-  end
+       when team_id == home_team_id,
+       do: update_score_data_by(data, :home, +3)
 
-  defp handle_incident(%{type: @three_point}, data, _home_team_id) do
-    data = put_in(data.score.away, data.score.away + 3)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | away: period_score.away + 3}
-    put_in(data.period_scores, [period_score | rest])
-  end
+  defp handle_incident(%{type: @three_point}, data, _home_team_id),
+    do: update_score_data_by(data, :away, +3)
 
   defp handle_incident(%{type: @cancel_three_point, team_id: team_id}, data, home_team_id)
-       when team_id == home_team_id do
-    data = put_in(data.score.home, data.score.home - 3)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | home: period_score.home - 3}
-    put_in(data.period_scores, [period_score | rest])
-  end
+       when team_id == home_team_id,
+       do: update_score_data_by(data, :home, -3)
 
-  defp handle_incident(%{type: @cancel_three_point}, data, _home_team_id) do
-    data = put_in(data.score.away, data.score.away - 3)
-    [period_score | rest] = data.period_scores
-    period_score = %{period_score | away: period_score.away - 3}
-    put_in(data.period_scores, [period_score | rest])
-  end
+  defp handle_incident(%{type: @cancel_three_point}, data, _home_team_id),
+    do: update_score_data_by(data, :away, -3)
 
   defp handle_incident(_incident, data, _home_team_id), do: data
+
+  @spec update_score_data_by(data :: t(), team :: :home | :away, points :: integer()) :: t()
+  defp update_score_data_by(%__MODULE__{} = data, team, points) do
+    score = update_score_by(data.score, team, points)
+    [period_score | rest] = data.period_scores
+    period_score = update_score_by(period_score, team, points)
+    %{data | score: score, period_scores: [period_score | rest]}
+  end
+
+  @spec update_score_by(HomeAwayStat.t(), :home | :away, integer()) :: HomeAwayStat.t()
+  defp update_score_by(score, team, points) do
+    current = Map.get(score, team)
+    Map.put(score, team, current + points)
+  end
 end

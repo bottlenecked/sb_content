@@ -22,17 +22,21 @@ defmodule DiffEngine.Change.LiveData.BasketBallLiveDataDiff do
     end
 
     def diff_clock(prev_data, next_data) do
-      %{current_period: cp2, total_ellapsed_seconds: ts2, correct_at: ca2, time_ticking?: tt2} =
-        next_data
+      %{
+        current_period: cp2,
+        remaining_seconds_in_period: rs2,
+        correct_at: ca2,
+        time_ticking?: tt2
+      } = next_data
 
       case prev_data do
-        %{current_period: ^cp2, total_ellapsed_seconds: ^ts2, time_ticking?: ^tt2} ->
+        %{current_period: ^cp2, remaining_seconds_in_period: ^rs2, time_ticking?: ^tt2} ->
           NoChange.value()
 
         _ ->
           %BasketBallClockChanged{
             current_period: cp2,
-            total_ellapsed_seconds: ts2,
+            remaining_seconds_in_period: rs2,
             correct_at: ca2,
             time_ticking?: tt2
           }

@@ -12,7 +12,8 @@ defmodule SbGraphql.Schema do
       when identifier in [
              :live,
              :active,
-             :displayed
+             :displayed,
+             :time_ticking
            ] do
     key = :"#{identifier}?"
     new_middleware = {Absinthe.Middleware.MapGet, key}
@@ -33,6 +34,7 @@ defmodule SbGraphql.Schema do
 
   import_types(__MODULE__.EventTypes)
   import_types(__MODULE__.MarketTypes)
+  import_types(__MODULE__.LiveDataTypes)
 
   query do
     import_fields(:event_queries)

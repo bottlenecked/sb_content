@@ -1,4 +1,4 @@
-defmodule State.Lists do
+defmodule State.Search do
   @moduledoc """
   Find event ids by common characteristics
   """

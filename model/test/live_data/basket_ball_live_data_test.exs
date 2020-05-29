@@ -8,7 +8,7 @@ defmodule Model.LiveData.BasketBallLiveDataTest do
     home_team_id = 1
     away_team_id = 2
 
-    data =
+    incidents =
       [
         {0, CommonIncident.event_start()},
         {0, CommonIncident.period_start()},
@@ -28,7 +28,8 @@ defmodule Model.LiveData.BasketBallLiveDataTest do
       |> Enum.map(fn {{team_id, type}, idx} ->
         %Incident{id: idx, type: type, team_id: team_id}
       end)
-      |> BasketBallLiveData.update_live_data(%BasketBallLiveData{}, home_team_id)
+
+    data = BasketBallLiveData.update_live_data(%BasketBallLiveData{}, incidents, home_team_id)
 
     assert data.score.home == 5
     assert data.score.away == 5
@@ -42,7 +43,7 @@ defmodule Model.LiveData.BasketBallLiveDataTest do
   end
 
   test "period counting" do
-    data =
+    incidents =
       [
         CommonIncident.event_start(),
         CommonIncident.period_start(),
@@ -56,8 +57,31 @@ defmodule Model.LiveData.BasketBallLiveDataTest do
       |> Enum.map(fn {type, idx} ->
         %Incident{id: idx, type: type}
       end)
-      |> BasketBallLiveData.update_live_data(%BasketBallLiveData{}, :none)
+
+    data = BasketBallLiveData.update_live_data(%BasketBallLiveData{}, incidents, :none)
 
     assert data.current_period == 3
+  end
+
+  test "calculate remaining time in period" do
+    import BasketBallLiveData, only: [calculate_remaining_seconds_in_period: 2]
+
+    live_data = %BasketBallLiveData{
+      regular_periods_count: 4,
+      max_extra_periods_count: 5,
+      regular_period_length: 600,
+      extra_period_length: 300,
+      current_period: 1
+    }
+
+    assert calculate_remaining_seconds_in_period(live_data, 600) == 0
+
+    assert calculate_remaining_seconds_in_period(live_data, 500) == 100
+
+    live_data = %{live_data | current_period: 3}
+    assert calculate_remaining_seconds_in_period(live_data, 1500) == 300
+
+    live_data = %{live_data | current_period: 6}
+    assert calculate_remaining_seconds_in_period(live_data, 2800) == 200
   end
 end

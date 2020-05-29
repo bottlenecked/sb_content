@@ -22,10 +22,10 @@ defmodule Model.LiveData.SoccerLiveData do
     incidents: []
   ]
 
-  @spec update_live_data(list(Incident.t()), t(), integer()) :: t()
+  @spec update_live_data(t(), list(Incident.t()), integer()) :: t()
   def update_live_data(
-        incidents_asc,
         %__MODULE__{} = data,
+        incidents_asc,
         home_team_id
       ) do
     incidents_asc

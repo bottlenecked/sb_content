@@ -20,6 +20,7 @@ defmodule SbGraphql.Schema.EventTypes do
     field(:live, :boolean, default_value: false)
     field(:displayed, :boolean, default_value: false)
     field(:active, :boolean, default_value: false)
+    field(:live_data, :live_data)
     field(:markets, list_of(:market))
   end
 

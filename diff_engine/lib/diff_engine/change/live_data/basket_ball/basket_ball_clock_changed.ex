@@ -2,7 +2,7 @@ defmodule DiffEngine.Change.LiveData.BasketBall.BasketBallClockChanged do
   defstruct [
     :event_id,
     :current_period,
-    :total_ellapsed_seconds,
+    :remaining_seconds_in_period,
     :correct_at,
     :time_ticking?
   ]

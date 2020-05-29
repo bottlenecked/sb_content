@@ -1,11 +1,22 @@
 defmodule SbGraphql.Resolvers.EventResolvers do
-  alias State.{Lists, EventWorker}
+  alias State.{Search, EventWorker}
 
   def events(_parent, %{operator_id: operator_id, filters: filters} = _args, _res) do
     events =
       operator_id
-      |> Lists.get_event_pids(filters)
-      |> Task.async_stream(&EventWorker.get_event_data/1, max_concurrency: 100)
+      |> Search.get_event_pids(filters)
+      |> Task.async_stream(
+        fn pid ->
+          try do
+            EventWorker.get_event_data(pid)
+          catch
+            # based on the Registry documentation, an entry can persist for a little time before it gets
+            # cleaned up after the process's death. This should help catch these errors
+            :exit, {:noproc, _} -> nil
+          end
+        end,
+        max_concurrency: 100
+      )
       |> Enum.map(fn
         {:ok, data} -> data
         _ -> nil

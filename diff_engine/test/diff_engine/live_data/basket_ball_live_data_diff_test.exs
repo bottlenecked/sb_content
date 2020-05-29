@@ -16,7 +16,7 @@ defmodule DiffEngine.LiveData.BasketBallLiveDataDiffTest do
       current_period: 1,
       time_ticking?: true,
       correct_at: DateTime.utc_now(),
-      total_ellapsed_seconds: 1890
+      remaining_seconds_in_period: 120
     }
 
     assert [] == LiveDataDiff.diff(prev, prev)
@@ -24,7 +24,7 @@ defmodule DiffEngine.LiveData.BasketBallLiveDataDiffTest do
     [
       current_period: 2,
       time_ticking?: false,
-      total_ellapsed_seconds: 1900
+      remaining_seconds_in_period: 110
     ]
     |> Enum.map(fn {key, val} -> Map.put(prev, key, val) end)
     |> Enum.each(fn next ->

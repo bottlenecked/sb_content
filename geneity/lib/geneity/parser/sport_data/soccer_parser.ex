@@ -1,12 +1,39 @@
 defmodule Geneity.Parser.SportData.SoccerParser do
   @soccer "FOOT"
-  alias Geneity.Parser.SportData.{IncidentParser, InplayPeriodParser}
+  alias Geneity.Parser.SportData.IncidentParser
 
   alias Model.LiveData.SoccerLiveData
   alias Model.LiveData.IncidentType.SoccerIncident
 
   def handle_event(:start_element, {"Inplay", attributes}, %{sport_id: @soccer} = state) do
-    live_data = InplayPeriodParser.parse_inplay_info(%SoccerLiveData{}, attributes)
+    live_data =
+      attributes
+      |> Enum.reduce(%SoccerLiveData{}, fn
+        {"period_length", value}, acc ->
+          %{acc | regular_period_length: String.to_integer(value)}
+
+        {"num_periods", value}, acc ->
+          %{acc | regular_periods_count: String.to_integer(value)}
+
+        {"num_extra_periods", value}, acc ->
+          %{acc | max_extra_periods_count: String.to_integer(value)}
+
+        {"extra_period_length", value}, acc ->
+          %{acc | extra_period_length: String.to_integer(value)}
+
+        {"inplay_secs", value}, acc ->
+          %{acc | total_ellapsed_seconds: String.to_integer(value)}
+
+        {"correct_at", value}, acc ->
+          {:ok, value, 0} = DateTime.from_iso8601(value <> "Z")
+          %{acc | correct_at: value}
+
+        {"clock_status", value}, acc ->
+          %{acc | time_ticking?: value == "TICKING"}
+
+        _, acc ->
+          acc
+      end)
 
     state = %{state | live_data: live_data}
     {:ok, state}
@@ -42,7 +69,7 @@ defmodule Geneity.Parser.SportData.SoccerParser do
       teams: [home_team, _]
     } = state
 
-    live_data = SoccerLiveData.update_live_data(incidents, live_data, home_team.id)
+    live_data = SoccerLiveData.update_live_data(live_data, incidents, home_team.id)
     live_data = %{live_data | incidents: Enum.reverse(incidents)}
     state = %{state | live_data: live_data}
     {:ok, state}
