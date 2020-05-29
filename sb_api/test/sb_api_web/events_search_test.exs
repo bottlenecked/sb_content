@@ -11,7 +11,7 @@ defmodule SbApi.EventsSearchTest do
   """
 
   test "Return all event ids", %{conn: conn} do
-    response = get_response(conn, %{})
+    response = get_response(conn, @query, %{})
 
     events = response["data"]["events"]
 
@@ -26,7 +26,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     assert %{
              "data" => %{
@@ -44,7 +44,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     assert %{
              "data" => %{
@@ -63,7 +63,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     events = response["data"]["events"]
     assert length(events) == 1
@@ -76,7 +76,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     events = response["data"]["events"]
     assert length(events) == 1
@@ -90,7 +90,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     ids =
       response["data"]["events"]
@@ -106,7 +106,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     events = response["data"]["events"]
     assert length(events) == 11
@@ -119,7 +119,7 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     events = response["data"]["events"]
     assert length(events) == 11
@@ -132,16 +132,9 @@ defmodule SbApi.EventsSearchTest do
       }
     }
 
-    response = get_response(conn, variables)
+    response = get_response(conn, @query, variables)
 
     events = response["data"]["events"]
     assert length(events) == 0
-  end
-
-  defp get_response(conn, variables) do
-    conn
-    |> get("/api", query: @query, variables: Jason.encode!(variables))
-    |> json_response(200)
-    |> assert_no_errors()
   end
 end

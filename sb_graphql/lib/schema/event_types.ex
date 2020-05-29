@@ -26,7 +26,7 @@ defmodule SbGraphql.Schema.EventTypes do
 
   object :event_queries do
     field :events, list_of(:event) do
-      arg(:operator_id, non_null(:id))
+      arg(:operator_id, non_null(:id), default_value: "stoiximan_gr")
       arg(:filters, :event_filter, default_value: %{})
 
       resolve(&EventResolvers.events/3)

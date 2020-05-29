@@ -6,10 +6,10 @@ defmodule SbGraphql.Schema.LiveDataTypes.SoccerTypes do
     @desc "current half or overtime. Eg. during regular period will be 1 or 2, 3 or more during overtime"
     field(:current_period, :integer)
 
-    @desc "total seconds ellapsed across all halfs (and overtime) so far. If in next half, extra time for previous half not included"
+    @desc "total seconds ellapsed across all halfs (and overtime) so far. If in next period, extra time for previous period not included"
     field(:total_ellapsed_seconds, :integer)
 
-    @desc "time in utc data were sent from the backend. can be used to adjust for clock skew"
+    @desc "time in UTC live data were sent from the backend. can be used to adjust for clock differences"
     field(:correct_at, :datetime)
 
     @desc "length of regular period (regular time halfs), in seconds"

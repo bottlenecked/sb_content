@@ -3,13 +3,13 @@ defmodule SbGraphql.Schema.LiveDataTypes.BasketBallTypes do
 
   @desc "Details about current state of a live basket ball match"
   object :basket_ball_live_data do
-    @desc "Current half, quarter (depending on league) or overtime. Eg. during regular period will be 1 - 4, 5 or more during overtime"
+    @desc "Current period: half, quarter (depending on league) or overtime. Eg. during regular periods for a match with quarters the value will be 1 - 4, 5 or more during overtime"
     field(:current_period, :integer)
 
-    @desc "Total seconds ellapsed across all halfs/periods (and overtime) so far"
-    field(:total_ellapsed_seconds, :integer)
+    @desc "Seconds remaining in the current period"
+    field(:remaining_seconds_in_period, :integer)
 
-    @desc "Time in utc data were sent from the backend. Can be used to adjust for clock skew"
+    @desc "Time in UTC live data were sent from the backend. Can be used to adjust for clock differences"
     field(:correct_at, :datetime)
 
     @desc "Length of regular period (regular time halfs or quarters), in seconds"
