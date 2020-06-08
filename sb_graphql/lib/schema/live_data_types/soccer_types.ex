@@ -1,6 +1,8 @@
 defmodule SbGraphql.Schema.LiveDataTypes.SoccerTypes do
   use Absinthe.Schema.Notation
 
+  import SbGraphql.Resolvers.IdentifierResolvers, only: [resolve_to_property: 1]
+
   @desc "details about current state of a live soccer match"
   object :soccer_live_data do
     @desc "current half or overtime. Eg. during regular period will be 1 or 2, 3 or more during overtime"
@@ -19,8 +21,9 @@ defmodule SbGraphql.Schema.LiveDataTypes.SoccerTypes do
     field(:extra_period_length, :integer)
 
     @desc "True if clock not stopped by referee and period still in progress"
-
-    field(:time_ticking, :boolean)
+    field(:time_ticking, :boolean) do
+      resolve(resolve_to_property(:time_ticking?))
+    end
 
     @desc "total goals scored including regular, overtime and penalty shoot-out periods"
     field(:score, :score)

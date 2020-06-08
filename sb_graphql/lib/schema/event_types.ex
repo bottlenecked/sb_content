@@ -2,6 +2,8 @@ defmodule SbGraphql.Schema.EventTypes do
   use Absinthe.Schema.Notation
   alias SbGraphql.Resolvers.EventResolvers
 
+  import SbGraphql.Resolvers.IdentifierResolvers, only: [resolve_to_property: 1]
+
   @desc "filters to search events with"
   input_object :event_filter do
     @desc "filter based on event ids"
@@ -38,13 +40,19 @@ defmodule SbGraphql.Schema.EventTypes do
     field(:league_id, :id)
 
     @desc "a flag indicating whether event is currently in progress"
-    field(:live, :boolean, default_value: false)
+    field(:live, :boolean, default_value: false) do
+      resolve(resolve_to_property(:live?))
+    end
 
     @desc "a flag indicating whether an event is visible to clients or not. Only visible events can be bet on"
-    field(:displayed, :boolean, default_value: false)
+    field(:displayed, :boolean) do
+      resolve(resolve_to_property(:displayed?))
+    end
 
     @desc "a flag indicating whether betting is available on this event. If inactive, neither betting nor cashout is allowed for bets on this event"
-    field(:active, :boolean, default_value: false)
+    field(:active, :boolean) do
+      resolve(resolve_to_property(:active?))
+    end
 
     @desc "clock status, scoreboards and other info pertaining to an in-progress event"
     field(:live_data, :live_data)

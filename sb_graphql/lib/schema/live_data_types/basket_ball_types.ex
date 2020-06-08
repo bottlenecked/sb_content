@@ -1,6 +1,8 @@
 defmodule SbGraphql.Schema.LiveDataTypes.BasketBallTypes do
   use Absinthe.Schema.Notation
 
+  import SbGraphql.Resolvers.IdentifierResolvers, only: [resolve_to_property: 1]
+
   @desc "Details about current state of a live basket ball match"
   object :basket_ball_live_data do
     @desc "Current period: half, quarter (depending on league) or overtime. Eg. during regular periods for a match with quarters the value will be 1 - 4, 5 or more during overtime"
@@ -19,7 +21,9 @@ defmodule SbGraphql.Schema.LiveDataTypes.BasketBallTypes do
     field(:extra_period_length, :integer)
 
     @desc "True if clock not stopped by referee and period still in progress"
-    field(:time_ticking, :boolean)
+    field(:time_ticking, :boolean) do
+      resolve(resolve_to_property(:time_ticking?))
+    end
 
     @desc "Total points scored including regular and overtime periods"
     field(:score, :score)

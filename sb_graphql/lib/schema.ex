@@ -1,25 +1,10 @@
 defmodule SbGraphql.Schema do
   use Absinthe.Schema
 
-  def middleware(middleware, field, object) do
+  def middleware(middleware, _field, _object) do
     middleware
-    |> apply(:handle_questionmarks, field, object)
 
     # |> apply(:debug, field, object)
-  end
-
-  def apply(middleware, :handle_questionmarks, %{identifier: identifier} = field, object)
-      when identifier in [
-             :live,
-             :active,
-             :displayed,
-             :time_ticking
-           ] do
-    key = :"#{identifier}?"
-    new_middleware = {Absinthe.Middleware.MapGet, key}
-
-    middleware
-    |> Absinthe.Schema.replace_default(new_middleware, field, object)
   end
 
   def apply(middleware, :debug, _field, _object) do
