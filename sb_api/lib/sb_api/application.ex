@@ -12,9 +12,10 @@ defmodule SbApi.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: SbApi.PubSub},
       # Start the Endpoint (http/https)
-      SbApiWeb.Endpoint
+      SbApiWeb.Endpoint,
       # Start a worker by calling: SbApi.Worker.start_link(arg)
       # {SbApi.Worker, arg}
+      {Absinthe.Subscription, SbApiWeb.Endpoint}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

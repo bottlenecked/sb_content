@@ -1,10 +1,13 @@
 defmodule SbGraphql.Resolvers.EventResolvers do
   alias State.{Search, EventWorker}
 
-  def events(_parent, %{operator_id: operator_id, filters: filters} = _args, _res) do
+  def events(_parent, %{operator_id: operator_id} = args, _res) do
+    # default value for arguments does not work as expected, fix after
+    # TODO: remove the <args.filters || %{}> after https://github.com/absinthe-graphql/absinthe/issues/939
+    # is fixed
     events =
       operator_id
-      |> Search.get_event_pids(filters)
+      |> Search.get_event_pids(args[:filters] || %{})
       |> Task.async_stream(
         fn pid ->
           try do

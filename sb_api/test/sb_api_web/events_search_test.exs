@@ -11,7 +11,7 @@ defmodule SbApi.EventsSearchTest do
   """
 
   test "Return all event ids", %{conn: conn} do
-    response = get_response(conn, @query, %{})
+    response = get_response(conn, @query, %{filters: %{}})
 
     events = response["data"]["events"]
 

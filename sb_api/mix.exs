@@ -39,7 +39,7 @@ defmodule SbApi.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:absinthe_plug, "~> 1.4"},
+      {:absinthe_phoenix, "~> 2.0.0"},
       {:state, path: "../state"},
       {:sb_graphql, path: "../sb_graphql"}
     ]
