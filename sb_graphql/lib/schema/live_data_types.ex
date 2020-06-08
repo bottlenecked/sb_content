@@ -3,7 +3,6 @@ defmodule SbGraphql.Schema.LiveDataTypes do
 
   alias Model.LiveData.{SoccerLiveData, BasketBallLiveData}
 
-  import_types(Absinthe.Type.Custom)
   import_types(__MODULE__.ScoreTypes)
   import_types(__MODULE__.SoccerTypes)
   import_types(__MODULE__.BasketBallTypes)

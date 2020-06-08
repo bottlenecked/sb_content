@@ -32,6 +32,7 @@ defmodule SbGraphql.Schema do
 
   def apply(middleware, _, _, _), do: middleware
 
+  import_types(Absinthe.Type.Custom)
   import_types(__MODULE__.EventTypes)
   import_types(__MODULE__.MarketTypes)
   import_types(__MODULE__.LiveDataTypes)

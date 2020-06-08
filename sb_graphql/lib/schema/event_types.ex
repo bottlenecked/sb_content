@@ -51,6 +51,9 @@ defmodule SbGraphql.Schema.EventTypes do
 
     @desc "list of markets available for betting in this event"
     field(:markets, list_of(:market))
+
+    @desc "Time in UTC the event is scheduled to go live. Can change and be pushed further back as start time nears"
+    field(:start_time, :datetime)
   end
 
   object :event_queries do
