@@ -18,7 +18,7 @@ defmodule SbGraphql.Schema.LiveDataTypes.BasketBallTypes do
     @desc "Length of overtime periods in seconds"
     field(:extra_period_length, :integer)
 
-    @desc "True if clock not stopped by referee or period ended"
+    @desc "True if clock not stopped by referee and period still in progress"
     field(:time_ticking, :boolean)
 
     @desc "Total points scored including regular and overtime periods"

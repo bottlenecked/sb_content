@@ -18,7 +18,8 @@ defmodule SbGraphql.Schema.LiveDataTypes.SoccerTypes do
     @desc "length of overtime periods in seconds"
     field(:extra_period_length, :integer)
 
-    @desc "true if clock not stopped by referee or period ended"
+    @desc "True if clock not stopped by referee and period still in progress"
+
     field(:time_ticking, :boolean)
 
     @desc "total goals scored including regular, overtime and penalty shoot-out periods"
