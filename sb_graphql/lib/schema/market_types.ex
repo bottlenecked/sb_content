@@ -6,7 +6,7 @@ defmodule SbGraphql.Schema.MarketTypes do
     @desc "unique identifier"
     field(:id, :id)
 
-    @desc "type of market (like Match Result, Over/Under etc."
+    @desc "type of market (like Match Result, Over/Under etc.)"
     field(:type_id, :id)
 
     @desc "flag indicating whether betting is available on this market. If inactive neither betting nor cashout (for bets already placed in this market) are available"
@@ -17,6 +17,9 @@ defmodule SbGraphql.Schema.MarketTypes do
 
     @desc "meta info about the market. For example many markets of the over/under type maybe available, each with a different modifier like 2.5, 3.5 etc."
     field(:modifier, :string)
+
+    @desc "if set, indicates point up until betting on this market will be available"
+    field(:close_time, :datetime)
 
     @desc "list of this market's selections"
     field(:selections, list_of(:selection))

@@ -108,4 +108,18 @@ defmodule Geneity.ParserTest do
     assert %{live_data: %SoccerLiveData{} = live_data} = result
     assert %{score: %{home: 1, away: 2}} = live_data
   end
+
+  test "parse market closing time" do
+    result =
+      "events/foot_outright_event"
+      |> Helpers.load_xml_file()
+      |> Geneity.Parser.parse_event_xml!()
+
+    assert %{
+             markets: [
+               %{close_time: ~U"2021-06-11 12:00:00Z"}
+               | _rest
+             ]
+           } = result
+  end
 end

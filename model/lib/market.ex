@@ -5,6 +5,7 @@ defmodule Model.Market do
     :active?,
     :modifier,
     :order,
+    :close_time,
     displayed?: true,
     selections: []
   ]

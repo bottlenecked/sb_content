@@ -17,6 +17,10 @@ defmodule Geneity.Parser.MarketParser do
         {"mkt_sort", type}, acc ->
           [{:type_id, type} | acc]
 
+        {"mkt_close_at", value}, acc ->
+          {:ok, close_time, 0} = DateTime.from_iso8601(value <> "Z")
+          [{:close_time, close_time} | acc]
+
         {"handicap", handicap}, acc ->
           {modifier, _} = Float.parse(handicap)
           [{:modifier, modifier} | acc]
