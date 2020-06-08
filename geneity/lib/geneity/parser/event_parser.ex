@@ -24,7 +24,7 @@ defmodule Geneity.Parser.EventParser do
       attributes
       |> Enum.reduce(state, fn
         {"sb_class_id", id}, acc ->
-          %{acc | zone_id: String.to_integer(id)}
+          %{acc | zone_id: id}
 
         {"disporder", value}, acc ->
           order = String.to_integer(value) * 10_000_000
@@ -42,7 +42,7 @@ defmodule Geneity.Parser.EventParser do
       attributes
       |> Enum.reduce(state, fn
         {"sb_type_id", id}, acc ->
-          %{acc | league_id: String.to_integer(id)}
+          %{acc | league_id: id}
 
         {"disporder", value}, acc ->
           order = String.to_integer(value) * 1_000_000
@@ -60,7 +60,7 @@ defmodule Geneity.Parser.EventParser do
       attributes
       |> Enum.reduce(state, fn
         {"ev_id", id}, acc ->
-          %{acc | id: String.to_integer(id)}
+          %{acc | id: id}
 
         {"start_time", time}, acc ->
           {:ok, start_time, 0} = DateTime.from_iso8601(time <> "Z")
@@ -87,7 +87,7 @@ defmodule Geneity.Parser.EventParser do
     state =
       attributes
       |> Enum.reduce(state, fn
-        {"br_match_id", id}, acc -> %{acc | br_match_id: String.to_integer(id)}
+        {"br_match_id", id}, acc -> %{acc | br_match_id: id}
         _, acc -> acc
       end)
 

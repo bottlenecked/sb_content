@@ -14,7 +14,7 @@ defmodule Geneity.Parser.TeamParser do
     team =
       attributes
       |> Enum.reduce(%Team{}, fn
-        {"team_id", value}, acc -> %{acc | id: String.to_integer(value)}
+        {"team_id", id}, acc -> %{acc | id: id}
         _, acc -> acc
       end)
 

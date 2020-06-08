@@ -6,7 +6,7 @@ defmodule Geneity.Parser.SelectionParser do
       attributes
       |> Enum.reduce([], fn
         {"seln_id", id}, acc ->
-          [{:id, String.to_integer(id)} | acc]
+          [{:id, id} | acc]
 
         {"status", status}, acc ->
           [{:active?, status == "A"} | acc]

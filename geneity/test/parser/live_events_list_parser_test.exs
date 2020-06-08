@@ -7,7 +7,7 @@ defmodule Geneity.Parser.LiveEventsListParserTest do
       |> Helpers.load_xml_file()
       |> Geneity.Parser.LeagueParser.get_event_ids!()
 
-    assert [5_322_917 | _] = result
+    assert ["5322917" | _] = result
     assert length(result) == 31
   end
 end

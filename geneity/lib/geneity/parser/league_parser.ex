@@ -23,7 +23,7 @@ defmodule Geneity.Parser.LeagueParser do
     code =
       attrs
       |> Enum.filter(fn {k, _v} -> k == "ev_id" end)
-      |> Enum.map(fn {_k, v} -> String.to_integer(v) end)
+      |> Enum.map(fn {_k, v} -> v end)
       |> List.first()
 
     {:ok, [code | list]}

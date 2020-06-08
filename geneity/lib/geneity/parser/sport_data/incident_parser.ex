@@ -11,14 +11,14 @@ defmodule Geneity.Parser.SportData.IncidentParser do
     xml_attributes
     |> Enum.reduce(%Incident{}, fn
       {"incident_id", value}, acc ->
-        %{acc | id: String.to_integer(value)}
+        %{acc | id: value}
 
       {"type", value}, acc ->
         type = map_incident_type.(value)
         %{acc | type: type}
 
       {"team_id", value}, acc ->
-        %{acc | team_id: String.to_integer(value)}
+        %{acc | team_id: value}
 
       {"inplay_period_mins", value}, acc ->
         %{acc | game_time: String.to_integer(value)}

@@ -22,14 +22,12 @@ defmodule State.Search do
 
   def get_event_pids(operator_id, %{event_id: [_ev_id]} = filters) do
     # optimize single event_id lookup case
-    filters = normalize_filters(filters)
 
     Registry.lookup(@registry_name, {:event, hd(filters.event_id), operator_id})
     |> Enum.map(fn {pid, _value} -> pid end)
   end
 
   def get_event_pids(operator_id, %{event_id: _event_ids} = filters) do
-    filters = normalize_filters(filters)
     guard = guard_clause(:"$1", filters.event_id)
 
     Registry.select(@registry_name, [
@@ -38,10 +36,7 @@ defmodule State.Search do
   end
 
   def get_event_pids(operator_id, filters) do
-    {pattern, guards} =
-      filters
-      |> normalize_filters()
-      |> filters_to_match_specs()
+    {pattern, guards} = filters_to_match_specs(filters)
 
     Registry.select(@registry_name, [
       {{{:event, :_, operator_id}, :"$1", pattern}, guards, [:"$1"]}
@@ -94,29 +89,4 @@ defmodule State.Search do
   end
 
   def guard_clause(variable, value), do: {:"=:=", variable, value}
-
-  defp normalize_filters(filters) do
-    filters
-    |> Enum.filter(fn {key, _value} -> key in [:event_id, :zone_id, :league_id] end)
-    |> Enum.map(&fix_ids/1)
-    |> Enum.reduce(filters, fn {key, value}, acc -> Map.put(acc, key, value) end)
-  end
-
-  defp fix_ids({key, value}) do
-    {key, convert_to_ints(value)}
-  end
-
-  defp convert_to_ints(value) when is_binary(value) do
-    case Integer.parse(value) do
-      {int, _} -> int
-      _ -> value
-    end
-  end
-
-  defp convert_to_ints(values) when is_list(values) do
-    values
-    |> Enum.map(&convert_to_ints/1)
-  end
-
-  defp convert_to_ints(value), do: value
 end

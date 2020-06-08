@@ -7,7 +7,7 @@ defmodule Geneity.Parser.HierarchyParserTest do
       |> Helpers.load_xml_file()
       |> Geneity.Parser.HierarchyParser.get_league_ids!()
 
-    assert [182_758 | _] = result
+    assert ["182758" | _] = result
     assert length(result) == 41
   end
 end

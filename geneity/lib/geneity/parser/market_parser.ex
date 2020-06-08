@@ -6,7 +6,7 @@ defmodule Geneity.Parser.MarketParser do
       attributes
       |> Enum.reduce([], fn
         {"mkt_id", id}, acc ->
-          [{:id, String.to_integer(id)} | acc]
+          [{:id, id} | acc]
 
         {"status", status}, acc ->
           [{:active?, status == "A"} | acc]

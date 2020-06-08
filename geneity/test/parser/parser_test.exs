@@ -13,11 +13,11 @@ defmodule Geneity.ParserTest do
       |> Geneity.Parser.parse_event_xml!()
 
     assert %Event{
-             id: 5_113_307,
+             id: "5113307",
              sport_id: "FOOT",
-             zone_id: 11395,
-             league_id: 17221,
-             br_match_id: 21_752_575,
+             zone_id: "11395",
+             league_id: "17221",
+             br_match_id: "21752575",
              start_time: ~U[2020-03-29 15:00:00Z],
              active?: true,
              displayed?: true,
@@ -30,7 +30,7 @@ defmodule Geneity.ParserTest do
 
     assert [
              %Market{
-               id: 200_196_701,
+               id: "200196701",
                type_id: "MRES",
                active?: true,
                displayed?: false,
@@ -43,7 +43,7 @@ defmodule Geneity.ParserTest do
 
     assert [
              %Selection{
-               id: 848_691_656,
+               id: "848691656",
                type_id: "H",
                active?: true,
                price_decimal: 2.85,
@@ -54,7 +54,7 @@ defmodule Geneity.ParserTest do
 
     assert Enum.count(selections) == 3
 
-    assert [%Team{id: 107_953}, %Team{}] = teams
+    assert [%Team{id: "107953"}, %Team{}] = teams
 
     assert %SoccerLiveData{
              current_period: 1,
@@ -75,14 +75,14 @@ defmodule Geneity.ParserTest do
 
     assert [
              %Incident{
-               id: 189_417_919,
+               id: "189417919",
                type: event_start_type,
                game_time: 1,
                timestamp: ~U[2020-03-29 15:01:48Z]
              },
              _,
              %Incident{
-               team_id: 107_953,
+               team_id: "107953",
                type: free_kick_type
              },
              _,
