@@ -1,6 +1,6 @@
 defmodule SbApiWeb.UserSocket do
   use Phoenix.Socket
-
+  use Absinthe.Phoenix.Socket, schema: SbGraphql.Schema
   ## Channels
   # channel "room:*", SbApiWeb.RoomChannel
 

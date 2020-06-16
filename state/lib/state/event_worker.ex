@@ -1,7 +1,8 @@
 defmodule State.EventWorker do
   use GenServer, restart: :transient
 
-  alias State.{Content, Telemetry}
+  alias State.{Content, Telemetry, PubSub}
+  alias DiffEngine.Change.EventRemoved
 
   require Logger
 
@@ -110,10 +111,14 @@ defmodule State.EventWorker do
 
   defp diff(old_data, new_data), do: DiffEngine.diff(old_data, new_data)
 
+  defp publish_changes([], _operator_id), do: :ok
+
   defp publish_changes(changes, operator_id) do
     changes
     |> length()
     |> Telemetry.changes_count(operator_id)
+
+    PubSub.publish_changes(operator_id, changes)
   end
 
   defp set_tags(state, changes) do
@@ -122,7 +127,10 @@ defmodule State.EventWorker do
   end
 
   defp publish_event_removed(state) do
-    IO.inspect(event_removed: state.event_id)
+    [
+      %EventRemoved{event_id: state.event_id}
+    ]
+    |> publish_changes(state.operator_id)
   end
 
   defp calculate_next_poll(%__MODULE__{} = state) do

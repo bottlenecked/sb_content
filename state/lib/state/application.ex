@@ -7,7 +7,14 @@ defmodule State.Application do
 
   def start(_type, _args) do
     children = [
-      {Registry, keys: :unique, name: EventServerRegistry},
+      Supervisor.child_spec({Registry, keys: :unique, name: EventServerRegistry},
+        id: EventServerRegistry
+      ),
+      Supervisor.child_spec(
+        {Registry,
+         keys: :duplicate, partitions: System.schedulers_online(), name: State.PubSub.name()},
+        id: State.PubSub.name()
+      ),
       State.EventSupervisor,
       State.ContentListenerWorker,
       State.Telemetry

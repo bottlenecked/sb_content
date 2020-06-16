@@ -7,7 +7,12 @@ defmodule SbApiWeb.Router do
 
   scope "/" do
     forward("/api", Absinthe.Plug, schema: SbGraphql.Schema)
-    forward("/graphiql", Absinthe.Plug.GraphiQL, schema: SbGraphql.Schema, interface: :simple)
+
+    forward("/graphiql", Absinthe.Plug.GraphiQL,
+      schema: SbGraphql.Schema,
+      interface: :simple,
+      socket: SbApiWeb.UserSocket
+    )
   end
 
   # Enables LiveDashboard only for development

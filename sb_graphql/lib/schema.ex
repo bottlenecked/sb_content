@@ -21,8 +21,13 @@ defmodule SbGraphql.Schema do
   import_types(__MODULE__.EventTypes)
   import_types(__MODULE__.MarketTypes)
   import_types(__MODULE__.LiveDataTypes)
+  import_types(__MODULE__.EventSubscriptionTypes)
 
   query do
     import_fields(:event_queries)
+  end
+
+  subscription do
+    import_fields(:event_subscriptions)
   end
 end
