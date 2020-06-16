@@ -1,11 +1,10 @@
 defmodule SbGraphql.Schema.LiveDataTypes do
   use Absinthe.Schema.Notation
+  import SbGraphql.Schema.Helpers.Macros, only: [import_types_under: 1]
 
   alias Model.LiveData.{SoccerLiveData, BasketBallLiveData}
 
-  import_types(__MODULE__.ScoreTypes)
-  import_types(__MODULE__.SoccerTypes)
-  import_types(__MODULE__.BasketBallTypes)
+  import_types_under("./lib/schema/live_data_types/")
 
   union :live_data do
     types([
