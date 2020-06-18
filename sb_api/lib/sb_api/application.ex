@@ -15,7 +15,8 @@ defmodule SbApi.Application do
       SbApiWeb.Endpoint,
       # Start a worker by calling: SbApi.Worker.start_link(arg)
       # {SbApi.Worker, arg}
-      {Absinthe.Subscription, SbApiWeb.Endpoint}
+      {Absinthe.Subscription, SbApiWeb.Endpoint},
+      SbGraphql.Supervisor
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

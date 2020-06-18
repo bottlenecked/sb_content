@@ -4,7 +4,7 @@ defmodule SbGraphql.Schema.EventSubscriptionTypes.EventStatusChangedType do
   import SbGraphql.Resolvers.IdentifierResolvers, only: [resolve_to_property: 1]
 
   @desc "event status has changed between active / inactive"
-  object :event_status_changed do
+  object :status_changed do
     field(:event_id, :id)
 
     field(:active, :boolean) do
