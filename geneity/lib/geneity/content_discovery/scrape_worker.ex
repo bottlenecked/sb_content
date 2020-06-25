@@ -136,6 +136,8 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     do: Process.send_after(self(), :scrape, millis_after)
 
   defp via_tuple(type, operator_id) do
-    {:via, Registry, {GeneityRegistry, {:scaper, {type, operator_id}}}}
+    {:via, Registry, {GeneityRegistry, name(type, operator_id)}}
   end
+
+  def name(type, operator_id), do: {:scaper, {type, operator_id}}
 end

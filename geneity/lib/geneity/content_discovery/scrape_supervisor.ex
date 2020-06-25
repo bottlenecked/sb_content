@@ -31,4 +31,14 @@ defmodule Geneity.ContentDiscovery.ScrapeSupervisor do
     spec = {ScrapeWorker, %{type: type, interval: interval, operator_id: operator_id}}
     DynamicSupervisor.start_child(__MODULE__, spec)
   end
+
+  def stop_scrapper(operator_id, type) when is_operator(operator_id) and type in [:live, :pre] do
+    case Registry.lookup(GeneityRegistry, ScrapeWorker.name(type, operator_id)) do
+      [{pid, _value}] ->
+        DynamicSupervisor.terminate_child(__MODULE__, pid)
+
+      _other ->
+        {:error, :not_found}
+    end
+  end
 end
