@@ -1,4 +1,6 @@
 defmodule Geneity.PubSub do
+  alias Geneity.ContentDiscovery.{ScrapeSupervisor, ScrapeWorker}
+
   @doc """
   Subscribe to receive notification when new events are discovered. The receiving process
   will receive messages of the form {:new_events, {operator_id, [event_ids]}}. These events might
@@ -7,10 +9,8 @@ defmodule Geneity.PubSub do
   def subscribe_new_events() do
     Registry.register(name(), :new_events, [])
 
-    get_events = &Geneity.ContentDiscovery.ScrapeWorker.get_current_event_ids/1
-
-    Geneity.Api.Operator.all()
-    |> Enum.map(fn operator_id -> {operator_id, get_events.(operator_id)} end)
+    ScrapeSupervisor.scrapers_list()
+    |> Enum.map(&ScrapeWorker.get_current_event_ids/1)
     |> Enum.each(fn {operator_id, event_ids} -> publish_new_events(operator_id, event_ids) end)
   end
 

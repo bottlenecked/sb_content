@@ -32,10 +32,23 @@ defmodule Geneity.Api do
   def get_live_event_ids(operator_id),
     do: get_implementation_module().get_live_event_ids(operator_id)
 
-  defp get_implementation_module(),
-    do:
-      if(Mix.env() == :prod,
-        do: Geneity.Api.HttpApi,
-        else: Geneity.Api.SimulationApi
-      )
+  def set_api_mode(mode) when mode in [:test, :prod] do
+    api_module =
+      case mode do
+        :test -> Geneity.Api.SimulationApi
+        :prod -> Geneity.Api.HttpApi
+      end
+
+    Application.put_env(:geneity, :api_module, api_module)
+  end
+
+  def get_implementation_module() do
+    case Application.get_env(:geneity, :api_module) do
+      nil ->
+        raise "Geneity api_module needs to be explicitly set by calling Geneity.Api.set_api_mode/1 before attempting to fetch content"
+
+      other ->
+        other
+    end
+  end
 end

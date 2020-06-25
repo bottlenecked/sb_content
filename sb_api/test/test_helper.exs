@@ -1,5 +1,8 @@
 ExUnit.start(colors: [enabled: true])
 
+Geneity.Api.set_api_mode(:test)
+Geneity.ContentDiscovery.ScrapeSupervisor.start_scraper("stoiximan_gr", :live)
+
 defmodule TestHelper do
   use SbApiWeb.ConnCase
 

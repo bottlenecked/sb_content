@@ -5,62 +5,63 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   alias Geneity.ContentDiscovery
 
   defstruct [
+    :type,
     :operator_id,
-    :live_interval,
-    :regular_interval,
-    live_events: MapSet.new(),
-    pre_events: MapSet.new()
+    :interval,
+    events: MapSet.new()
   ]
 
-  def start_link(operator_id) do
+  @type milliseconds :: non_neg_integer()
+
+  @type args :: %{
+          type: :pre | :live,
+          interval: milliseconds(),
+          operator_id: Geneity.Api.Operator.t()
+        }
+
+  @spec start_link(args()) :: GenServer.on_start()
+  def start_link(args) do
     args = %__MODULE__{
-      operator_id: operator_id,
-      live_interval: 5_000,
-      regular_interval: 60_000
+      type: args.type,
+      operator_id: args.operator_id,
+      interval: args.interval
     }
 
-    GenServer.start_link(__MODULE__, args, name: via_tuple(operator_id))
+    GenServer.start_link(__MODULE__, args, name: via_tuple(args.type, args.operator_id))
   end
 
-  def get_current_event_ids(operator_id) do
-    name = via_tuple(operator_id)
-    GenServer.call(name, :get_event_ids)
+  @spec get_current_event_ids(pid()) :: {Geneity.Api.Operator.t(), [String.t()]}
+  def get_current_event_ids(pid) do
+    GenServer.call(pid, :get_event_ids)
   end
 
   @impl true
   def init(state) do
-    schedule_next_scrape(Utils.Jitter.between(0, 150), :scrape_live)
-    schedule_next_scrape(Utils.Jitter.between(0, 150), :scrape_pre)
+    Utils.Jitter.between(0, 150)
+    |> schedule_next_scrape()
+
     {:ok, state}
   end
 
   @impl true
   def handle_call(:get_event_ids, _from, state) do
-    result =
-      [
-        MapSet.to_list(state.live_events),
-        MapSet.to_list(state.pre_events)
-      ]
-      |> List.flatten()
-      |> Enum.uniq()
+    event_ids =
+      state.events
+      |> MapSet.to_list()
 
-    {:reply, result, state}
+    {:reply, {state.operator_id, event_ids}, state}
   end
 
   @impl true
-  def handle_info(scrape_type, state) when scrape_type in [:scrape_live, :scrape_pre] do
+  def handle_info(:scrape, state) do
     state =
-      scrape_type
+      state.type
       |> do_scrape(state.operator_id)
-      |> handle_scrape_results(scrape_type, state)
+      |> handle_scrape_results(state)
 
-    if scrape_type == :scrape_pre do
-      state.regular_interval
-    else
-      state.live_interval
-    end
+    state.interval
     |> Utils.Jitter.jitter(200)
-    |> schedule_next_scrape(scrape_type)
+    |> schedule_next_scrape()
 
     {:noreply, state}
   end
@@ -69,16 +70,16 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   @impl true
   def handle_info({ref, _}, state) when is_reference(ref), do: {:noreply, state}
 
-  defp do_scrape(:scrape_pre, operator_id), do: ContentDiscovery.scrape(operator_id)
-  defp do_scrape(:scrape_live, operator_id), do: ContentDiscovery.scrape_live(operator_id)
+  defp do_scrape(:pre, operator_id), do: ContentDiscovery.scrape(operator_id)
+  defp do_scrape(:live, operator_id), do: ContentDiscovery.scrape_live(operator_id)
 
-  defp handle_scrape_results(results, type, %{operator_id: operator_id} = state) do
+  defp handle_scrape_results(results, %{operator_id: operator_id} = state) do
     results
-    |> log_errors(type, operator_id)
+    |> log_errors(state.type, operator_id)
     |> search_for_possibly_new_event_ids(state)
     |> publish_possibly_new_event_ids(state.operator_id)
 
-    update_state(type, results, state)
+    update_state(results, state)
   end
 
   defp log_errors(%ContentDiscovery{} = result, type, operator_id) do
@@ -114,8 +115,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     # and thus not return event ids. Since each polling round the result is stored, we might end up re-discovering new events
     # because in the new polling round we managed to scrape without errors
     event_ids
-    |> Enum.filter(fn id -> !MapSet.member?(state.live_events, id) end)
-    |> Enum.filter(fn id -> !MapSet.member?(state.pre_events, id) end)
+    |> Enum.filter(fn id -> !MapSet.member?(state.events, id) end)
   end
 
   defp publish_possibly_new_event_ids(new_event_ids, operator_id) do
@@ -124,21 +124,18 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
     end
   end
 
-  defp update_state(:scrape_live, %ContentDiscovery{event_ids: event_ids, error: nil}, state),
-    do: %{state | live_events: MapSet.new(event_ids)}
-
-  defp update_state(:scrape_pre, %ContentDiscovery{event_ids: event_ids, error: nil}, state),
-    do: %{state | pre_events: MapSet.new(event_ids)}
+  defp update_state(%ContentDiscovery{event_ids: event_ids, error: nil}, state),
+    do: %{state | events: MapSet.new(event_ids)}
 
   # minor optimization to avoid too much publishing: do not update state if top-level request failed
-  defp update_state(_, _, state),
+  defp update_state(_, state),
     do: state
 
-  @spec schedule_next_scrape(non_neg_integer(), :scrape_pre | :scrape_live) :: reference()
-  defp schedule_next_scrape(millis_after, type),
-    do: Process.send_after(self(), type, millis_after)
+  @spec schedule_next_scrape(non_neg_integer()) :: reference()
+  defp schedule_next_scrape(millis_after),
+    do: Process.send_after(self(), :scrape, millis_after)
 
-  defp via_tuple(operator_id) do
-    {:via, Registry, {GeneityRegistry, {:scaper, operator_id}}}
+  defp via_tuple(type, operator_id) do
+    {:via, Registry, {GeneityRegistry, {:scaper, {type, operator_id}}}}
   end
 end
