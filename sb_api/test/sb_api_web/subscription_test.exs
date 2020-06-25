@@ -1,11 +1,11 @@
-defmodule SbApiWeb.Test.SubscriptionTest do
+defmodule SbApiWeb.Test.EventSubscriptionTest do
   use SbApiWeb.SubscriptionCase
 
-  test "blah", %{socket: socket} do
+  test "status changed is captured", %{socket: socket} do
     subscription = """
-    subscription {
-      changes {
-        ...on StatusChanged {
+    subscription{
+      changes{
+        ...on StatusChanged{
           eventId,
           active
         },
@@ -14,7 +14,7 @@ defmodule SbApiWeb.Test.SubscriptionTest do
     }
     """
 
-    # setup a subscription
+    # setting up the subscription
     ref = push_doc(socket, subscription)
 
     assert_reply(ref, :ok, %{subscriptionId: subscription_id})
@@ -23,7 +23,8 @@ defmodule SbApiWeb.Test.SubscriptionTest do
     change = %DiffEngine.Change.Event.StatusChanged{event_id: 1, active?: true}
     State.PubSub.publish_changes("stoiximan_gr", [change])
 
-    # check to see if we got subscription data
+    # assert that the change is received
+
     expected = %{
       result: %{
         data: %{
@@ -33,7 +34,8 @@ defmodule SbApiWeb.Test.SubscriptionTest do
       subscriptionId: subscription_id
     }
 
-    assert_push("subscription:data", push)
-    assert expected == push
+    assert_push("subscription:data", actual)
+
+    assert actual == expected
   end
 end
