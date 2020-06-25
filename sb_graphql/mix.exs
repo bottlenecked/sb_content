@@ -21,7 +21,7 @@ defmodule SbGraphql.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:absinthe, "~> 1.4"},
+      {:absinthe, "~> 1.5"},
       {:state, path: "../state"}
     ]
   end
