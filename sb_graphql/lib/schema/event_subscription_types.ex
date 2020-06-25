@@ -7,6 +7,7 @@ defmodule SbGraphql.Schema.EventSubscriptionTypes do
 
   union :change do
     types([
+      :display_order_changed,
       :event_removed,
       :status_changed
     ])
