@@ -13,13 +13,20 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
 
   @type milliseconds :: non_neg_integer()
 
-  @type args :: %{
+  @type t() :: %__MODULE__{
           type: :pre | :live,
+          operator_id: Geneity.Operator.t(),
           interval: milliseconds(),
-          operator_id: Geneity.Api.Operator.t()
+          events: MapSet.t()
         }
 
-  @spec start_link(args()) :: GenServer.on_start()
+  @type start_args() :: %{
+          type: :pre | :live,
+          operator_id: Geneity.Api.Operator.t(),
+          interval: milliseconds()
+        }
+
+  @spec start_link(start_args()) :: GenServer.on_start()
   def start_link(args) do
     args = %__MODULE__{
       type: args.type,
@@ -31,7 +38,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   end
 
   @spec get_current_event_ids(pid()) :: {Geneity.Api.Operator.t(), [String.t()]}
-  def get_current_event_ids(pid) do
+  def get_current_event_ids(pid) when is_pid(pid) do
     GenServer.call(pid, :get_event_ids)
   end
 
@@ -131,7 +138,7 @@ defmodule Geneity.ContentDiscovery.ScrapeWorker do
   defp update_state(_, state),
     do: state
 
-  @spec schedule_next_scrape(non_neg_integer()) :: reference()
+  @spec schedule_next_scrape(milliseconds()) :: reference()
   defp schedule_next_scrape(millis_after),
     do: Process.send_after(self(), :scrape, millis_after)
 

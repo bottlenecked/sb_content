@@ -13,26 +13,27 @@ defmodule Geneity.ContentDiscovery.ScrapeSupervisor do
     DynamicSupervisor.init(strategy: :one_for_one)
   end
 
-  def scrapers_list() do
+  def children() do
     __MODULE__
     |> DynamicSupervisor.which_children()
     |> Enum.map(fn {_, pid, _, _} -> pid end)
+    |> Enum.filter(&is_pid/1)
   end
 
-  def start_scraper(operator_id, :pre) do
-    do_start_scraper(operator_id, :pre, 60_000)
+  def start_child(operator_id, :pre) do
+    do_start_child(operator_id, :pre, 60_000)
   end
 
-  def start_scraper(operator_id, :live) do
-    do_start_scraper(operator_id, :live, 5_000)
+  def start_child(operator_id, :live) do
+    do_start_child(operator_id, :live, 5_000)
   end
 
-  defp do_start_scraper(operator_id, type, interval) when is_operator(operator_id) do
-    spec = {ScrapeWorker, %{type: type, interval: interval, operator_id: operator_id}}
-    DynamicSupervisor.start_child(__MODULE__, spec)
+  defp do_start_child(operator_id, type, interval) when is_operator(operator_id) do
+    args = %{type: type, operator_id: operator_id, interval: interval}
+    DynamicSupervisor.start_child(__MODULE__, {ScrapeWorker, args})
   end
 
-  def stop_scrapper(operator_id, type) when is_operator(operator_id) and type in [:live, :pre] do
+  def stop_child(operator_id, type) when is_operator(operator_id) and type in [:live, :pre] do
     case Registry.lookup(GeneityRegistry, ScrapeWorker.name(type, operator_id)) do
       [{pid, _value}] ->
         DynamicSupervisor.terminate_child(__MODULE__, pid)

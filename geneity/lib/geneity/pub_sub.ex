@@ -6,12 +6,12 @@ defmodule Geneity.PubSub do
   will receive messages of the form {:new_events, {operator_id, [event_ids]}}. These events might
   not always be 'new' so further checks should be made that they are indeed new.
   """
+  @spec subscribe_new_events() :: [{Geneity.Api.Operator.t(), [String.t()]}]
   def subscribe_new_events() do
     Registry.register(name(), :new_events, [])
 
-    ScrapeSupervisor.scrapers_list()
+    ScrapeSupervisor.children()
     |> Enum.map(&ScrapeWorker.get_current_event_ids/1)
-    |> Enum.each(fn {operator_id, event_ids} -> publish_new_events(operator_id, event_ids) end)
   end
 
   def publish_new_events(operator_id, event_ids) do

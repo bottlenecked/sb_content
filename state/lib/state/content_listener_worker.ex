@@ -13,7 +13,15 @@ defmodule State.ContentListenerWorker do
 
   @impl true
   def handle_continue(:continue_init, state) do
-    Geneity.PubSub.subscribe_new_events()
+    operator_events = Geneity.PubSub.subscribe_new_events()
+
+    events =
+      for {operator, events} <- operator_events, event <- events do
+        {operator, event}
+      end
+
+    state = %{state | pending_events: events}
+    handle_pending()
     {:noreply, state}
   end
 
@@ -29,8 +37,7 @@ defmodule State.ContentListenerWorker do
         handle_pending()
         %{state | pending_events: pending}
       else
-        # order is not preserved but shouldn't matter too much
-        %{state | pending_events: List.flatten([pending | state.pending_events])}
+        %{state | pending_events: state.pending_events ++ pending}
       end
 
     {:noreply, state}
